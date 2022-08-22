@@ -1,3 +1,13 @@
+#+title: Innovation Lab EFREI Paris
+* Fonctionnement
+L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants de réaliser leur projet.
+Ce lieu se divise en deux parties. La première se situe à gauche en rentrant par la porte centrale, c'est un espace de travail en libre accès.
+La deuxième partie est un espace de fabrication dont l'accès est reglementé, car on y retrouve les machines et les espaces de stockages. Pour accéder à ce lieu, voici les éléments à savoir:
+L'Innovation Lab est principalement géré par le Fablab Manager remi.griot@efrei.fr. Il cogère le lieu avec des étudiants, les étudiants encadrants.
+Gérer le lieu signifie l'organisier, le maintenir, acceuillir les utilisateurs, les former...
+En général, le lieu sera ouvert aux utilsisateurs durant les permanences, dont l'agenda est ci dessous.
+Pour utiliser les machines, il faudra suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
+
 * Agenda
 Permanences, évenements, formations... tout est ici:
 #+begin_export html
@@ -47,7 +57,9 @@ Ils sont responsables de la bonne marche du lieu.
 ** Espace de réalité virtuelle
 ** Outillage
 * Formations
-
+Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
+vous intéresse lors de la prise de rendez-vous. Si vous êtes indécis, l’impression 3D est
+certainement un bon début.
 * Reglement intérieur
 [[./doc/RI InnovationLab V3.pdf]]
 * Réseau Sociaux
