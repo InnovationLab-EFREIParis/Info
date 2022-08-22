@@ -1,10 +1,12 @@
-* Planning des permanences
-
+* Agenda
+Permanences, évenements, formations... tout est ici:
 #+begin_export html
 <iframe src="https://calendar.google.com/calendar/embed?src=rd05kdhplh71pcovlkmacd392c%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
 #+end_export
 
-* Liste des �tudiants encadrants
+* Liste des étudiants encadrants
+Les étudiants encadrants sont des étudiants qui co-gèrent l'Innovation Lab.
+Ils sont responsables de la bonne marche du lieu.
 
 - Le Callonec	Baptise	L1	baptiste.le-callonnec@efrei.net
 - Calle	Illian	L1	illian.calle@efrei.net
@@ -39,22 +41,63 @@
 
 * Equipements
 ** Impression 3D
-** D�coupe Laser
-** Fraiseuse Num�rique
+** Découpe Laser
+** Fraiseuse Numérique
 ** Espace electronique
-** Espace de r�alit� virtuelle
+** Espace de réalité virtuelle
 ** Outillage
 * Formations
 
-* Reglement int�rieur
+* Reglement intérieur
 [[./doc/RI InnovationLab V3.pdf]]
-* R�seau Sociaux
+* Réseau Sociaux
 [[https://www.instagram.com/innovationlab_efrei/]]
 
 * Projets
 
 #+begin_export html
 
-<iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=770 height=500 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+<iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=800 height=600 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
 
 #+end_export
+
+* FAQ
+
+*Dois-je payer quelque chose ?* \\
+Non, l’accès à l’Innovation Lab est gratuit.
+
+*Que fait-on à l’Innovation Lab ? Puis je y mener des projets personnels ?* \\
+Oui, tous les projets sont les bienvenus : Entrepreneurial, personnel, associatif, académique…
+Cependant, ces projets doivent être renseignés via une fiche projet. Cette fiche est courte et simple à remplir. 
+
+*Dois-je fournir mes bobines de filament pour imprimer en 3D?* \\
+Les bobines pour l’impression 3D sont fournies, les utilisateurs
+n’ont pas à apporter de filament. Les changements de bobines et
+la maintenance des machines sont sous la responsabilité des
+étudiants encadrants.\\
+
+*Dois-je fournir le consommable pour la découpe laser?* \\
+Oui, mais il est possible que vous trouviez votre bonheur dans les
+chutes mises gratuitement à la disposition de tous. \\
+
+*… et si j’ai besoin de plus de consommable ?* \\
+Pour les grandes découpes, c’est à vous de fournir le
+consommable. Si vous le laissez sur place, il faudra
+impérativement l’étiqueter avec la date et un e-mail. A noter
+qu’un état des lieux en fin de semestre rebascule tout le
+consommable dans le pot commun. Le stockage est limité dans le
+temps. \\
+
+*Puis je laisser du matériel ?* \\
+Du stockage est mis à disposition le temps d’un semestre. Vous pouvez utiliser les casiers gris en y
+mettant votre nom et la date. Les casiers seront vidés lors de l’état des lieux de fin de semestre. \\
+
+*L’Innovation Lab est ouvert le samedi ?* \\
+Si vous êtes étudiant encadrant, vous pouvez utiliser le lieu quand vous le souhaitez, sous réserve que
+le campus soit ouvert. En tant qu’utilisateurs, vous pouvez seulement venir durant les permanences. \\
+
+*Comment devenir étudiant encadrant ?* \\
+Lorsque vous êtes étudiants encadrants, vous bénéficiez d’un accès privilégié à l’Innovation Lab, sous
+réserve que vous soyez disponibles pour une permanence hebdomadaire. Vous pouvez déjà vous
+familiariser avec le lieu en tant qu’utilisateur et passer quelques formations puis devenir encadrants
+en envoyant votre demande à remi.griot@efrei.fr \\
