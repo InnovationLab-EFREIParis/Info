@@ -1,11 +1,12 @@
-#+title: Innovation Lab EFREI Paris
-#+description: Fonctionnement de l'Innovation Lab
+#+title: Equipements
+#+description: Equipements
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
 
 
-* Equipements
+#+attr_html: :width 400px
+[[./img/flou.jpg]]
 ** Zone machines silencieuses
 *** Impression 3D Depot de filament
 + Imprimante 3D Raise3D - N2 - (305 x 305 x 305 mm)
