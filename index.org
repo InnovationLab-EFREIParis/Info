@@ -8,7 +8,7 @@
 [[./img/campus-8304.jpg]]
 
 * Présentation
-L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets. Ces projets peuvent être académiques, personnelles, associatifs...
+L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets. Ces projets peuvent être académiques, personnels, associatifs...
 Le lieu se divise en deux grands espaces:
 - Le premier est *un espace de travail en libre accès* se situant à gauche en rentrant par la porte centrale. A moins que cette espace ne soit reservé, vous pouvez vous y installer pour y travailler seul ou en groupe.
 - Le deuxième espace est *un espace de fabrication* (ou fablab) dont l'accès est reglementé, car on y retrouve les machines et les espaces de stockages. 
@@ -104,7 +104,7 @@ Lorsque vous êtes étudiants encadrants, vous bénéficiez d’un accès privil
 réserve que vous soyez disponibles pour une permanence hebdomadaire. Vous pouvez déjà vous
 familiariser avec le lieu en tant qu’utilisateur et passer quelques formations puis devenir encadrants
 en envoyant votre demande à remi.griot@efrei.fr \\
-* Réseau Sociaux
+* Réseaux Sociaux
 Retrouvez l'actualité de l'I-lab sur les réseaux:
 
 #+begin_export html
