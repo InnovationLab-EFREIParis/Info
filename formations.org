@@ -1,0 +1,14 @@
+#+title: Innovation Lab EFREI Paris
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+* Formations
+** Test Formations
+Les formations disponibles sont:
+- Impression 3D
+- Découpe laser
+- Fraiseuse numérique
+- Outillage   
+- Espace éléctronique
+- Espace réalité virtuelle

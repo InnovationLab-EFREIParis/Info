@@ -1,0 +1,26 @@
+#+title: Innovation Lab EFREI Paris
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+* Equipements
+** Zone machines silencieuses
+*** Impression 3D Depot de filament
++ Imprimante 3D Raise3D - N2 - (305 x 305 x 305 mm)
++ Imprimante 3D Raise3D - Pro2 - (305 x 305 x 305 mm)
++ Imprimante 3D MakerBot - Method X (152 x 190 x 196 mm)
++ Scanner 3D Einscan SE
+*** Electronique
++ Station soudage et air chaud
++ Oscilloscopes et alimentations de laboratoire
+*** Zone réalité virtuelle
+
+** Zone machines bruyantes
++ Découpeuse Laser  GCC Spirit GLS (960 x 610 mm)
++ Fraiseuse numérique Ooznest (500*500 mm)
++ Scie à onglet
++ Outillage électro portatifs (ponceuse, visseuse, scie circulaire)
+
+
