@@ -1,5 +1,5 @@
 #+title: Innovation Lab EFREI Paris
-#+description: Fonctionnement de l'Innovation Lab
+#+description: Fonctionnement de l'I-Lab
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
@@ -19,7 +19,7 @@ Pour utiliser les machines, il faudra suivre une formation et obtenir un open ba
 * Agenda
 Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessous. 
 #+begin_export html
-<iframe src="https://calendar.google.com/calendar/embed?src=rd05kdhplh71pcovlkmacd392c%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="600" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=rd05kdhplh71pcovlkmacd392c%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
 #+end_export
 
 * Liste des étudiants encadrants
@@ -87,14 +87,16 @@ vous intéresse lors de la prise de rendez-vous avec un étudiant encadrant. Si 
 * Reglement intérieur
 [[./doc/RI InnovationLab V3.pdf]]
 * Réseau Sociaux
+Retrouvez l'actualité de l'I-lab sur les réseaux sociaux:
 [[https://www.instagram.com/innovationlab_efrei/]]
+https://www.facebook.com/Innovation-Lab-EFREI-Paris-108545590589576
 
 * Projets
 Liste des fiches projets réalisé à l'Innovation Lab.
 
 #+begin_export html
 
-<iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=600 height=600 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+<iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=700 height=600 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
 
 #+end_export
 
