@@ -8,14 +8,16 @@
 [[./img/campus-8304.jpg]]
 
 * Présentation
-L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets. Ces projets peuvent être académiques, personnels, associatifs...
+L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets.
+Ces projets peuvent être académiques, personnels, associatifs...
 Le lieu se divise en deux grands espaces:
-- Le premier est *un espace de travail en libre accès* se situant à gauche en rentrant par la porte centrale. A moins que cette espace ne soit reservé, vous pouvez vous y installer pour y travailler seul ou en groupe.
-- Le deuxième espace est *un espace de fabrication* (ou fablab) dont l'accès est reglementé, car on y retrouve les machines et les espaces de stockages. 
-L'Innovation Lab est principalement géré par le Fablab Manager (remi.griot@efrei.fr). Il cogère le lieu avec les étudiants encadrants.
-Gérer le lieu signifie l'organisier, le maintenir, acceuillir les utilisateurs, les former...
-En général, l'espace de fabrication est ouvert aux utilsisateurs durant les permanences, dont l'agenda est ci dessous.
-Pour utiliser les machines, il faudra suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
+- Le premier est *un espace de travail en libre accès* se situant à gauche en rentrant par la porte centrale. A moins que cette espace ne soit reservé, vous
+  pouvez vous y installer pour y travailler seul ou en groupe.
+- Le deuxième espace est *un espace de fabrication* (ou fablab) dont l'accès est reglementé car on y retrouve les machines et les espaces de stockages. 
+L'Innovation Lab est géré par le Fablab Manager (remi.griot@efrei.fr) et une équipe d'étudiants encadrants.
+Ils sont responsables l'organisation du lieu, de la maintenance des machines, de l'acceuil et de la formation des utilisateurs...
+En général, l'espace de fabrication est ouvert aux utilisateurs durant les permanences des étudiants encadrants, dont l'agenda est ci dessous.
+Afin d'utiliser les machines, les utilisateurs doivent suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
 
 * Agenda
 Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessous. 
@@ -54,13 +56,7 @@ Pour en savoir plus: [[file:formations.org][formations]]
 
 * Reglement intérieur
 [[./doc/RI InnovationLab V3.pdf]]
-<<<<<<< HEAD
-* Réseau Sociaux
-Retrouvez l'actualité de l'I-lab sur les réseaux sociaux:
-[[https://www.instagram.com/innovationlab_efrei/]]
-https://www.facebook.com/Innovation-Lab-EFREI-Paris-108545590589576
-=======
->>>>>>> refs/remotes/origin/master
+
 
 * Projets
 Liste des fiches projets réalisés à l'Innovation Lab.
@@ -119,5 +115,5 @@ Retrouvez l'actualité de l'I-lab sur les réseaux:
 #+end_export
 
 #+begin_export html
-<iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F108545590589576%2Fvideos%2F2906970299600169%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+<center><iframe src="https://www.facebook.com/plugins/video.php?height=476&href=https%3A%2F%2Fwww.facebook.com%2F108545590589576%2Fvideos%2F2906970299600169%2F&show_text=false&width=267&t=0" width="267" height="476" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe></center>
 #+end_export
