@@ -17,7 +17,7 @@
 + Station soudage et air chaud
 + Oscilloscopes et alimentations de laboratoire
 *** Zone réalité virtuelle
-
++ HTC Vive Pro
 ** Zone machines bruyantes
 + Découpeuse Laser  GCC Spirit GLS (960 x 610 mm)
 + Fraiseuse numérique Ooznest (500*500 mm)
