@@ -7,6 +7,9 @@
 #+attr_html: :width 400px
 [[./img/campus-8304.jpg]]
 
+* Dernières nouvelles
+Venez découvrir l'I-Lab le mardi 20/09/22 entre 17h30 et 19h. Au menu: informations, visite, démo...
+
 * Présentation
 L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets.
 Ces projets peuvent être académiques, personnels, associatifs...
