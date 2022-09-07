@@ -59,7 +59,9 @@ Pour en savoir plus: [[file:formations.org][formations]]
 
 
 * Projets
-Liste des fiches projets réalisés à l'Innovation Lab.
+Les utilisateurs de l'I-Lab s'engagent à remplir une fiche pour chaque projet qu'ils réalisent. Cette fiche est rapide à remplir et permet de recenser les usages de l'I-Lab.\\
+C'est ici: [[https://forms.monday.com/forms/75d3d586abeab1eb25c5115f4f8c8c34?r=use1][Fiche Projet]] 
+** Liste des fiches projets réalisés à l'Innovation Lab.
 
 #+begin_export html
 
