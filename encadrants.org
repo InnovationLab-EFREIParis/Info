@@ -1,10 +1,10 @@
-#+title: Innovation Lab EFREI Paris
+#+title: Les étudiants encadrants
 #+description: Fonctionnement de l'Innovation Lab
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
 
-* Liste des étudiants encadrants
+
 
 | Nom          | Prénom    | Promo. | Email                               | Status    |
 |--------------+-----------+--------+-------------------------------------+-----------|
