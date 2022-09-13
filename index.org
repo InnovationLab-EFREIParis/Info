@@ -4,13 +4,14 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-#+attr_html: :width 400px
-[[./img/campus-8304.jpg]]
+
 
 * Dernières nouvelles
-+ Soirée porte ouverte le mardi 20/09/22 entre 17h30 et 19h30. Au menu: informations, visite, démo...
-+ Repair Café le jeudi 20/10/22 entre 16h30 et 19h30
-  
++ Soirée porte ouverte I-Lab - mardi 20/09/22 - 17h30 à 19h30. /Don't be shy, come say hi/
++ [[file:repaircafe.org][Repair Café]] - jeudi 20/10/22 - 16h30 à 19h30. /Les gens jettent vraiment n'importe quoi/
+
+#+attr_html: :width 400px
+[[./img/campus-8304.jpg]] 
 
 * Présentation
 L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets.
