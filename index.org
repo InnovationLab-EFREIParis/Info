@@ -8,7 +8,9 @@
 [[./img/campus-8304.jpg]]
 
 * Dernières nouvelles
-Venez découvrir l'I-Lab le mardi 20/09/22 entre 17h30 et 19h. Au menu: informations, visite, démo...
++ Soirée porte ouverte le mardi 20/09/22 entre 17h30 et 19h30. Au menu: informations, visite, démo...
++ Repair Café le jeudi 20/10/22 entre 16h30 et 19h30
+  
 
 * Présentation
 L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets.
@@ -46,7 +48,7 @@ A noter que des espaces de stockages pour vos projets sont egalement disponibles
 Pour en savoir plus: [[file:equipements.org][equipements]]
 
 * Formations
-Les formations se déroulent en groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
+Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent en groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
 Elles vous permettent d’acquérir les bases indispensables afin d’utiliser les machines.
 Vous y aborderez les notions de conceptions, de fabrication ainsi que les consignes de sécurités.\\
 À la suite de la formation, vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
