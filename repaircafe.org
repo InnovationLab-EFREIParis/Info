@@ -4,6 +4,9 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
 
+#+attr_html: :width 400px
+[[./img/repair.jpg]]
+
 Un Repair Café est un événement participatif et convivial. Son
 principal objectif est d’éviter de jeter les objets du quotidien qui
 peuvent encore servir, en les réparant ou en apprenant à les
