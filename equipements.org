@@ -12,16 +12,17 @@
 + Imprimante 3D Raise3D - N2 - (305 x 305 x 305 mm)
 + Imprimante 3D Raise3D - Pro2 - (305 x 305 x 305 mm)
 + Imprimante 3D MakerBot - Method X (152 x 190 x 196 mm)
++ Imprimante 3D Creality - CR30 - (200 x 170 x âˆž mm)  
 + Scanner 3D Einscan SE
 *** Electronique
 + Station soudage et air chaud
 + Oscilloscopes et alimentations de laboratoire
-*** Zone réalité virtuelle
+*** Zone rÃ©alitÃ© virtuelle
 + HTC Vive Pro
 ** Zone machines bruyantes
-+ Découpeuse Laser  GCC Spirit GLS (960 x 610 mm)
-+ Fraiseuse numérique Ooznest (500*500 mm)
-+ Scie à onglet
-+ Outillage électro portatifs (ponceuse, visseuse, scie circulaire)
++ DÃ©coupeuse Laser  GCC Spirit GLS (960 x 610 mm)
++ Fraiseuse numÃ©rique Ooznest (500 x 500 mm)
++ Scie Ã  onglet
++ Outillage Ã©lectro portatifs (ponceuse, visseuse, scie circulaire)
 
 
