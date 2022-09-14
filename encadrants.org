@@ -6,34 +6,28 @@
 
 * Liste des étudiants encadrants
 
-| Nom          | Prénom    | Promo. | Email                               | Status    |
-|--------------+-----------+--------+-------------------------------------+-----------|
-| Le Callonec  | Baptise   | L1     | baptiste.le-callonnec@efrei.net     |           |
-| Calle        | Illian    | L1     | illian.calle@efrei.net              |           |
-| Chazard      | Elisa     | L2     | elisa.chazard@efrei.net             |           |
-| Guez         | Victoria  | L2     | victoria.guez@efrei.net             | Non dispo |
-| Al Khoury    | Layla     | L2     | layla.al.khoury.aoun@efrei.net      |           |
-| Alba Sanchez | Luis      | L2     | luis.alba.sanchez@efrei.net         |           |
-| Darbellay    | Martin    | L2     | martin.darbellay@efrei.net          | Non dispo |
-| Lucas        | Martin    | L2     | martin.lucas@efrei.net              |           |
-| Morel        | Nathan    | L2     | nathan.morel@efrei.net              |           |
-| Vialle       | Martin    | L2     | martin.vialle@efrei.net             |           |
-| Vincent      | Esteban   | L2     | esteban.vincent@efrei.net           |           |
-| Dheilly      | Robin     | L3     | robin.dheilly@efrei.net             |           |
-| Guillot      | Sasha     | l3     | sasha.guillot@efrei.net             |           |
-| Zhou         | Killian   | L3     | killian.zhou@efrei.net              |           |
-| Babin        | Victor    | L3     | victor.babin@efrei.net              |           |
-| Dewatre      | Pierre    | L3     | pierre.dewatre@efrei.net            |           |
-| Geslot       | Gaspard   | L3     | gaspard.geslot@efrei.net            |           |
-| Howayek      | Elie      | L3     | elie.howayek@efrei.net              |           |
-| Iloo         | Moise     | L3     | moise.iloo.liandja@efrei.net        |           |
-| Lefevre      | Valentin  | L3     | valentin.lefevre@efrei.net          |           |
-| Stasik       | Victoria  | L3     | victoria.stasik@efrei.net           |           |
-| Wang         | Justine   | L3     | justine.wang@efrei.net              |           |
-| Collin       | Alexis    | M1     | alexis.collin@efrei.net             |           |
-| Cotton       | Florent   | M1     | florent.cotton@efrei.net            |           |
-| Mauvezin     | Charlotte | M1     | charlotte.mauvezin@efrei.net        |           |
-| Phonchareun  | Alex      | M1     | alex.phonchareun@efrei.net          |           |
-| Tazi         | Kenza     | M1     | kenza.tazi@efrei.net                |           |
-| Yann Kader   | Obou N Do | M1     | yann.kader.axel.obou.n.do@efrei.net |           |
-| Angebaud     | Calixte   | M1     | calixte.angebaud@efrei.net          |           |
+| Nom          | Prénom    | Promo. | Email                                |
+|--------------+-----------+--------+--------------------------------------|
+| Le Callonec  | Baptise   | L1     | baptiste.le-callonnec@efrei.net      |
+| Calle        | Illian    | L1     | illian.calle@efrei.net               |
+| Chazard      | Elisa     | L2     | elisa.chazard@efrei.net              |
+| Al Khoury    | Layla     | L2     | layla.al.khoury.aoun@efrei.net       |
+| Alba Sanchez | Luis      | L2     | luis.alba.sanchez@efrei.net          |
+| Lucas        | Martin    | L2     | martin.lucas@efrei.net               |
+| Vialle       | Martin    | L2     | martin.vialle@efrei.net              |
+| Dheilly      | Robin     | L3     | robin.dheilly@efrei.net              |
+| Guillot      | Sasha     | l3     | sasha.guillot@efrei.net              |
+| Zhou         | Killian   | L3     | killian.zhou@efrei.net               |
+| Babin        | Victor    | L3     | victor.babin@efrei.net               |
+| Dewatre      | Pierre    | L3     | pierre.dewatre@efrei.net             |
+| Geslot       | Gaspard   | L3     | gaspard.geslot@efrei.net             |
+| Iloo         | Moise     | L3     | moise.iloo.liandja@efrei.net         |
+| Lefevre      | Valentin  | L3     | valentin.lefevre@efrei.net           |
+| Stasik       | Victoria  | L3     | victoria.stasik@efrei.net            |
+| Wang         | Justine   | L3     | justine.wang@efrei.net               |
+| Collin       | Alexis    | M1     | alexis.collin@efrei.net              |
+| Cotton       | Florent   | M1     | florent.cotton@efrei.net             |
+| Mauvezin     | Charlotte | M1     | charlotte.mauvezin@efrei.net         |
+| Tazi         | Kenza     | M1     | kenza.tazi@efrei.net                 |
+| Yann Kader   | Obou N Do | M1     | yann.kader.axel.obou.n.do@efrei.net  |
+| Angebaud     | Calixte   | M1     | calixte.angebaud@efrei.net           |
