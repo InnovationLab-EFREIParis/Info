@@ -19,7 +19,6 @@ En voici la liste:
 | Dheilly      | Robin     | M1     | robin.dheilly@efrei.net             |
 | Zhou         | Killian   | M1     | killian.zhou@efrei.net              |
 | Babin        | Victor    | M1     | victor.babin@efrei.net              |
-| Dewatre      | Pierre    | M1     | pierre.dewatre@efrei.net            |
 | Geslot       | Gaspard   | M1     | gaspard.geslot@efrei.net            |
 | Iloo         | Moise     | M1     | moise.iloo.liandja@efrei.net        |
 | Lefevre      | Valentin  | M1     | valentin.lefevre@efrei.net          |
