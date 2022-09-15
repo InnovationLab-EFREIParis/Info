@@ -46,7 +46,7 @@ Voici les prinipaux espaces et equipements de l'Innovation Lab:
 + Espace de réalité virtuelle
 + Outillage
 A noter que des espaces de stockages pour vos projets sont egalement disponibles.\\
-Pour en savoir plus: [[file:equipements.org][equipements]]
+Pour en savoir plus: *[[file:equipements.org][equipements]]*
 
 * Formations
 Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent en groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
@@ -57,7 +57,7 @@ comme étudiant autorisé à vous servir des machines. Comme dit dans le règlem
 durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
 vous intéresse lors de la prise de rendez-vous avec un étudiant encadrant. Si vous êtes indécis, l’impression 3D est certainement un bon début.\\
-Pour en savoir plus: [[file:formations.org][formations]
+Pour en savoir plus: *[[file:formations.org][formations]]*
 
 
 * Reglement intérieur
