@@ -57,7 +57,7 @@ comme étudiant autorisé à vous servir des machines. Comme dit dans le règlem
 durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
 vous intéresse lors de la prise de rendez-vous avec un étudiant encadrant. Si vous êtes indécis, l’impression 3D est certainement un bon début.\\
-Pour en savoir plus: *[[file:formations.org][formations]]*
+Les dates et supports de formations sont ici: *[[file:formations.org][formations]]*
 
 
 * Reglement intérieur
