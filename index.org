@@ -33,7 +33,7 @@ Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessou
 
 * Les étudiants encadrants
 Les étudiants encadrants sont des étudiants qui co-gèrent l'Innovation Lab. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu.
-Retrouvez la liste de ces étudiants [[file:encadrants.org][ici]] \\
+*Retrouvez la liste de ces étudiants [[file:encadrants.org][ici]]* \\
 Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature à remi.griot@efrei.fr
 
 
