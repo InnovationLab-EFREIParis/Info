@@ -4,26 +4,26 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-| Date                    | Encadrant | Formation |
-|-------------------------+-----------+-----------|
-| Lun 19/09 18h30-20h30   | Robin     | Laser     |
-| Mer 21/09 17h30-19h30   | Baptiste  | 3DPrint   |
-| Jeudi 22/09 17h30-19h30 | Yann      | CNC       |
-| Lun 26/09               | Robin     | Elec      |
-| Mer 28/09               | Baptiste  | Laser     |
-| Jeudi 29/09             | Yann      | 3DPrint   |
-| Lun 3/10                | Robin     | CNC       |
-| Mer 5/10                | Baptiste  | Elec      |
-| Jeudi 6/10              | Yann      | Laser     |
-| Lun 10/10               | Robin     | 3D Print  |
-| Mer 12/10               | Baptiste  | CNC       |
-| Jeudi 13/10             | Yann      | Elec      |
-| Lun 17/10               | Robin     | Laser     |
-| Mer 19/10               | Baptiste  | 3D print  |
-| Jeudi 20/10             | Yann      | CNC       |
-| Lun 24/10               | Robin     | Elec      |
-| Mer 26/10               | Baptiste  | Laser     |
-| Jeudi 27/10             | Yann      | 3D print  |
+| Date                    | Encadrant                           | Formation |
+|-------------------------+-------------------------------------+-----------|
+| Lun 19/09 18h30-20h30   | robin.dheilly@efrei.net             | laser     |
+| mer 21/09 17h30-19h30   | baptiste.le-callonnec@efrei.net     | 3dprint   |
+| jeudi 22/09 17h30-19h30 | yann.kader.axel.obou.n.do@efrei.net | cnc       |
+| lun 26/09               | robin.dheilly@efrei.net             | elec      |
+| mer 28/09               | baptiste.le-callonnec@efrei.net     | laser     |
+| jeudi 29/09             | yann.kader.axel.obou.n.do@efrei.net | 3dprint   |
+| lun 3/10                | robin.dheilly@efrei.net             | cnc       |
+| mer 5/10                | baptiste.le-callonnec@efrei.net     | elec      |
+| jeudi 6/10              | yann.kader.axel.obou.n.do@efrei.net | laser     |
+| lun 10/10               | robin.dheilly@efrei.net             | 3d print  |
+| mer 12/10               | baptiste.le-callonnec@efrei.net     | cnc       |
+| jeudi 13/10             | yann.kader.axel.obou.n.do@efrei.net | elec      |
+| lun 17/10               | robin.dheilly@efrei.net             | laser     |
+| mer 19/10               | baptiste.le-callonnec@efrei.net     | 3d print  |
+| jeudi 20/10             | yann.kader.axel.obou.n.do@efrei.net | cnc       |
+| lun 24/10               | robin.dheilly@efrei.net             | elec      |
+| mer 26/10               | baptiste.le-callonnec@efrei.net     | laser     |
+| jeudi 27/10             | yann.kader.axel.obou.n.do@efrei.net | 3D print  |
 
 
 Les formations disponibles sont:
