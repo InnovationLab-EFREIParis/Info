@@ -39,4 +39,6 @@ C'est ici: *[[file:solidworks.org][Solidworks]]*
 [[file:support/support_outillage.pdf]]
 * Espace éléctronique
 [[file:support/support_electronique.pdf]]
+* Dessin vectoriel
+C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
 * Espace réalité virtuelle

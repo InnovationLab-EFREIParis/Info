@@ -1,0 +1,7 @@
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+
+* Introduction
+https://www.loom.com/share/b6e487cb4f14498eaf15546458dab2aa
