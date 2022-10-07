@@ -116,6 +116,7 @@ Lorsque vous êtes étudiants encadrants, vous bénéficiez d’un accès privil
 réserve que vous soyez disponibles pour une permanence hebdomadaire. Vous pouvez déjà vous
 familiariser avec le lieu en tant qu’utilisateur et passer quelques formations puis devenir encadrants
 en envoyant votre demande à remi.griot@efrei.fr \\
+
 * Réseaux Sociaux
 Retrouvez l'actualité de l'I-lab sur les réseaux:
 
@@ -128,3 +129,10 @@ Retrouvez l'actualité de l'I-lab sur les réseaux:
 #+end_export
 * Liens
 En panne d'idée ou de fournisseurs, voici quelques [[file:liens.org][bonnes adresses]]
+
+* A vous la parole
+#+begin_export html
+
+<iframe src="https://forms.monday.com/forms/embed/bf15a0f45a7aa784ca590f603e0d05fd?r=use1" width="650" height="500" style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+
+#+end_export
