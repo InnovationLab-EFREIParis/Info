@@ -6,12 +6,6 @@
 
 | Date        | Encadrant                           | Formation |
 |-------------+-------------------------------------+-----------|
-| mer 28/09   | baptiste.le-callonnec@efrei.net     | laser     |
-| jeudi 29/09 | yann.kader.axel.obou.n.do@efrei.net | 3dprint   |
-| lun 3/10    | robin.dheilly@efrei.net             | cnc       |
-| mar 4/10    | samuel.poinama@efrei.net            |           |
-| mer 5/10    | baptiste.le-callonnec@efrei.net     | elec      |
-| jeudi 6/10  | yann.kader.axel.obou.n.do@efrei.net | laser     |
 | lun 10/10   | robin.dheilly@efrei.net             | 3d print  |
 | mar 11/10   | samuel.poinama@efrei.net            |           |
 | mer 12/10   | baptiste.le-callonnec@efrei.net     | cnc       |
