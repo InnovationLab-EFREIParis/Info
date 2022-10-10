@@ -8,15 +8,15 @@
 |-------------+-------------------------------------+-----------|
 | lun 10/10   | robin.dheilly@efrei.net             | 3d print  |
 | mar 11/10   | samuel.poinama@efrei.net            |           |
-| mer 12/10   | baptiste.le-callonnec@efrei.net     | cnc       |
-| jeudi 13/10 | yann.kader.axel.obou.n.do@efrei.net | elec      |
+| jeu 13/10   | baptiste.le-callonnec@efrei.net     | cnc       |
+| jeu 13/10   | yann.kader.axel.obou.n.do@efrei.net | elec      |
 | lun 17/10   | robin.dheilly@efrei.net             | laser     |
 | mar 18/10   | samuel.poinama@efrei.net            |           |
-| mer 19/10   | baptiste.le-callonnec@efrei.net     | 3d print  |
-| jeudi 20/10 | yann.kader.axel.obou.n.do@efrei.net | cnc       |
+| jeu 19/10   | baptiste.le-callonnec@efrei.net     | 3d print  |
+| jeu 20/10   | yann.kader.axel.obou.n.do@efrei.net | cnc       |
 | lun 24/10   | robin.dheilly@efrei.net             | elec      |
 | mar 25/10   | samuel.poinama@efrei.net            |           |
-| mer 26/10   | baptiste.le-callonnec@efrei.net     | laser     |
+| jeu 26/10   | baptiste.le-callonnec@efrei.net     | laser     |
 | jeudi 27/10 | yann.kader.axel.obou.n.do@efrei.net | 3D print  |
 
 
