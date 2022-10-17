@@ -8,7 +8,7 @@
 
 
 #+attr_html: :width 400px
-[[./img/logo.PNG]]
+[[./img/logo.png]]
 
 *Dois-je payer quelque chose ?* \\
 Non, l’accès à l’Innovation Lab est gratuit.
