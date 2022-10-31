@@ -6,19 +6,14 @@
 
 | Date        | Encadrant                           | Formation |
 |-------------+-------------------------------------+-----------|
-| mar 25/10   | samuel.poinama@efrei.net            | cnc       |
-| jeu 26/10   | baptiste.le-callonnec@efrei.net     | laser     |
-| jeudi 27/10 | yann.kader.axel.obou.n.do@efrei.net | 3D print  |
-| mar 25/10   | samuel.poinama@efrei.net            | elec      |
-| jeu 3/11    | baptiste.le-callonnec@efrei.net     | cnc       |
 | jeu 3/11    | yann.kader.axel.obou.n.do@efrei.net | laser     |
-| mar 25/10   | samuel.poinama@efrei.net            | 3d print  |
+| mar 08/11   | samuel.poinama@efrei.net            | 3d print  |
 | jeudi 10/11 | baptiste.le-callonnec@efrei.net     | elec      |
 | jeudi 10/11 | yann.kader.axel.obou.n.do@efrei.net | cnc       |
-| mar 25/10   | samuel.poinama@efrei.net            | laser     |
+| mar 15/11   | samuel.poinama@efrei.net            | laser     |
 | jeudi 17/11 | baptiste.le-callonnec@efrei.net     | 3D print  |
 | jeudi 17/11 | yann.kader.axel.obou.n.do@efrei.net | elec      |
-| mar 25/10   | samuel.poinama@efrei.net            | cnc       |
+| mar 22/11   | samuel.poinama@efrei.net            | cnc       |
 | jeudi 24/11 | baptiste.le-callonnec@efrei.net     | laser     |
 | jeudi 24/11 | yann.kader.axel.obou.n.do@efrei.net | 3D print  |
 
