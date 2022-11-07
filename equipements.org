@@ -9,10 +9,12 @@
 [[./img/flou.jpg]]
 ** Zone machines silencieuses
 *** Impression 3D Depot de filament
-+ Imprimante 3D Raise3D - N2 - (305 x 305 x 305 mm)
-+ Imprimante 3D Raise3D - Pro2 - (305 x 305 x 305 mm)
-+ Imprimante 3D MakerBot - Method X (152 x 190 x 196 mm)
-+ Imprimante 3D Creality - CR30 - (200 x 170 x ∞ mm)  
++ Simple extrusion 3D Creality - CR30 - (200 x 170 x ∞ mm)  
++ Simple extrusion Raise3D - N2 - (305 x 305 x 305 mm)
++ Double extrusion Raise3D - Pro2 - (305 x 305 x 305 mm)
++ Double extrusion Raise3D - Pro3 - (305 x 305 x 305 mm)
++ Double extrusion 3D MakerBot - Method X (152 x 190 x 196 mm)
+*** Scanner 3D
 + Scanner 3D Einscan SE
 *** Electronique
 + Station soudage et air chaud
