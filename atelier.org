@@ -1,0 +1,23 @@
+#+title: Ateliers
+#+description: Equipements
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+#+attr_html: :width 400px
+[[./img/line.jpg]]
+
+* Atelier Création & Fabrication
+** Jeudi 24/11 de 17h30 à 19h30
+** Animé par Line Pierron, designer
+Venez vous initier à la création et à la fabrication à l'heure du numérique.\\
+Line combine l'artisanat moderne et traditionnel dans des créations
+originales (mobilier, bijoux) qu'elle viendra nous présenter.
+Une initiation aux différents process de fabrication numérique sera
+ensuite proposée aux participants.\\
+Son travail de designer est visible ici: https://line-raphael.fr/nosprojets/
+
+
+Inscription via le formulaire:
+https://forms.office.com/r/e8EdqVZE5p
