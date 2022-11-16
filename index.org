@@ -10,7 +10,7 @@
 * Actualités
 
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
-+ *Engineering Project* - tous les vendredi, l'I-lab est reservé en priorité aux projets transerves M2
++ *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
 + [[file:atelier.org][*Atelier*]] - Jeudi 24/11 de 17h30 à 19h30 - /Création & Fabrication, ouvert à tous/
 
  
