@@ -18,5 +18,12 @@ Une initiation aux différents process de fabrication numérique sera
 ensuite proposée aux participants.\\
 Son travail de designer est visible [[https://line-raphael.fr/][ici]]
 
-Inscription via le [[https://forms.office.com/r/e8EdqVZE5p][formulaire]]
+* Inscription
+
+#+begin_export html
+
+<iframe width="640px" height="480px" src="https://forms.office.com/Pages/ResponsePage.aspx?id=zwA2QU69fEyKYWnnPN33MaqmT0C-jNtIsdYMZg3otOJUQjRMM0VQWFQxUjFQM1M2T1FSVVNOWlQ0SC4u&embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+#+end_export
+
+
 
