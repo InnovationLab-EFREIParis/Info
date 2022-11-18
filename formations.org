@@ -4,18 +4,15 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-| Date        | Encadrant                           | Formation |
-|-------------+-------------------------------------+-----------|
-| jeu 3/11    | yann.kader.axel.obou.n.do@efrei.net | laser     |
-| mar 08/11   | samuel.poinama@efrei.net            | 3d print  |
-| jeudi 10/11 | baptiste.le-callonnec@efrei.net     | elec      |
-| jeudi 10/11 | yann.kader.axel.obou.n.do@efrei.net | cnc       |
-| mar 15/11   | samuel.poinama@efrei.net            | laser     |
-| jeudi 17/11 | baptiste.le-callonnec@efrei.net     | 3D print  |
-| jeudi 17/11 | yann.kader.axel.obou.n.do@efrei.net | elec      |
-| mar 22/11   | samuel.poinama@efrei.net            | cnc       |
-| jeudi 24/11 | baptiste.le-callonnec@efrei.net     | laser     |
-| jeudi 24/11 | yann.kader.axel.obou.n.do@efrei.net | 3D print  |
+| Date        | Encadrant                       | Formation |
+|-------------+---------------------------------+-----------|
+| mar 15/11   | samuel.poinama@efrei.net        | laser     |
+| jeudi 17/11 | baptiste.le-callonnec@efrei.net | 3D print  |
+| vend 18/11  | Etudiants encadrants M2         |           |
+| mar 22/11   | samuel.poinama@efrei.net        | cnc       |
+| jeudi 24/11 | baptiste.le-callonnec@efrei.net | laser     |
+| vend 25/11  | Etudiants encadrants M2         |           |
+
 
 * Impression 3D
 [[file:support/support_imprimante3d.pdf]]
