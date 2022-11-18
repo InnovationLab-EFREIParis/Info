@@ -24,7 +24,6 @@ En voici la liste:
 | Cotton      | Florent    | M2     | florent.cotton@efrei.net            |
 | Mauvezin    | Charlotte  | M2     | charlotte.mauvezin@efrei.net        |
 | Phonchareun | Alex       | M2     | alex.phonchareun@efrei.net          |
-| Tazi        | Kenza      | M2     | kenza.tazi@efrei.net                |
 | Angebaud    | Calixte    | M2     | calixte.angebaud@efrei.net          |
 | Yann Kader  | Obou N Do  | M2     | yann.kader.axel.obou.n.do@efrei.net |
 
