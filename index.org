@@ -9,7 +9,11 @@
 
 * Actualités
 
-+ *[[file:formations.org][Formations]]* - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/ 
++ [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
++ *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
++ [[file:atelier.org][*Atelier*]] - Jeudi 24/11 de 17h30 à 19h30 - /Création & Fabrication, ouvert à tous/
+
+ 
 
 #+attr_html: :width 400px
 [[./img/campus-8304.jpg]] 
