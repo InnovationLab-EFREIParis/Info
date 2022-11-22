@@ -1,5 +1,5 @@
 #+title: Ateliers
-#+description: Equipements
+#+description: Atelier
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
