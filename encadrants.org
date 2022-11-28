@@ -6,6 +6,7 @@
 
 #+attr_html: :width 400px
 [[./img/encadrant.jpg]]
+
 Les étudiants encadrants sont essentiels au bon fonctionnement du lieu.
 En voici la liste: 
 
