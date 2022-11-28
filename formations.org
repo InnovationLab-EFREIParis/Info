@@ -4,15 +4,9 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-| Date        | Encadrant                       | Formation |
-|-------------+---------------------------------+-----------|
-| mar 15/11   | samuel.poinama@efrei.net        | laser     |
-| jeudi 17/11 | baptiste.le-callonnec@efrei.net | 3D print  |
-| vend 18/11  | Etudiants encadrants M2         |           |
-| mar 22/11   | samuel.poinama@efrei.net        | cnc       |
-| jeudi 24/11 | baptiste.le-callonnec@efrei.net | laser     |
-| vend 25/11  | Etudiants encadrants M2         |           |
-
+Les formations sont dispensées lors des permanences.
+Il suffit d'informer par mail l'étudiant chargé de la permanence qui vous interesse de la formation que vous voulez suivre.
+Le liste est ci dessous:
 
 * Impression 3D
 [[file:support/support_imprimante3d.pdf]]
