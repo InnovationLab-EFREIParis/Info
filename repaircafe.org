@@ -6,8 +6,10 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
-#+attr_html: :width 400px
+#+attr_html: :width 300px
 [[./img/repair.jpg]]
+
+
 
 Un Repair Café est un événement participatif et convivial. Son
 principal objectif est d’éviter de jeter les objets du quotidien qui
@@ -21,6 +23,14 @@ valeurs qui les animent.
 Pour le bon déroulement du Repair Café, tous les participants,
 s’engagent à avoir une attitude respectueuse, patiente et cordiale
 et à prendre en compte notre charte :
+
+
+* Inscription
+
+#+begin_export html
+<iframe width="640px" height="480px" src="https://forms.office.com/e/hEx8LrZ2em?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+#+end_export
+
 
 * Organisation
 Après s'être inscrit via le formulaire, rendez vous à l'I-Lab à l'heure convenu. Vous serez pris en charge par une équipe de réparateurs qui va passer avec vous 40 minutes maximum sur votre objet. 

@@ -9,6 +9,7 @@
 
 * Actualités
 
++ [[file:repaircafe.org][*Repair Café*]] - Jeudi 8 décembre à partir de 9h30 - /Journée EFREI for Good/
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
 + *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
 
