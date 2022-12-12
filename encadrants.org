@@ -4,17 +4,18 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
 
-#+attr_html: :width 400px
+#+attr_html: :width 300px
 [[./img/encadrant.jpg]]
 
-Les étudiants encadrants sont essentiels au bon fonctionnement du lieu.
-En voici la liste: 
+** Liste des étudiants encadrants 2022/2023
 
 | Nom         | Prénom     | Promo. | Email                               |
 |-------------+------------+--------+-------------------------------------|
 | Poinama     | Samuel     | L1     | samuel.poinama@efrei.net            |
 | Dragan      | Constantin | L1     | constantin.dragan@efrei.net         |
+| Linossier   | Clément    | L1     | clement.linossier@efrei.net         |
 | Mercat      | Gautier    | B1     | gautier.mercat@efrei.net            |
+| Michel      | Quentin    | B1     | quentin.michel@efrei.net            |
 | Le Callonec | Baptise    | L2     | baptiste.le-callonnec@efrei.net     |
 | Chazard     | Elisa      | L3     | elisa.chazard@efrei.net             |
 | Lucas       | Martin     | L3     | martin.lucas@efrei.net              |
@@ -26,7 +27,6 @@ En voici la liste:
 | Geslot      | Gaspard    | M1     | gaspard.geslot@efrei.net            |
 | Collin      | Alexis     | M2     | alexis.collin@efrei.net             |
 | Cotton      | Florent    | M2     | florent.cotton@efrei.net            |
-| Mauvezin    | Charlotte  | M2     | charlotte.mauvezin@efrei.net        |
 | Phonchareun | Alex       | M2     | alex.phonchareun@efrei.net          |
 | Angebaud    | Calixte    | M2     | calixte.angebaud@efrei.net          |
 | Yann Kader  | Obou N Do  | M2     | yann.kader.axel.obou.n.do@efrei.net |
