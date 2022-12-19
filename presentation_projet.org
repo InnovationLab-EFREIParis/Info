@@ -1,0 +1,24 @@
+#+title: Presentations projets
+#+description: Presentations projets 
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+* Tous les vendredi de 11h30 à 12h à l'Innovation Lab
+
+*Qui fait quoi?!*\\
+L'idée est de créer un moment d'échange autour des différents projets et d'y méler étudiants et enseignants.
+Des présentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leur travaux et d'aiguiser leur discours!
+15 minutes de présentation / 15 minutes d'échange. 
+A midi vous êtes dehors, promis!
+
+
+
+** Vendredi 20/01/23 - Robminton
+** Vendredi 24/01/23 - Voiture autonome
+** Vendredi 03/02/23 - Localisation Roller
+** Vendredi 10/02/23 - Bras robotisé (TBC)
+** Vendredi 17/02/23 - Alexis Collin (TBC)
+** Vendredi 24/02/23 - ?
+** Vendredi 03/03/23 - Reconnaissance des émotions
