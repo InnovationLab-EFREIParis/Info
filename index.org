@@ -9,7 +9,6 @@
 
 * Actualités
 
-+ [[file:repaircafe.org][*Repair Café*]] - Jeudi 8 décembre à partir de 9h30 - /Journée EFREI for Good/
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
 + *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
 
@@ -27,13 +26,14 @@ L'Innovation Lab est géré par le Fablab Manager (remi.griot@efrei.fr) et une �
 Ils sont responsables de l'organisation du lieu, de la maintenance des machines, de l'accueil et de la formation des utilisateurs...
 En général, l'espace de fabrication est ouvert aux utilisateurs durant les permanences des étudiants encadrants, dont l'agenda est ci dessous.
 Afin d'utiliser les machines, les utilisateurs doivent suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
-
+-----
 * Agenda
 Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessous. 
 #+begin_export html
 <iframe src="https://calendar.google.com/calendar/embed?src=rd05kdhplh71pcovlkmacd392c%40group.calendar.google.com&ctz=Europe%2FParis" style="border: 0" width="700" height="600" frameborder="0" scrolling="no"></iframe>
 #+end_export
 
+-----
 * Les étudiants encadrants
 Les étudiants encadrants sont des étudiants qui co-gèrent l'Innovation Lab. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu.
 *Retrouvez la liste de ces étudiants [[file:encadrants.org][ici]]* \\
@@ -77,7 +77,7 @@ C'est ici: [[https://forms.monday.com/forms/75d3d586abeab1eb25c5115f4f8c8c34?r=u
 <iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=700 height=600 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
 
 #+end_export
-
+-----
 * FAQ
 
 Des questions? On essaye d'y répondre ici : [[file:faq.org][*Foire aux questions*]]
