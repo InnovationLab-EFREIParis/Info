@@ -1,0 +1,78 @@
+#+title: Gestion de version avec Git
+#+description: Gestion de version avec Git
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+Git est un outil de gestion version. 
+
+#+BEGIN_QUOTE
+Version control systems provide you with three important capabilities:\\
+*Reversibility*: the ability to back up to a previous state if you discover that some modification you did was a mistake or a bad idea.\\
+*Concurrency*: the ability to have many people modifying the same collection of files knowing that conflicting modifications can be detected and resolved.\\
+*History*: the ability to attach historical data to your data, such as explanatory comments about the intention behind each change to it. Even for a programmer working solo, change histories are an important aid to memory; for a multi-person project, they are a vitally important form of communication among developers.\\
+--- Git manual
+#+END_QUOTE
+
+* Configuration
+** Clone d'un dépot (en ligne -> local)
+#+BEGIN_SRC sh
+git clone https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench.git
+#+END_SRC
+
+** Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)
+#+BEGIN_SRC sh
+git init
+#+END_SRC
+Cette commande créait une suite de fichier dans le dossier caché .git
+Notamment le fichier .gitignore permettant de lister les fichiers ignorés par le gestionnaire de version
+
+* En local
+** ajout du fichier monfichier.txt à l'index
+#+BEGIN_SRC sh
+git add monfichier.txt
+#+END_SRC
+** ajout de tous les fichiers encore non présents à l'index
+#+BEGIN_SRC sh
+git add .
+#+END_SRC
+** retire le ficher monfichier.txt de l’index
+#+BEGIN_SRC sh
+git rm monfichier.txt
+#+END_SRC
+** Sauvegarde en local de ma version, accompagné d’un message "Version 1"
+#+BEGIN_SRC sh
+git commit –m "Version 1"
+#+END_SRC
+** Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail
+#+BEGIN_SRC sh
+git status
+#+END_SRC
+
+* Echange entre distant et local
+** local vers distant
+Transfert les commit du dépôt local vers le dépôt maitre (en ligne)
+#+BEGIN_SRC sh
+git push
+#+END_SRC
+
+** Distant vers local
+Télécharge en local le dépôt distant
+#+BEGIN_SRC sh
+git fetch
+#+END_SRC
+liste les différences entre origin (local) et main(distant)
+#+BEGIN_SRC sh
+git diff origin/main
+#+END_SRC
+du dépôt local vers l'espace de travail
+#+BEGIN_SRC sh
+git merge
+#+END_SRC
+# met à jour l'espace de travail
+Reviens à faire fetch suivie d'un merge
+#+BEGIN_SRC sh
+git pull 
+#+END_SRC

@@ -5,20 +5,24 @@
 #+OPTIONS: toc:nil num:nil
 
 
-* Tous les vendredi de 11h30 à 12h à l'Innovation Lab
+* Tous les _vendredi de 11h30 Ã  12h_ Ã  l'Innovation Lab
 
 *Qui fait quoi?!*\\
-L'idée est de créer un moment d'échange autour des différents projets et d'y méler étudiants et enseignants.
-Des présentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leur travaux et d'aiguiser leur discours!\\
-/15 minutes de présentation / 15 minutes d'échange. \\
-A midi vous êtes dehors, promis!/
+L'idÃ©e est de crÃ©er un moment d'Ã©change autour des diffÃ©rents projets et d'y mÃ©ler Ã©tudiants et enseignants.
+Des prÃ©sentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leur travaux et d'aiguiser leur discours!\\
+/15 minutes de prÃ©sentation / 15 minutes d'Ã©change. \\
+A midi vous Ãªtes dehors, promis!/
 
 
 
-** Vendredi 20/01/23 - Robminton
-** Vendredi 24/01/23 - Voiture autonome
-** Vendredi 03/02/23 - Localisation Roller
-** Vendredi 10/02/23 - Bras robotisé (TBC)
-** Vendredi 17/02/23 - Alexis Collin (TBC)
-** Vendredi 24/02/23 - ?
-** Vendredi 03/03/23 - Reconnaissance des émotions
+**  20/01 -  Robminton (Projet M2)
+Robots ramasseur & lanceur de volants de badminton
+**  24/01 - Course Voiture autonome (Projet M2)
+Course de voiture autonome Ã  l'Ã©chelle 1/10e
+**  03/02 - Localisation Roller (Projet M2)
+Localiser les sportifs lors de compÃ©tition de roller
+**  10/02 - Bras robotisÃ© (TBC) (Projet M2)
+**  17/02 - Alexis Collin (TBC) (Projet M2)
+**  24/02 - ?
+**  03/03 - Reconnaissance des Ã©motions
+Construction dâ€™une base de donnÃ©es labelisÃ©e, Ã©tude statistique des caractÃ©ristiques de la voix et reconnaissance automatique dâ€™Ã©motions
