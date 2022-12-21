@@ -17,7 +17,7 @@ Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
 Pour accéder à la page de téléchargement :
 
 1 – https://www.solidworks.com/SDK
-Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.\\
 2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)\\
 4 – Choisissez la version 2022-2023\\
 5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC\\
