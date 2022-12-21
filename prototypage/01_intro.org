@@ -12,6 +12,62 @@ Le réel, c'est quand on se cogne
  ---Jacques Lacan
 #+END_QUOTE
 
+* Logiciels prérequis à installer avant le premier jour
+** Conception 3D - Solidworks
+Voici la procédure pour installer Solidworks version étudiante
+(Solidworks Student Standard : SDK 2022-2023)
+
+Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
+
+Pour accéder à la page de téléchargement :
+
+1 – https://www.solidworks.com/SDK
+
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
+
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)
+
+4 – Choisissez la version 2022-2023
+
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC
+
+6- Télécharger le fichier exécutable.
+
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers
+
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe
+
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+
+
+** Fabrication 3D
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+https://www.raise3d.com/ideamaker/
+
+** Conception 2D
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+https://inkscape.org/fr/
+
+** Programmation microcontroller
+
+Le compilateur est 100% en ligne mais requiert de créer un compte
+https://studio.keil.arm.com/auth/login/
+
+** Gestion de version (optionnel)
+
+
+
+
+* Agenda
+
+
+|    | Lundi (premier jour)           | Mardi            | Mercredi      | Jeudi       | Vendredi          |
+|----+--------------------------------+------------------+---------------+-------------+-------------------|
+| AM | Introduction  Formation Binome | Electronique     | Decoupe Laser | Fabrication | Fabrication       |
+| PM | Conception 2D/3D               | Conception 2D/3D | Impression 3D |             | Evaluation Projet |
+
+
+
 * Définitions
 
 #+BEGIN_QUOTE
@@ -78,41 +134,6 @@ Modularité: facilite les évolutions, les réparations
 
 Outils: Gestion de version 
 
-
-* Logiciels prérequis
-** Conception 3D - Solidworks
-Licence Solidworks Student Standard : SDK 2022-2023
-
-Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
-
-Pour accéder à la page de téléchargement :
-
-1 – www.solidworks.com/SDK
-
-Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
-
-2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)
-
-4 – Choisissez la version 2022-2023
-
-5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC
-
-6- Télécharger le fichier exécutable.
-
-7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers
-
-8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe
-
-Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
-
-
-** Fabrication 3D
-
-** Conception 2D
-
-** Programmation microcontroller
-
-** Gestion de version (optionnel)
 
 
 * Conception

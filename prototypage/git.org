@@ -16,6 +16,9 @@ Version control systems provide you with three important capabilities:\\
 --- Git manual
 #+END_QUOTE
 
+* Prérequis
+Installation de Git https://git-scm.com/downloads
+Création d'un compte sur https://github.com/
 * Configuration
 ** Clone d'un dépot (en ligne -> local)
 #+BEGIN_SRC sh

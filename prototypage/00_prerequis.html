@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-12-21 mer. 21:12 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prototypage</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="remi.griot@efrei.fr" />
+<meta name="description" content="prototypage rapide"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Prototypage</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgdf0689f">Bienvenue</a></li>
+<li><a href="#orgad779c9">Logiciels prérequis</a>
+<ul>
+<li><a href="#org619c72f">Conception 3D - Solidworks</a></li>
+<li><a href="#org9cc4769">Fabrication 3D</a></li>
+<li><a href="#orge2d5dc3">Conception 2D</a></li>
+<li><a href="#org33be8d1">Programmation microcontroller</a></li>
+<li><a href="#org7c995f7">Gestion de version (optionnel)</a></li>
+</ul>
+</li>
+<li><a href="#org440652e">Agenda</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgdf0689f" class="outline-2">
+<h2 id="orgdf0689f">Bienvenue</h2>
+<div class="outline-text-2" id="text-orgdf0689f">
+<p>
+Il est vivement conseiller d'installer les logiciels prérequis à ce cours avant son commencement.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgad779c9" class="outline-2">
+<h2 id="orgad779c9">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-orgad779c9">
+</div>
+<div id="outline-container-org619c72f" class="outline-3">
+<h3 id="org619c72f">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-org619c72f">
+<p>
+Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
+Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
+Pour accéder à la page de téléchargement :
+</p>
+
+<p>
+1 – <a href="https://www.solidworks.com/SDK">https://www.solidworks.com/SDK</a>
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)<br />
+4 – Choisissez la version 2022-2023<br />
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC<br />
+6- Télécharger le fichier exécutable.<br />
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers<br />
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe<br />
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9cc4769" class="outline-3">
+<h3 id="org9cc4769">Fabrication 3D</h3>
+<div class="outline-text-3" id="text-org9cc4769">
+<p>
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+<a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge2d5dc3" class="outline-3">
+<h3 id="orge2d5dc3">Conception 2D</h3>
+<div class="outline-text-3" id="text-orge2d5dc3">
+<p>
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+<a href="https://inkscape.org/fr/">https://inkscape.org/fr/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org33be8d1" class="outline-3">
+<h3 id="org33be8d1">Programmation microcontroller</h3>
+<div class="outline-text-3" id="text-org33be8d1">
+<p>
+Le compilateur est 100% en ligne mais requiert de créer un compte
+<a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
+</p>
+
+<p>
+Compilateur en ligne pour cible ARM. 
+Il est nécessaire de créer un compte
+<a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-org7c995f7" class="outline-3">
+<h3 id="org7c995f7">Gestion de version (optionnel)</h3>
+<div class="outline-text-3" id="text-org7c995f7">
+<p>
+Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
+Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org440652e" class="outline-2">
+<h2 id="org440652e">Agenda</h2>
+<div class="outline-text-2" id="text-org440652e">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Lundi (premier jour)</th>
+<th scope="col" class="org-left">Mardi</th>
+<th scope="col" class="org-left">Mercredi</th>
+<th scope="col" class="org-left">Jeudi</th>
+<th scope="col" class="org-left">Vendredi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">AM</td>
+<td class="org-left">Introduction  Formation Binome</td>
+<td class="org-left">Electronique</td>
+<td class="org-left">Fabrication 2D</td>
+<td class="org-left">Fabrication</td>
+<td class="org-left">Fabrication</td>
+</tr>
+
+<tr>
+<td class="org-left">PM</td>
+<td class="org-left">Conception 2D/3D</td>
+<td class="org-left">Conception 2D/3D</td>
+<td class="org-left">Fabrication 3D</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Evaluation Projet</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: remi.griot@efrei.fr</p>
+<p class="date">Created: 2022-12-21 mer. 21:12</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
