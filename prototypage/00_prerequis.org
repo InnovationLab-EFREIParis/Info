@@ -7,6 +7,7 @@
 #+LINK_HOME: index.html
 
 * Bienvenue
+Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Il est vivement conseiller d'installer les logiciels prérequis à ce cours avant son commencement.
 
 * Logiciels prérequis 
