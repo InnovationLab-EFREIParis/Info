@@ -23,6 +23,7 @@
 | Vialle      | Martin     | L3     | martin.vialle@efrei.net             |
 | Vincent     | Esteban    | L3     | esteban.vincent@efrei.net           |
 | Guez        | Victoria   | L3     | victoria.guez@efrei.net             |
+| Guillot     | Sasha      | L3     | sasha.guillot@efrei.net             |
 | Dheilly     | Robin      | M1     | robin.dheilly@efrei.net             |
 | Zhou        | Killian    | M1     | killian.zhou@efrei.net              |
 | Geslot      | Gaspard    | M1     | gaspard.geslot@efrei.net            |
