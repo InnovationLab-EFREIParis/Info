@@ -1,0 +1,28 @@
+#+title: Presentations projets
+#+description: Presentations projets 
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+* Tous les _vendredi de 11h30 à 12h_ à l'Innovation Lab
+
+*Qui fait quoi?!*\\
+L'idée est de créer un moment d'échange autour des différents projets et d'y méler étudiants et enseignants.
+Des présentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leur travaux et d'aiguiser leur discours!\\
+/15 minutes de présentation / 15 minutes d'échange. \\
+A midi vous êtes dehors, promis!/
+
+
+
+**  20/01 -  Robminton (Projet M2)
+Robots ramasseur & lanceur de volants de badminton
+**  24/01 - Course Voiture autonome (Projet M2)
+Course de voiture autonome à l'échelle 1/10e
+**  03/02 - Localisation Roller (Projet M2)
+Localiser les sportifs lors de compétition de roller
+**  10/02 - Bras robotisé (TBC) (Projet M2)
+**  17/02 - Alexis Collin (TBC) (Projet M2)
+**  24/02 - ?
+**  03/03 - Reconnaissance des émotions
+Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions

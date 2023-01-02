@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-12-21 mer. 21:04 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Gestion de version avec Git</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="remi.griot@efrei.fr" />
+<meta name="description" content="Gestion de version avec Git"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Gestion de version avec Git</h1>
+<p>
+Git est un outil de gestion version. 
+</p>
+
+<blockquote>
+<p>
+Version control systems provide you with three important capabilities:<br />
+<b>Reversibility</b>: the ability to back up to a previous state if you discover that some modification you did was a mistake or a bad idea.<br />
+<b>Concurrency</b>: the ability to have many people modifying the same collection of files knowing that conflicting modifications can be detected and resolved.<br />
+<b>History</b>: the ability to attach historical data to your data, such as explanatory comments about the intention behind each change to it. Even for a programmer working solo, change histories are an important aid to memory; for a multi-person project, they are a vitally important form of communication among developers.<br />
+&#x2014; Git manual
+</p>
+</blockquote>
+
+<div id="outline-container-orgf5336e6" class="outline-2">
+<h2 id="orgf5336e6">Prérequis</h2>
+<div class="outline-text-2" id="text-orgf5336e6">
+<p>
+Installation de Git <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a>
+Création d'un compte sur <a href="https://github.com/">https://github.com/</a>
+</p>
+</div>
+</div>
+<div id="outline-container-orgf985800" class="outline-2">
+<h2 id="orgf985800">Configuration</h2>
+<div class="outline-text-2" id="text-orgf985800">
+</div>
+<div id="outline-container-org3410c4b" class="outline-3">
+<h3 id="org3410c4b">Clone d'un dépot (en ligne -&gt; local)</h3>
+<div class="outline-text-3" id="text-org3410c4b">
+<div class="org-src-container">
+<pre class="src src-sh">git clone https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench.git
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5a66de2" class="outline-3">
+<h3 id="org5a66de2">Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)</h3>
+<div class="outline-text-3" id="text-org5a66de2">
+<div class="org-src-container">
+<pre class="src src-sh">git init
+</pre>
+</div>
+<p>
+Cette commande créait une suite de fichier dans le dossier caché .git
+Notamment le fichier .gitignore permettant de lister les fichiers ignorés par le gestionnaire de version
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgccd0fb2" class="outline-2">
+<h2 id="orgccd0fb2">En local</h2>
+<div class="outline-text-2" id="text-orgccd0fb2">
+</div>
+<div id="outline-container-org084b70e" class="outline-3">
+<h3 id="org084b70e">ajout du fichier monfichier.txt à l'index</h3>
+<div class="outline-text-3" id="text-org084b70e">
+<div class="org-src-container">
+<pre class="src src-sh">git add monfichier.txt
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org7b1d210" class="outline-3">
+<h3 id="org7b1d210">ajout de tous les fichiers encore non présents à l'index</h3>
+<div class="outline-text-3" id="text-org7b1d210">
+<div class="org-src-container">
+<pre class="src src-sh">git add .
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org0713c47" class="outline-3">
+<h3 id="org0713c47">retire le ficher monfichier.txt de l’index</h3>
+<div class="outline-text-3" id="text-org0713c47">
+<div class="org-src-container">
+<pre class="src src-sh">git rm monfichier.txt
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd458966" class="outline-3">
+<h3 id="orgd458966">Sauvegarde en local de ma version, accompagné d’un message "Version 1"</h3>
+<div class="outline-text-3" id="text-orgd458966">
+<div class="org-src-container">
+<pre class="src src-sh">git commit –m "Version 1"
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-org5d6e92d" class="outline-3">
+<h3 id="org5d6e92d">Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail</h3>
+<div class="outline-text-3" id="text-org5d6e92d">
+<div class="org-src-container">
+<pre class="src src-sh">git status
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7bbdf9d" class="outline-2">
+<h2 id="org7bbdf9d">Echange entre distant et local</h2>
+<div class="outline-text-2" id="text-org7bbdf9d">
+</div>
+<div id="outline-container-orgd9f16e8" class="outline-3">
+<h3 id="orgd9f16e8">local vers distant</h3>
+<div class="outline-text-3" id="text-orgd9f16e8">
+<p>
+Transfert les commit du dépôt local vers le dépôt maitre (en ligne)
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">git push
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0880afa" class="outline-3">
+<h3 id="org0880afa">Distant vers local</h3>
+<div class="outline-text-3" id="text-org0880afa">
+<p>
+Télécharge en local le dépôt distant
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">git fetch
+</pre>
+</div>
+<p>
+liste les différences entre origin (local) et main(distant)
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">git diff origin/main
+</pre>
+</div>
+<p>
+du dépôt local vers l'espace de travail
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">git merge
+</pre>
+</div>
+
+<p>
+Reviens à faire fetch suivie d'un merge
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">git pull 
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: remi.griot@efrei.fr</p>
+<p class="date">Created: 2022-12-21 mer. 21:04</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

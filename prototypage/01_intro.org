@@ -1,0 +1,141 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+
+#+BEGIN_QUOTE
+Le réel, c'est quand on se cogne
+ ---Jacques Lacan
+#+END_QUOTE
+
+* Logiciels prérequis à installer avant le premier jour
+** Conception 3D - Solidworks
+Voici la procédure pour installer Solidworks version étudiante
+(Solidworks Student Standard : SDK 2022-2023)
+
+Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
+
+Pour accéder à la page de téléchargement :
+
+1 – https://www.solidworks.com/SDK
+
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
+
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)
+
+4 – Choisissez la version 2022-2023
+
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC
+
+6- Télécharger le fichier exécutable.
+
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers
+
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe
+
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+
+
+** Fabrication 3D
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+https://www.raise3d.com/ideamaker/
+
+** Conception 2D
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+https://inkscape.org/fr/
+
+** Programmation microcontroller
+
+Le compilateur est 100% en ligne mais requiert de créer un compte
+https://studio.keil.arm.com/auth/login/
+
+** Gestion de version (optionnel)
+
+
+
+
+* Agenda
+
+
+|    | Lundi (premier jour)           | Mardi            | Mercredi      | Jeudi       | Vendredi          |
+|----+--------------------------------+------------------+---------------+-------------+-------------------|
+| AM | Introduction  Formation Binome | Electronique     | Decoupe Laser | Fabrication | Fabrication       |
+| PM | Conception 2D/3D               | Conception 2D/3D | Impression 3D |             | Evaluation Projet |
+
+
+
+* Définitions
+
+#+BEGIN_QUOTE
+Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série.
+ ---(Définition Larousse)
+#+END_QUOTE
+
+Le prototypage implique une approche _transverse_, _pluridisciplinaire_, _itératif_  et ... _pragmatique_!
+On parle de _prototypage rapide_ lorsque les itérations sont courtes. Certaines technologies
+ont permis de démocratiser la fabriquation et de pouvoir sur un même site, concevoir et fabriquer.
+
+#+BEGIN_QUOTE
+Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale.
+--- (Définition Wihipédia)
+#+END_QUOTE
+
+/Prototypage rapide = Fail as fast as possible/
+
+Le prototypage croise également le domaine du design, qui lui aussi est assez vaste et ne renvoyant pas à la même chose selon le contexte. 
+									
+#+BEGIN_QUOTE
+Un des rôles du design est de répondre à des besoins, de résoudre des problèmes, de proposer des solutions nouvelles ou d’explorer des possibilités pour améliorer la qualité de vie des êtres humains
+ ---(Défnition Wikipedia)
+#+END_QUOTE
+
+-----
+CAD: Computed aided design / CAO: Conception assisté par ordinateur
+CAM: Computed aided manufacturing  / FAO: Fabrication assisté par ordinateur
+
+
+* Méthodes
+
+
+- Spécification
+  + Approche fonctionnelle 
+  + Formulation d'hypotheses
+  + Reflexion collective ou individuelle
+  + Mise en forme (exigences, cahiers des charges) 
+- Conception
+  + Approche architecturale
+  + Modélisation 
+    + Unitaire
+    + Assemblage
+  + Codage
+- Simulation
+  + Plus ou moins fidèle selon la ganularité /(niveau de détail du modèle)/
+  + Test unitaire
+- Fabrication    
+  + Paramétrage des machines
+  + Choix des matériaux
+- Vérification
+  + Mise en situation réel
+  + Test global
+
+
+
+#+attr_html: :width 400px
+[[./img/0_iteration.jpg]]
+
+** Qualités d'un prototype
+
+Maintenabilité: facilite les itérations
+Modularité: facilite les évolutions, les réparations
+
+Outils: Gestion de version 
+
+
+
+* Conception
+
+* Fabrication
