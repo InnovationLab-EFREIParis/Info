@@ -10,7 +10,35 @@
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:
 + Créer les comptes associés
-+ Installer les logiciels 
++ Installer les logiciels prérequis
+
+* Contenu
+
+Ce cours contient plusieurs composantes:
++ une partie théorique définissant quelques notions essentielles, d'aborder des questions de méthodologie. Cette partie permet egalement de faire un retor d'expérience.
++ des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.
++ un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.
+
+** Compétences
+ 
+Ce cours doit vous permettre de monter en compétences sur ces domaines:
++ Modélisation 2D-3D
++ Fabrication additives, soustractives
++ Electronique et programmation
+
+** Evaluation
+
+L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
+
+
+
+** Agenda
+
+|    | Lundi (premier jour)               | Mardi                                    | Mercredi       | Jeudi  | Vendredi          |
+|----+------------------------------------+------------------------------------------+----------------+--------+-------------------|
+| AM | Introduction      Formation Binome | Electronique                             | Fabrication 2D | Projet | Projet            |
+| PM | Conception 2D/3D - Exercices       | Conception 2D/3D     Presentation projet | Fabrication 3D |        | Evaluation Projet |
+
 
 * Logiciels prérequis 
 ** Conception 3D - Solidworks
@@ -43,12 +71,4 @@ https://studio.keil.arm.com/auth/login/
 ** Gestion de version (optionnel)
 Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
 Si vous voulez en savoir plus [[./git.org][Gestion de version]]
-
-* Agenda
-
-|    | Lundi (premier jour)           | Mardi            | Mercredi       | Jeudi       | Vendredi          |
-|----+--------------------------------+------------------+----------------+-------------+-------------------|
-| AM | Introduction  Formation Binome | Electronique     | Fabrication 2D | Fabrication | Fabrication       |
-| PM | Conception 2D/3D               | Conception 2D/3D | Fabrication 3D |             | Evaluation Projet |
-
 

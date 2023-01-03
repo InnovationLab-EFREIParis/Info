@@ -3,127 +3,150 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-02 lun. 15:31 -->
+<!-- 2023-01-03 mar. 15:02 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="remi.griot@efrei.fr" />
-<meta name="description" content="prototypage rapide" />
-<meta name="generator" content="Org Mode" />
+<meta name="description" content="prototypage rapide"
+ />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Prototypage</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orga868f8d">Bienvenue</a></li>
-<li><a href="#org937660d">Logiciels prérequis</a>
+<li><a href="#org552a8e1">Bienvenue</a></li>
+<li><a href="#orgadf29b0">Contenu</a>
 <ul>
-<li><a href="#org35a93ab">Conception 3D - Solidworks</a></li>
-<li><a href="#org17c4739">Fabrication 3D</a></li>
-<li><a href="#orge0ac86a">Conception 2D</a></li>
-<li><a href="#org0b70d85">Programmation microcontroller</a></li>
-<li><a href="#org4f029b9">Gestion de version (optionnel)</a></li>
+<li><a href="#org21f342c">Compétences</a></li>
+<li><a href="#org794388d">Evaluation</a></li>
+<li><a href="#org6c64e61">Agenda</a></li>
 </ul>
 </li>
-<li><a href="#orgd6f5495">Agenda</a></li>
+<li><a href="#org2e85547">Logiciels prérequis</a>
+<ul>
+<li><a href="#org95ce74c">Conception 3D - Solidworks</a></li>
+<li><a href="#org28a9793">Fabrication 3D</a></li>
+<li><a href="#orgdb67f4b">Conception 2D</a></li>
+<li><a href="#orgaaff11b">Programmation microcontroller</a></li>
+<li><a href="#orgd0e8e23">Gestion de version (optionnel)</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga868f8d" class="outline-2">
-<h2 id="orga868f8d">Bienvenue</h2>
-<div class="outline-text-2" id="text-orga868f8d">
+<div id="outline-container-org552a8e1" class="outline-2">
+<h2 id="org552a8e1">Bienvenue</h2>
+<div class="outline-text-2" id="text-org552a8e1">
 <p>
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:
 </p>
 <ul class="org-ul">
 <li>Créer les comptes associés</li>
-<li>Installer les logiciels</li>
+<li>Installer les logiciels prérequis</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org937660d" class="outline-2">
-<h2 id="org937660d">Logiciels prérequis</h2>
-<div class="outline-text-2" id="text-org937660d">
-</div>
-<div id="outline-container-org35a93ab" class="outline-3">
-<h3 id="org35a93ab">Conception 3D - Solidworks</h3>
-<div class="outline-text-3" id="text-org35a93ab">
+<div id="outline-container-orgadf29b0" class="outline-2">
+<h2 id="orgadf29b0">Contenu</h2>
+<div class="outline-text-2" id="text-orgadf29b0">
 <p>
-Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
-Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
-Pour accéder à la page de téléchargement :
+Ce cours contient plusieurs composantes:
 </p>
-
-<p>
-1 – <a href="https://www.solidworks.com/SDK">https://www.solidworks.com/SDK</a>
-Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.<br />
-2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)<br />
-4 – Choisissez la version 2022-2023<br />
-5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC<br />
-6- Télécharger le fichier exécutable.<br />
-7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers<br />
-8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe<br />
-Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
-</p>
-</div>
+<ul class="org-ul">
+<li>une partie théorique définissant quelques notions essentielles, d'aborder des questions de méthodologie. Cette partie permet egalement de faire un retor d'expérience.</li>
+<li>des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.</li>
+<li>un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.</li>
+</ul>
 </div>
 
-<div id="outline-container-org17c4739" class="outline-3">
-<h3 id="org17c4739">Fabrication 3D</h3>
-<div class="outline-text-3" id="text-org17c4739">
+<div id="outline-container-org21f342c" class="outline-3">
+<h3 id="org21f342c">Compétences</h3>
+<div class="outline-text-3" id="text-org21f342c">
 <p>
-Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
-<a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
+Ce cours doit vous permettre de monter en compétences sur ces domaines:
 </p>
+<ul class="org-ul">
+<li>Modélisation 2D-3D</li>
+<li>Fabrication additives, soustractives</li>
+<li>Electronique et programmation</li>
+</ul>
 </div>
 </div>
 
-<div id="outline-container-orge0ac86a" class="outline-3">
-<h3 id="orge0ac86a">Conception 2D</h3>
-<div class="outline-text-3" id="text-orge0ac86a">
+<div id="outline-container-org794388d" class="outline-3">
+<h3 id="org794388d">Evaluation</h3>
+<div class="outline-text-3" id="text-org794388d">
 <p>
-Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
-<a href="https://inkscape.org/fr/">https://inkscape.org/fr/</a>
+L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org0b70d85" class="outline-3">
-<h3 id="org0b70d85">Programmation microcontroller</h3>
-<div class="outline-text-3" id="text-org0b70d85">
-<p>
-Le compilateur est 100% en ligne mais requiert de créer un compte
-<a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
-</p>
-</div>
-</div>
 
-<div id="outline-container-org4f029b9" class="outline-3">
-<h3 id="org4f029b9">Gestion de version (optionnel)</h3>
-<div class="outline-text-3" id="text-org4f029b9">
-<p>
-Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
-Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
-</p>
-</div>
-</div>
-</div>
 
-<div id="outline-container-orgd6f5495" class="outline-2">
-<h2 id="orgd6f5495">Agenda</h2>
-<div class="outline-text-2" id="text-orgd6f5495">
+<div id="outline-container-org6c64e61" class="outline-3">
+<h3 id="org6c64e61">Agenda</h3>
+<div class="outline-text-3" id="text-org6c64e61">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -153,7 +176,7 @@ Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
 <tbody>
 <tr>
 <td class="org-left">AM</td>
-<td class="org-left">Introduction  Formation Binome</td>
+<td class="org-left">Introduction      Formation Binome</td>
 <td class="org-left">Electronique</td>
 <td class="org-left">Fabrication 2D</td>
 <td class="org-left">Fabrication</td>
@@ -162,8 +185,8 @@ Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
 
 <tr>
 <td class="org-left">PM</td>
-<td class="org-left">Conception 2D/3D</td>
-<td class="org-left">Conception 2D/3D</td>
+<td class="org-left">Conception 2D/3D - Exercices</td>
+<td class="org-left">Conception 2D/3D     Presentation projet</td>
 <td class="org-left">Fabrication 3D</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">Evaluation Projet</td>
@@ -173,10 +196,83 @@ Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
 </div>
 </div>
 </div>
+
+
+
+
+
+<div id="outline-container-org2e85547" class="outline-2">
+<h2 id="org2e85547">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-org2e85547">
+</div>
+<div id="outline-container-org95ce74c" class="outline-3">
+<h3 id="org95ce74c">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-org95ce74c">
+<p>
+Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
+Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
+Pour accéder à la page de téléchargement :
+</p>
+
+<p>
+1 – <a href="https://www.solidworks.com/SDK">https://www.solidworks.com/SDK</a>
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.<br />
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)<br />
+4 – Choisissez la version 2022-2023<br />
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC<br />
+6- Télécharger le fichier exécutable.<br />
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers<br />
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe<br />
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org28a9793" class="outline-3">
+<h3 id="org28a9793">Fabrication 3D</h3>
+<div class="outline-text-3" id="text-org28a9793">
+<p>
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+<a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdb67f4b" class="outline-3">
+<h3 id="orgdb67f4b">Conception 2D</h3>
+<div class="outline-text-3" id="text-orgdb67f4b">
+<p>
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+<a href="https://inkscape.org/fr/">https://inkscape.org/fr/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgaaff11b" class="outline-3">
+<h3 id="orgaaff11b">Programmation microcontroller</h3>
+<div class="outline-text-3" id="text-orgaaff11b">
+<p>
+Le compilateur est 100% en ligne mais requiert de créer un compte
+<a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd0e8e23" class="outline-3">
+<h3 id="orgd0e8e23">Gestion de version (optionnel)</h3>
+<div class="outline-text-3" id="text-orgd0e8e23">
+<p>
+Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
+Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
+</p>
+</div>
+</div>
+</div>
+</div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-02 lun. 15:31</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-03 mar. 15:02</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

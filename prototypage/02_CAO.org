@@ -6,3 +6,15 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
+* Conception - CAO 
+*CAD*: Computed aided design / CAO: Conception assisté par ordinateur
+
+* Exercices
+
+** Test
+
+[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices 1]] \\
+[[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
+
+
+#+INCLUDE: ../solidworks.org

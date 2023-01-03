@@ -8,14 +8,14 @@
 
 
 #+BEGIN_QUOTE
-Le réel, c'est quand on se cogne
+Le réel, c'est quand on se cogne \\
  ---Jacques Lacan
 #+END_QUOTE
 
 * Définitions
 
 #+BEGIN_QUOTE
-Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série.
+Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série. \\
  ---(Définition Larousse)
 #+END_QUOTE
 
@@ -24,7 +24,7 @@ On parle de _prototypage rapide_ lorsque les itérations sont courtes. Certaines
 ont permis de démocratiser la fabriquation et de pouvoir sur un même site, concevoir et fabriquer.
 
 #+BEGIN_QUOTE
-Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale.
+Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale. \\
 --- (Définition Wihipédia)
 #+END_QUOTE
 
@@ -33,7 +33,7 @@ Le prototype matérialise une étape d'évolution d'un projet, souvent pour dém
 Le prototypage croise également le domaine du design, qui lui aussi est assez vaste et ne renvoyant pas à la même chose selon le contexte. 
 									
 #+BEGIN_QUOTE
-Un des rôles du design est de répondre à des besoins, de résoudre des problèmes, de proposer des solutions nouvelles ou d’explorer des possibilités pour améliorer la qualité de vie des êtres humains
+Un des rôles du design est de répondre à des besoins, de résoudre des problèmes, de proposer des solutions nouvelles ou d’explorer des possibilités pour améliorer la qualité de vie des êtres humains \\
  ---(Défnition Wikipedia)
 #+END_QUOTE
 
@@ -144,7 +144,7 @@ Epaisseur = 1.2 mm (celle du cylindre)
 *Version 2*
 #+attr_html: :width 700px
 [[./img/carter_helice_rsV2.jpg]]
-Non fonctionnel, car la grille sensée rigidifié le carter empeche l'air de passer. 
+Non fonctionnel car la grille sensée rigidifié le carter empeche l'air de passer.
 
 Masse = 129.53 grammes \\
 Epaisseur = 1.2 mm
@@ -154,17 +154,18 @@ Epaisseur = 1.2 mm
 *Version 3*
 #+attr_html: :width 700px
 [[./img/carter_helice_rsV3.jpg]]
-Fonctionnel, mais pas assez robuste.
+Fonctionnel mais pas assez robuste.
 
 Masse = 116.28 grammes \\
 Epaisseur = 1.2 mm
 
 -------
+
 *Version 4*
 #+attr_html: :width 700px
 [[./img/carter_helice_rsV4.jpg]]
 
-Fonctionnel, mais trop lourde.
+Fonctionnel mais trop lourde
 
 Masse = 137.19 grammes \\
 Epaisseur = 2.4 mm
@@ -175,7 +176,7 @@ Epaisseur = 2.4 mm
 #+attr_html: :width 700px
 [[./img/carter_helice_rsV5.jpg]]
 
-Fonctionnel, robuste, légère... et esthetique
+Fonctionnel, robuste, léger... et esthetique
 
 Masse = 94.01 grammes \\
 Epaisseur = 2.4 mm
@@ -184,9 +185,9 @@ Epaisseur = 2.4 mm
 
 
 * Conception - CAO 
-*CAD*: Computed aided design / CAO: Conception assisté par ordinateur
+*CAD*: Computed aided design / CAO: Conception assistée par ordinateur
 
 
 * Fabrication - FAO
-*CAM*: Computed aided manufacturing  / FAO: Fabrication assisté par ordinateur
+*CAM*: Computed aided manufacturing  / FAO: Fabrication assistée par ordinateur
 
