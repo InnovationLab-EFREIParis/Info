@@ -8,7 +8,9 @@
 
 * Bienvenue
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
-Il est vivement conseiller d'installer les logiciels prérequis à ce cours avant son commencement.
+Avant le début du cours, il est vivement conseillé de:
++ Créer les comptes associés
++ Installer les logiciels 
 
 * Logiciels prérequis 
 ** Conception 3D - Solidworks
@@ -35,13 +37,9 @@ Solidworks permet de faire de la conception en 2D, mais il egalement interessant
 https://inkscape.org/fr/
 
 ** Programmation microcontroller
-
 Le compilateur est 100% en ligne mais requiert de créer un compte
 https://studio.keil.arm.com/auth/login/
 
-Compilateur en ligne pour cible ARM. 
-Il est nécessaire de créer un compte
-https://studio.keil.arm.com/auth/login/
 ** Gestion de version (optionnel)
 Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
 Si vous voulez en savoir plus [[./git.org][Gestion de version]]

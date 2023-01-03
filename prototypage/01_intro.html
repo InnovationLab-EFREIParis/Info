@@ -3,92 +3,37 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-12-21 mer. 14:34 -->
+<!-- 2023-01-02 lun. 16:51 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="remi.griot@efrei.fr" />
-<meta name="description" content="prototypage rapide"
- />
+<meta name="description" content="prototypage rapide" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org0712c0e">Agenda</a></li>
-<li><a href="#orga989871">Définitions</a></li>
-<li><a href="#orgcf579a3">Méthodes</a>
+<li><a href="#org4ffca7f">Définitions</a></li>
+<li><a href="#orgb38b3e3">Méthodes</a>
 <ul>
-<li><a href="#org71fb51e">Qualités d'un prototype</a></li>
+<li><a href="#orgf245ea2">Design thinking, une approche pragmatique</a></li>
+<li><a href="#org640e9ec">Qualités d'un prototype (1)</a></li>
+<li><a href="#org3d30b36">Qualités d'un prototype (2)</a></li>
 </ul>
 </li>
-<li><a href="#org099c066">Logiciels prérequis</a>
-<ul>
-<li><a href="#org607b563">Conception 3D - Solidworks</a></li>
-<li><a href="#org2ae1eab">Fabrication 3D</a></li>
-<li><a href="#org169a836">Conception 2D</a></li>
-<li><a href="#orge54652c">Programmation microcontroller</a></li>
-<li><a href="#org23e0da0">Gestion de version (optionnel)</a></li>
-</ul>
-</li>
-<li><a href="#orga4cbb3b">Conception</a></li>
-<li><a href="#org74ee9c1">Fabrication</a></li>
+<li><a href="#org25acb08">Conception - CAO</a></li>
+<li><a href="#orgc1e295f">Fabrication - FAO</a></li>
 </ul>
 </div>
 </div>
@@ -99,71 +44,9 @@ Le réel, c'est quand on se cogne
 </p>
 </blockquote>
 
-<div id="outline-container-org0712c0e" class="outline-2">
-<h2 id="org0712c0e">Agenda</h2>
-<div class="outline-text-2" id="text-org0712c0e">
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">&#xa0;</th>
-<th scope="col" class="org-left">Lundi</th>
-<th scope="col" class="org-left">Mardi</th>
-<th scope="col" class="org-left">Mercredi</th>
-<th scope="col" class="org-left">Jeudi</th>
-<th scope="col" class="org-left">Vendredi</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">AM</td>
-<td class="org-left">Introduction @&lt;br/&gt; Formation Binome</td>
-<td class="org-left">Electronique</td>
-<td class="org-left">Decoupe Laser</td>
-<td class="org-left">Fabrication</td>
-<td class="org-left">Fabrication</td>
-</tr>
-
-<tr>
-<td class="org-left">PM</td>
-<td class="org-left">Conception 2D/3D</td>
-<td class="org-left">Conception 2D/3D</td>
-<td class="org-left">Impression 3D</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">Evaluation Projet</td>
-</tr>
-
-<tr>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-
-<div id="outline-container-orga989871" class="outline-2">
-<h2 id="orga989871">Définitions</h2>
-<div class="outline-text-2" id="text-orga989871">
+<div id="outline-container-org4ffca7f" class="outline-2">
+<h2 id="org4ffca7f">Définitions</h2>
+<div class="outline-text-2" id="text-org4ffca7f">
 <blockquote>
 <p>
 Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série.
@@ -172,7 +55,7 @@ Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil,
 </blockquote>
 
 <p>
-Le prototypage implique une approche <span class="underline">transverse</span>, <span class="underline">pluridisciplinaire</span>, <span class="underline">itératif</span>  et &#x2026; <span class="underline">pragmatique</span>!
+Le prototypage implique une approche <span class="underline">transverse</span>, <span class="underline">pluridisciplinaire</span>, <span class="underline">itérative</span>  et &#x2026; <span class="underline">pragmatique</span>!
 On parle de <span class="underline">prototypage rapide</span> lorsque les itérations sont courtes. Certaines technologies
 ont permis de démocratiser la fabriquation et de pouvoir sur un même site, concevoir et fabriquer.
 </p>
@@ -200,17 +83,18 @@ Un des rôles du design est de répondre à des besoins, de résoudre des probl�
 </blockquote>
 
 <hr />
-<p>
-CAD: Computed aided design / CAO: Conception assisté par ordinateur
-CAM: Computed aided manufacturing  / FAO: Fabrication assisté par ordinateur
+</div>
+</div>
+
+<div id="outline-container-orgb38b3e3" class="outline-2">
+<h2 id="orgb38b3e3">Méthodes</h2>
+<div class="outline-text-2" id="text-orgb38b3e3">
+
+<div id="org842ece5" class="figure">
+<p><img src="./img/0_iteration.jpg" alt="0_iteration.jpg" width="700px" />
 </p>
 </div>
-</div>
 
-
-<div id="outline-container-orgcf579a3" class="outline-2">
-<h2 id="orgcf579a3">Méthodes</h2>
-<div class="outline-text-2" id="text-orgcf579a3">
 <ul class="org-ul">
 <li>Spécification
 <ul class="org-ul">
@@ -243,122 +127,96 @@ CAM: Computed aided manufacturing  / FAO: Fabrication assisté par ordinateur
 <ul class="org-ul">
 <li>Mise en situation réel</li>
 <li>Test global</li>
+<li>Test unitaire</li>
 </ul></li>
 </ul>
-
-
-
-
-<div class="figure">
-<p><img src="./img/0_iteration.jpg" alt="0_iteration.jpg" width="400px" />
-</p>
-</div>
 </div>
 
-<div id="outline-container-org71fb51e" class="outline-3">
-<h3 id="org71fb51e">Qualités d'un prototype</h3>
-<div class="outline-text-3" id="text-org71fb51e">
-<p>
-Maintenabilité: facilite les itérations
-Modularité: facilite les évolutions, les réparations
-</p>
+<div id="outline-container-orgf245ea2" class="outline-3">
+<h3 id="orgf245ea2">Design thinking, une approche pragmatique</h3>
+<div class="outline-text-3" id="text-orgf245ea2">
 
-<p>
-Outils: Gestion de version 
+<div id="orgdbfd1d6" class="figure">
+<p><img src="./img/lean_startup.jpg" alt="lean_startup.jpg" width="700px" />
 </p>
 </div>
-</div>
-</div>
-
-
-<div id="outline-container-org099c066" class="outline-2">
-<h2 id="org099c066">Logiciels prérequis</h2>
-<div class="outline-text-2" id="text-org099c066">
-</div>
-<div id="outline-container-org607b563" class="outline-3">
-<h3 id="org607b563">Conception 3D - Solidworks</h3>
-<div class="outline-text-3" id="text-org607b563">
-<p>
-Licence Solidworks Student Standard : SDK 2022-2023
-</p>
 
 <p>
-Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
-</p>
-
-<p>
-Pour accéder à la page de téléchargement :
-</p>
-
-<p>
-1 – www.solidworks.com/SDK
-</p>
-
-<p>
-Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.
-</p>
-
-<p>
-2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)
-</p>
-
-<p>
-4 – Choisissez la version 2022-2023
-</p>
-
-<p>
-5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC
-</p>
-
-<p>
-6- Télécharger le fichier exécutable.
-</p>
-
-<p>
-7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers
-</p>
-
-<p>
-8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe
-</p>
-
-<p>
-Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+Le design thinking est un process basé sur l’expérience utilisateur et l’itération
+rapide : tester et valider chaque étape de la création d’un produit avec l’utilisateur
+plutôt qu’aboutir pour se rendre compte qu’il ne plait pas.
+En effet il encourage à « faire » plutôt que « dire » : crayonner, dessiner, maquetter…
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org2ae1eab" class="outline-3">
-<h3 id="org2ae1eab">Fabrication 3D</h3>
+
+<div id="outline-container-org640e9ec" class="outline-3">
+<h3 id="org640e9ec">Qualités d'un prototype (1)</h3>
+<div class="outline-text-3" id="text-org640e9ec">
+<ul class="org-ul">
+<li><b>Maintenabilité</b>: facilite les itérations<br /></li>
+<li><b>Modularité</b>: facilite les évolutions, les réparations</li>
+</ul>
+
+<p>
+Ces qualités sont utiles autant pour le hardware que le software. Exemples:<br />
+Hardware: Eviter l'utilisation de colle et de clous! Priveligier les assemblages à base de visses et d'écrou. 
+Software: Eviter les copiers coller dans le code,  autant utiliser des fonctions. Ne pas mettre de valeur numérique direct, utiliser des variables.
+</p>
+</div>
 </div>
 
-<div id="outline-container-org169a836" class="outline-3">
-<h3 id="org169a836">Conception 2D</h3>
-</div>
-
-<div id="outline-container-orge54652c" class="outline-3">
-<h3 id="orge54652c">Programmation microcontroller</h3>
-</div>
-
-<div id="outline-container-org23e0da0" class="outline-3">
-<h3 id="org23e0da0">Gestion de version (optionnel)</h3>
-</div>
-</div>
 
 
-<div id="outline-container-orga4cbb3b" class="outline-2">
-<h2 id="orga4cbb3b">Conception</h2>
+<div id="outline-container-org3d30b36" class="outline-3">
+<h3 id="org3d30b36">Qualités d'un prototype (2)</h3>
+<div class="outline-text-3" id="text-org3d30b36">
+
+<div id="orgf4d23fa" class="figure">
+<p><img src="./img/mvp_0.jpg" alt="mvp_0.jpg" width="500px" />
+</p>
 </div>
 
-<div id="outline-container-org74ee9c1" class="outline-2">
-<h2 id="org74ee9c1">Fabrication</h2>
+<p>
+Ne jamais perdre de vue les fonctions essentiels de votre prototype, sa raison d'être. Celles ci constituent la base de votre prototype.
+Se supperposeront ensuite avec les itérations succesives d'autres qualités: La fiablilité, l'ergonomie, le confort&#x2026; 
+C'est sur ce point qu'intervient la notion de <i><b>Minimum Viable Product</b></i>.
+</p>
+
+
+<div id="org1a7570b" class="figure">
+<p><img src="./img/mvp_1.jpg" alt="mvp_1.jpg" width="500px" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org25acb08" class="outline-2">
+<h2 id="org25acb08">Conception - CAO</h2>
+<div class="outline-text-2" id="text-org25acb08">
+<p>
+<b>CAD</b>: Computed aided design / CAO: Conception assisté par ordinateur
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgc1e295f" class="outline-2">
+<h2 id="orgc1e295f">Fabrication - FAO</h2>
+<div class="outline-text-2" id="text-orgc1e295f">
+<p>
+<b>CAM</b>: Computed aided manufacturing  / FAO: Fabrication assisté par ordinateur
+</p>
+</div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2022-12-21 mer. 14:34</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-02 lun. 16:51</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
