@@ -6,6 +6,7 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
+
 * Bienvenue
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:
@@ -15,20 +16,29 @@ Avant le début du cours, il est vivement conseillé de:
 * Contenu
 
 Ce cours contient plusieurs composantes:
-+ une partie théorique définissant quelques notions essentielles, d'aborder des questions de méthodologie. Cette partie permet egalement de faire un retor d'expérience.
++ une partie théorique définissant quelques notions essentielles et abordant des questions de méthodologie. Cette partie permet egalement de faire un retour d'expérience.
 + des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.
 + un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.
 
 ** Compétences
  
-Ce cours doit vous permettre de monter en compétences sur ces domaines:
+Ce cours doit (normalement) vous permettre de monter en compétences sur ces domaines:
 + Modélisation 2D-3D
-+ Fabrication additives, soustractives
++ Fabrication numérique additive et soustractive
 + Electronique et programmation
 
 ** Evaluation
 
 L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
+
+** Projet 
+Le projet consiste en la conception, la fabrication et la programmation d'une /useless box/.
+Ce projet implique:
++ la programmation d'un micro controller
++ son interfaçage avec un moteur et un switch
++ la conception des éléments mécaniques et du boitier
+
+https://youtu.be/rFJcrQHw1k0
 
 
 

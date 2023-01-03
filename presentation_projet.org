@@ -3,7 +3,7 @@
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
-
+#+MACRO: color @@html:<font color="$1">$2</font>@@
 
 * Tous les _vendredi de 11h30 à 12h_ à l'Innovation Lab
 
@@ -16,7 +16,7 @@
 L'idée est de créer un moment d'échange autour des différents projets et d'y méler étudiants et enseignants.
 Des présentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leur travaux et d'aiguiser leur discours!\\
 /15 minutes de présentation / 15 minutes d'échange. \\
-A midi vous êtes dehors, promis!/
+/A midi vous êtes dehors, promis!/
 
 #+attr_html: :width 200px
 [[./img/interieur.jpg]]
