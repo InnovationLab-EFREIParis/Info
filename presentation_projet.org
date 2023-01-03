@@ -15,14 +15,15 @@ A midi vous êtes dehors, promis!/
 
 
 
-**  20/01 -  Robminton (Projet M2)
+**  20/01 -  Robminton - /projet M2/
 Robots ramasseur & lanceur de volants de badminton
-**  24/01 - Course Voiture autonome (Projet M2)
-Course de voiture autonome à l'échelle 1/10e
-**  03/02 - Localisation Roller (Projet M2)
+**  24/01 - Course de voiture autonome - /projet M2/
+Conception d'une voiture à l'echelle 1/10e en vue de participer à une course de voiture autonome.
+**  03/02 - Localisation Roller - /projet M2/
 Localiser les sportifs lors de compétition de roller
-**  10/02 - Bras robotisé (TBC) (Projet M2)
-**  17/02 - Alexis Collin (TBC) (Projet M2)
+**  10/02 - Bras robotisé (TBC) - /projet M2/
+**  17/02 - DoRobo - /projet M2/
+"DoRobo" est un robot mobile autonome chargé de réaliser la prise de mesure de qualité de l'air ambiant pour la prévention de risques liés à la fuite de produits toxiques dans les entrepôts de stockages et autres lieux utilisant ou entreposant de nombreux produits nocifs pour l'homme.
 **  24/02 - ?
-**  03/03 - Reconnaissance des émotions
+**  03/03 - Reconnaissance des émotions - /projet M2/
 Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions
