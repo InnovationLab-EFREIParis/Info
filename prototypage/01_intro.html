@@ -3,86 +3,37 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-04 mer. 09:37 -->
+<!-- 2023-01-04 mer. 21:34 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
-<meta name="generator" content="Org mode" />
 <meta name="author" content="remi.griot@efrei.fr" />
-<meta name="description" content="prototypage rapide"
- />
+<meta name="description" content="prototypage rapide" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
-<link rel="stylesheet" type="text/css" href="code.css"/>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org1f94587">Définitions</a></li>
-<li><a href="#org6a43c8e">Méthodes</a>
+<li><a href="#orgff17576">Définitions</a></li>
+<li><a href="#org0c3a478">Qui prototype</a></li>
+<li><a href="#org37ced0d">Méthodes</a>
 <ul>
-<li><a href="#orgbcde672">Design thinking, une approche pragmatique</a></li>
-<li><a href="#org3fc782f">Qualités d'un prototype (1)</a></li>
-<li><a href="#org84a642d">Qualités d'un prototype (2)</a></li>
-<li><a href="#org952346d">Exemple d'itération d'un design 3D</a></li>
+<li><a href="#org21f4f77">Design thinking, une approche pragmatique</a></li>
+<li><a href="#org7725b93">Qualités d'un prototype (1)</a></li>
+<li><a href="#orgafb09d2">Qualités d'un prototype (2)</a></li>
+<li><a href="#org8aa97c6">Exemple d'itération d'un design 3D</a></li>
 </ul>
 </li>
-<li><a href="#org7b30c52">Conception - CAO</a></li>
-<li><a href="#org76d0853">Fabrication - FAO</a></li>
 </ul>
 </div>
 </div>
@@ -93,9 +44,9 @@ Le réel, c'est quand on se cogne <br />
 </p>
 </blockquote>
 
-<div id="outline-container-org1f94587" class="outline-2">
-<h2 id="org1f94587">Définitions</h2>
-<div class="outline-text-2" id="text-org1f94587">
+<div id="outline-container-orgff17576" class="outline-2">
+<h2 id="orgff17576">Définitions</h2>
+<div class="outline-text-2" id="text-orgff17576">
 <blockquote>
 <p>
 Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série. <br />
@@ -106,7 +57,7 @@ Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil,
 <p>
 Le prototypage implique une approche <span class="underline">transverse</span>, <span class="underline">pluridisciplinaire</span>, <span class="underline">itérative</span>  et &#x2026; <span class="underline">pragmatique</span>!
 On parle de <span class="underline">prototypage rapide</span> lorsque les itérations sont courtes. Certaines technologies
-ont permis de démocratiser la fabriquation et de pouvoir sur un même site, concevoir et fabriquer.
+ont permis de démocratiser la fabrication et de pouvoir sur un même site, concevoir et fabriquer.
 </p>
 
 <blockquote>
@@ -130,20 +81,26 @@ Un des rôles du design est de répondre à des besoins, de résoudre des probl�
  &#x2014;(Défnition Wikipedia)
 </p>
 </blockquote>
+</div>
+</div>
 
-<hr />
-
+<div id="outline-container-org0c3a478" class="outline-2">
+<h2 id="org0c3a478">Qui prototype</h2>
+<div class="outline-text-2" id="text-org0c3a478">
 <p>
-Aborder la conception d'un prototype se fait souvent en équipe restreinte voir seul.
+Aborder la conception d'un prototype se fait souvent en équipe relativement restreinte voir seul.
+Comme évoqué précédement, prototyper découle d'une volonté de "sortir des sentiers battus".
+Il s'agit donc d'être agile et la plupart du temps <i>multi-tâches</i>.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org6a43c8e" class="outline-2">
-<h2 id="org6a43c8e">Méthodes</h2>
-<div class="outline-text-2" id="text-org6a43c8e">
 
-<div class="figure">
+<div id="outline-container-org37ced0d" class="outline-2">
+<h2 id="org37ced0d">Méthodes</h2>
+<div class="outline-text-2" id="text-org37ced0d">
+
+<div id="org8c7039d" class="figure">
 <p><img src="./img/0_iteration.jpg" alt="0_iteration.jpg" width="700px" />
 </p>
 </div>
@@ -168,7 +125,7 @@ Aborder la conception d'un prototype se fait souvent en équipe restreinte voir 
 </ul></li>
 <li>Simulation
 <ul class="org-ul">
-<li>Plus ou moins fidèle selon la ganularité <i>(niveau de détail du modèle)</i></li>
+<li>Plus ou moins fidèle selon la granularité <i>(niveau de détail du modèle)</i></li>
 <li>Test unitaire</li>
 </ul></li>
 <li>Fabrication    
@@ -178,18 +135,18 @@ Aborder la conception d'un prototype se fait souvent en équipe restreinte voir 
 </ul></li>
 <li>Vérification
 <ul class="org-ul">
-<li>Mise en situation réel</li>
+<li>Mise en situation réelle</li>
 <li>Test global</li>
 <li>Test unitaire</li>
 </ul></li>
 </ul>
 </div>
 
-<div id="outline-container-orgbcde672" class="outline-3">
-<h3 id="orgbcde672">Design thinking, une approche pragmatique</h3>
-<div class="outline-text-3" id="text-orgbcde672">
+<div id="outline-container-org21f4f77" class="outline-3">
+<h3 id="org21f4f77">Design thinking, une approche pragmatique</h3>
+<div class="outline-text-3" id="text-org21f4f77">
 
-<div class="figure">
+<div id="orgf17dbde" class="figure">
 <p><img src="./img/lean_startup.jpg" alt="lean_startup.jpg" width="700px" />
 </p>
 </div>
@@ -203,11 +160,9 @@ En effet il encourage à « faire » plutôt que « dire » : crayonner, de
 </div>
 </div>
 
-
-
-<div id="outline-container-org3fc782f" class="outline-3">
-<h3 id="org3fc782f">Qualités d'un prototype (1)</h3>
-<div class="outline-text-3" id="text-org3fc782f">
+<div id="outline-container-org7725b93" class="outline-3">
+<h3 id="org7725b93">Qualités d'un prototype (1)</h3>
+<div class="outline-text-3" id="text-org7725b93">
 <p>
 Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proche lorsqu'il s'agit des qualités requises:
 </p>
@@ -227,37 +182,14 @@ Software: Eviter les copiers coller dans le code, autant utiliser des fonctions.
 Ne pas mettre de valeur numérique direct, utiliser des variables.
 </p>
 
+
 <div class="org-src-container">
-<pre class="src src-C">int rayon=3;
+<pre class="src src-C++">int rayon=3;
 float pi=3.14;
 int diametre = 2*rayon*pi;
-//printf("%d\n", diametre);
+printf("%d\n", diametre);
 </pre>
 </div>
-
-<pre class="example">
-
-</pre>
-
-
-<div class="org-src-container">
-<pre class="src src-emacs-lisp">(unless noninteractive
-(org-html-htmlize-generate-css)
-(with-current-buffer "*html*"
-(write-file css-file))
-(format "#+html_head_extra: &lt;link rel=\"stylesheet\" type=\"text/css\" href=\"%s\"/&gt;"
-css-file))
-</pre>
-</div>
-<div class="org-src-container">
-<pre class="src src-C">int a=1;
-int b=1;
-printf("%d\n", a+b);
-</pre>
-</div>
-<pre class="example">
-2
-</pre>
 
 <hr />
 
@@ -269,11 +201,11 @@ printf("%d\n", diametre);
 </div>
 </div>
 
-<div id="outline-container-org84a642d" class="outline-3">
-<h3 id="org84a642d">Qualités d'un prototype (2)</h3>
-<div class="outline-text-3" id="text-org84a642d">
+<div id="outline-container-orgafb09d2" class="outline-3">
+<h3 id="orgafb09d2">Qualités d'un prototype (2)</h3>
+<div class="outline-text-3" id="text-orgafb09d2">
 
-<div class="figure">
+<div id="org5d161f7" class="figure">
 <p><img src="./img/mvp_0.jpg" alt="mvp_0.jpg" width="500px" />
 </p>
 </div>
@@ -285,7 +217,7 @@ C'est sur ce point qu'intervient la notion de <i><b>Minimum Viable Product</b></
 </p>
 
 
-<div class="figure">
+<div id="org0e7a468" class="figure">
 <p><img src="./img/mvp_1.jpg" alt="mvp_1.jpg" width="500px" />
 </p>
 </div>
@@ -293,12 +225,12 @@ C'est sur ce point qu'intervient la notion de <i><b>Minimum Viable Product</b></
 </div>
 
 
-<div id="outline-container-org952346d" class="outline-3">
-<h3 id="org952346d">Exemple d'itération d'un design 3D</h3>
-<div class="outline-text-3" id="text-org952346d">
+<div id="outline-container-org8aa97c6" class="outline-3">
+<h3 id="org8aa97c6">Exemple d'itération d'un design 3D</h3>
+<div class="outline-text-3" id="text-org8aa97c6">
 <p>
 Il s'agit d'un carter de protection d'une hélice de drone. La fonction première est de protéger les personnes de l'hélice. 
-En effet, Celle ci tournant rapidement, il est difficile d'en déterminer les contours.
+En effet, celle ci tournant rapidement, il est difficile d'en déterminer les contours.
 A noter que ce carter doit être léger pour ne pas modifier le comportement du dispositif.
 </p>
 
@@ -306,7 +238,7 @@ A noter que ce carter doit être léger pour ne pas modifier le comportement du 
 <b>Version 1</b>
 </p>
 
-<div class="figure">
+<div id="org03b5a62" class="figure">
 <p><img src="./img/carter_helice_rsV1.jpg" alt="carter_helice_rsV1.jpg" width="700px" />
 </p>
 </div>
@@ -356,7 +288,7 @@ Epaisseur = 1.2 mm
 <b>Version 4</b>
 </p>
 
-<div class="figure">
+<div id="org5f3bbb0" class="figure">
 <p><img src="./img/carter_helice_rsV4.jpg" alt="carter_helice_rsV4.jpg" width="700px" />
 </p>
 </div>
@@ -376,7 +308,7 @@ Epaisseur = 2.4 mm
 <b>Version 5</b>
 </p>
 
-<div class="figure">
+<div id="orgc9a6669" class="figure">
 <p><img src="./img/carter_helice_rsV5.jpg" alt="carter_helice_rsV5.jpg" width="700px" />
 </p>
 </div>
@@ -389,36 +321,14 @@ Fonctionnel, robuste, léger&#x2026; et esthetique
 Masse = 94.01 grammes <br />
 Epaisseur = 2.4 mm
 </p>
-
-<hr />
 </div>
-</div>
-</div>
-
-
-<div id="outline-container-org7b30c52" class="outline-2">
-<h2 id="org7b30c52">Conception - CAO</h2>
-<div class="outline-text-2" id="text-org7b30c52">
-<p>
-<b>CAD</b>: Computed aided design / CAO: Conception assistée par ordinateur
-</p>
-</div>
-</div>
-
-
-<div id="outline-container-org76d0853" class="outline-2">
-<h2 id="org76d0853">Fabrication - FAO</h2>
-<div class="outline-text-2" id="text-org76d0853">
-<p>
-<b>CAM</b>: Computed aided manufacturing  / FAO: Fabrication assistée par ordinateur
-</p>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-04 mer. 09:37</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-04 mer. 21:34</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

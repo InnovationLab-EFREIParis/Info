@@ -37,9 +37,12 @@ Un des rôles du design est de répondre à des besoins, de résoudre des probl�
  ---(Défnition Wikipedia)
 #+END_QUOTE
 
------
+* Qui prototype
 
-Aborder la conception d'un prototype se fait souvent en équipe restreinte voir seul.
+Aborder la conception d'un prototype se fait souvent en équipe relativement restreinte voir seul.
+Comme évoqué précédement, prototyper découle d'une volonté de "sortir des sentiers battus".
+Il s'agit donc d'être agile et la plupart du temps /multi-tâches/.
+
 
 * Méthodes
 
@@ -59,13 +62,13 @@ Aborder la conception d'un prototype se fait souvent en équipe restreinte voir 
     + Assemblage
   + Codage
 - Simulation
-  + Plus ou moins fidèle selon la ganularité /(niveau de détail du modèle)/
+  + Plus ou moins fidèle selon la granularité /(niveau de détail du modèle)/
   + Test unitaire
 - Fabrication    
   + Paramétrage des machines
   + Choix des matériaux
 - Vérification
-  + Mise en situation réel
+  + Mise en situation réelle
   + Test global
   + Test unitaire
 
@@ -78,10 +81,8 @@ rapide : tester et valider chaque étape de la création d’un produit avec l�
 plutôt qu’aboutir pour se rendre compte qu’il ne plait pas.
 En effet il encourage à « faire » plutôt que « dire » : crayonner, dessiner, maquetter…
 
-
-
 ** Qualités d'un prototype (1)
-Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proche lorsqu'il s'agit des qualités requises:
+Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:
 
 - *Maintenabilité*: facilite les itérations. Un code maintenable est un code qui est facile à lire et à comprendre. Il en va de même pour un modèle 3D. \\
 - *Modularité*: facilite les évolutions et les réparations.
@@ -127,7 +128,7 @@ C'est sur ce point qu'intervient la notion de /*Minimum Viable Product*/.
 
 ** Exemple d'itération d'un design 3D
 Il s'agit d'un carter de protection d'une hélice de drone. La fonction première est de protéger les personnes de l'hélice. 
-En effet, Celle ci tournant rapidement, il est difficile d'en déterminer les contours.
+En effet, celle ci tournant rapidement, il est difficile d'en déterminer les contours.
 A noter que ce carter doit être léger pour ne pas modifier le comportement du dispositif.
 
 *Version 1*
@@ -181,13 +182,5 @@ Fonctionnel, robuste, léger... et esthetique
 Masse = 94.01 grammes \\
 Epaisseur = 2.4 mm
 
--------
 
-
-* Conception - CAO 
-*CAD*: Computed aided design / CAO: Conception assistée par ordinateur
-
-
-* Fabrication - FAO
-*CAM*: Computed aided manufacturing  / FAO: Fabrication assistée par ordinateur
 
