@@ -21,7 +21,7 @@ Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil,
 
 Le prototypage implique une approche _transverse_, _pluridisciplinaire_, _itérative_  et ... _pragmatique_!
 On parle de _prototypage rapide_ lorsque les itérations sont courtes. Certaines technologies
-ont permis de démocratiser la fabriquation et de pouvoir sur un même site, concevoir et fabriquer.
+ont permis de démocratiser la fabrication et de pouvoir sur un même site, concevoir et fabriquer.
 
 #+BEGIN_QUOTE
 Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale. \\
