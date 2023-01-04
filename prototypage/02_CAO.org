@@ -7,14 +7,33 @@
 #+LINK_HOME: index.html
 
 * Conception - CAO 
-*CAD*: Computed aided design / CAO: Conception assist� par ordinateur
+*CAD*: Computed aided design / *CAO*: Conception assisté par ordinateur \\
 
-* Exercices
+Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 grandes catégories. 
+A noter qu'il existe aussi des logiciels "hybrides" à la frontière des ces catégories.
+*** Les logiciels paramétriques
+Ces logiciels permettent de spécifier des relations de géométrie entre les lignes, les surfaces ou les volumes du design. Ces relations sont comparables à des fonctions. L'utilisateur doit donc rentrer 
+les paramètres de ces fonctions afin d'obtenir le résultat escompté (cotation, angle, rotation, duplication...).
+Ce type de logiciel permet d'assurer la maintenabilité et l'évolution du design car l'objet est décrit de façon "mathématique". Ils demandent à l'utilisateur d’être rigoureux et conscient des propriétés de son modèle. Ce type de logiciel est recommandé pour du design de pièce manufacturée ou technique. Le temps de prise en main peut être assez long. \\
++ *Solidworks* Un des logiciels les plus utilisés dans l'industrie.
++ Fusion 360
++ Onshape
+*** Les logiciels de modélisation volumique
+Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphères, cylindres...) qui, après des opérations booléennes (union, intersection, soustraction), formeront des solides plus complexes. \\
+ 
+*Tinkercad* (gratuit et en ligne) est un très bon outil pour commencer rapidement à concevoir des objets en 3D.
+*** Mesh Modeling
+Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
+ 
 
-** Test
+* Solidworks
 
-[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][S�rie Exercices 1]] \\
-[[./exercice_SW/ebook indispensable.pdf][S�rie Exercices 2]]
+Voici une série d'exercice et de vidéo afin de prendre en main Solidworks
+
+** Exercices
+
+[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices 1]] \\
+[[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
 
 
 #+INCLUDE: ../solidworks.org

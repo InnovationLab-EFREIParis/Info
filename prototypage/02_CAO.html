@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-03 mar. 17:50 -->
+<!-- 2023-01-04 mer. 10:29 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
@@ -78,12 +78,22 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org03abfb4">Conception - CAO</a></li>
-<li><a href="#orgaa83da0">Exercices</a>
+<li><a href="#orgc16e696">Conception - CAO</a>
 <ul>
-<li><a href="#orgfc96a30">Test</a>
+<li>
 <ul>
-<li><a href="#orgad9e5db">Capsules Vidéos sur Solidworks</a></li>
+<li><a href="#org2bab28e">Les logiciels paramétriques</a></li>
+<li><a href="#org098ba36">Les logiciels de modélisation volumique</a></li>
+<li><a href="#org02ddd52">Mesh Modeling</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgd3bc918">Exercices</a>
+<ul>
+<li><a href="#org39f8d2a">Test</a>
+<ul>
+<li><a href="#org6b248ca">Capsules Vidéos sur Solidworks</a></li>
 </ul>
 </li>
 </ul>
@@ -92,22 +102,63 @@ for the JavaScript code in this tag.
 </div>
 </div>
 
-<div id="outline-container-org03abfb4" class="outline-2">
-<h2 id="org03abfb4">Conception - CAO</h2>
-<div class="outline-text-2" id="text-org03abfb4">
+<div id="outline-container-orgc16e696" class="outline-2">
+<h2 id="orgc16e696">Conception - CAO</h2>
+<div class="outline-text-2" id="text-orgc16e696">
 <p>
-<b>CAD</b>: Computed aided design / CAO: Conception assisté par ordinateur
+<b>CAD</b>: Computed aided design / <b>CAO</b>: Conception assisté par ordinateur <br />
+</p>
+
+<p>
+Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 grandes familles. 
+A noter qu'il existe aussi des logiciels "hybride" mêlant les 2 concepts.
+</p>
+</div>
+<div id="outline-container-org2bab28e" class="outline-4">
+<h4 id="org2bab28e">Les logiciels paramétriques</h4>
+<div class="outline-text-4" id="text-org2bab28e">
+<p>
+Ces logiciels permettent de spécifier des relations de géométrie entre les lignes, les surfaces ou les volumes du design. Ces relations sont comparables à des fonctions. L'utilisateur doit donc rentrer 
+les paramètres de ces fonctions afin d'obtenir le résultat escompté (cotation, angle, rotation, duplication&#x2026;).
+Ce type de logiciel permet d'assurer la maintenabilité et l'évolution du design car l'objet est décrit de façon "mathématique". Ils demandent à l'utilisateur d’être rigoureux et conscient des propriétés de son modèle. Ce type de logiciel est recommandé pour du design de pièce manufacturée ou technique. Le temps de prise en main peut être assez long. <br />
+</p>
+<ul class="org-ul">
+<li><b>Solidworks</b> Un des logiciels les plus utilisés dans l'industrie.</li>
+<li>Fusion 360</li>
+<li>Onshape</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org098ba36" class="outline-4">
+<h4 id="org098ba36">Les logiciels de modélisation volumique</h4>
+<div class="outline-text-4" id="text-org098ba36">
+<p>
+Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphères, cylindres&#x2026;) qui, après des opérations booléennes (union, intersection, soustraction), formeront des solides plus complexes. <br />
+</p>
+
+<p>
+<b>Tinkercad</b> (gratuit et en ligne) est un très bon outil pour commencer rapidement à concevoir des objets en 3D.
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgaa83da0" class="outline-2">
-<h2 id="orgaa83da0">Exercices</h2>
-<div class="outline-text-2" id="text-orgaa83da0">
+<div id="outline-container-org02ddd52" class="outline-4">
+<h4 id="org02ddd52">Mesh Modeling</h4>
+<div class="outline-text-4" id="text-org02ddd52">
+<p>
+Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
+</p>
 </div>
-<div id="outline-container-orgfc96a30" class="outline-3">
-<h3 id="orgfc96a30">Test</h3>
-<div class="outline-text-3" id="text-orgfc96a30">
+</div>
+</div>
+
+
+<div id="outline-container-orgd3bc918" class="outline-2">
+<h2 id="orgd3bc918">Exercices</h2>
+<div class="outline-text-2" id="text-orgd3bc918">
+</div>
+<div id="outline-container-org39f8d2a" class="outline-3">
+<h3 id="org39f8d2a">Test</h3>
+<div class="outline-text-3" id="text-org39f8d2a">
 <p>
 <a href="./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf">Série Exercices 1</a> <br />
 <a href="./exercice_SW/ebook indispensable.pdf">Série Exercices 2</a>
@@ -115,17 +166,17 @@ for the JavaScript code in this tag.
 </div>
 
 
-<div id="outline-container-orgad9e5db" class="outline-4">
-<h4 id="orgad9e5db">Capsules Vidéos sur Solidworks</h4>
-<div class="outline-text-4" id="text-orgad9e5db">
+<div id="outline-container-org6b248ca" class="outline-4">
+<h4 id="org6b248ca">Capsules Vidéos sur Solidworks</h4>
+<div class="outline-text-4" id="text-org6b248ca">
 <p>
 Chaque capsule vidéo dure environ 15 minutes. Il est conseillé de faire les manipulations en même temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
 </p>
 </div>
 
 <ul class="org-ul">
-<li><a id="orged68cf8"></a>Introduction<br />
-<div class="outline-text-5" id="text-orged68cf8">
+<li><a id="orgfdac505"></a>Introduction<br />
+<div class="outline-text-5" id="text-orgfdac505">
 <p>
 Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de la création d'une pièce:
 </p>
@@ -133,8 +184,8 @@ Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de 
 </div>
 </li>
 
-<li><a id="org9b5d936"></a>Esquisse 1<br />
-<div class="outline-text-5" id="text-org9b5d936">
+<li><a id="org9c1d9c4"></a>Esquisse 1<br />
+<div class="outline-text-5" id="text-org9c1d9c4">
 <p>
 Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
 </p>
@@ -142,8 +193,8 @@ Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esqu
 </div>
 </li>
 
-<li><a id="org4262673"></a>Esquisse 2<br />
-<div class="outline-text-5" id="text-org4262673">
+<li><a id="orged9c263"></a>Esquisse 2<br />
+<div class="outline-text-5" id="text-orged9c263">
 <p>
 Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités plus avancés (arc de cercle, relation): 
 </p>
@@ -152,8 +203,8 @@ Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités pl
 </li>
 
 
-<li><a id="org8d2587e"></a>Fonction 1<br />
-<div class="outline-text-5" id="text-org8d2587e">
+<li><a id="orge132022"></a>Fonction 1<br />
+<div class="outline-text-5" id="text-orge132022">
 <p>
 Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, de perçage et de congès: 
 </p>
@@ -161,8 +212,8 @@ Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, d
 </div>
 </li>
 
-<li><a id="org5629bcb"></a>Exemple<br />
-<div class="outline-text-5" id="text-org5629bcb">
+<li><a id="orgea78e26"></a>Exemple<br />
+<div class="outline-text-5" id="text-orgea78e26">
 <p>
 Exemple appliqué de tout les concepts vu précédement:
 </p>
@@ -171,8 +222,8 @@ Exemple appliqué de tout les concepts vu précédement:
 </li>
 
 
-<li><a id="org94bb028"></a>Fonction 2<br />
-<div class="outline-text-5" id="text-org94bb028">
+<li><a id="org367225b"></a>Fonction 2<br />
+<div class="outline-text-5" id="text-org367225b">
 <p>
 Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition linéaire:
 </p>
@@ -181,8 +232,8 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 </li>
 
 
-<li><a id="orgc80da80"></a>Fonction 3<br />
-<div class="outline-text-5" id="text-orgc80da80">
+<li><a id="org3cd235f"></a>Fonction 3<br />
+<div class="outline-text-5" id="text-org3cd235f">
 <p>
 Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition circulaire:
 </p>
@@ -196,7 +247,7 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-03 mar. 17:50</p>
+<p class="date">Created: 2023-01-04 mer. 10:29</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
