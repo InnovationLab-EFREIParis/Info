@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-04 mer. 11:33 -->
+<!-- 2023-01-04 mer. 15:00 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
@@ -71,21 +71,22 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org0c62f26">Microcontroller</a></li>
+<li><a href="#orgb5d051b">Microcontroller</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org0c62f26" class="outline-2">
-<h2 id="org0c62f26">Microcontroller</h2>
-<div class="outline-text-2" id="text-org0c62f26">
-<p>
+<div id="outline-container-orgb5d051b" class="outline-2">
+<h2 id="orgb5d051b">Microcontroller</h2>
+<div class="outline-text-2" id="text-orgb5d051b">
+<p width="150px" style="float:left;margin:0px 20px 20px 0px;">
+<img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
 Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
 En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
 En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus&#x2026;
-Du fait que tous soit intégré dans une puce, les microcontroller sont compact, économe en énergie et donc tout désigné pour être embarqué.
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou indiuctance que au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
 </p>
 
 
@@ -99,7 +100,7 @@ En général, les variations de ces grandeurs physiques feront varier une resist
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Capteur</th>
+<th scope="col" class="org-left">Capteurs</th>
 <th scope="col" class="org-left">Grandeur physique</th>
 </tr>
 </thead>
@@ -123,6 +124,11 @@ En général, les variations de ces grandeurs physiques feront varier une resist
 <td class="org-left">Photodiode</td>
 <td class="org-left">Lumière</td>
 </tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">&#x2026;</td>
+</tr>
 </tbody>
 </table>
 
@@ -138,7 +144,7 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 </colgroup>
 <thead>
 <tr>
-<th scope="col" class="org-left">Actionneur</th>
+<th scope="col" class="org-left">Actionneurs</th>
 </tr>
 </thead>
 <tbody>
@@ -157,8 +163,24 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 <tr>
 <td class="org-left">Ecran</td>
 </tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+</tr>
 </tbody>
 </table>
+
+<p>
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Par exemple dans une automobile ou en IOT.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./img/voiture.jpg" alt="voiture.jpg" width="600px" />
+</p>
+</div>
 
 
 <p>
@@ -170,7 +192,7 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-04 mer. 11:33</p>
+<p class="date">Created: 2023-01-04 mer. 15:00</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

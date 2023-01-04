@@ -7,12 +7,16 @@
 #+LINK_HOME: index.html
 
 * Microcontroller
+
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
+#+ATTR_HTML: :width 150px
+[[./img/uc.jpg]]
 Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
 En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
 En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus...
-Du fait que tous soit intégré dans une puce, les microcontroller sont compact, économe en énergie et donc tout désigné pour être embarqué.
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou indiuctance que au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
 
 
 | Capteurs         | Grandeur physique |
@@ -33,7 +37,12 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs auqu
 | Ecran       |
 | ...         |
 
-Dans d'autre configurations, le µC sont souvent intégrer dans des systèmes ou leur rôle s'arrete à capter envoyer des données, l'action est donc 
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Par exemple dans une automobile ou en IOT.
+
+
+#+ATTR_HTML: :width 600px
+[[./img/voiture.jpg]]
 
 
 En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
@@ -41,5 +50,25 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'u
 
 
 
+* STM32
 
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
 
+| Board     | Nucleo STM32L476RG  | Arduino Uno |
+|-----------+---------------------+-------------|
+| Family    | ARM Cortex-M4       | ATMega 328P |
+| Vendor    | ST Microelectronics | ATMega      |
+| SRAM      | 128 KB              | 2 KB        |
+| Flash     | 1 MB                | 32 KB       |
+| Frequency | up to 80MHz         | 16          |
+| FPU       | YES                 | NO          |
+| Timers    | 16                  | 3           |
+| ADCs      | 1x 12-bit           | 6 (10 bits) |
+| UARTs     | 3                   | 1           |
+| SPIs      | 3                   | 1           |
+| I2Cs      | 3                   | 1           |
+| RTC       | 1                   | 0           |
+| CAN       | 1                   | 1           |
+| Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
+
+* IDE
