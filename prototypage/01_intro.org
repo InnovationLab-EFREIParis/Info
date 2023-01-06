@@ -7,10 +7,6 @@
 #+LINK_HOME: index.html
 
 
-#+BEGIN_QUOTE
-Le réel, c'est quand on se cogne \\
- ---Jacques Lacan
-#+END_QUOTE
 
 * Définitions
 
@@ -28,7 +24,6 @@ Le prototype matérialise une étape d'évolution d'un projet, souvent pour dém
 --- (Définition Wihipédia)
 #+END_QUOTE
 
-/Prototypage rapide = Fail as fast as possible/
 
 Le prototypage croise également le domaine du design, qui lui aussi est assez vaste et ne renvoyant pas à la même chose selon le contexte. 
 									
@@ -37,7 +32,7 @@ Un des rôles du design est de répondre à des besoins, de résoudre des probl�
  ---(Défnition Wikipedia)
 #+END_QUOTE
 
-* Qui prototype
+* Qui prototype?
 
 Aborder la conception d'un prototype se fait souvent en équipe relativement restreinte voir seul.
 Comme évoqué précédement, prototyper découle d'une volonté de "sortir des sentiers battus".
@@ -80,6 +75,16 @@ Le design thinking est un process basé sur l’expérience utilisateur et l’i
 rapide : tester et valider chaque étape de la création d’un produit avec l’utilisateur
 plutôt qu’aboutir pour se rendre compte qu’il ne plait pas.
 En effet il encourage à « faire » plutôt que « dire » : crayonner, dessiner, maquetter…
+Garder constamment le soucis de l'expérience utilisateur (client) permet de rapidement détecter: \\
++ les défauts ou bug
++ les évolutions contre productives
+
+Plus ces découvertes sont tardives, plus elles peuvent couter cher. /Fail as fast as possible/
+
+#+BEGIN_QUOTE
+Le réel, c'est quand on se cogne \\
+ ---Jacques Lacan
+#+END_QUOTE
 
 ** Qualités d'un prototype (1)
 Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:

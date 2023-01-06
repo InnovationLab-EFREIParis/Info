@@ -20,7 +20,7 @@ Des présentations techniques et informelles qui seront l'occasion pour les pres
 /A midi vous êtes dehors, promis!/
 ***  20/01 -  Robminton - /projet M2/
 Robots ramasseur & lanceur de volants de badminton
-***  24/01 - Course de voiture autonome - /projet M2/
+***  27/01 - Course de voiture autonome - /projet M2/
 Conception d'une voiture à l'echelle 1/10e en vue de participer à une course de voiture autonome.
 ***  03/02 - Localisation Roller - /projet M2/
 Localiser les sportifs lors de compétition de roller

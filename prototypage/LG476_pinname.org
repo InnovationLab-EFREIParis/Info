@@ -14,7 +14,7 @@ Voici un tableau permettant de faire le lien entre les broches du composants, le
 
 | Pin Name (Keil) | Arduino | Autre nom |
 |-----------------+---------+-----------|
-| PA​_0  ​           |         |           |
+| PA​_0  ​          |         |           |
 | PA​_1            |         |           |
 | PA​_2            |         |           |
 | PA​_3            |         |           |
