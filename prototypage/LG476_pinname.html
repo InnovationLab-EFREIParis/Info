@@ -3,20 +3,13 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-06 ven. 16:04 -->
+<!-- 2023-01-06 ven. 16:03 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Prototypage (rapide) Prototypage (rapide)</title>
-<meta name="author" content="remi.griot@efrei.fr remi.griot@efrei.fr" />
-<meta name="description" content="prototypage rapide
-prototypage rapide" />
+<title>Prototypage (rapide)</title>
+<meta name="author" content="remi.griot@efrei.fr" />
+<meta name="description" content="prototypage rapide" />
 <meta name="generator" content="Org Mode" />
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
-<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
-<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -26,258 +19,7 @@ prototypage rapide" />
 </head>
 <body>
 <div id="content" class="content">
-<h1 class="title">Prototypage (rapide) Prototypage (rapide)</h1>
-<div id="table-of-contents" role="doc-toc">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
-<ul>
-<li><a href="#orga2f3c2a">Microcontroller</a></li>
-<li><a href="#org65eaaeb">STM32</a></li>
-<li><a href="#orgea24f1d">IDE</a>
-<ul>
-<li><a href="#orgce829f4">Nom de broches</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-
-<div id="outline-container-orga2f3c2a" class="outline-2">
-<h2 id="orga2f3c2a">Microcontroller</h2>
-<div class="outline-text-2" id="text-orga2f3c2a">
-<p width="150px" style="float:left;margin:0px 20px 20px 0px;">
-<img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
-Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
-En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
-En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus&#x2026;
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
-La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
-</p>
-
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Capteurs</th>
-<th scope="col" class="org-left">Grandeur physique</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">Bouton</td>
-<td class="org-left">Pression</td>
-</tr>
-
-<tr>
-<td class="org-left">Potentiometre</td>
-<td class="org-left">Angle</td>
-</tr>
-
-<tr>
-<td class="org-left">Thermoresistance</td>
-<td class="org-left">Temperature</td>
-</tr>
-
-<tr>
-<td class="org-left">Photodiode</td>
-<td class="org-left">Lumière</td>
-</tr>
-
-<tr>
-<td class="org-left">&#x2026;</td>
-<td class="org-left">&#x2026;</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacer.
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Actionneurs</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">LED</td>
-</tr>
-
-<tr>
-<td class="org-left">Servomoteur</td>
-</tr>
-
-<tr>
-<td class="org-left">Moteur</td>
-</tr>
-
-<tr>
-<td class="org-left">Ecran</td>
-</tr>
-
-<tr>
-<td class="org-left">&#x2026;</td>
-</tr>
-</tbody>
-</table>
-
-<p>
-Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
-Par exemple dans une automobile ou en IOT.
-</p>
-
-
-
-<div id="orgf66c780" class="figure">
-<p><img src="./img/voiture.jpg" alt="voiture.jpg" width="600px" />
-</p>
-</div>
-
-
-<p>
-En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs&#x2026;
-La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
-</p>
-</div>
-</div>
-
-
-
-<div id="outline-container-org65eaaeb" class="outline-2">
-<h2 id="org65eaaeb">STM32</h2>
-<div class="outline-text-2" id="text-org65eaaeb">
-<p>
-Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
-</p>
-
-<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
-
-
-<colgroup>
-<col  class="org-left" />
-
-<col  class="org-left" />
-
-<col  class="org-left" />
-</colgroup>
-<thead>
-<tr>
-<th scope="col" class="org-left">Board</th>
-<th scope="col" class="org-left">Nucleo STM32L476RG</th>
-<th scope="col" class="org-left">Arduino Uno</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="org-left">Family</td>
-<td class="org-left">ARM Cortex-M4</td>
-<td class="org-left">ATMega 328P</td>
-</tr>
-
-<tr>
-<td class="org-left">Vendor</td>
-<td class="org-left">ST Microelectronics</td>
-<td class="org-left">ATMega</td>
-</tr>
-
-<tr>
-<td class="org-left">SRAM</td>
-<td class="org-left">128 KB</td>
-<td class="org-left">2 KB</td>
-</tr>
-
-<tr>
-<td class="org-left">Flash</td>
-<td class="org-left">1 MB</td>
-<td class="org-left">32 KB</td>
-</tr>
-
-<tr>
-<td class="org-left">Frequency</td>
-<td class="org-left">up to 80MHz</td>
-<td class="org-left">16</td>
-</tr>
-
-<tr>
-<td class="org-left">FPU</td>
-<td class="org-left">YES</td>
-<td class="org-left">NO</td>
-</tr>
-
-<tr>
-<td class="org-left">Timers</td>
-<td class="org-left">16</td>
-<td class="org-left">3</td>
-</tr>
-
-<tr>
-<td class="org-left">ADCs</td>
-<td class="org-left">1x 12-bit</td>
-<td class="org-left">6 (10 bits)</td>
-</tr>
-
-<tr>
-<td class="org-left">UARTs</td>
-<td class="org-left">3</td>
-<td class="org-left">1</td>
-</tr>
-
-<tr>
-<td class="org-left">SPIs</td>
-<td class="org-left">3</td>
-<td class="org-left">1</td>
-</tr>
-
-<tr>
-<td class="org-left">I2Cs</td>
-<td class="org-left">3</td>
-<td class="org-left">1</td>
-</tr>
-
-<tr>
-<td class="org-left">RTC</td>
-<td class="org-left">1</td>
-<td class="org-left">0</td>
-</tr>
-
-<tr>
-<td class="org-left">CAN</td>
-<td class="org-left">1</td>
-<td class="org-left">1</td>
-</tr>
-
-<tr>
-<td class="org-left">Vcc</td>
-<td class="org-left">1.71 V - 3.6V</td>
-<td class="org-left">3.3 - 5V</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-
-<div id="outline-container-orgea24f1d" class="outline-2">
-<h2 id="orgea24f1d">IDE</h2>
-<div class="outline-text-2" id="text-orgea24f1d">
-</div>
-<div id="outline-container-orgce829f4" class="outline-3">
-<h3 id="orgce829f4">Nom de broches</h3>
-<div class="outline-text-3" id="text-orgce829f4">
+<h1 class="title">Prototypage (rapide)</h1>
 <p>
 Dans Keil Studio, le fichier definissant le nom des broches du composant est <br />
 TARGET​_STM​/TARGET​_STM32L4​/TARGET​_STM32L476xG/pinNames.h <br />
@@ -614,12 +356,9 @@ Voici un tableau permettant de faire le lien entre les broches du composants, le
 </tbody>
 </table>
 </div>
-</div>
-</div>
-</div>
 <div id="postamble" class="status">
-<p class="author">Author: remi.griot@efrei.fr remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-06 ven. 16:04</p>
+<p class="author">Author: remi.griot@efrei.fr</p>
+<p class="date">Created: 2023-01-06 ven. 16:03</p>
 <p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>

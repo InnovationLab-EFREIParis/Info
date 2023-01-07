@@ -1,57 +1,67 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
 
-Dans Keil Studio
-TARGET_STM/TARGET_STM32L4/TARGET_STM32L476xG/pinNames.h
+Dans Keil Studio, le fichier definissant le nom des broches du composant est \\
+TARGET​_STM​/TARGET​_STM32L4​/TARGET​_STM32L476xG/pinNames.h \\
+
+Voici un tableau permettant de faire le lien entre les broches du composants, les noms utilisés par Keil et le connecteur au format Arduino
+ situé sur la carte.
 
 | Pin Name (Keil) | Arduino | Autre nom |
 |-----------------+---------+-----------|
-| PA_0            |         |           |
-| PA_1            |         |           |
-| PA_2            |         |           |
-| PA_3            |         |           |
-| PA_4            |         |           |
-| PA_5            |         | LED1      |
-| PA_6            |         |           |
-| PA_7            |         |           |
-| PA_8            |         |           |
-| PA_9            |         |           |
-| PA_10           |         |           |
-| PA_11           |         |           |
-| PA_12           |         |           |
-| PA_13           |         |           |
-| PA_14           |         |           |
-| PA_15           |         |           |
-| PB_0            |         |           |
-| PB_1            |         |           |
-| PB_2            |         |           |
-| PB_3            |         |           |
-| PB_4            |         |           |
-| PB_5            |         |           |
-| PB_6            |         |           |
-| PB_7            |         |           |
-| PB_8            |         |           |
-| PB_9            |         |           |
-| PB_10           |         |           |
-| PB_11           |         |           |
-| PB_12           |         |           |
-| PB_13           |         |           |
-| PB_14           |         |           |
-| PB_15           |         |           |
-| PC_0            |         |           |
-| PC_1            |         |           |
-| PC_2            |         |           |
-| PC_3            |         |           |
-| PC_4            |         |           |
-| PC_5            |         |           |
-| PC_6            |         |           |
-| PC_7            |         |           |
-| PC_8            |         |           |
-| PC_9            |         |           |
-| PC_10           |         |           |
-| PC_11           |         |           |
-| PC_12           |         |           |
-| PC_13           |         | BUTTON1   |
-| PC_14           |         |           |
-| PC_15           |         |           |
-| PD_2            |         |           |
-| PH_0            |         |           |
-| PH_1            |         |           |
+| PA​_0  ​          |         |           |
+| PA​_1            |         |           |
+| PA​_2            |         |           |
+| PA​_3            |         |           |
+| PA​_4            |         |           |
+| PA​_5            |         | LED1      |
+| PA​_6            |         |           |
+| PA​_7            |         |           |
+| PA​_8            |         |           |
+| PA​_9            |         |           |
+| PA​_10           |         |           |
+| PA​_11           |         |           |
+| PA​_12           |         |           |
+| PA​_13           |         |           |
+| PA​_14           |         |           |
+| PA​_15           |         |           |
+| PB​_0            |         |           |
+| PB​_1            |         |           |
+| PB​_2            |         |           |
+| PB​_3            |         |           |
+| PB​_4            |         |           |
+| PB​_5            |         |           |
+| PB​_6            |         |           |
+| PB​_7            |         |           |
+| PB​_8            |         |           |
+| PB​_9            |         |           |
+| PB​_10           |         |           |
+| PB​_11           |         |           |
+| PB​_12           |         |           |
+| PB​_13           |         |           |
+| PB​_14           |         |           |
+| PB​_15           |         |           |
+| PC​_0            |         |           |
+| PC​_1            |         |           |
+| PC​_2            |         |           |
+| PC​_3            |         |           |
+| PC​_4            |         |           |
+| PC​_5            |         |           |
+| PC​_6            |         |           |
+| PC​_7            |         |           |
+| PC​_8            |         |           |
+| PC​_9            |         |           |
+| PC​_10           |         |           |
+| PC​_11           |         |           |
+| PC​_12           |         |           |
+| PC​_13           |         | BUTTON1   |
+| PC​_14           |         |           |
+| PC​_15           |         |           |
+| PD​_2            |         |           |
+| PH​_0            |         |           |
+| PH​_1            |         |           |

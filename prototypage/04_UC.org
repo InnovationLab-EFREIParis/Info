@@ -50,7 +50,7 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'u
 
 
 
-* STM32
+* STM32 Nucleo
 
 Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
 
@@ -71,4 +71,21 @@ Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cet
 | CAN       | 1                   | 1           |
 | Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
 
+
+* LED
+
+* Bouton Poussoir
+
+
+
+* Servo Moteur (projet)
+
+* Switch (projet)
+
+
 * IDE
+
+** Nom de broches
+
+#+INCLUDE: ./LG476_pinname.org
+
