@@ -71,6 +71,8 @@ Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cet
 | CAN       | 1                   | 1           |
 | Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
 
+[docview:./stm/stm32l476_refmanual.pdf::4]
+
 
 * LED
 
