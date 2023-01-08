@@ -144,7 +144,7 @@ Un servomoteur est un système motorisé capable d'atteindre des positions préd
 
 
 ** Keil Studio Ide
-Copier coller l'URL dans File/Add Mbed Library to Active Project
+Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans /File​/Add Mbed Library to Active Project/ \\
 http://os.mbed.com/users/jasonberry/code/Servo/
 
 #+begin_src C++ 
@@ -184,8 +184,7 @@ Programmer la carte de façon à ce que l'intensité de la luminosité de la LED
 
 
 
-
-* IDE
+* Annexes
 
 ** Nom de broches
 
