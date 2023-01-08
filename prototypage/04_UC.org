@@ -171,6 +171,19 @@ int main()
 
 * Switch (projet)
 
+* Exercices
+
+** Exercice 1
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+
+** Exercice 2
+Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
+
+** Exercice 3
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
+
+
+
 
 * IDE
 
