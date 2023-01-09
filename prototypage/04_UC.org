@@ -170,6 +170,9 @@ int main()
 
 
 * Switch (projet)
+# TBC
+* Carte fille /Seeed Grove Base Shield/
+# TBC
 
 * Exercices
 
