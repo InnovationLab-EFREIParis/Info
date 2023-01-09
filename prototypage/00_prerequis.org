@@ -20,6 +20,11 @@ Ce cours contient plusieurs composantes:
 + des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.
 + un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.
 
+[[./01_intro.org][Introduction]] \\
+[[./02_CAO.org][Conception 3D]] \\
+
+
+
 ** Compétences
  
 Ce cours doit (normalement) vous permettre de monter en compétences sur ces domaines:
@@ -52,6 +57,9 @@ https://youtu.be/rFJcrQHw1k0
 |----+------------------------------------+------------------------------------------+----------------+--------+-------------------|
 | AM | Introduction      Formation Binome | Electronique                             | Fabrication 2D | Projet | Projet            |
 | PM | Conception 2D/3D - Exercices       | Conception 2D/3D     Presentation projet | Fabrication 3D |        | Evaluation Projet |
+
+
+
 
 
 * Logiciels prérequis 

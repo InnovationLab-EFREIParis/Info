@@ -1,0 +1,35 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file c:/git/Info/prototypage/04_UC.org
+
+
+* STM32 Nucleo
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2023-01-07 sam. 11:07
+  :ARCHIVE_FILE: c:/git/Info/prototypage/04_UC.org
+  :ARCHIVE_CATEGORY: 04_UC
+  :END:
+
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
+
+| Board     | Nucleo STM32L476RG  | Arduino Uno |
+|-----------+---------------------+-------------|
+| Family    | ARM Cortex-M4       | ATMega 328P |
+| Vendor    | ST Microelectronics | ATMega      |
+| SRAM      | 128 KB              | 2 KB        |
+| Flash     | 1 MB                | 32 KB       |
+| Frequency | up to 80MHz         | 16          |
+| FPU       | YES                 | NO          |
+| Timers    | 16                  | 3           |
+| ADCs      | 1x 12-bit           | 6 (10 bits) |
+| UARTs     | 3                   | 1           |
+| SPIs      | 3                   | 1           |
+| I2Cs      | 3                   | 1           |
+| RTC       | 1                   | 0           |
+| CAN       | 1                   | 1           |
+| Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
+
+[docview:./stm/stm32l476_refmanual.pdf::4]
+
+

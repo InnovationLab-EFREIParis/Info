@@ -11,12 +11,12 @@
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+ATTR_HTML: :width 150px
 [[./img/uc.jpg]]
-Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
-En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
-En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus...
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
-La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+Un microcontroller (ÂµC) est une puce programmable en C ou C++ pour la majoritÃ© des cas. 
+En premiÃ¨re approche, on peut voir cette puce comme un micro ordinateur, car elle intÃ¨gre non seulement une unitÃ© de calcul (micro processeur), mais egalement des pÃ©riphÃ©riques. 
+En voici quelques exemples: mÃ©moire FLASH, mÃ©moire RAM, convertisseur (NA ou AN), controller de bus...
+Du fait que tout soit intÃ©grÃ© dans une puce, les microcontroller sont compacts, Ã©conomes en Ã©nergie et donc tout dÃ©signÃ© pour Ãªtre embarquÃ©.
+La plupart du temps le ÂµC va s'interfacer avec des capteurs dont le rÃ´le est de capter des grandeurs physiques.
+En gÃ©nÃ©ral, les variations de ces grandeurs physiques feront varier une resistance, une capacitÃ© ou inductance qui au final pourra Ãªtre convertie en tension (ou en courant), et donc exploitable par le ÂµC.
 
 
 | Capteurs         | Grandeur physique |
@@ -24,10 +24,10 @@ En général, les variations de ces grandeurs physiques feront varier une resistan
 | Bouton           | Pression          |
 | Potentiometre    | Angle             |
 | Thermoresistance | Temperature       |
-| Photodiode       | Lumière           |
+| Photodiode       | LumiÃ¨re           |
 | ...              | ...               |
 
-De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacer.
+De lÃ , il pourra rÃ©aliser un traitement et des actions, via des actionneurs auquels il est Ã©galement interfacer.
 
 | Actionneurs |
 |-------------|
@@ -37,7 +37,7 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs auqu
 | Ecran       |
 | ...         |
 
-Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Dans d'autre configurations, le ÂµC et les capteurs forment un sous systÃ¨me intÃ©grÃ© dans un systÃ¨me plus large. Ce sous systÃ¨me n'effectue aucune action Ã  part renvoyer ses donnÃ©es Ã  un autre sous sytÃ¨me.
 Par exemple dans une automobile ou en IOT.
 
 
@@ -45,14 +45,14 @@ Par exemple dans une automobile ou en IOT.
 [[./img/voiture.jpg]]
 
 
-En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
-La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
+En gÃ©nÃ©ral le ÂµC se trouve sur une carte Ã©lectronique oÃ¹ l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
+La plus connues de ces cartes est la carte ARDUINO UNO, architecturÃ©e autour d'un ÂµC ATmega328P.
 
 
 
 * STM32 Nucleo
 
-Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
+Nous utiliserons une carte d'Ã©valuation du constructeur ST Microelectronics. Cette carte d'Ã©valuation est issue de la gamme Nucleo.
 
 | Board     | Nucleo STM32L476RG  | Arduino Uno |
 |-----------+---------------------+-------------|
@@ -71,19 +71,120 @@ Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cet
 | CAN       | 1                   | 1           |
 | Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
 
+Voici les documents relatifs Ã  la carte d'Ã©valuation Nucleo STM32L476RG
 
-* LED
-
-* Bouton Poussoir
+docview:./stm/stm32_l476_usermanual.pdf
 
 
+docview:./stm/stm32_l476_schematic.pdf
+
+
+* LED (Utilisateur)
+** Hardware
+#+attr_html: :width 400px
+[[./img/led.jpg]] 
+
+** Keil Studio Ide
+#+begin_src C++ 
+#include "mbed.h"
+#define WAIT_TIME_MS 100 
+DigitalOut led1(PA_5);
+int main()
+{
+    while (true)
+    {
+        led1 = !led1;
+        thread_sleep_for(WAIT_TIME_MS);
+    }
+}
+#+end_src
+
+** Cube IDE
+#TBC
+
+* Bouton Poussoir (Utilisateur)
+** Hardware
+#+attr_html: :width 400px
+[[./img/button.jpg]] 
+
+** Keil Studio Ide
+#+begin_src C++ 
+#include "mbed.h"
+#define WAIT_TIME_MS 100 
+DigitalOut led1(PA_5);
+DigitalIn button(PC_13);
+
+int main()
+{
+    while (true)
+    {
+        if(button==true){
+        led1 = false;
+        }              
+        else{
+        led1 = true;
+        }
+        thread_sleep_for(WAIT_TIME_MS);
+    }
+    
+}
+#+end_src
+
+** Cube IDE
+#TBC
 
 * Servo Moteur (projet)
+#+BEGIN_QUOTE
+Un servomoteur est un systÃ¨me motorisÃ© capable d'atteindre des positions prÃ©dÃ©terminÃ©es, puis de les maintenir. La position est dans le cas dâ€™un moteur rotatif, une valeur d'angle. \\
+---  (DÃ©finition WihipÃ©dia)
+#+END_QUOTE
+
+** Hardware
+
+
+
+** Keil Studio Ide
+Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans /Fileâ€‹/Add Mbed Library to Active Project/ \\
+http://os.mbed.com/users/jasonberry/code/Servo/
+
+#+begin_src C++ 
+#include "mbed.h"
+#include "Servo.h"
+
+#define WAIT_TIME_MS 500 
+
+Servo myservo(PA_8);
+
+int main()
+{
+    myservo.position(0);
+    while (true)
+    {
+        myservo.position(90);       
+        thread_sleep_for(WAIT_TIME_MS);
+        myservo.position(0);
+        thread_sleep_for(WAIT_TIME_MS);
+    }   
+}
+#+end_src
+
 
 * Switch (projet)
 
+* Exercices
 
-* IDE
+** Exercice 1
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume quand on appuie sur le bouton, reste allumÃ© quand on le relache, puis s'Ã©teint Ã  la pression suivante.
+
+** Exercice 2
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume 1 seconde puis s'Ã©teigne quand on bascule le switch sur une position. La LED reste Ã©teinte lorsque le switch est sur l'autre position.
+
+** Exercice 3
+Programmer la carte de faÃ§on Ã  ce que l'intensitÃ© de la luminositÃ© de la LED augmente puis diminue jusq'Ã  complÃ©tement d'Ã©teindre, et cela de faÃ§on cyclique (pÃ©riode de 500ms)
+
+
+
+* Annexes
 
 ** Nom de broches
 

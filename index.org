@@ -9,13 +9,14 @@
 
 * Actualités
 
++ *Learning XP Week - 9 au 13 janvier - /L'Innovation Lab est reservé durant tout la semaine/*
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
 + *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
 
-#+attr_html: :width 400px
-[[./img/campus-8304.jpg]] 
-
 * Présentation
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
+#+attr_html: :width 300px
+[[./img/campus-8304.jpg]] 
 L'Innovation Lab est un tiers lieu au sein de l'école permettant aux étudiants ainsi qu'aux enseignants, chercheurs et intervenants extérieurs de réaliser leurs projets.
 Ces projets peuvent être académiques, personnels, associatifs...
 Le lieu se divise en deux grands espaces:

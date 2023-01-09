@@ -92,12 +92,13 @@ Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait 
 - *Maintenabilité*: facilite les itérations. Un code maintenable est un code qui est facile à lire et à comprendre. Il en va de même pour un modèle 3D. \\
 - *Modularité*: facilite les évolutions et les réparations.
 
-Exemples:\\
+Exemples: \\
 Hardware: Eviter l'utilisation de colle et de clous! Priveligier les assemblages à base de visses et d'écrou. Concernant la modélisation, utiliser quand c'est possible des paramètres.
 
 Software: Eviter les copiers coller dans le code, autant utiliser des fonctions.
 Ne pas mettre de valeur numérique direct, utiliser des variables.
 
+Privilegier un code lisible... \\
 
 #+begin_src C++ :includes <stdio.h>
 int rayon=3;
@@ -106,18 +107,13 @@ int diametre = 2*rayon*pi;
 printf("%d\n", diametre);
 #+end_src
 
-#+results:
-: 
-
-------
+... à un code compact et "optimisé"
 
 #+begin_src C++ :includes <stdio.h>
 int diametre = 2*3*3.14;
 printf("%d\n", diametre);
 #+end_src
 
-#+results:
-: 2
 
 ** Qualités d'un prototype (2)
 #+attr_html: :width 500px
