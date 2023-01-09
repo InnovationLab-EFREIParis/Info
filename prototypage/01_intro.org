@@ -43,7 +43,9 @@ Il s'agit donc d'être agile et la plupart du temps /multi-tâches/.
 
 
 #+attr_html: :width 700px
+#+CAPTION: Principales étapes de prototypage 
 [[./img/0_iteration.jpg]]
+
 
 - Spécification
   + Approche fonctionnelle 
@@ -69,6 +71,7 @@ Il s'agit donc d'être agile et la plupart du temps /multi-tâches/.
 
 ** Design thinking, une approche pragmatique
 #+attr_html: :width 700px
+#+CAPTION: Lean startup
 [[./img/lean_startup.jpg]]
 
 Le design thinking est un process basé sur l’expérience utilisateur et l’itération
@@ -86,7 +89,7 @@ Le réel, c'est quand on se cogne \\
  ---Jacques Lacan
 #+END_QUOTE
 
-** Qualités d'un prototype (1)
+** Qualités d'un prototype
 Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:
 
 - *Maintenabilité*: facilite les itérations. Un code maintenable est un code qui est facile à lire et à comprendre. Il en va de même pour un modèle 3D. \\
@@ -115,17 +118,20 @@ printf("%d\n", diametre);
 #+end_src
 
 
-** Qualités d'un prototype (2)
+** Caractéristique d'un prototype
 #+attr_html: :width 500px
+#+CAPTION: Pyramide des caratéristiques d'un prototype
 [[./img/mvp_0.jpg]]
 
 Ne jamais perdre de vue les fonctions essentiels de votre prototype, sa raison d'être. Celles ci constituent la base de votre prototype.
 Se supperposeront ensuite avec les itérations succesives d'autres qualités: La fiablilité, l'ergonomie, le confort... 
 C'est sur ce point qu'intervient la notion de /*Minimum Viable Product*/.
 
+#+BEGIN_CENTER
+#+CAPTION: Minimum Viable Product
 #+attr_html: :width 500px
-[[./img/mvp_1.jpg]]
-
+[[file:./img/mvp_1.jpg]]
+#+END_CENTER
 
 ** Exemple d'itération d'un design 3D
 Il s'agit d'un carter de protection d'une hélice de drone. La fonction première est de protéger les personnes de l'hélice. 

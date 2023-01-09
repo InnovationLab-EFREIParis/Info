@@ -181,6 +181,8 @@ Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteign
 
 ** Exercice 3
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
+** Exercice 4
+Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
 
 
 
