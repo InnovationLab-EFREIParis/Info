@@ -41,6 +41,10 @@ Ce projet implique:
 https://youtu.be/rFJcrQHw1k0
 
 
+** Binomes
+
+#+INCLUDE: ./participants.org
+
 
 ** Agenda
 
