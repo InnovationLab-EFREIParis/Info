@@ -1,0 +1,36 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+* Consignes relatif au projet
+Le projet consiste en la conception, la fabrication et la programmation d'une /useless box/.
+Ce projet implique:
++ la programmation d'un micro controller
++ son interfaçage avec un moteur et un switch
++ la conception des éléments mécaniques et du boitier
+
+
+https://youtu.be/rFJcrQHw1k0
+
+* Contraintes
+
++ Boitier: Les visses utilisées pour l'assemblage du boitier sont de type M3
++ Boitier: Le boitier doit laisser apparent le connecteur USB de la carte mère
++ Boitier: Le boitier doit faire intervenir dans sa fabrication de l’impression 3D et de la découpe laser
++ Boitier: La carte mère doit être fixée au fond du boitier (entretoises M3 de longueur 10 mm)
++ Impression 3D: Les parties imprimées en 3D doivent être auto portantes (pas de support)
++ Découpe laser :Les parties découpées au laser font 3mm d’épaisseur
+
+
+
+
+* Assemblage fond de boitier et carte Nucleo
+
+Vous pouvez vous aider de ce début d'assemblage pour construire le boitier
+
+[[./3dmodels/fondboitier/assemblage.sldasm]]
+

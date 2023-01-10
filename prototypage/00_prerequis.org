@@ -22,6 +22,9 @@ Ce cours contient plusieurs composantes:
 
 [[./01_intro.org][Introduction]] \\
 [[./02_CAO.org][Conception 3D]] \\
+[[./04_UC.org][Electronique]] \\
+[[./05_projet.org][Projet]] \\
+
 
 
 
