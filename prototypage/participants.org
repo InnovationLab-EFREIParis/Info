@@ -17,6 +17,7 @@
 | Thibault ESNOUF                  | C      |
 | Ndeye Bineta WADE                | D      |
 | Nawel AÂSLI                      | D      |
+| James Llewellyn GUIATEU KAMGAING | D      |
 | Abdoula JAITEH                   | E      |
 | Axel GOURDIN                     | E      |
 | Nassim BELLAOUD                  | F      |
@@ -27,6 +28,5 @@
 | Leo LANCELLE                     | H      |
 | Clément ROUANET                  | I      |
 | Rafaël LANGLAIS                  | I      |
-| James Llewellyn GUIATEU KAMGAING | J      |
 | Yassine EL MANSOURI EL MOUDAN    | X      |
 
