@@ -30,7 +30,10 @@ https://youtu.be/rFJcrQHw1k0
 
 * Assemblage fond de boitier et carte Nucleo
 
-Vous pouvez vous aider de ce début d'assemblage pour construire le boitier
+Vous pouvez vous aider de ce début d'assemblage pour construire le boitier.
+Il faut télécharger les 2 fichiers
+
+file:./3dmodels/fondboitier/FondBoitierNucleo_Entretroise.SLDPRT
 
 [[file:./3dmodels/fondboitier/assemblage.SLDASM]]
 
