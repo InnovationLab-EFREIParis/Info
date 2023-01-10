@@ -28,13 +28,13 @@
 
 
 #+attr_html: :width 300px
-[[./img/sw2slice.JPG]]
+[[./img/sw2slice.jpg]]
 
 * Architecture Imprimante 3D par dépot de filament
 
 
 #+attr_html: :width 300px
-[[./img/imprimante3D.JPG]]
+[[./img/imprimante3D.jpg]]
 
 * Pramètres du slicer
 
