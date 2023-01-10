@@ -22,3 +22,33 @@
 + Fichier/Enregistrer sous
 + Sélctionner *STL* dans le menu déroulant /Type/
 + Cliquer sur enregister
+
+
+* Fabrication additive
+
+
+#+attr_html: :width 300px
+[[./img/sw2slice.JPG]]
+
+* Architecture Imprimante 3D par dépot de filament
+
+
+#+attr_html: :width 300px
+[[./img/imprimante3D.JPG]]
+
+* Pramètres du slicer
+
+[[file:./3dmodels/etude_de_cas_1_fondamentaux.STL]]
+
++ Matériaux
+  + Température extrudeur
++ Vitesse d'impression
++ Hauteur de couche
++ Coque
++ Taux et pattern de remplissage  
++ Aide à l'adhérence
++ Température du plateau
++ Orientation
+  + Support
+  + Solidité
+
