@@ -32,5 +32,5 @@ https://youtu.be/rFJcrQHw1k0
 
 Vous pouvez vous aider de ce début d'assemblage pour construire le boitier
 
-[[./3dmodels/fondboitier/assemblage.sldasm]]
+[[file:./3dmodels/fondboitier/assemblage.SLDASM]]
 
