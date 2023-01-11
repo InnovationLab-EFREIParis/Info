@@ -9,6 +9,7 @@
 
 * Actualités
 
++ *[[./presentation_projet.org][Presentations Projets]]* - Tous les vendredi de 11h30 à 12h, à partir de 20 janvier
 + *Learning XP Week - 9 au 13 janvier - /L'Innovation Lab est reservé durant toute la semaine/*
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
 + *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
