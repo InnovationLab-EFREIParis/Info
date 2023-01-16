@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-16 lun. 14:55 -->
+<!-- 2023-01-16 lun. 18:16 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Gestion de version avec Git</title>
@@ -17,52 +17,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
 <div id="content">
@@ -89,22 +43,22 @@ Version control systems provide you with three important capabilities:<br />
 </div>
 
 
-<div id="outline-container-orga1bfc4f" class="outline-2">
-<h2 id="orga1bfc4f">Prérequis</h2>
-<div class="outline-text-2" id="text-orga1bfc4f">
+<div id="outline-container-org3169889" class="outline-2">
+<h2 id="org3169889">Prérequis</h2>
+<div class="outline-text-2" id="text-org3169889">
 <ul class="org-ul">
 <li>Installation de Git <a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></li>
 <li>Création d'un compte sur <a href="https://github.com/">https://github.com/</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3b53ca5" class="outline-2">
-<h2 id="org3b53ca5">Configuration</h2>
-<div class="outline-text-2" id="text-org3b53ca5">
+<div id="outline-container-org336fcdf" class="outline-2">
+<h2 id="org336fcdf">Configuration</h2>
+<div class="outline-text-2" id="text-org336fcdf">
 </div>
-<div id="outline-container-orgc8e6e21" class="outline-4">
-<h4 id="orgc8e6e21">Clone d'un dépot (en ligne -&gt; local)</h4>
-<div class="outline-text-4" id="text-orgc8e6e21">
+<div id="outline-container-orgc32c5af" class="outline-4">
+<h4 id="orgc32c5af">Clone d'un dépot (en ligne -&gt; local)</h4>
+<div class="outline-text-4" id="text-orgc32c5af">
 <div class="org-src-container">
 <pre class="src src-sh">git clone https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench.git
 </pre>
@@ -112,9 +66,9 @@ Version control systems provide you with three important capabilities:<br />
 </div>
 </div>
 
-<div id="outline-container-org4778fd4" class="outline-4">
-<h4 id="org4778fd4">Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)</h4>
-<div class="outline-text-4" id="text-org4778fd4">
+<div id="outline-container-orgeee9f78" class="outline-4">
+<h4 id="orgeee9f78">Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)</h4>
+<div class="outline-text-4" id="text-orgeee9f78">
 <div class="org-src-container">
 <pre class="src src-sh">git init
 </pre>
@@ -127,58 +81,58 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org2bb0e16" class="outline-2">
-<h2 id="org2bb0e16">En local</h2>
-<div class="outline-text-2" id="text-org2bb0e16">
+<div id="outline-container-org2d54461" class="outline-2">
+<h2 id="org2d54461">En local</h2>
+<div class="outline-text-2" id="text-org2d54461">
 </div>
-<div id="outline-container-orgf72319c" class="outline-4">
-<h4 id="orgf72319c">ajout du fichier monfichier.txt à l'index</h4>
-<div class="outline-text-4" id="text-orgf72319c">
+<div id="outline-container-org2bd9ffc" class="outline-4">
+<h4 id="org2bd9ffc">ajout du fichier monfichier.txt à l'index</h4>
+<div class="outline-text-4" id="text-org2bd9ffc">
 <div class="org-src-container">
 <pre class="src src-sh">git add monfichier.txt
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org22b1c48" class="outline-4">
-<h4 id="org22b1c48">ajout de tous les fichiers encore non présents à l'index</h4>
-<div class="outline-text-4" id="text-org22b1c48">
+<div id="outline-container-org9da2752" class="outline-4">
+<h4 id="org9da2752">ajout de tous les fichiers encore non présents à l'index</h4>
+<div class="outline-text-4" id="text-org9da2752">
 <div class="org-src-container">
 <pre class="src src-sh">git add .
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org5176ca7" class="outline-4">
-<h4 id="org5176ca7">retire le ficher monfichier.txt de l’index</h4>
-<div class="outline-text-4" id="text-org5176ca7">
+<div id="outline-container-org6c3ff80" class="outline-4">
+<h4 id="org6c3ff80">retire le ficher monfichier.txt de l’index</h4>
+<div class="outline-text-4" id="text-org6c3ff80">
 <div class="org-src-container">
-<pre class="src src-sh">git rm monfichier.txt
+<pre class="src src-sh">git rm&#160;monfichier.txt
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org6c0454b" class="outline-4">
-<h4 id="org6c0454b">Sauvegarde en local de ma version, accompagné d’un message "Version 1"</h4>
-<div class="outline-text-4" id="text-org6c0454b">
+<div id="outline-container-orgff46206" class="outline-4">
+<h4 id="orgff46206">Sauvegarde en local de ma version, accompagné d’un message "Version 1"</h4>
+<div class="outline-text-4" id="text-orgff46206">
 <div class="org-src-container">
-<pre class="src src-sh">git commit –m "Version 1"
+<pre class="src src-sh">git commit &#8211;m <span style="color: #e9b96e;">"Version 1"</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org8822d49" class="outline-4">
-<h4 id="org8822d49">Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail</h4>
-<div class="outline-text-4" id="text-org8822d49">
+<div id="outline-container-orgc32edd4" class="outline-4">
+<h4 id="orgc32edd4">Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail</h4>
+<div class="outline-text-4" id="text-orgc32edd4">
 <div class="org-src-container">
-<pre class="src src-sh">git status
+<pre class="src src-sh">git&#160;status
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgce4f86a" class="outline-4">
-<h4 id="orgce4f86a">Liste les fichiers modifiés entre origin (le depot originelement cloner, donc à distance) et l'index en local (la plupart du temps la branche local)</h4>
-<div class="outline-text-4" id="text-orgce4f86a">
+<div id="outline-container-orgee213ed" class="outline-4">
+<h4 id="orgee213ed">Liste les fichiers modifiés entre origin (le depot originelement cloner, donc à distance) et l'index en local (la plupart du temps la branche local)</h4>
+<div class="outline-text-4" id="text-orgee213ed">
 <p>
 <b>A faire seulement après <i>git fetch</i></b>
 </p>
@@ -190,17 +144,17 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org63e1b90" class="outline-2">
-<h2 id="org63e1b90">Echange entre distant et local</h2>
-<div class="outline-text-2" id="text-org63e1b90">
+<div id="outline-container-org151caac" class="outline-2">
+<h2 id="org151caac">Echange entre distant et local</h2>
+<div class="outline-text-2" id="text-org151caac">
 </div>
-<div id="outline-container-orgeaef42b" class="outline-3">
-<h3 id="orgeaef42b">Local vers distant</h3>
-<div class="outline-text-3" id="text-orgeaef42b">
+<div id="outline-container-org3d74e8a" class="outline-3">
+<h3 id="org3d74e8a">Local vers distant</h3>
+<div class="outline-text-3" id="text-org3d74e8a">
 </div>
-<div id="outline-container-org0034bd3" class="outline-4">
-<h4 id="org0034bd3">Transfert les commit du dépôt local vers le dépôt maitre (en ligne)</h4>
-<div class="outline-text-4" id="text-org0034bd3">
+<div id="outline-container-orgae98e32" class="outline-4">
+<h4 id="orgae98e32">Transfert les commit du dépôt local vers le dépôt maitre (en ligne)</h4>
+<div class="outline-text-4" id="text-orgae98e32">
 <div class="org-src-container">
 <pre class="src src-sh">git push
 </pre>
@@ -209,13 +163,13 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org47febcc" class="outline-3">
-<h3 id="org47febcc">Distant vers local</h3>
-<div class="outline-text-3" id="text-org47febcc">
+<div id="outline-container-orgd739939" class="outline-3">
+<h3 id="orgd739939">Distant vers local</h3>
+<div class="outline-text-3" id="text-orgd739939">
 </div>
-<div id="outline-container-org4fd4fa8" class="outline-4">
-<h4 id="org4fd4fa8">Télécharge le <span class="underline">depot distant</span> vers le <span class="underline">dépôt local</span> (<b>Attention</b>, cette opération ne met pas l'espace de travail à jour!)</h4>
-<div class="outline-text-4" id="text-org4fd4fa8">
+<div id="outline-container-org87c1a2c" class="outline-4">
+<h4 id="org87c1a2c">Télécharge le <span class="underline">depot distant</span> vers le <span class="underline">dépôt local</span> (<b>Attention</b>, cette opération ne met pas l'espace de travail à jour!)</h4>
+<div class="outline-text-4" id="text-org87c1a2c">
 <div class="org-src-container">
 <pre class="src src-sh">git fetch
 </pre>
@@ -223,18 +177,18 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-orge405fd8" class="outline-4">
-<h4 id="orge405fd8">Met à jour l'espace de travail en y appliquant les modifications du dépôt local</h4>
-<div class="outline-text-4" id="text-orge405fd8">
+<div id="outline-container-org82f7a66" class="outline-4">
+<h4 id="org82f7a66">Met à jour l'espace de travail en y appliquant les modifications du dépôt local</h4>
+<div class="outline-text-4" id="text-org82f7a66">
 <div class="org-src-container">
 <pre class="src src-sh">git merge
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgcc16b3e" class="outline-4">
-<h4 id="orgcc16b3e">Reviens à faire fetch suivie d'un merge</h4>
-<div class="outline-text-4" id="text-orgcc16b3e">
+<div id="outline-container-org4015f43" class="outline-4">
+<h4 id="org4015f43">Reviens à faire fetch suivie d'un merge</h4>
+<div class="outline-text-4" id="text-org4015f43">
 <div class="org-src-container">
 <pre class="src src-sh">git pull 
 </pre>
@@ -246,8 +200,7 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-16 lun. 14:55</p>
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-16 lun. 18:16</p>
 </div>
 </body>
 </html>

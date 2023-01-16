@@ -85,6 +85,7 @@ docview:./stm/stm32_l476_schematic.pdf
 [[./img/led.jpg]] 
 
 ** Keil Studio Ide
+#+STYLE: <style> pre { background-color: #191919 } pre { color:#00FF00 } </style>
 #+begin_src C++ 
 #include "mbed.h"
 #define WAIT_TIME_MS 100 
