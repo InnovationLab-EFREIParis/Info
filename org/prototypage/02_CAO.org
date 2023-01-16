@@ -7,34 +7,34 @@
 #+LINK_HOME: index.html
 
 * Conception - CAO 
-*CAD*: Computed aided design / *CAO*: Conception assisté par ordinateur \\
+*CAD*: Computed aided design / *CAO*: Conception assistÃ© par ordinateur \\
 
-Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 grandes catégories. 
-A noter qu'il existe aussi des logiciels "hybrides" à la frontière des ces catégories.
-*** Les logiciels paramétriques
-Ces logiciels permettent de spécifier des entités géométriques (ligne, courbe, surface) ainsi que les relations entre ces entités. Ces relations sont comparables à des fonctions dont l'utilisateur ajuste
-les paramètres d'obtenir le résultat escompté (cotation, angle, rotation, duplication...). Par exemple pour faire un cube, l'utilisateur doit d'abord dessiner un carré (surface délimité par 4 segments égaux et orthogonaux) puis y appliquer une extrusion de longueur égale au segment formant le carré.
-Ainsi, le paramètre de la fonction d'extrusion est le même que le paramètre de fonction definissant le carré. En changeant un paramètre, l'utilisateur change le volume. Imaginons que ce cube aient été dupliqué (fonction répétition), alors toutes les répétitions de ce cube seront également modifiée. \\
-Ce type de logiciel permet d'assurer la maintenabilité et l'évolution du design car l'objet est décrit de façon paramètrique. Ce type de logiciel est recommandé pour du design de pièce manufacturée ou technique. Le temps de prise en main peut être assez long. \\
-+ *Solidworks* Un des logiciels les plus utilisés dans l'industrie.
+Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 grandes catÃ©gories. 
+A noter qu'il existe aussi des logiciels "hybrides" Ã  la frontiÃ¨re des ces catÃ©gories.
+*** Les logiciels paramÃ©triques
+Ces logiciels permettent de spÃ©cifier des entitÃ©s gÃ©omÃ©triques (ligne, courbe, surface) ainsi que les relations entre ces entitÃ©s. Ces relations sont comparables Ã  des fonctions dont l'utilisateur ajuste
+les paramÃ¨tres d'obtenir le rÃ©sultat escomptÃ© (cotation, angle, rotation, duplication...). Par exemple pour faire un cube, l'utilisateur doit d'abord dessiner un carrÃ© (surface dÃ©limitÃ© par 4 segments Ã©gaux et orthogonaux) puis y appliquer une extrusion de longueur Ã©gale au segment formant le carrÃ©.
+Ainsi, le paramÃ¨tre de la fonction d'extrusion est le mÃªme que le paramÃ¨tre de fonction definissant le carrÃ©. En changeant un paramÃ¨tre, l'utilisateur change le volume. Imaginons que ce cube aient Ã©tÃ© dupliquÃ© (fonction rÃ©pÃ©tition), alors toutes les rÃ©pÃ©titions de ce cube seront Ã©galement modifiÃ©e. \\
+Ce type de logiciel permet d'assurer la maintenabilitÃ© et l'Ã©volution du design car l'objet est dÃ©crit de faÃ§on paramÃ¨trique. Ce type de logiciel est recommandÃ© pour du design de piÃ¨ce manufacturÃ©e ou technique. Le temps de prise en main peut Ãªtre assez long. \\
++ *Solidworks* Un des logiciels les plus utilisÃ©s dans l'industrie.
 + Fusion 360
 + Onshape
-*** Les logiciels de modélisation volumique
-Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphères, cylindres...) qui, après des opérations booléennes (union, intersection, soustraction), formeront des solides plus complexes. \\
+*** Les logiciels de modÃ©lisation volumique
+Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphÃ¨res, cylindres...) qui, aprÃ¨s des opÃ©rations boolÃ©ennes (union, intersection, soustraction), formeront des solides plus complexes. \\
  
-*Tinkercad* (gratuit et en ligne) est un très bon outil pour commencer rapidement à concevoir des objets en 3D.
+*Tinkercad* (gratuit et en ligne) est un trÃ¨s bon outil pour commencer rapidement Ã  concevoir des objets en 3D.
 *** Mesh Modeling
-Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
+Ce dernier type de modÃ©lisation se destine plus Ã  un usage "artistique" comme la crÃ©ation de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
  
 
 * Solidworks
 
-Voici une série d'exercice et de vidéo afin de prendre en main Solidworks
+Voici une sÃ©rie d'exercice et de vidÃ©o afin de prendre en main Solidworks
 
 ** Exercices
 
-[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices 1]] \\
-[[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
+[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][SÃ©rie Exercices 1]] \\
+[[./exercice_SW/ebook indispensable.pdf][SÃ©rie Exercices 2]]
 
 
 #+INCLUDE: ../solidworks.org
