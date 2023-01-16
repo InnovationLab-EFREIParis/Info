@@ -1,0 +1,28 @@
+#+title: Formations
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+
+Les formations sont dispensées lors des permanences.
+Il suffit d'informer par mail l'étudiant chargé de la permanence qui vous interesse de la formation que vous voulez suivre.
+Le liste est ci dessous:
+
+* Impression 3D
+[[file:support/support_imprimante3d.pdf]]
+* Conception 3D avec Solidworks
+C'est ici: *[[file:solidworks.org][Solidworks]]*
+* Découpe laser
+[[file:support/support_Laser.pdf]]
+* Fraiseuse numérique
+[[file:support/support_CNC.pdf]]
+* Outillage   
+[[file:support/support_outillage.pdf]]
+* Espace éléctronique
+[[file:support/support_electronique.pdf]]
+* Dessin vectoriel
+C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
+* Espace réalité virtuelle
+... à venir
+* Prototypage: Learning XP Week
+[[./prototypage/00_prerequis.org][Prerequis]]

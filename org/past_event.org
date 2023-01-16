@@ -1,0 +1,31 @@
+#+title: Evenements passÈs
+#+description: Oldies
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+
+* Repair cafÈ 
+** Jeudi 08/12/22 de 9h30 ‡ 10h30
+
+-----
+
+#+attr_html: :width 200px
+[[./img/line.jpg]]
+
+* Atelier CrÈation & Fabrication
+** Jeudi 24/11/22 de 17h30 ‡ 19h30
+** AnimÈ par Line Pierron, designer
+Venez vous initier √† la cr√©ation et √† la fabrication √† l'heure du num√©rique.\\
+Line combine l'artisanat moderne et traditionnel dans des cr√©ations
+originales (mobilier, bijoux) qu'elle viendra nous pr√©senter.
+Une initiation aux diff√©rents process de fabrication num√©rique sera
+ensuite propos√©e aux participants.\\
+Son travail de designer est visible [[https://line-raphael.fr/][ici]]
+
+-----
+
+* Repair cafÈ 
+** Jeudi 10/10/22 de 16h30 ‡ 19h30

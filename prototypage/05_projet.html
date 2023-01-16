@@ -3,37 +3,84 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-10 mar. 11:35 -->
+<!-- 2023-01-16 lun. 12:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="remi.griot@efrei.fr" />
-<meta name="description" content="prototypage rapide" />
-<meta name="generator" content="Org Mode" />
+<meta name="description" content="prototypage rapide"
+ />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orgdc4f6de">Consignes relatif au projet</a></li>
-<li><a href="#orgf4aa69d">Contraintes</a></li>
-<li><a href="#org0f4918b">Assemblage fond de boitier et carte Nucleo</a></li>
+<li><a href="#org9ad9a47">Consignes relatif au projet</a></li>
+<li><a href="#orgf1266dd">Contraintes</a></li>
+<li><a href="#org5334962">Assemblage fond de boitier et carte Nucleo</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgdc4f6de" class="outline-2">
-<h2 id="orgdc4f6de">Consignes relatif au projet</h2>
-<div class="outline-text-2" id="text-orgdc4f6de">
+<div id="outline-container-org9ad9a47" class="outline-2">
+<h2 id="org9ad9a47">Consignes relatif au projet</h2>
+<div class="outline-text-2" id="text-org9ad9a47">
 <p>
 Le projet consiste en la conception, la fabrication et la programmation d'une <i>useless box</i>.
 Ce projet implique:
@@ -51,9 +98,9 @@ Ce projet implique:
 </div>
 </div>
 
-<div id="outline-container-orgf4aa69d" class="outline-2">
-<h2 id="orgf4aa69d">Contraintes</h2>
-<div class="outline-text-2" id="text-orgf4aa69d">
+<div id="outline-container-orgf1266dd" class="outline-2">
+<h2 id="orgf1266dd">Contraintes</h2>
+<div class="outline-text-2" id="text-orgf1266dd">
 <ul class="org-ul">
 <li>Boitier: Les visses utilisées pour l'assemblage du boitier sont de type M3</li>
 <li>Boitier: Le boitier doit laisser apparent le connecteur USB de la carte mère</li>
@@ -68,9 +115,9 @@ Ce projet implique:
 
 
 
-<div id="outline-container-org0f4918b" class="outline-2">
-<h2 id="org0f4918b">Assemblage fond de boitier et carte Nucleo</h2>
-<div class="outline-text-2" id="text-org0f4918b">
+<div id="outline-container-org5334962" class="outline-2">
+<h2 id="org5334962">Assemblage fond de boitier et carte Nucleo</h2>
+<div class="outline-text-2" id="text-org5334962">
 <p>
 Vous pouvez vous aider de ce début d'assemblage pour construire le boitier.
 Il faut télécharger les 2 fichiers
@@ -88,8 +135,8 @@ Il faut télécharger les 2 fichiers
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-10 mar. 11:35</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-16 lun. 12:12</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

@@ -1,0 +1,54 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+* Fabrication - FAO
+*CAM*: Computed aided manufacturing  / *FAO*: Fabrication assistée par ordinateur
+
+* D'une pièce Solidworks vers la découpe laser
+
++ Faites un clic droit sur la face de votre solide que vous souhaitez découper
++ Sélectionner *Exporter vers DXF/DWG*
++ Choisissez un nom de fichier et cliquer sur *enregistrer*
++ Dans la fenêtre à gauche de votre écran, valider en cliquant sur la coche verte
++ Enfin, dans la dernière fenêtre, vérifier si il n'y a pas d'erreur et cliquer sur enregistrer. Si vous voulez supprimer certaines entités, vous pouvez le faire en les sélectionnant puis en cliquant sur supprimer 
+
+* D'une pièce Solidworks vers l'impression 3D
+
++ Fichier/Enregistrer sous
++ Sélctionner *STL* dans le menu déroulant /Type/
++ Cliquer sur enregister
+
+
+* Fabrication additive
+
+
+#+attr_html: :width 300px
+[[./img/sw2slice.jpg]]
+
+* Architecture Imprimante 3D par dépot de filament
+
+
+#+attr_html: :width 300px
+[[./img/imprimante3D.jpg]]
+
+* Pramètres du slicer
+
+[[file:./3dmodels/etude_de_cas_1_fondamentaux.STL]]
+
++ Matériaux
+  + Température extrudeur
++ Vitesse d'impression
++ Hauteur de couche
++ Coque
++ Taux et pattern de remplissage  
++ Aide à l'adhérence
++ Température du plateau
++ Orientation
+  + Support
+  + Solidité
+

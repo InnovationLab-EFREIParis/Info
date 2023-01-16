@@ -3,14 +3,15 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-04 mer. 21:59 -->
+<!-- 2023-01-16 lun. 12:12 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
 <meta name="author" content="remi.griot@efrei.fr remi.griot@efrei.fr" />
 <meta name="description" content="prototypage rapide
-Fonctionnement de l'Innovation Lab" />
-<meta name="generator" content="Org Mode" />
+Fonctionnement de l'Innovation Lab"
+ />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -23,30 +24,76 @@ Fonctionnement de l'Innovation Lab" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#orga2f02af">Conception - CAO</a>
+<li><a href="#orgb7d9653">Conception - CAO</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org895db45">Les logiciels paramétriques</a></li>
-<li><a href="#orgc8b84a0">Les logiciels de modélisation volumique</a></li>
-<li><a href="#org446d620">Mesh Modeling</a></li>
+<li><a href="#orgee219e8">Les logiciels paramétriques</a></li>
+<li><a href="#org8a12101">Les logiciels de modélisation volumique</a></li>
+<li><a href="#orgbc3dc36">Mesh Modeling</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2156382">Solidworks</a>
+<li><a href="#org08896ba">Solidworks</a>
 <ul>
-<li><a href="#org4b4783c">Exercices</a>
+<li><a href="#orgc1bbf3c">Exercices</a>
 <ul>
-<li><a href="#org0fd7bba">Capsules Vidéos sur Solidworks</a></li>
+<li><a href="#org9cb874e">Capsules Vid�os sur Solidworks</a></li>
 </ul>
 </li>
 </ul>
@@ -55,9 +102,9 @@ Fonctionnement de l'Innovation Lab" />
 </div>
 </div>
 
-<div id="outline-container-orga2f02af" class="outline-2">
-<h2 id="orga2f02af">Conception - CAO</h2>
-<div class="outline-text-2" id="text-orga2f02af">
+<div id="outline-container-orgb7d9653" class="outline-2">
+<h2 id="orgb7d9653">Conception - CAO</h2>
+<div class="outline-text-2" id="text-orgb7d9653">
 <p>
 <b>CAD</b>: Computed aided design / <b>CAO</b>: Conception assisté par ordinateur <br />
 </p>
@@ -67,9 +114,9 @@ Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 gran
 A noter qu'il existe aussi des logiciels "hybrides" à la frontière des ces catégories.
 </p>
 </div>
-<div id="outline-container-org895db45" class="outline-4">
-<h4 id="org895db45">Les logiciels paramétriques</h4>
-<div class="outline-text-4" id="text-org895db45">
+<div id="outline-container-orgee219e8" class="outline-4">
+<h4 id="orgee219e8">Les logiciels paramétriques</h4>
+<div class="outline-text-4" id="text-orgee219e8">
 <p>
 Ces logiciels permettent de spécifier des entités géométriques (ligne, courbe, surface) ainsi que les relations entre ces entités. Ces relations sont comparables à des fonctions dont l'utilisateur ajuste
 les paramètres d'obtenir le résultat escompté (cotation, angle, rotation, duplication&#x2026;). Par exemple pour faire un cube, l'utilisateur doit d'abord dessiner un carré (surface délimité par 4 segments égaux et orthogonaux) puis y appliquer une extrusion de longueur égale au segment formant le carré.
@@ -83,9 +130,9 @@ Ce type de logiciel permet d'assurer la maintenabilité et l'évolution du desig
 </ul>
 </div>
 </div>
-<div id="outline-container-orgc8b84a0" class="outline-4">
-<h4 id="orgc8b84a0">Les logiciels de modélisation volumique</h4>
-<div class="outline-text-4" id="text-orgc8b84a0">
+<div id="outline-container-org8a12101" class="outline-4">
+<h4 id="org8a12101">Les logiciels de modélisation volumique</h4>
+<div class="outline-text-4" id="text-org8a12101">
 <p>
 Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphères, cylindres&#x2026;) qui, après des opérations booléennes (union, intersection, soustraction), formeront des solides plus complexes. <br />
 </p>
@@ -95,9 +142,9 @@ Ces logiciels ont une prise en main plus rapide, car ils sont relativement intui
 </p>
 </div>
 </div>
-<div id="outline-container-org446d620" class="outline-4">
-<h4 id="org446d620">Mesh Modeling</h4>
-<div class="outline-text-4" id="text-org446d620">
+<div id="outline-container-orgbc3dc36" class="outline-4">
+<h4 id="orgbc3dc36">Mesh Modeling</h4>
+<div class="outline-text-4" id="text-orgbc3dc36">
 <p>
 Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
 </p>
@@ -106,17 +153,17 @@ Ce dernier type de modélisation se destine plus à un usage "artistique" comme 
 </div>
 
 
-<div id="outline-container-org2156382" class="outline-2">
-<h2 id="org2156382">Solidworks</h2>
-<div class="outline-text-2" id="text-org2156382">
+<div id="outline-container-org08896ba" class="outline-2">
+<h2 id="org08896ba">Solidworks</h2>
+<div class="outline-text-2" id="text-org08896ba">
 <p>
 Voici une série d'exercice et de vidéo afin de prendre en main Solidworks
 </p>
 </div>
 
-<div id="outline-container-org4b4783c" class="outline-3">
-<h3 id="org4b4783c">Exercices</h3>
-<div class="outline-text-3" id="text-org4b4783c">
+<div id="outline-container-orgc1bbf3c" class="outline-3">
+<h3 id="orgc1bbf3c">Exercices</h3>
+<div class="outline-text-3" id="text-orgc1bbf3c">
 <p>
 <a href="./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf">Série Exercices 1</a> <br />
 <a href="./exercice_SW/ebook indispensable.pdf">Série Exercices 2</a>
@@ -124,76 +171,76 @@ Voici une série d'exercice et de vidéo afin de prendre en main Solidworks
 </div>
 
 
-<div id="outline-container-org0fd7bba" class="outline-4">
-<h4 id="org0fd7bba">Capsules Vidéos sur Solidworks</h4>
-<div class="outline-text-4" id="text-org0fd7bba">
+<div id="outline-container-org9cb874e" class="outline-4">
+<h4 id="org9cb874e">Capsules Vid�os sur Solidworks</h4>
+<div class="outline-text-4" id="text-org9cb874e">
 <p>
-Chaque capsule vidéo dure environ 15 minutes. Il est conseillé de faire les manipulations en même temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
+Chaque capsule vid�o dure environ 15 minutes. Il est conseill� de faire les manipulations en m�me temps que le visionnage de la vid�o, ce qui peut vous amener � passer 30 minutes par capsule.
 </p>
 </div>
 
 <ul class="org-ul">
-<li><a id="org583f2f4"></a>Introduction<br />
-<div class="outline-text-5" id="text-org583f2f4">
+<li><a id="org82b7b70"></a>Introduction<br />
+<div class="outline-text-5" id="text-org82b7b70">
 <p>
-Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de la création d'une pièce:
+Cette vid�o vous permettra d'avoir un aper�u des diff�rentes �tapes lors de la cr�ation d'une pi�ce:
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ7OwdcAcxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
-<li><a id="orgb0ed6e1"></a>Esquisse 1<br />
-<div class="outline-text-5" id="text-orgb0ed6e1">
+<li><a id="org225c12b"></a>Esquisse 1<br />
+<div class="outline-text-5" id="text-org225c12b">
 <p>
-Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
+Cette vid�o vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5jId1YrTWAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
-<li><a id="orgc81cdbf"></a>Esquisse 2<br />
-<div class="outline-text-5" id="text-orgc81cdbf">
+<li><a id="orge4c2207"></a>Esquisse 2<br />
+<div class="outline-text-5" id="text-orge4c2207">
 <p>
-Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités plus avancés (arc de cercle, relation): 
+Cette vid�o poursuit l'�dition d'esquisse en utilisant des fonctionnalit�s plus avanc�s (arc de cercle, relation): 
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MkjaaoVj5BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
 
-<li><a id="org8d8fb43"></a>Fonction 1<br />
-<div class="outline-text-5" id="text-org8d8fb43">
+<li><a id="org4a2364b"></a>Fonction 1<br />
+<div class="outline-text-5" id="text-org4a2364b">
 <p>
-Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, de perçage et de congès: 
+Cette vid�o permet d'appr�hender les param�tres des fonctions d'extrusions, de per�age et de cong�s: 
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pQ4-ze1oDSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
-<li><a id="orga4d6c97"></a>Exemple<br />
-<div class="outline-text-5" id="text-orga4d6c97">
+<li><a id="orge045e4e"></a>Exemple<br />
+<div class="outline-text-5" id="text-orge045e4e">
 <p>
-Exemple appliqué de tout les concepts vu précédement:
+Exemple appliqu� de tout les concepts vu pr�c�dement:
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/teqTepatoRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
 
-<li><a id="org2735adf"></a>Fonction 2<br />
-<div class="outline-text-5" id="text-org2735adf">
+<li><a id="org246b973"></a>Fonction 2<br />
+<div class="outline-text-5" id="text-org246b973">
 <p>
-Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition linéaire:
+Cette vid�o vous permet de comprendre les principaux param�tres d'une fonction de r�p�tition lin�aire:
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aGtFkHNxHeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
 </li>
 
 
-<li><a id="orgb4a9716"></a>Fonction 3<br />
-<div class="outline-text-5" id="text-orgb4a9716">
+<li><a id="org60f9577"></a>Fonction 3<br />
+<div class="outline-text-5" id="text-org60f9577">
 <p>
-Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition circulaire:
+Cette vid�o vous permet de comprendre les principaux param�tres d'une fonction de r�p�tition circulaire:
 </p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vTP7yL_E8E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
@@ -205,8 +252,8 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-04 mer. 21:59</p>
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="date">Created: 2023-01-16 lun. 12:12</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

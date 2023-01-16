@@ -1,0 +1,99 @@
+#+title: Prototypage
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+
+* Bienvenue
+Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
+Avant le début du cours, il est vivement conseillé de:
++ Créer les comptes associés
++ Installer les logiciels prérequis
+
+* Contenu
+
+Ce cours contient plusieurs composantes:
++ une partie théorique définissant quelques notions essentielles et abordant des questions de méthodologie. Cette partie permet egalement de faire un retour d'expérience.
++ des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.
++ un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.
+
+[[./01_intro.org][Introduction]] \\
+[[./02_CAO.org][Conception 3D]] \\
+[[./04_UC.org][Electronique]] \\
+[[./05_projet.org][Projet]] \\
+[[./03_FAO.org][Fabrication]] \\
+
+
+
+** Compétences
+ 
+Ce cours doit (normalement) vous permettre de monter en compétences sur ces domaines:
++ Modélisation 2D-3D
++ Fabrication numérique additive et soustractive
++ Electronique et programmation
+
+** Evaluation
+
+L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
+
+** Projet 
+Le projet consiste en la conception, la fabrication et la programmation d'une /useless box/.
+Ce projet implique:
++ la programmation d'un micro controller
++ son interfaçage avec un moteur et un switch
++ la conception des éléments mécaniques et du boitier
+
+https://youtu.be/rFJcrQHw1k0
+
+
+** Binomes
+
+#+INCLUDE: ./participants.org
+
+
+** Agenda
+
+|    | Lundi (premier jour)               | Mardi                                    | Mercredi       | Jeudi  | Vendredi          |
+|----+------------------------------------+------------------------------------------+----------------+--------+-------------------|
+| AM | Introduction      Formation Binome | Electronique                             | Fabrication 2D | Projet | Projet            |
+| PM | Conception 2D/3D - Exercices       | Conception 2D/3D     Presentation projet | Fabrication 3D |        | Evaluation Projet |
+
+
+
+
+
+* Logiciels prérequis 
+** Conception 3D - Solidworks
+Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
+Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
+Pour accéder à la page de téléchargement :
+
+1 – https://www.solidworks.com/SDK
+Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.\\
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)\\
+4 – Choisissez la version 2022-2023\\
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC\\
+6- Télécharger le fichier exécutable.\\
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers\\
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe\\
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+
+** Fabrication 3D
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+https://www.raise3d.com/ideamaker/
+
+** Conception 2D
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+https://inkscape.org/fr/
+
+** Programmation microcontroller
+Le compilateur est 100% en ligne mais requiert de créer un compte
+https://studio.keil.arm.com/auth/login/
+
+** Gestion de version (optionnel)
+Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
+Si vous voulez en savoir plus [[./git.org][Gestion de version]]
+
