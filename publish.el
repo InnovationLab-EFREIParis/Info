@@ -11,7 +11,7 @@
          :publishing-directory "./"
          :recursive t
          :publishing-function org-html-publish-to-html
-         :auto-sitemap t
+         :auto-sitemap nil
 	 )
 	
         
@@ -34,6 +34,11 @@
 (org-publish-all t)
 
 (message "Build complete!")
+
+
+
+
+
 
 
 

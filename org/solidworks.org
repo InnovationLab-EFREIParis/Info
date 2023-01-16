@@ -4,50 +4,50 @@
 #+OPTIONS: num:nil
 
 
-* Capsules Vidéos sur Solidworks
-Chaque capsule vidéo dure environ 15 minutes. Il est conseillé de faire les manipulations en même temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
+* Capsules VidÃ©os sur Solidworks
+Chaque capsule vidÃ©o dure environ 15 minutes. Il est conseillÃ© de faire les manipulations en mÃªme temps que le visionnage de la vidÃ©o, ce qui peut vous amener Ã  passer 30 minutes par capsule.
 
 ** Introduction
-Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de la création d'une pièce:
+Cette vidÃ©o vous permettra d'avoir un aperÃ§u des diffÃ©rentes Ã©tapes lors de la crÃ©ation d'une piÃ¨ce:
 #+begin_export html 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vZ7OwdcAcxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 ** Esquisse 1 
-Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
+Cette vidÃ©o vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
 #+begin_export html 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5jId1YrTWAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 ** Esquisse 2
-Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités plus avancés (arc de cercle, relation): 
+Cette vidÃ©o poursuit l'Ã©dition d'esquisse en utilisant des fonctionnalitÃ©s plus avancÃ©s (arc de cercle, relation): 
 #+begin_export html 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/MkjaaoVj5BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 
 ** Fonction 1
-Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, de perçage et de congès: 
+Cette vidÃ©o permet d'apprÃ©hender les paramÃ¨tres des fonctions d'extrusions, de perÃ§age et de congÃ¨s: 
 #+begin_export html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/pQ4-ze1oDSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 ** Exemple 
-Exemple appliqué de tout les concepts vu précédement:
+Exemple appliquÃ© de tout les concepts vu prÃ©cÃ©dement:
 #+begin_export html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/teqTepatoRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 
 ** Fonction 2
-Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition linéaire:
+Cette vidÃ©o vous permet de comprendre les principaux paramÃ¨tres d'une fonction de rÃ©pÃ©tition linÃ©aire:
 #+begin_export html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aGtFkHNxHeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
 
 ** Fonction 3
-Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition circulaire:
+Cette vidÃ©o vous permet de comprendre les principaux paramÃ¨tres d'une fonction de rÃ©pÃ©tition circulaire:
 #+begin_export html
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vTP7yL_E8E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
