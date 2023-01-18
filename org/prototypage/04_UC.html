@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2023-01-16 lun. 18:06 -->
+<!-- 2023-01-17 mar. 09:43 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide) Prototypage (rapide)</title>
@@ -32,50 +32,50 @@ prototypage rapide"
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga4587a5">Microcontroller</a></li>
-<li><a href="#org950ab85">STM32 Nucleo</a></li>
-<li><a href="#orgad1cc2d">LED (Utilisateur)</a>
+<li><a href="#orga554c3a">Microcontroller</a></li>
+<li><a href="#org1031d1c">STM32 Nucleo</a></li>
+<li><a href="#org02aff15">LED (Utilisateur)</a>
 <ul>
-<li><a href="#org7e78933">Hardware</a></li>
-<li><a href="#org9da4486">Keil Studio Ide</a></li>
-<li><a href="#org726e70e">Cube IDE</a></li>
+<li><a href="#orge993cb2">Hardware</a></li>
+<li><a href="#orgcad5208">Keil Studio Ide</a></li>
+<li><a href="#orga9deb8d">Cube IDE</a></li>
 </ul>
 </li>
-<li><a href="#org3c13136">Bouton Poussoir (Utilisateur)</a>
+<li><a href="#org463fb8b">Bouton Poussoir (Utilisateur)</a>
 <ul>
-<li><a href="#org2864450">Hardware</a></li>
-<li><a href="#org71e2b7b">Keil Studio Ide</a></li>
-<li><a href="#org1a97fe8">Cube IDE</a></li>
+<li><a href="#org9124a95">Hardware</a></li>
+<li><a href="#org4b8db1a">Keil Studio Ide</a></li>
+<li><a href="#org5728eed">Cube IDE</a></li>
 </ul>
 </li>
-<li><a href="#orgcf2f9f6">Servo Moteur (projet)</a>
+<li><a href="#orgcfd35a5">Servo Moteur (projet)</a>
 <ul>
-<li><a href="#org4dcd2fb">Hardware</a></li>
-<li><a href="#org07b2dd3">Keil Studio Ide</a></li>
+<li><a href="#orgc6e3b59">Hardware</a></li>
+<li><a href="#orgdac4db5">Keil Studio Ide</a></li>
 </ul>
 </li>
-<li><a href="#org29de49e">Switch (projet)</a></li>
-<li><a href="#org64c45e6">Carte fille <i>Seeed Grove Base Shield</i></a></li>
-<li><a href="#orgf675aff">Exercices</a>
+<li><a href="#org2b15aa5">Switch (projet)</a></li>
+<li><a href="#org24b9d03">Carte fille <i>Seeed Grove Base Shield</i></a></li>
+<li><a href="#orgaf64f5e">Exercices</a>
 <ul>
-<li><a href="#orgafeea67">Exercice 1</a></li>
-<li><a href="#orga0b020c">Exercice 2</a></li>
-<li><a href="#org59be611">Exercice 3</a></li>
-<li><a href="#org838e0ab">Exercice 4</a></li>
+<li><a href="#org654fd97">Exercice 1</a></li>
+<li><a href="#orgbda243f">Exercice 2</a></li>
+<li><a href="#org97837dc">Exercice 3</a></li>
+<li><a href="#org5b23d98">Exercice 4</a></li>
 </ul>
 </li>
-<li><a href="#orga471d21">Annexes</a>
+<li><a href="#org634bb7f">Annexes</a>
 <ul>
-<li><a href="#org0c9ceed">Nom de broches</a></li>
+<li><a href="#org3894332">Nom de broches</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orga4587a5" class="outline-2">
-<h2 id="orga4587a5">Microcontroller</h2>
-<div class="outline-text-2" id="text-orga4587a5">
+<div id="outline-container-orga554c3a" class="outline-2">
+<h2 id="orga554c3a">Microcontroller</h2>
+<div class="outline-text-2" id="text-orga554c3a">
 <p width="150px" style="float:left;margin:0px 20px 20px 0px;">
 <img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
 Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
@@ -189,9 +189,9 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 
 
-<div id="outline-container-org950ab85" class="outline-2">
-<h2 id="org950ab85">STM32 Nucleo</h2>
-<div class="outline-text-2" id="text-org950ab85">
+<div id="outline-container-org1031d1c" class="outline-2">
+<h2 id="org1031d1c">STM32 Nucleo</h2>
+<div class="outline-text-2" id="text-org1031d1c">
 <p>
 Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
 </p>
@@ -316,13 +316,13 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 
 
-<div id="outline-container-orgad1cc2d" class="outline-2">
-<h2 id="orgad1cc2d">LED (Utilisateur)</h2>
-<div class="outline-text-2" id="text-orgad1cc2d">
+<div id="outline-container-org02aff15" class="outline-2">
+<h2 id="org02aff15">LED (Utilisateur)</h2>
+<div class="outline-text-2" id="text-org02aff15">
 </div>
-<div id="outline-container-org7e78933" class="outline-3">
-<h3 id="org7e78933">Hardware</h3>
-<div class="outline-text-3" id="text-org7e78933">
+<div id="outline-container-orge993cb2" class="outline-3">
+<h3 id="orge993cb2">Hardware</h3>
+<div class="outline-text-3" id="text-orge993cb2">
 
 <div class="figure">
 <p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
@@ -331,9 +331,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org9da4486" class="outline-3">
-<h3 id="org9da4486">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-org9da4486">
+<div id="outline-container-orgcad5208" class="outline-3">
+<h3 id="orgcad5208">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orgcad5208">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">"mbed.h"</span>
 <span style="color: #e090d7;">#define</span> <span style="color: #fcaf3e;">WAIT_TIME_MS</span> 100 
@@ -351,9 +351,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org726e70e" class="outline-3">
-<h3 id="org726e70e">Cube IDE</h3>
-<div class="outline-text-3" id="text-org726e70e">
+<div id="outline-container-orga9deb8d" class="outline-3">
+<h3 id="orga9deb8d">Cube IDE</h3>
+<div class="outline-text-3" id="text-orga9deb8d">
 <p>
 #TBC
 </p>
@@ -361,13 +361,13 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org3c13136" class="outline-2">
-<h2 id="org3c13136">Bouton Poussoir (Utilisateur)</h2>
-<div class="outline-text-2" id="text-org3c13136">
+<div id="outline-container-org463fb8b" class="outline-2">
+<h2 id="org463fb8b">Bouton Poussoir (Utilisateur)</h2>
+<div class="outline-text-2" id="text-org463fb8b">
 </div>
-<div id="outline-container-org2864450" class="outline-3">
-<h3 id="org2864450">Hardware</h3>
-<div class="outline-text-3" id="text-org2864450">
+<div id="outline-container-org9124a95" class="outline-3">
+<h3 id="org9124a95">Hardware</h3>
+<div class="outline-text-3" id="text-org9124a95">
 
 <div class="figure">
 <p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
@@ -376,9 +376,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org71e2b7b" class="outline-3">
-<h3 id="org71e2b7b">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-org71e2b7b">
+<div id="outline-container-org4b8db1a" class="outline-3">
+<h3 id="org4b8db1a">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-org4b8db1a">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">"mbed.h"</span>
 <span style="color: #e090d7;">#define</span> <span style="color: #fcaf3e;">WAIT_TIME_MS</span> 100 
@@ -404,9 +404,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org1a97fe8" class="outline-3">
-<h3 id="org1a97fe8">Cube IDE</h3>
-<div class="outline-text-3" id="text-org1a97fe8">
+<div id="outline-container-org5728eed" class="outline-3">
+<h3 id="org5728eed">Cube IDE</h3>
+<div class="outline-text-3" id="text-org5728eed">
 <p>
 #TBC
 </p>
@@ -414,9 +414,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-orgcf2f9f6" class="outline-2">
-<h2 id="orgcf2f9f6">Servo Moteur (projet)</h2>
-<div class="outline-text-2" id="text-orgcf2f9f6">
+<div id="outline-container-orgcfd35a5" class="outline-2">
+<h2 id="orgcfd35a5">Servo Moteur (projet)</h2>
+<div class="outline-text-2" id="text-orgcfd35a5">
 <blockquote>
 <p>
 Un servomoteur est un système motorisé capable d'atteindre des positions prédéterminées, puis de les maintenir. La position est dans le cas d’un moteur rotatif, une valeur d'angle. <br />
@@ -425,15 +425,15 @@ Un servomoteur est un système motorisé capable d'atteindre des positions préd
 </blockquote>
 </div>
 
-<div id="outline-container-org4dcd2fb" class="outline-3">
-<h3 id="org4dcd2fb">Hardware</h3>
+<div id="outline-container-orgc6e3b59" class="outline-3">
+<h3 id="orgc6e3b59">Hardware</h3>
 </div>
 
 
 
-<div id="outline-container-org07b2dd3" class="outline-3">
-<h3 id="org07b2dd3">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-org07b2dd3">
+<div id="outline-container-orgdac4db5" class="outline-3">
+<h3 id="orgdac4db5">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orgdac4db5">
 <p>
 Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans <i>File​/Add Mbed Library to Active Project</i> <br />
 <a href="http://os.mbed.com/users/jasonberry/code/Servo/">http://os.mbed.com/users/jasonberry/code/Servo/</a>
@@ -465,50 +465,50 @@ Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans <i>File​/
 </div>
 
 
-<div id="outline-container-org29de49e" class="outline-2">
-<h2 id="org29de49e">Switch (projet)</h2>
-<div class="outline-text-2" id="text-org29de49e">
+<div id="outline-container-org2b15aa5" class="outline-2">
+<h2 id="org2b15aa5">Switch (projet)</h2>
+<div class="outline-text-2" id="text-org2b15aa5">
 </div>
 </div>
-<div id="outline-container-org64c45e6" class="outline-2">
-<h2 id="org64c45e6">Carte fille <i>Seeed Grove Base Shield</i></h2>
-<div class="outline-text-2" id="text-org64c45e6">
+<div id="outline-container-org24b9d03" class="outline-2">
+<h2 id="org24b9d03">Carte fille <i>Seeed Grove Base Shield</i></h2>
+<div class="outline-text-2" id="text-org24b9d03">
 </div>
 </div>
 
-<div id="outline-container-orgf675aff" class="outline-2">
-<h2 id="orgf675aff">Exercices</h2>
-<div class="outline-text-2" id="text-orgf675aff">
+<div id="outline-container-orgaf64f5e" class="outline-2">
+<h2 id="orgaf64f5e">Exercices</h2>
+<div class="outline-text-2" id="text-orgaf64f5e">
 </div>
-<div id="outline-container-orgafeea67" class="outline-3">
-<h3 id="orgafeea67">Exercice 1</h3>
-<div class="outline-text-3" id="text-orgafeea67">
+<div id="outline-container-org654fd97" class="outline-3">
+<h3 id="org654fd97">Exercice 1</h3>
+<div class="outline-text-3" id="text-org654fd97">
 <p>
 Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga0b020c" class="outline-3">
-<h3 id="orga0b020c">Exercice 2</h3>
-<div class="outline-text-3" id="text-orga0b020c">
+<div id="outline-container-orgbda243f" class="outline-3">
+<h3 id="orgbda243f">Exercice 2</h3>
+<div class="outline-text-3" id="text-orgbda243f">
 <p>
 Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org59be611" class="outline-3">
-<h3 id="org59be611">Exercice 3</h3>
-<div class="outline-text-3" id="text-org59be611">
+<div id="outline-container-org97837dc" class="outline-3">
+<h3 id="org97837dc">Exercice 3</h3>
+<div class="outline-text-3" id="text-org97837dc">
 <p>
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
 </p>
 </div>
 </div>
-<div id="outline-container-org838e0ab" class="outline-3">
-<h3 id="org838e0ab">Exercice 4</h3>
-<div class="outline-text-3" id="text-org838e0ab">
+<div id="outline-container-org5b23d98" class="outline-3">
+<h3 id="org5b23d98">Exercice 4</h3>
+<div class="outline-text-3" id="text-org5b23d98">
 <p>
 Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
 </p>
@@ -518,13 +518,13 @@ Programmer la carte de façon à ce le servo moteur face une rotation de 90° da
 
 
 
-<div id="outline-container-orga471d21" class="outline-2">
-<h2 id="orga471d21">Annexes</h2>
-<div class="outline-text-2" id="text-orga471d21">
+<div id="outline-container-org634bb7f" class="outline-2">
+<h2 id="org634bb7f">Annexes</h2>
+<div class="outline-text-2" id="text-org634bb7f">
 </div>
-<div id="outline-container-org0c9ceed" class="outline-3">
-<h3 id="org0c9ceed">Nom de broches</h3>
-<div class="outline-text-3" id="text-org0c9ceed">
+<div id="outline-container-org3894332" class="outline-3">
+<h3 id="org3894332">Nom de broches</h3>
+<div class="outline-text-3" id="text-org3894332">
 <p>
 Dans Keil Studio, le fichier definissant le nom des broches du composant est <br />
 TARGET​_STM​/TARGET​_STM32L4​/TARGET​_STM32L476xG/pinNames.h <br />
@@ -920,7 +920,7 @@ Voici un tableau permettant de faire le lien entre les noms des broches du compo
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: remi.griot@efrei.fr remi.griot@efrei.fr</p>
-<p class="date">Created: 2023-01-16 lun. 18:06</p>
+<p class="date">Created: 2023-01-17 mar. 09:43</p>
 </div>
 </body>
 </html>

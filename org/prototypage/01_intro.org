@@ -89,6 +89,13 @@ Le réel, c'est quand on se cogne \\
  ---Jacques Lacan
 #+END_QUOTE
 
+** Contraintes
+
++ *Temps*
++ *Budget*
++ *Stockage*
++ *Compétence*
+
 ** Qualités d'un prototype
 Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:
 
@@ -118,7 +125,7 @@ printf("%d\n", diametre);
 #+end_src
 
 
-** Caractéristique d'un prototype
+** Caractéristiques d'un prototype
 #+attr_html: :width 500px
 #+CAPTION: Pyramide des caratéristiques d'un prototype
 [[./img/mvp_0.jpg]]

@@ -1,5 +1,5 @@
 #+title: Prototypage
-#+description: prototypage rapide
+# #+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil

@@ -59,8 +59,16 @@
       org-html-head-include-default-style nil ;; Use our own styles
       org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
 
-
-
+;;;; Block Code background color
+;;;; fontify code in code blocks
+;;(setq org-src-fontify-natively t)
+;;
+;;(org-block-begin-line
+;; ((t (:underline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
+;;(org-block-background
+;; ((t (:background "#000000"))))
+;;(org-block-end-line
+;;((t (:overline "#A7A6AA" :foreground "#008ED1" :background "#EAEAFF"))))
 
 ;; Generate the site output
 (org-publish-all t)
