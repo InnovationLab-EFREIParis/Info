@@ -1,12 +1,10 @@
-#+title: Prototypage
-# #+description: prototypage rapide
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 #+LINK_UP: 
 #+LINK_HOME: index.html
-
-
 * Bienvenue
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:

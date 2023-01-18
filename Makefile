@@ -18,6 +18,9 @@ clean:
 	@rm -rvf *.el~
 	@rm -rvf ./org/*.org~
 	@rm -rvf ./org/prototypage/*.org~
+	@rm -rvf ./org/prototypage/*.html
+	@rm -rvf ./org/prototypage/*.html~
+	@rm -rvf ./prototypage/*.html~
 	#@rm -rvf *.elc
 	#@rm -rvf public
 	#@rm -rvf ~/.org-timestamps/*

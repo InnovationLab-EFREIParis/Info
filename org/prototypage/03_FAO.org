@@ -7,20 +7,20 @@
 #+LINK_HOME: index.html
 
 * Fabrication - FAO
-*CAM*: Computed aided manufacturing  / *FAO*: Fabrication assistée par ordinateur
+*CAM*: Computed aided manufacturing  / *FAO*: Fabrication assistÃ©e par ordinateur
 
-* D'une pièce Solidworks vers la découpe laser
+* D'une piÃ¨ce Solidworks vers la dÃ©coupe laser
 
-+ Faites un clic droit sur la face de votre solide que vous souhaitez découper
-+ Sélectionner *Exporter vers DXF/DWG*
++ Faites un clic droit sur la face de votre solide que vous souhaitez dÃ©couper
++ SÃ©lectionner *Exporter vers DXF/DWG*
 + Choisissez un nom de fichier et cliquer sur *enregistrer*
-+ Dans la fenêtre à gauche de votre écran, valider en cliquant sur la coche verte
-+ Enfin, dans la dernière fenêtre, vérifier si il n'y a pas d'erreur et cliquer sur enregistrer. Si vous voulez supprimer certaines entités, vous pouvez le faire en les sélectionnant puis en cliquant sur supprimer 
++ Dans la fenÃªtre Ã  gauche de votre Ã©cran, valider en cliquant sur la coche verte
++ Enfin, dans la derniÃ¨re fenÃªtre, vÃ©rifier si il n'y a pas d'erreur et cliquer sur enregistrer. Si vous voulez supprimer certaines entitÃ©s, vous pouvez le faire en les sÃ©lectionnant puis en cliquant sur supprimer 
 
-* D'une pièce Solidworks vers l'impression 3D
+* D'une piÃ¨ce Solidworks vers l'impression 3D
 
 + Fichier/Enregistrer sous
-+ Sélctionner *STL* dans le menu déroulant /Type/
++ SÃ©lctionner *STL* dans le menu dÃ©roulant /Type/
 + Cliquer sur enregister
 
 
@@ -30,25 +30,25 @@
 #+attr_html: :width 300px
 [[./img/sw2slice.jpg]]
 
-* Architecture Imprimante 3D par dépot de filament
+* Architecture Imprimante 3D par dÃ©pot de filament
 
 
 #+attr_html: :width 300px
 [[./img/imprimante3D.jpg]]
 
-* Pramètres du slicer
+* PramÃ¨tres du slicer
 
 [[file:./3dmodels/etude_de_cas_1_fondamentaux.STL]]
 
-+ Matériaux
-  + Température extrudeur
++ MatÃ©riaux
+  + TempÃ©rature extrudeur
 + Vitesse d'impression
 + Hauteur de couche
 + Coque
 + Taux et pattern de remplissage  
-+ Aide à l'adhérence
-+ Température du plateau
++ Aide Ã  l'adhÃ©rence
++ TempÃ©rature du plateau
 + Orientation
   + Support
-  + Solidité
+  + SoliditÃ©
 
