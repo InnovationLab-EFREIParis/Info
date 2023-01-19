@@ -10,16 +10,16 @@
 (unless package-archive-contents
   (package-refresh-contents))
 
-;; Install dependencies
+; Install dependencies
 (package-install 'htmlize)
 
 
 ;; Code block darker 80%
-(require 'color)
-(set-face-attribute 'org-block nil :background
-                    (color-darken-name
-                     (face-attribute 'default :background) 80))
-
+;(require 'color)
+;(set-face-attribute 'org-block nil :background
+;                    (color-darken-name
+;                     (face-attribute 'default :background) 80))
+;
 
 ;load the publishing system
 (require 'ox-publish)
@@ -34,6 +34,8 @@
          :publishing-directory "./"
          :recursive t
          :publishing-function org-html-publish-to-html
+	 :with-author nil      ;; Don't include author name
+	 :time-stamp-file nil  ;; Don't include time stamp in file
          :auto-sitemap nil
 	 )
 	
@@ -54,10 +56,10 @@
 	))
 
 ;; Customize the HTML output
-(setq org-html-validation-link nil            ;; Don't show validation link
-      org-html-head-include-scripts nil       ;; Use our own scripts
-      org-html-head-include-default-style nil ;; Use our own styles
-      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
+;;(setq org-html-validation-link nil            ;; Don't show validation link
+ ;;     org-html-head-include-scripts nil       ;; Use our own scripts
+;;      org-html-head-include-default-style nil ;; Use our own styles
+;;      org-html-head "<link rel=\"stylesheet\" href=\"https://cdn.simplecss.org/simple.min.css\" />")
 
 ;;;; Block Code background color
 ;;;; fontify code in code blocks

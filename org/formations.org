@@ -4,8 +4,9 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-Les formations sont dispensées lors des permanences.
-Il suffit d'informer par mail l'étudiant chargé de la permanence qui vous interesse de la formation que vous voulez suivre.
+Les formations sont dispensées lors des permanences, il suffit de vous référer à l'agenda en page d'acceuil.
+Clic droit sur la permanence qui vous interesse vous permettra d'obtenir le mail de l'étudiant encadrant concerné.
+N'hésitez pas à le prevenir! (on ne sait jamais...)
 Le liste est ci dessous:
 
 * Impression 3D
@@ -18,11 +19,11 @@ C'est ici: *[[file:solidworks.org][Solidworks]]*
 [[file:support/support_CNC.pdf]]
 * Outillage   
 [[file:support/support_outillage.pdf]]
-* Espace éléctronique
+* Espace Electronique
 [[file:support/support_electronique.pdf]]
 * Dessin vectoriel
 C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
-* Espace réalité virtuelle
-... à venir
+# * Espace réalité virtuelle
+# ... Ã  venir
 * Prototypage: Learning XP Week
 [[./prototypage/00_prerequis.org][Prerequis]]
