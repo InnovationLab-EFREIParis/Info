@@ -1,0 +1,200 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+
+
+* Définitions
+
+#+BEGIN_QUOTE
+Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série. \\
+ ---(Définition Larousse)
+#+END_QUOTE
+
+Le prototypage implique une approche _transverse_, _pluridisciplinaire_, _itérative_  et ... _pragmatique_!
+On parle de _prototypage rapide_ lorsque les itérations sont courtes. Certaines technologies
+ont permis de démocratiser la fabrication et de pouvoir sur un même site, concevoir et fabriquer.
+
+#+BEGIN_QUOTE
+Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale. \\
+--- (Définition Wihipédia)
+#+END_QUOTE
+
+
+Le prototypage croise également le domaine du design, qui lui aussi est assez vaste et ne renvoyant pas à la même chose selon le contexte. 
+									
+#+BEGIN_QUOTE
+Un des rôles du design est de répondre à des besoins, de résoudre des problèmes, de proposer des solutions nouvelles ou d’explorer des possibilités pour améliorer la qualité de vie des êtres humains \\
+ ---(Défnition Wikipedia)
+#+END_QUOTE
+
+* Qui prototype?
+
+Aborder la conception d'un prototype se fait souvent en équipe relativement restreinte voir seul.
+Comme évoqué précédement, prototyper découle d'une volonté de "sortir des sentiers battus".
+Il s'agit donc d'être agile et la plupart du temps /multi-tâches/.
+
+
+* Méthodes
+
+
+#+attr_html: :width 700px
+#+CAPTION: Principales étapes de prototypage 
+[[./img/0_iteration.jpg]]
+
+
+- Spécification
+  + Approche fonctionnelle 
+  + Formulation d'hypotheses
+  + Reflexion collective ou individuelle
+  + Mise en forme (exigences, cahiers des charges) 
+- Conception
+  + Approche architecturale
+  + Modélisation 
+    + Unitaire
+    + Assemblage
+  + Codage
+- Simulation
+  + Plus ou moins fidèle selon la granularité /(niveau de détail du modèle)/
+  + Test unitaire
+- Fabrication    
+  + Paramétrage des machines
+  + Choix des matériaux
+- Vérification
+  + Mise en situation réelle
+  + Test global
+  + Test unitaire
+
+** Design thinking, une approche pragmatique
+#+attr_html: :width 700px
+#+CAPTION: Lean startup
+[[./img/lean_startup.jpg]]
+
+Le design thinking est un process basé sur l’expérience utilisateur et l’itération
+rapide : tester et valider chaque étape de la création d’un produit avec l’utilisateur
+plutôt qu’aboutir pour se rendre compte qu’il ne plait pas.
+En effet il encourage à « faire » plutôt que « dire » : crayonner, dessiner, maquetter…
+Garder constamment le soucis de l'expérience utilisateur (client) permet de rapidement détecter: \\
++ les défauts ou bug
++ les évolutions contre productives
+
+Plus ces découvertes sont tardives, plus elles peuvent couter cher. /Fail as fast as possible/
+
+#+BEGIN_QUOTE
+Le réel, c'est quand on se cogne \\
+ ---Jacques Lacan
+#+END_QUOTE
+
+** Contraintes
+
++ *Temps*
++ *Budget*
++ *Stockage*
++ *Compétence*
+
+** Qualités d'un prototype
+Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:
+
+- *Maintenabilité*: facilite les itérations. Un code maintenable est un code qui est facile à lire et à comprendre. Il en va de même pour un modèle 3D. \\
+- *Modularité*: facilite les évolutions et les réparations.
+
+Exemples: \\
+Hardware: Eviter l'utilisation de colle et de clous! Priveligier les assemblages à base de visses et d'écrou. Concernant la modélisation, utiliser quand c'est possible des paramètres.
+
+Software: Eviter les copiers coller dans le code, autant utiliser des fonctions.
+Ne pas mettre de valeur numérique direct, utiliser des variables.
+
+Privilegier un code lisible... \\
+
+#+begin_src C++ :includes <stdio.h>
+int rayon=3;
+float pi=3.14;
+int diametre = 2*rayon*pi;
+printf("%d\n", diametre);
+#+end_src
+
+... à un code compact et "optimisé"
+
+#+begin_src C++ :includes <stdio.h>
+int diametre = 2*3*3.14;
+printf("%d\n", diametre);
+#+end_src
+
+
+** Caractéristiques d'un prototype
+#+attr_html: :width 500px
+#+CAPTION: Pyramide des caratéristiques d'un prototype
+[[./img/mvp_0.jpg]]
+
+Ne jamais perdre de vue les fonctions essentiels de votre prototype, sa raison d'être. Celles ci constituent la base de votre prototype.
+Se supperposeront ensuite avec les itérations succesives d'autres qualités: La fiablilité, l'ergonomie, le confort... 
+C'est sur ce point qu'intervient la notion de /*Minimum Viable Product*/.
+
+#+BEGIN_CENTER
+#+CAPTION: Minimum Viable Product
+#+attr_html: :width 500px
+[[file:./img/mvp_1.jpg]]
+#+END_CENTER
+
+** Exemple d'itération d'un design 3D
+Il s'agit d'un carter de protection d'une hélice de drone. La fonction première est de protéger les personnes de l'hélice. 
+En effet, celle ci tournant rapidement, il est difficile d'en déterminer les contours.
+A noter que ce carter doit être léger pour ne pas modifier le comportement du dispositif.
+
+*Version 1*
+#+attr_html: :width 700px
+[[./img/carter_helice_rsV1.jpg]]
+
+Non fonctionnel, car trop souple. Les turbulences créés par l'hélice font bouger le carter qui vient heurter les pales.
+
+Masse = 102.33 grammes (obtenue par modelisation avec une densité de 0.001g/mm3) \\
+Epaisseur = 1.2 mm (celle du cylindre)
+
+-------
+
+*Version 2*
+#+attr_html: :width 700px
+[[./img/carter_helice_rsV2.jpg]]
+Non fonctionnel car la grille sensée rigidifié le carter empeche l'air de passer.
+
+Masse = 129.53 grammes \\
+Epaisseur = 1.2 mm
+
+------
+
+*Version 3*
+#+attr_html: :width 700px
+[[./img/carter_helice_rsV3.jpg]]
+Fonctionnel mais pas assez robuste.
+
+Masse = 116.28 grammes \\
+Epaisseur = 1.2 mm
+
+-------
+
+*Version 4*
+#+attr_html: :width 700px
+[[./img/carter_helice_rsV4.jpg]]
+
+Fonctionnel mais trop lourde
+
+Masse = 137.19 grammes \\
+Epaisseur = 2.4 mm
+
+
+-------
+*Version 5*
+#+attr_html: :width 700px
+[[./img/carter_helice_rsV5.jpg]]
+
+Fonctionnel, robuste, léger... et esthetique
+
+Masse = 94.01 grammes \\
+Epaisseur = 2.4 mm
+
+
+

@@ -1,0 +1,53 @@
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+
+
+* Capsules Videos sur Solidworks
+Chaque capsule video dure environ 15 minutes. Il est conseille de faire les manipulations en mÃªme temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
+
+** Introduction
+Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de la création d'une pièce:
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vZ7OwdcAcxc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+** Esquisse 1 
+Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5jId1YrTWAo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+** Esquisse 2
+Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités plus avancés (arc de cercle, relation): 
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MkjaaoVj5BI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+
+** Fonction 1
+Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, de perçage et de congés: 
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/pQ4-ze1oDSk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+** Exemple 
+Exemple appliqué de tous les concepts vu précédement:
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/teqTepatoRI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+
+** Fonction 2
+Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition linéaire:
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aGtFkHNxHeo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
+
+** Fonction 3
+Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition circulaire:
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vTP7yL_E8E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
