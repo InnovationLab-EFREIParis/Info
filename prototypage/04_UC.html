@@ -6,9 +6,8 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
-<meta name="generator" content="Org mode" />
-<meta name="description" content="prototypage rapide"
- />
+<meta name="description" content="prototypage rapide" />
+<meta name="generator" content="Org Mode" />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -21,104 +20,58 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
-<script type="text/javascript">
-/*
-@licstart  The following is the entire license notice for the
-JavaScript code in this tag.
-
-Copyright (C) 2012-2020 Free Software Foundation, Inc.
-
-The JavaScript code in this tag is free software: you can
-redistribute it and/or modify it under the terms of the GNU
-General Public License (GNU GPL) as published by the Free Software
-Foundation, either version 3 of the License, or (at your option)
-any later version.  The code is distributed WITHOUT ANY WARRANTY;
-without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
-
-As additional permission under GNU GPL version 3 section 7, you
-may distribute non-source (e.g., minimized or compacted) forms of
-that code without the copy of the GNU GPL normally required by
-section 4, provided you include this license notice and a URL
-through which recipients can access the Corresponding Source.
-
-
-@licend  The above is the entire license notice
-for the JavaScript code in this tag.
-*/
-<!--/*--><![CDATA[/*><!--*/
- function CodeHighlightOn(elem, id)
- {
-   var target = document.getElementById(id);
-   if(null != target) {
-     elem.cacheClassElem = elem.className;
-     elem.cacheClassTarget = target.className;
-     target.className = "code-highlighted";
-     elem.className   = "code-highlighted";
-   }
- }
- function CodeHighlightOff(elem, id)
- {
-   var target = document.getElementById(id);
-   if(elem.cacheClassElem)
-     elem.className = elem.cacheClassElem;
-   if(elem.cacheClassTarget)
-     target.className = elem.cacheClassTarget;
- }
-/*]]>*///-->
-</script>
 </head>
 <body>
-<div id="content">
+<div id="content" class="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents">
+<div id="table-of-contents" role="doc-toc">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents">
+<div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orge17143b">Microcontroller</a></li>
-<li><a href="#org6c75518">STM32 Nucleo</a></li>
-<li><a href="#org6902645">LED (Utilisateur)</a>
+<li><a href="#orge97361a">Microcontroller</a></li>
+<li><a href="#org01b95f3">STM32 Nucleo</a></li>
+<li><a href="#org03a9146">LED (Utilisateur)</a>
 <ul>
-<li><a href="#orga0a5bf2">Hardware</a></li>
-<li><a href="#orgc0ae146">Keil Studio Ide</a></li>
-<li><a href="#org464bf0e">Cube IDE</a></li>
+<li><a href="#org389e450">Hardware</a></li>
+<li><a href="#orge1403d0">Keil Studio Ide</a></li>
+<li><a href="#orgb85ff21">Cube IDE</a></li>
 </ul>
 </li>
-<li><a href="#org5936990">Bouton Poussoir (Utilisateur)</a>
+<li><a href="#org49f7f9b">Bouton Poussoir (Utilisateur)</a>
 <ul>
-<li><a href="#org4297fde">Hardware</a></li>
-<li><a href="#org6397bad">Keil Studio Ide</a></li>
-<li><a href="#orgea19a65">Cube IDE</a></li>
+<li><a href="#orgdc815c4">Hardware</a></li>
+<li><a href="#orgf6971af">Keil Studio Ide</a></li>
+<li><a href="#org3e56b95">Cube IDE</a></li>
 </ul>
 </li>
-<li><a href="#orgfa903d8">Servo Moteur (projet)</a>
+<li><a href="#org05b0761">Servo Moteur (projet)</a>
 <ul>
-<li><a href="#orgfaae88b">Hardware</a></li>
-<li><a href="#orgd382ae7">Keil Studio Ide</a></li>
+<li><a href="#org0381254">Hardware</a></li>
+<li><a href="#org27cc9ce">Keil Studio Ide</a></li>
 </ul>
 </li>
-<li><a href="#orgf431d73">Switch (projet)</a></li>
-<li><a href="#orgec481cd">Carte fille <i>Seeed Grove Base Shield</i></a></li>
-<li><a href="#org14e0627">Exercices</a>
+<li><a href="#org6c7975c">Switch (projet)</a></li>
+<li><a href="#org638d575">Carte fille <i>Seeed Grove Base Shield</i></a></li>
+<li><a href="#org9324f30">Exercices</a>
 <ul>
-<li><a href="#orgc98c063">Exercice 1</a></li>
-<li><a href="#orgaaec57b">Exercice 2</a></li>
-<li><a href="#orgd911156">Exercice 3</a></li>
-<li><a href="#org72a1aed">Exercice 4</a></li>
+<li><a href="#orgce4c013">Exercice 1</a></li>
+<li><a href="#org1959029">Exercice 2</a></li>
+<li><a href="#org140e995">Exercice 3</a></li>
+<li><a href="#orged8cf7c">Exercice 4</a></li>
 </ul>
 </li>
-<li><a href="#orgd0a623f">Annexes</a>
+<li><a href="#org836fe82">Annexes</a>
 <ul>
-<li><a href="#org1f475de">Nom de broches</a></li>
+<li><a href="#org8e2a34b">Nom de broches</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge17143b" class="outline-2">
-<h2 id="orge17143b">Microcontroller</h2>
-<div class="outline-text-2" id="text-orge17143b">
+<div id="outline-container-orge97361a" class="outline-2">
+<h2 id="orge97361a">Microcontroller</h2>
+<div class="outline-text-2" id="text-orge97361a">
 <p width="150px" style="float:left;margin:0px 20px 20px 0px;">
 <img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
 Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
@@ -217,7 +170,7 @@ Par exemple dans une automobile ou en IOT.
 
 
 
-<div class="figure">
+<div id="org0b778f5" class="figure">
 <p><img src="./img/voiture.jpg" alt="voiture.jpg" width="600px" />
 </p>
 </div>
@@ -232,9 +185,9 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 
 
-<div id="outline-container-org6c75518" class="outline-2">
-<h2 id="org6c75518">STM32 Nucleo</h2>
-<div class="outline-text-2" id="text-org6c75518">
+<div id="outline-container-org01b95f3" class="outline-2">
+<h2 id="org01b95f3">STM32 Nucleo</h2>
+<div class="outline-text-2" id="text-org01b95f3">
 <p>
 Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
 </p>
@@ -348,44 +301,44 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </p>
 
 <p>
-<a href="/home/remi/Git/Info/org/prototypage/stm/stm32_l476_usermanual.pdf">./stm/stm32_l476_usermanual.pdf</a>
+<a href="c:/Git/Info/org/prototypage/stm/stm32_l476_usermanual.pdf">./stm/stm32_l476_usermanual.pdf</a>
 </p>
 
 
 <p>
-<a href="/home/remi/Git/Info/org/prototypage/stm/stm32_l476_schematic.pdf">./stm/stm32_l476_schematic.pdf</a>
+<a href="c:/Git/Info/org/prototypage/stm/stm32_l476_schematic.pdf">./stm/stm32_l476_schematic.pdf</a>
 </p>
 </div>
 </div>
 
 
-<div id="outline-container-org6902645" class="outline-2">
-<h2 id="org6902645">LED (Utilisateur)</h2>
-<div class="outline-text-2" id="text-org6902645">
+<div id="outline-container-org03a9146" class="outline-2">
+<h2 id="org03a9146">LED (Utilisateur)</h2>
+<div class="outline-text-2" id="text-org03a9146">
 </div>
-<div id="outline-container-orga0a5bf2" class="outline-3">
-<h3 id="orga0a5bf2">Hardware</h3>
-<div class="outline-text-3" id="text-orga0a5bf2">
+<div id="outline-container-org389e450" class="outline-3">
+<h3 id="org389e450">Hardware</h3>
+<div class="outline-text-3" id="text-org389e450">
 
-<div class="figure">
+<div id="org6781c8f" class="figure">
 <p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-orgc0ae146" class="outline-3">
-<h3 id="orgc0ae146">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-orgc0ae146">
+<div id="outline-container-orge1403d0" class="outline-3">
+<h3 id="orge1403d0">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orge1403d0">
 <div class="org-src-container">
-<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
-<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 100 
-<span style="font-weight: bold; text-decoration: underline;">DigitalOut</span> <span style="font-weight: bold;">led1</span>(PA_5);
-<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+<pre class="src src-C++"><span style="color: #94BFF3;">#include</span> <span style="color: #CC9393;">"mbed.h"</span>
+<span style="color: #94BFF3;">#define</span> <span style="color: #DFAF8F;">WAIT_TIME_MS</span> 100 
+<span style="color: #7CB8BB;">DigitalOut</span> <span style="color: #93E0E3;">led1</span>(PA_5);
+<span style="color: #7CB8BB;">int</span> <span style="color: #93E0E3;">main</span>()
 {
-    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    <span style="color: #F0DFAF; font-weight: bold;">while</span> (<span style="color: #BFEBBF;">true</span>)
     {
-        led1 = !led1;
+        led1 = <span style="color: #F0DFAF; font-weight: bold;">!</span>led1;
         thread_sleep_for(WAIT_TIME_MS);
     }
 }
@@ -394,9 +347,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org464bf0e" class="outline-3">
-<h3 id="org464bf0e">Cube IDE</h3>
-<div class="outline-text-3" id="text-org464bf0e">
+<div id="outline-container-orgb85ff21" class="outline-3">
+<h3 id="orgb85ff21">Cube IDE</h3>
+<div class="outline-text-3" id="text-orgb85ff21">
 <p>
 #TBC
 </p>
@@ -404,39 +357,39 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org5936990" class="outline-2">
-<h2 id="org5936990">Bouton Poussoir (Utilisateur)</h2>
-<div class="outline-text-2" id="text-org5936990">
+<div id="outline-container-org49f7f9b" class="outline-2">
+<h2 id="org49f7f9b">Bouton Poussoir (Utilisateur)</h2>
+<div class="outline-text-2" id="text-org49f7f9b">
 </div>
-<div id="outline-container-org4297fde" class="outline-3">
-<h3 id="org4297fde">Hardware</h3>
-<div class="outline-text-3" id="text-org4297fde">
+<div id="outline-container-orgdc815c4" class="outline-3">
+<h3 id="orgdc815c4">Hardware</h3>
+<div class="outline-text-3" id="text-orgdc815c4">
 
-<div class="figure">
+<div id="org46246f6" class="figure">
 <p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org6397bad" class="outline-3">
-<h3 id="org6397bad">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-org6397bad">
+<div id="outline-container-orgf6971af" class="outline-3">
+<h3 id="orgf6971af">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orgf6971af">
 <div class="org-src-container">
-<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
-<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 100 
-<span style="font-weight: bold; text-decoration: underline;">DigitalOut</span> <span style="font-weight: bold;">led1</span>(PA_5);
-<span style="font-weight: bold; text-decoration: underline;">DigitalIn</span> <span style="font-weight: bold;">button</span>(PC_13);
+<pre class="src src-C++"><span style="color: #94BFF3;">#include</span> <span style="color: #CC9393;">"mbed.h"</span>
+<span style="color: #94BFF3;">#define</span> <span style="color: #DFAF8F;">WAIT_TIME_MS</span> 100 
+<span style="color: #7CB8BB;">DigitalOut</span> <span style="color: #93E0E3;">led1</span>(PA_5);
+<span style="color: #7CB8BB;">DigitalIn</span> <span style="color: #93E0E3;">button</span>(PC_13);
 
-<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+<span style="color: #7CB8BB;">int</span> <span style="color: #93E0E3;">main</span>()
 {
-    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    <span style="color: #F0DFAF; font-weight: bold;">while</span> (<span style="color: #BFEBBF;">true</span>)
     {
-        <span style="font-weight: bold;">if</span>(button==<span style="font-weight: bold; text-decoration: underline;">true</span>){
-        led1 = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+        <span style="color: #F0DFAF; font-weight: bold;">if</span>(button==<span style="color: #BFEBBF;">true</span>){
+        led1 = <span style="color: #BFEBBF;">false</span>;
         }              
-        <span style="font-weight: bold;">else</span>{
-        led1 = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+        <span style="color: #F0DFAF; font-weight: bold;">else</span>{
+        led1 = <span style="color: #BFEBBF;">true</span>;
         }
         thread_sleep_for(WAIT_TIME_MS);
     }
@@ -446,9 +399,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-orgea19a65" class="outline-3">
-<h3 id="orgea19a65">Cube IDE</h3>
-<div class="outline-text-3" id="text-orgea19a65">
+<div id="outline-container-org3e56b95" class="outline-3">
+<h3 id="org3e56b95">Cube IDE</h3>
+<div class="outline-text-3" id="text-org3e56b95">
 <p>
 #TBC
 </p>
@@ -456,9 +409,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-orgfa903d8" class="outline-2">
-<h2 id="orgfa903d8">Servo Moteur (projet)</h2>
-<div class="outline-text-2" id="text-orgfa903d8">
+<div id="outline-container-org05b0761" class="outline-2">
+<h2 id="org05b0761">Servo Moteur (projet)</h2>
+<div class="outline-text-2" id="text-org05b0761">
 <blockquote>
 <p>
 Un servomoteur est un système motorisé capable d'atteindre des positions prédéterminées, puis de les maintenir. La position est dans le cas d’un moteur rotatif, une valeur d'angle. <br />
@@ -467,32 +420,32 @@ Un servomoteur est un système motorisé capable d'atteindre des positions préd
 </blockquote>
 </div>
 
-<div id="outline-container-orgfaae88b" class="outline-3">
-<h3 id="orgfaae88b">Hardware</h3>
+<div id="outline-container-org0381254" class="outline-3">
+<h3 id="org0381254">Hardware</h3>
 </div>
 
 
 
-<div id="outline-container-orgd382ae7" class="outline-3">
-<h3 id="orgd382ae7">Keil Studio Ide</h3>
-<div class="outline-text-3" id="text-orgd382ae7">
+<div id="outline-container-org27cc9ce" class="outline-3">
+<h3 id="org27cc9ce">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-org27cc9ce">
 <p>
 Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans <i>File​/Add Mbed Library to Active Project</i> <br />
 <a href="http://os.mbed.com/users/jasonberry/code/Servo/">http://os.mbed.com/users/jasonberry/code/Servo/</a>
 </p>
 
 <div class="org-src-container">
-<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
-<span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"Servo.h"</span>
+<pre class="src src-C++"><span style="color: #94BFF3;">#include</span> <span style="color: #CC9393;">"mbed.h"</span>
+<span style="color: #94BFF3;">#include</span> <span style="color: #CC9393;">"Servo.h"</span>
 
-<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 500 
+<span style="color: #94BFF3;">#define</span> <span style="color: #DFAF8F;">WAIT_TIME_MS</span> 500 
 
-<span style="font-weight: bold; text-decoration: underline;">Servo</span> <span style="font-weight: bold;">myservo</span>(PA_8);
+<span style="color: #7CB8BB;">Servo</span> <span style="color: #93E0E3;">myservo</span>(PA_8);
 
-<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+<span style="color: #7CB8BB;">int</span> <span style="color: #93E0E3;">main</span>()
 {
     myservo.position(0);
-    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    <span style="color: #F0DFAF; font-weight: bold;">while</span> (<span style="color: #BFEBBF;">true</span>)
     {
         myservo.position(90);       
         thread_sleep_for(WAIT_TIME_MS);
@@ -507,50 +460,50 @@ Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans <i>File​/
 </div>
 
 
-<div id="outline-container-orgf431d73" class="outline-2">
-<h2 id="orgf431d73">Switch (projet)</h2>
-<div class="outline-text-2" id="text-orgf431d73">
+<div id="outline-container-org6c7975c" class="outline-2">
+<h2 id="org6c7975c">Switch (projet)</h2>
+<div class="outline-text-2" id="text-org6c7975c">
 </div>
 </div>
-<div id="outline-container-orgec481cd" class="outline-2">
-<h2 id="orgec481cd">Carte fille <i>Seeed Grove Base Shield</i></h2>
-<div class="outline-text-2" id="text-orgec481cd">
+<div id="outline-container-org638d575" class="outline-2">
+<h2 id="org638d575">Carte fille <i>Seeed Grove Base Shield</i></h2>
+<div class="outline-text-2" id="text-org638d575">
 </div>
 </div>
 
-<div id="outline-container-org14e0627" class="outline-2">
-<h2 id="org14e0627">Exercices</h2>
-<div class="outline-text-2" id="text-org14e0627">
+<div id="outline-container-org9324f30" class="outline-2">
+<h2 id="org9324f30">Exercices</h2>
+<div class="outline-text-2" id="text-org9324f30">
 </div>
-<div id="outline-container-orgc98c063" class="outline-3">
-<h3 id="orgc98c063">Exercice 1</h3>
-<div class="outline-text-3" id="text-orgc98c063">
+<div id="outline-container-orgce4c013" class="outline-3">
+<h3 id="orgce4c013">Exercice 1</h3>
+<div class="outline-text-3" id="text-orgce4c013">
 <p>
 Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgaaec57b" class="outline-3">
-<h3 id="orgaaec57b">Exercice 2</h3>
-<div class="outline-text-3" id="text-orgaaec57b">
+<div id="outline-container-org1959029" class="outline-3">
+<h3 id="org1959029">Exercice 2</h3>
+<div class="outline-text-3" id="text-org1959029">
 <p>
 Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgd911156" class="outline-3">
-<h3 id="orgd911156">Exercice 3</h3>
-<div class="outline-text-3" id="text-orgd911156">
+<div id="outline-container-org140e995" class="outline-3">
+<h3 id="org140e995">Exercice 3</h3>
+<div class="outline-text-3" id="text-org140e995">
 <p>
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
 </p>
 </div>
 </div>
-<div id="outline-container-org72a1aed" class="outline-3">
-<h3 id="org72a1aed">Exercice 4</h3>
-<div class="outline-text-3" id="text-org72a1aed">
+<div id="outline-container-orged8cf7c" class="outline-3">
+<h3 id="orged8cf7c">Exercice 4</h3>
+<div class="outline-text-3" id="text-orged8cf7c">
 <p>
 Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
 </p>
@@ -560,13 +513,13 @@ Programmer la carte de façon à ce le servo moteur face une rotation de 90° da
 
 
 
-<div id="outline-container-orgd0a623f" class="outline-2">
-<h2 id="orgd0a623f">Annexes</h2>
-<div class="outline-text-2" id="text-orgd0a623f">
+<div id="outline-container-org836fe82" class="outline-2">
+<h2 id="org836fe82">Annexes</h2>
+<div class="outline-text-2" id="text-org836fe82">
 </div>
-<div id="outline-container-org1f475de" class="outline-3">
-<h3 id="org1f475de">Nom de broches</h3>
-<div class="outline-text-3" id="text-org1f475de">
+<div id="outline-container-org8e2a34b" class="outline-3">
+<h3 id="org8e2a34b">Nom de broches</h3>
+<div class="outline-text-3" id="text-org8e2a34b">
 <p>
 Dans Keil Studio, le fichier definissant le nom des broches du composant est <br />
 TARGET​_STM​/TARGET​_STM32L4​/TARGET​_STM32L476xG/pinNames.h <br />
@@ -961,7 +914,7 @@ Voici un tableau permettant de faire le lien entre les noms des broches du compo
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>
