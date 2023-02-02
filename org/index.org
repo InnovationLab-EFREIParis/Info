@@ -24,7 +24,7 @@ Le lieu se divise en deux grands espaces:
 - Le premier est *un espace de travail en libre accès* se situant à gauche en rentrant par la porte centrale. A moins que cet espace ne soit reservé, vous
   pouvez vous y installer pour y travailler seul ou en groupe.
 - Le deuxième espace est *un espace de fabrication* (ou fablab) dont l'accès est reglementé car on y retrouve les machines et les espaces de stockages. 
-L'Innovation Lab est géré par le Fablab Manager (remi.griot@efrei.fr) et une équipe d'étudiants encadrants.
+L'Innovation Lab est géré par les Fablab Manager et une équipe d'étudiants encadrants.
 Ils sont responsables de l'organisation du lieu, de la maintenance des machines, de l'accueil et de la formation des utilisateurs...
 En général, l'espace de fabrication est ouvert aux utilisateurs durant les permanences des étudiants encadrants, dont l'agenda est ci dessous.
 Afin d'utiliser les machines, les utilisateurs doivent suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
@@ -36,11 +36,13 @@ Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessou
 #+end_export
 
 -----
+* Fablab Manager
+Pour toutes questions vous pouvez écrire à remi.griot@efrei.fr et marion.cragnolini@efrei.fr
 * Les étudiants encadrants
 #+ATTR_HTML: :target _blank
 Les étudiants encadrants sont des étudiants qui co-gèrent l'Innovation Lab. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu.
 *Retrouvez la liste de ces étudiants [[file:encadrants.org][ici]]* \\
-Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature à remi.griot@efrei.fr
+Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature aux Fablab Manager.
 
 
 * Equipements
