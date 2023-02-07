@@ -6,8 +6,9 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
-<meta name="description" content="prototypage rapide" />
-<meta name="generator" content="Org Mode" />
+<meta name="generator" content="Org mode" />
+<meta name="description" content="prototypage rapide"
+ />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -20,39 +21,85 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#org4582175">Bienvenue</a></li>
-<li><a href="#org18e91e4">Contenu</a>
+<li><a href="#orgc287fcf">Bienvenue</a></li>
+<li><a href="#orgc4d03a9">Contenu</a>
 <ul>
-<li><a href="#org07d1422">Compétences</a></li>
-<li><a href="#org0cbd1ec">Evaluation</a></li>
-<li><a href="#orga3b60b9">Projet</a></li>
-<li><a href="#org219aeb6">Binomes</a></li>
-<li><a href="#org4de499f">Agenda</a></li>
+<li><a href="#orgb3c0ca0">Compétences</a></li>
+<li><a href="#org85675c3">Evaluation</a></li>
+<li><a href="#org14cd58d">Projet</a></li>
+<li><a href="#org44e4ce1">Binomes</a></li>
+<li><a href="#org52434dc">Agenda</a></li>
 </ul>
 </li>
-<li><a href="#orgb61dd08">Logiciels prérequis</a>
+<li><a href="#org4ad394d">Logiciels prérequis</a>
 <ul>
-<li><a href="#orge94c72d">Conception 3D - Solidworks</a></li>
-<li><a href="#org0a7d2f4">Fabrication 3D</a></li>
-<li><a href="#orged1859f">Conception 2D</a></li>
-<li><a href="#org3c1611a">Programmation microcontroller</a></li>
-<li><a href="#org11e5489">Gestion de version (optionnel)</a></li>
+<li><a href="#orgc05b986">Conception 3D - Solidworks</a></li>
+<li><a href="#orga036489">Fabrication 3D</a></li>
+<li><a href="#org0abb7bd">Conception 2D</a></li>
+<li><a href="#orgbaebd80">Programmation microcontroller</a></li>
+<li><a href="#org5d05ca2">Gestion de version (optionnel)</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org4582175" class="outline-2">
-<h2 id="org4582175">Bienvenue</h2>
-<div class="outline-text-2" id="text-org4582175">
+<div id="outline-container-orgc287fcf" class="outline-2">
+<h2 id="orgc287fcf">Bienvenue</h2>
+<div class="outline-text-2" id="text-orgc287fcf">
 <p>
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:
@@ -64,9 +111,9 @@ Avant le début du cours, il est vivement conseillé de:
 </div>
 </div>
 
-<div id="outline-container-org18e91e4" class="outline-2">
-<h2 id="org18e91e4">Contenu</h2>
-<div class="outline-text-2" id="text-org18e91e4">
+<div id="outline-container-orgc4d03a9" class="outline-2">
+<h2 id="orgc4d03a9">Contenu</h2>
+<div class="outline-text-2" id="text-orgc4d03a9">
 <p>
 Ce cours contient plusieurs composantes:
 </p>
@@ -87,9 +134,9 @@ Ce cours contient plusieurs composantes:
 
 
 
-<div id="outline-container-org07d1422" class="outline-3">
-<h3 id="org07d1422">Compétences</h3>
-<div class="outline-text-3" id="text-org07d1422">
+<div id="outline-container-orgb3c0ca0" class="outline-3">
+<h3 id="orgb3c0ca0">Compétences</h3>
+<div class="outline-text-3" id="text-orgb3c0ca0">
 <p>
 Ce cours doit (normalement) vous permettre de monter en compétences sur ces domaines:
 </p>
@@ -101,18 +148,18 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur ces dom
 </div>
 </div>
 
-<div id="outline-container-org0cbd1ec" class="outline-3">
-<h3 id="org0cbd1ec">Evaluation</h3>
-<div class="outline-text-3" id="text-org0cbd1ec">
+<div id="outline-container-org85675c3" class="outline-3">
+<h3 id="org85675c3">Evaluation</h3>
+<div class="outline-text-3" id="text-org85675c3">
 <p>
 L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga3b60b9" class="outline-3">
-<h3 id="orga3b60b9">Projet</h3>
-<div class="outline-text-3" id="text-orga3b60b9">
+<div id="outline-container-org14cd58d" class="outline-3">
+<h3 id="org14cd58d">Projet</h3>
+<div class="outline-text-3" id="text-org14cd58d">
 <p>
 Le projet consiste en la conception, la fabrication et la programmation d'une <i>useless box</i>.
 Ce projet implique:
@@ -130,9 +177,9 @@ Ce projet implique:
 </div>
 
 
-<div id="outline-container-org219aeb6" class="outline-3">
-<h3 id="org219aeb6">Binomes</h3>
-<div class="outline-text-3" id="text-org219aeb6">
+<div id="outline-container-org44e4ce1" class="outline-3">
+<h3 id="org44e4ce1">Binomes</h3>
+<div class="outline-text-3" id="text-org44e4ce1">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -253,9 +300,9 @@ Ce projet implique:
 </div>
 
 
-<div id="outline-container-org4de499f" class="outline-3">
-<h3 id="org4de499f">Agenda</h3>
-<div class="outline-text-3" id="text-org4de499f">
+<div id="outline-container-org52434dc" class="outline-3">
+<h3 id="org52434dc">Agenda</h3>
+<div class="outline-text-3" id="text-org52434dc">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -310,13 +357,13 @@ Ce projet implique:
 
 
 
-<div id="outline-container-orgb61dd08" class="outline-2">
-<h2 id="orgb61dd08">Logiciels prérequis</h2>
-<div class="outline-text-2" id="text-orgb61dd08">
+<div id="outline-container-org4ad394d" class="outline-2">
+<h2 id="org4ad394d">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-org4ad394d">
 </div>
-<div id="outline-container-orge94c72d" class="outline-3">
-<h3 id="orge94c72d">Conception 3D - Solidworks</h3>
-<div class="outline-text-3" id="text-orge94c72d">
+<div id="outline-container-orgc05b986" class="outline-3">
+<h3 id="orgc05b986">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-orgc05b986">
 <p>
 Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
 Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
@@ -337,9 +384,9 @@ Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.
 </div>
 </div>
 
-<div id="outline-container-org0a7d2f4" class="outline-3">
-<h3 id="org0a7d2f4">Fabrication 3D</h3>
-<div class="outline-text-3" id="text-org0a7d2f4">
+<div id="outline-container-orga036489" class="outline-3">
+<h3 id="orga036489">Fabrication 3D</h3>
+<div class="outline-text-3" id="text-orga036489">
 <p>
 Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
 <a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
@@ -347,9 +394,9 @@ Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 
 </div>
 </div>
 
-<div id="outline-container-orged1859f" class="outline-3">
-<h3 id="orged1859f">Conception 2D</h3>
-<div class="outline-text-3" id="text-orged1859f">
+<div id="outline-container-org0abb7bd" class="outline-3">
+<h3 id="org0abb7bd">Conception 2D</h3>
+<div class="outline-text-3" id="text-org0abb7bd">
 <p>
 Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
 <a href="https://inkscape.org/fr/">https://inkscape.org/fr/</a>
@@ -357,9 +404,9 @@ Solidworks permet de faire de la conception en 2D, mais il egalement interessant
 </div>
 </div>
 
-<div id="outline-container-org3c1611a" class="outline-3">
-<h3 id="org3c1611a">Programmation microcontroller</h3>
-<div class="outline-text-3" id="text-org3c1611a">
+<div id="outline-container-orgbaebd80" class="outline-3">
+<h3 id="orgbaebd80">Programmation microcontroller</h3>
+<div class="outline-text-3" id="text-orgbaebd80">
 <p>
 Le compilateur est 100% en ligne mais requiert de créer un compte
 <a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
@@ -367,9 +414,9 @@ Le compilateur est 100% en ligne mais requiert de créer un compte
 </div>
 </div>
 
-<div id="outline-container-org11e5489" class="outline-3">
-<h3 id="org11e5489">Gestion de version (optionnel)</h3>
-<div class="outline-text-3" id="text-org11e5489">
+<div id="outline-container-org5d05ca2" class="outline-3">
+<h3 id="org5d05ca2">Gestion de version (optionnel)</h3>
+<div class="outline-text-3" id="text-org5d05ca2">
 <p>
 Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
 Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
@@ -379,7 +426,7 @@ Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

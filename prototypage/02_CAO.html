@@ -6,9 +6,10 @@
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
 <meta name="description" content="prototypage rapide
-Fonctionnement de l'Innovation Lab" />
-<meta name="generator" content="Org Mode" />
+Fonctionnement de l'Innovation Lab"
+ />
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
 <link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -21,30 +22,76 @@ Fonctionnement de l'Innovation Lab" />
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
 <script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
 </head>
 <body>
-<div id="content" class="content">
+<div id="content">
 <h1 class="title">Prototypage (rapide)</h1>
-<div id="table-of-contents" role="doc-toc">
+<div id="table-of-contents">
 <h2>Table of Contents</h2>
-<div id="text-table-of-contents" role="doc-toc">
+<div id="text-table-of-contents">
 <ul>
-<li><a href="#org6096591">Conception - CAO</a>
+<li><a href="#org714b352">Conception - CAO</a>
 <ul>
 <li>
 <ul>
-<li><a href="#org0f26131">Les logiciels paramétriques</a></li>
-<li><a href="#org175ec35">Les logiciels de modélisation volumique</a></li>
-<li><a href="#org25913dc">Mesh Modeling</a></li>
+<li><a href="#orgd709eaf">Les logiciels paramétriques</a></li>
+<li><a href="#org76956f2">Les logiciels de modélisation volumique</a></li>
+<li><a href="#org2273cab">Mesh Modeling</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgb8ff1a6">Solidworks</a>
+<li><a href="#org9e2d0e1">Solidworks</a>
 <ul>
-<li><a href="#orgea37535">Exercices</a>
+<li><a href="#orgbf22c52">Exercices</a>
 <ul>
-<li><a href="#orgfbb70db">Capsules Videos sur Solidworks</a></li>
+<li><a href="#org6b6137d">Capsules Videos sur Solidworks</a></li>
 </ul>
 </li>
 </ul>
@@ -53,9 +100,9 @@ Fonctionnement de l'Innovation Lab" />
 </div>
 </div>
 
-<div id="outline-container-org6096591" class="outline-2">
-<h2 id="org6096591">Conception - CAO</h2>
-<div class="outline-text-2" id="text-org6096591">
+<div id="outline-container-org714b352" class="outline-2">
+<h2 id="org714b352">Conception - CAO</h2>
+<div class="outline-text-2" id="text-org714b352">
 <p>
 <b>CAD</b>: Computed aided design / <b>CAO</b>: Conception assisté par ordinateur <br />
 </p>
@@ -65,9 +112,9 @@ Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 gran
 A noter qu'il existe aussi des logiciels "hybrides" à la frontière des ces catégories.
 </p>
 </div>
-<div id="outline-container-org0f26131" class="outline-4">
-<h4 id="org0f26131">Les logiciels paramétriques</h4>
-<div class="outline-text-4" id="text-org0f26131">
+<div id="outline-container-orgd709eaf" class="outline-4">
+<h4 id="orgd709eaf">Les logiciels paramétriques</h4>
+<div class="outline-text-4" id="text-orgd709eaf">
 <p>
 Ces logiciels permettent de spécifier des entités géométriques (ligne, courbe, surface) ainsi que les relations entre ces entités. ces relations sont comparables ã  des fonctions dont l'utilisateur ajuste
 les paramètres d'obtenir le résultat escompté (cotation, angle, rotation, duplication&#x2026;). par exemple pour faire un cube, l'utilisateur doit d'abord dessiner un carré (surface délimité par 4 segments égaux et orthogonaux) puis y appliquer une extrusion de longueur égale au segment formant le carré.
@@ -81,9 +128,9 @@ ce type de logiciel permet d'assurer la maintenabilité et l'évolution du desig
 </ul>
 </div>
 </div>
-<div id="outline-container-org175ec35" class="outline-4">
-<h4 id="org175ec35">Les logiciels de modélisation volumique</h4>
-<div class="outline-text-4" id="text-org175ec35">
+<div id="outline-container-org76956f2" class="outline-4">
+<h4 id="org76956f2">Les logiciels de modélisation volumique</h4>
+<div class="outline-text-4" id="text-org76956f2">
 <p>
 Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphÈres, cylindres&#x2026;) qui, après des opÉrations boolÉennes (union, intersection, soustraction), formeront des solides plus complexes. <br />
 </p>
@@ -93,9 +140,9 @@ Ces logiciels ont une prise en main plus rapide, car ils sont relativement intui
 </p>
 </div>
 </div>
-<div id="outline-container-org25913dc" class="outline-4">
-<h4 id="org25913dc">Mesh Modeling</h4>
-<div class="outline-text-4" id="text-org25913dc">
+<div id="outline-container-org2273cab" class="outline-4">
+<h4 id="org2273cab">Mesh Modeling</h4>
+<div class="outline-text-4" id="text-org2273cab">
 <p>
 Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
 </p>
@@ -104,17 +151,17 @@ Ce dernier type de modélisation se destine plus à un usage "artistique" comme 
 </div>
 
 
-<div id="outline-container-orgb8ff1a6" class="outline-2">
-<h2 id="orgb8ff1a6">Solidworks</h2>
-<div class="outline-text-2" id="text-orgb8ff1a6">
+<div id="outline-container-org9e2d0e1" class="outline-2">
+<h2 id="org9e2d0e1">Solidworks</h2>
+<div class="outline-text-2" id="text-org9e2d0e1">
 <p>
 Voici une série d'exercices et de vidéos afin de prendre en main Solidworks.
 </p>
 </div>
 
-<div id="outline-container-orgea37535" class="outline-3">
-<h3 id="orgea37535">Exercices</h3>
-<div class="outline-text-3" id="text-orgea37535">
+<div id="outline-container-orgbf22c52" class="outline-3">
+<h3 id="orgbf22c52">Exercices</h3>
+<div class="outline-text-3" id="text-orgbf22c52">
 <p>
 <a href="./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf">Série Exercices 1</a> <br />
 <a href="./exercice_SW/ebook indispensable.pdf">Série Exercices 2</a>
@@ -122,17 +169,17 @@ Voici une série d'exercices et de vidéos afin de prendre en main Solidworks.
 </div>
 
 
-<div id="outline-container-orgfbb70db" class="outline-4">
-<h4 id="orgfbb70db">Capsules Videos sur Solidworks</h4>
-<div class="outline-text-4" id="text-orgfbb70db">
+<div id="outline-container-org6b6137d" class="outline-4">
+<h4 id="org6b6137d">Capsules Videos sur Solidworks</h4>
+<div class="outline-text-4" id="text-org6b6137d">
 <p>
 Chaque capsule video dure environ 15 minutes. Il est conseille de faire les manipulations en mÃªme temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
 </p>
 </div>
 
 <ul class="org-ul">
-<li><a id="org6327ce3"></a>Introduction<br />
-<div class="outline-text-5" id="text-org6327ce3">
+<li><a id="org857143d"></a>Introduction<br />
+<div class="outline-text-5" id="text-org857143d">
 <p>
 Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de la création d'une pièce:
 </p>
@@ -140,8 +187,8 @@ Cette vidéo vous permettra d'avoir un aperçu des différentes étapes lors de 
 </div>
 </li>
 
-<li><a id="org57e54ab"></a>Esquisse 1<br />
-<div class="outline-text-5" id="text-org57e54ab">
+<li><a id="orgfdb321c"></a>Esquisse 1<br />
+<div class="outline-text-5" id="text-orgfdb321c">
 <p>
 Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esquisse (2D) (cotation, relation):
 </p>
@@ -149,8 +196,8 @@ Cette vidéo vous permettra de connaitre les rudiments lors du dessin d'une esqu
 </div>
 </li>
 
-<li><a id="orgb567b86"></a>Esquisse 2<br />
-<div class="outline-text-5" id="text-orgb567b86">
+<li><a id="org8b33bfb"></a>Esquisse 2<br />
+<div class="outline-text-5" id="text-org8b33bfb">
 <p>
 Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités plus avancés (arc de cercle, relation): 
 </p>
@@ -159,8 +206,8 @@ Cette vidéo poursuit l'édition d'esquisse en utilisant des fonctionnalités pl
 </li>
 
 
-<li><a id="orgc7ad7cd"></a>Fonction 1<br />
-<div class="outline-text-5" id="text-orgc7ad7cd">
+<li><a id="org18a63de"></a>Fonction 1<br />
+<div class="outline-text-5" id="text-org18a63de">
 <p>
 Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, de perçage et de congés: 
 </p>
@@ -168,8 +215,8 @@ Cette vidéo permet d'appréhender les paramètres des fonctions d'extrusions, d
 </div>
 </li>
 
-<li><a id="org504a2f3"></a>Exemple<br />
-<div class="outline-text-5" id="text-org504a2f3">
+<li><a id="org4d85f05"></a>Exemple<br />
+<div class="outline-text-5" id="text-org4d85f05">
 <p>
 Exemple appliqué de tous les concepts vu précédement:
 </p>
@@ -178,8 +225,8 @@ Exemple appliqué de tous les concepts vu précédement:
 </li>
 
 
-<li><a id="org1248504"></a>Fonction 2<br />
-<div class="outline-text-5" id="text-org1248504">
+<li><a id="orgadc3256"></a>Fonction 2<br />
+<div class="outline-text-5" id="text-orgadc3256">
 <p>
 Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition linéaire:
 </p>
@@ -188,8 +235,8 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 </li>
 
 
-<li><a id="org5fc713d"></a>Fonction 3<br />
-<div class="outline-text-5" id="text-org5fc713d">
+<li><a id="org6124caf"></a>Fonction 3<br />
+<div class="outline-text-5" id="text-org6124caf">
 <p>
 Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction de répétition circulaire:
 </p>
@@ -202,7 +249,7 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 </div>
 </div>
 <div id="postamble" class="status">
-<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
 </html>

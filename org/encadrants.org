@@ -9,7 +9,7 @@
 
 ** Liste des étudiants encadrants 2022/2023
 
-| Nom         | PrÃ©nom    | Promo. | Email                               |
+| Nom         | Prénom     | Promo. | Email                               |
 |-------------+------------+--------+-------------------------------------|
 | Poinama     | Samuel     | L1     | samuel.poinama@efrei.net            |
 | Dragan      | Constantin | L1     | constantin.dragan@efrei.net         |

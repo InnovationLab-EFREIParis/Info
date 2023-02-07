@@ -77,7 +77,7 @@ Les dates et supports de formations sont ici: [[file:formations.org][*formations
 
 * Reglement intérieur
 #+ATTR_HTML: :target _blank
-[[./doc/RI InnovationLab V3.pdf]]
+[[./doc/RI InnovationLab V4.pdf][Consulter ici]]
 
 
 * Projets
