@@ -1,0 +1,40 @@
+#+title: Prototypage (rapide)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+* Conception - CAO 
+*CAD*: Computed aided design / *CAO*: Conception assisté par ordinateur \\
+
+Il existe de nombreux logiciels de conception 3D, mais on peut distinguer 3 grandes catégories. 
+A noter qu'il existe aussi des logiciels "hybrides" à la frontière des ces catégories.
+*** Les logiciels paramétriques
+Ces logiciels permettent de spécifier des entités géométriques (ligne, courbe, surface) ainsi que les relations entre ces entités. ces relations sont comparables ã  des fonctions dont l'utilisateur ajuste
+les paramètres d'obtenir le résultat escompté (cotation, angle, rotation, duplication...). par exemple pour faire un cube, l'utilisateur doit d'abord dessiner un carré (surface délimité par 4 segments égaux et orthogonaux) puis y appliquer une extrusion de longueur égale au segment formant le carré.
+ainsi, le paramètre de la fonction d'extrusion est le mãªme que le paramètre de fonction definissant le carré. en changeant un paramètre, l'utilisateur change le volume. imaginons que ce cube aient été dupliqué (fonction répétition), alors toutes les répétitions de ce cube seront également modifiée. \\
+ce type de logiciel permet d'assurer la maintenabilité et l'évolution du design car l'objet est décrit de faã§on paramètrique. ce type de logiciel est recommandé pour du design de pièce manufacturée ou technique. le temps de prise en main peut ãªtre assez long. \\
++ *solidworks* un des logiciels les plus utilisés dans l'industrie.
++ fusion 360
++ onshape
+*** Les logiciels de modélisation volumique
+Ces logiciels ont une prise en main plus rapide, car ils sont relativement intuitif. L'utilisateur manipule des primitives simples ( cubes, sphÈres, cylindres...) qui, après des opÉrations boolÉennes (union, intersection, soustraction), formeront des solides plus complexes. \\
+ 
+*Tinkercad* (gratuit et en ligne) est un trés bon outil pour commencer rapidement Ã  concevoir des objets en 3D.
+*** Mesh Modeling
+Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
+ 
+
+* Solidworks
+
+Voici une série d'exercices et de vidéos afin de prendre en main Solidworks.
+
+** Exercices
+
+[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices 1]] \\
+[[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
+
+
+#+INCLUDE: ../solidworks.org
