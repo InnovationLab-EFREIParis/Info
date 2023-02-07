@@ -1,4 +1,4 @@
-#+title: Les étudiants encadrants
+#+title: Les Ã©tudiants encadrants
 #+description: Fonctionnement de l'Innovation Lab
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -9,7 +9,7 @@
 
 ** Liste des étudiants encadrants 2022/2023
 
-| Nom         | Prénom     | Promo. | Email                               |
+| Nom         | PrÃ©nom    | Promo. | Email                               |
 |-------------+------------+--------+-------------------------------------|
 | Poinama     | Samuel     | L1     | samuel.poinama@efrei.net            |
 | Dragan      | Constantin | L1     | constantin.dragan@efrei.net         |

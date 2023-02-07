@@ -1,4 +1,4 @@
-#+title: Innovation Lab EFREI Paris
+# #+title: Innovation Lab EFREI Paris
 #+description: Fonctionnement de l'I-Lab
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -6,10 +6,16 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
+#+ATTR_HTML: :style float:right;margin:0px 20px 20px 0px;
+#+attr_html: :width 250px
+[[./img/LOGO_EFREI_WEB_bleu.png]]
+
+
+* Innovation Lab EFREI Paris
 
 * Actualités
 #+ATTR_HTML: :target _blank
-+ *[[./presentation_projet.org][Presentations Projets]]* - Tous les vendredi de 11h30 à 12h, à partir de 20 janvier
++ *[[./presentation_projet.org][Presentations Projets]]* - Tous les vendredi de 11h30 à 12h
 + [[file:formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/
 + *Engineering Project* - Les projets M2 tous les vendredi à l'I-lab - /l'occasion de voir ce qui se passe en dernière année/
 # + *Learning XP Week - 9 au 13 janvier - /L'Innovation Lab est reservé durant toute la semaine/*
@@ -24,7 +30,7 @@ Le lieu se divise en deux grands espaces:
 - Le premier est *un espace de travail en libre accès* se situant à gauche en rentrant par la porte centrale. A moins que cet espace ne soit reservé, vous
   pouvez vous y installer pour y travailler seul ou en groupe.
 - Le deuxième espace est *un espace de fabrication* (ou fablab) dont l'accès est reglementé car on y retrouve les machines et les espaces de stockages. 
-L'Innovation Lab est géré par le Fablab Manager (remi.griot@efrei.fr) et une équipe d'étudiants encadrants.
+L'Innovation Lab est géré par les Fablab Manager et une équipe d'étudiants encadrants.
 Ils sont responsables de l'organisation du lieu, de la maintenance des machines, de l'accueil et de la formation des utilisateurs...
 En général, l'espace de fabrication est ouvert aux utilisateurs durant les permanences des étudiants encadrants, dont l'agenda est ci dessous.
 Afin d'utiliser les machines, les utilisateurs doivent suivre une formation et obtenir un open badge. Tout est décrit ci dessous.
@@ -36,11 +42,13 @@ Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessou
 #+end_export
 
 -----
+* Fablab Manager
+Pour toutes questions vous pouvez écrire à remi.griot@efrei.fr et marion.cragnolini@efrei.fr
 * Les étudiants encadrants
 #+ATTR_HTML: :target _blank
-Les étudiants encadrants sont des étudiants qui co-gèrent l'Innovation Lab. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu.
+Les étudiants encadrants co-gèrent  l'Innovation Lab avec les Fablab manager. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu.
 *Retrouvez la liste de ces étudiants [[file:encadrants.org][ici]]* \\
-Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature à remi.griot@efrei.fr
+Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature aux Fablab Manager.
 
 
 * Equipements
@@ -75,7 +83,7 @@ Les dates et supports de formations sont ici: [[file:formations.org][*formations
 * Projets
 Les utilisateurs de l'I-Lab s'engagent à remplir une fiche pour chaque projet qu'ils réalisent. Cette fiche est rapide à remplir et permet de recenser les usages de l'I-Lab.\\
 #+ATTR_HTML: :target _blank
-C'est ici: [[https://forms.monday.com/forms/75d3d586abeab1eb25c5115f4f8c8c34?r=use1][*Fiche Projet*]]
+ [[https://forms.monday.com/forms/75d3d586abeab1eb25c5115f4f8c8c34?r=use1][*Je remplie ma fiche projet*]]
 
 *Liste des fiches projets réalisés à l'Innovation Lab.*
 

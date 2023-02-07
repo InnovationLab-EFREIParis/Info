@@ -33,3 +33,6 @@ Dans  ce projet, nous travaillons sur une famille spécifique de ces codes défi
 Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
 ***  03/03 - Reconnaissance des émotions - /projet M2/
 Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions
+***  10/03 - Assistance in the assessment of physical and tactical needs in water polo - /stage Erasmus/
+This project will be carried out in collaboration with the French Swimming Federation and will generally aim to provide assistance in the assessment of physical and tactical needs in water polo. The objective of this project will be to precisely locate (about 20cm) polo players during matches and
+training. For this, it will be necessary to deploy a localization system and integrate it into a swimming cap (waterproof device).
