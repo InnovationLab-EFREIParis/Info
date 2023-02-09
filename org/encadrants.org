@@ -1,4 +1,4 @@
-#+title: Les Ã©tudiants encadrants
+#+title: Les étudiants encadrants
 #+description: Fonctionnement de l'Innovation Lab
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -17,7 +17,6 @@
 | Mercat      | Gautier    | B1     | gautier.mercat@efrei.net            |
 | Michel      | Quentin    | B1     | quentin.michel@efrei.net            |
 | Le Callonec | Baptise    | L2     | baptiste.le-callonnec@efrei.net     |
-| Chazard     | Elisa      | L3     | elisa.chazard@efrei.net             |
 | Lucas       | Martin     | L3     | martin.lucas@efrei.net              |
 | Morel       | Nathan     | L3     | nathan.morel@efrei.net              |
 | Vialle      | Martin     | L3     | martin.vialle@efrei.net             |
