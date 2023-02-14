@@ -27,14 +27,14 @@ Ces logiciels ont une prise en main plus rapide, car ils sont relativement intui
 Ce dernier type de modélisation se destine plus à un usage "artistique" comme la création de personnages ou de textures. Le concepteur a directement la main sur le maillage (mesh) qui compose l'objet, agissant comme un sculpteur sur l'objet. On parle alors de mesh modeling. 
  
 
-* Solidworks
-
-Voici une série d'exercices et de vidéos afin de prendre en main Solidworks.
-
-** Exercices
-
-[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices 1]] \\
-[[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
+# * Solidworks
+# 
+# Voici une série d'exercices et de vidéos afin de prendre en main Solidworks.
+# 
+# ** Exercices
+# 
+[[./exercice_SW/MEP FORMATION FONDAMENTAUX.pdf][# Série Exercices 1] \\
+[[./exercice_SW/ebook indispensable.pdf][# Série Exercices 2]]
 
 
 #+INCLUDE: ../solidworks.org
