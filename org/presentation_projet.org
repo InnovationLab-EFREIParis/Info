@@ -38,3 +38,5 @@ This project will be carried out in collaboration with the French Swimming Feder
 training. For this, it will be necessary to deploy a localization system and integrate it into a swimming cap (waterproof device).
 ***  17/03 - Drone simplifié - /stage M1/
 Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
+***  24/03 - Open Source Robotic Arm - /projet M2/
+Bras robotique open source avec éditeur d'animation 3d temps réel sur le web
