@@ -10,9 +10,8 @@
 #+attr_html: :width 250px
 [[./img/LOGO_EFREI_WEB_bleu.png]]
 
-
+# #+ATTR_HTML: :<style>*{font-size: 150%;}</style>
 * Innovation Lab EFREI Paris
-
 * Actualités
 #+ATTR_HTML: :target _blank
 + *[[./presentation_projet.org][Presentations Projets]]* - Tous les vendredi de 11h30 à 12h
