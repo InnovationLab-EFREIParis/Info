@@ -72,7 +72,7 @@ durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
 vous intéresse lors de la prise de rendez-vous avec un étudiant encadrant. Si vous êtes indécis, l’impression 3D est certainement un bon début.\\
 #+ATTR_HTML: :target _blank
-Les dates et supports de formations sont ici: [[file:formations.org][*formations*]]
+[[file:formations.org][*Liste et supports de formations*]]
 
 * Reglement intérieur
 #+ATTR_HTML: :target _blank

@@ -16,8 +16,9 @@ clean:
 	@echo "Cleaning up.."
 	@rm -rvf *.html~
 	@rm -rvf *.el~
-	@rm -rvf *.*~
-	@rm -rvf ./org/*.org~
+	@rm -rvf *~
+	@rm -rvf *#
+	@rm -rvf ./org/*~
 	@rm -rvf ./org/prototypage/*.org~
 	@rm -rvf ./org/*.html
 	@rm -rvf ./org/prototypage/*.html
