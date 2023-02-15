@@ -77,10 +77,12 @@ Page 5: Volume = 807200.00 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_bride.pdf]] \\
 [[./exercice_SW/fondamentaux/fondamentaux_bol_visiativ.pdf]] \\
 [[./exercice_SW/fondamentaux/fondamentaux_etude_de_cas_2.pdf]] \\
+[[./exercice_SW/fondamentaux/fondamentaux_prise.pdf]] \\
 
 ------
 Corrections partielles:\\
-[[./exercice_SW/fondamentaux/bol_visiativ_correction.SLDPRT]]
+[[./exercice_SW/fondamentaux/fondamentaux_bol_visiativ.SLDPRT]]
+[[./exercice_SW/fondamentaux/fondamentaux_prise.SLDPRT]]
 
 ** Série avancés
 [[./exercice_SW/ebook indispensable.pdf][Série Exercices 2]]
