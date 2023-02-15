@@ -65,7 +65,7 @@ Pour en savoir plus: *[[file:equipements.org][equipements]]*
 * Formations
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+attr_html: :width 300px
-[[./img/Capture_line_2.JPG]]
+[[./img/Capture_line_2.jpg]]
 Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent par groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
 Elles vous permettent d’acquérir les bases indispensables afin d’utiliser les machines.
 Vous y aborderez les notions de conceptions, de fabrication ainsi que les consignes de sécurités.\\
