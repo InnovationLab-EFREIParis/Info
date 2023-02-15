@@ -1,5 +1,5 @@
-#+title: Prototypage (rapide)
-#+description: prototypage rapide
+#+title: ST2CSE
+#+description: ST2CSE
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
@@ -8,14 +8,14 @@
 * Bienvenue
 Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
 Avant le début du cours, il est vivement conseillé de:
++ Installer les logiciels prérequis (voir en bas de page)
 + Créer les comptes associés
-+ Installer les logiciels prérequis
 
 * Contenu
 
 Ce cours s'articule en plusieurs composantes:
 + Cours magistrale portant principalement sur les élements théoriques
-+ Travaux pratiques portant sur les outils 
++ Travaux pratiques portant sur la maitrise des outils
 + un projet réalisé en binome permettant de mettre en pratique les compétences acquises. 
 
 Capteur \\
@@ -36,9 +36,13 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 
 ** Evaluation
 
-L'évaluation se fera sous forme d'un devoir sur table ainsi que la qualité du projet rendu. A noter que des éléments du pprojet seront donner durant le TPs
++ devoir sur table 
++ qualité du projet rendu. (A noter que des éléments du projet seront donné durant le TPs)
 
 ** Projet 
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
+#+attr_html: :width 300px
+[[./img/projet_1.png]] 
 Le projet consiste en la conception d'un système électronique composé 
 + d'une carte mère acceuillant un microcontroller
 + une carte fille acceuillant les capteurs et les actionneurs 
@@ -81,19 +85,19 @@ Attention, il sera nécessaire de télécharger le hotfix, après installation d
 8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe\\
 Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
 
-** Fabrication 3D
-Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+** Fabrication 3D - Ideamaker
+Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
 https://www.raise3d.com/ideamaker/
 
-** Conception 2D
-Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
-https://inkscape.org/fr/
+** Programmation microcontroller - STM32CubeIde
+Compilateur et programmation de la carte Nucleo
+https://www.st.com/en/development-tools/stm32cubeide.html
 
-** Programmation microcontroller
-Le compilateur est 100% en ligne mais requiert de créer un compte
-https://studio.keil.arm.com/auth/login/
+** Création de carte électronique - EasyEDA Designer
+Creation de schéma électronique et PCB (Création d’un compte en ligne)
+https://easyeda.com/editor
 
-** Gestion de version (optionnel)
+** Gestion de version
 Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
 Si vous voulez en savoir plus [[./git.org][Gestion de version]]
 
