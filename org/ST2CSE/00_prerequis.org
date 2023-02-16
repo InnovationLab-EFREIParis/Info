@@ -1,4 +1,4 @@
-#+title: Prototypage (rapide)
+#+title: ST2CSE
 #+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -6,7 +6,8 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 * Bienvenue
-Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
+Ce cours porte sur la conception de système embarqué, qui est une notion recoupant beaucoup de domaine. Le choix a été fait d'avoir une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
+immédiatement utilisables lors de vos projets étudiants.
 Avant le début du cours, il est vivement conseillé de:
 + Créer les comptes associés
 + Installer les logiciels prérequis
@@ -30,7 +31,7 @@ Projet \\
  
 Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique
 + Caractérisation de capteur et de la chaine d'acquisition
-+ Programation et traitemen
++ Programation et traitement de données
 + Conception de carte éléctronique
 + Conception et fabrication numérique
 
