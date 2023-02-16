@@ -40,3 +40,6 @@ training. For this, it will be necessary to deploy a localization system and int
 Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
 ***  24/03 - Open Source Robotic Arm - /projet M2/
 Bras robotique open source avec éditeur d'animation 3d temps réel sur le web
+***  31/03 - etude/prédiction du classement des tournois de golf suivant le WAGRTBC - /projet M2/
+Le rang mondial au golf est mis à jour chaque semaine sur la base du cumul de points obtenus en tournois appelé "Power".  Ce power qui se base sur des critères et calculs tenus secrets par le WAGR , est annoncé après les tournois. Comment pourrons-nous prédire ce calcul en amont des tournois pour les joueurs Français ?
+
