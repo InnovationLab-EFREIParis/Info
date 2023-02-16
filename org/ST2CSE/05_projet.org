@@ -1,0 +1,21 @@
+
+
+
+
+
++ Le programme contient un automate (machine à état) changeant d’état à chaque appuie sur un des bouton poussoir
++ L’état initiale est l’Etat1
++ L’état courant est affiché sur l’écran LCD (et sur la liaison série) ainsi que les informations comme décrit ci-dessous.
+++ Etat1 : Affichage de la température en °C par le capteur de température situé sur la carte fille
+
+++ Etat2 : Affichage de la température en °C par le capteur de température situé dans le µC
+
+++ Etat3 : Affichage de la distance relevé par le sonar
+
+++ Etat4 : Affichage de l’inclinaison en X, Y et Z relevé par le gyroscope
+
++ La séquence des états est :Etat1 -> Etat2 -> Etat3 -> Etat4 -> Etat1
++ La vitesse de la liaison série est 115200 bd/s
++ Par un appuie long (>1s), le deuxième bouton poussoir permet de changer la lumière du fond d’écran LCD (backlight), quel que soit l’état courant
++ Par un appuie court (<1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert)
++ La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état

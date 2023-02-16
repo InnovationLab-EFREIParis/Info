@@ -10,9 +10,8 @@
 #+attr_html: :width 250px
 [[./img/LOGO_EFREI_WEB_bleu.png]]
 
-
+# #+ATTR_HTML: :<style>*{font-size: 150%;}</style>
 * Innovation Lab EFREI Paris
-
 * Actualités
 #+ATTR_HTML: :target _blank
 + *[[./presentation_projet.org][Presentations Projets]]* - Tous les vendredi de 11h30 à 12h
@@ -64,16 +63,19 @@ A noter que des espaces de stockages pour vos projets sont egalement disponibles
 Pour en savoir plus: *[[file:equipements.org][equipements]]*
 
 * Formations
-Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent en groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
+#+attr_html: :width 300px
+[[./img/Capture_line_2.jpg]]
+Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent par groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
 Elles vous permettent d’acquérir les bases indispensables afin d’utiliser les machines.
 Vous y aborderez les notions de conceptions, de fabrication ainsi que les consignes de sécurités.\\
-À la suite de la formation, vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
+À la suite de la formation, rendez vous sur *Moodle* (espace Innovation Lab) où vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
 comme étudiant autorisé à vous servir des machines. Comme dit dans le règlement intérieur, les machines sont accessibles seulement 
 durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
 vous intéresse lors de la prise de rendez-vous avec un étudiant encadrant. Si vous êtes indécis, l’impression 3D est certainement un bon début.\\
 #+ATTR_HTML: :target _blank
-Les dates et supports de formations sont ici: [[file:formations.org][*formations*]]
+[[file:formations.org][*Liste et supports de formations*]]
 
 * Reglement intérieur
 #+ATTR_HTML: :target _blank
