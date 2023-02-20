@@ -59,7 +59,7 @@ Voici une série d'exercices afin de prendre en main Solidworks.
  Les exercices sont (normalement) classés par ordre de difficultés.
 Afin de déterminer si votre pièce est correcte: \\
 + s'assurer que l'esquisse est totalement contrainte
-+ comparer le volume de votre pièce avec celui indiqué par le logiciel dans Outils-Evaluer-Propriétés de masse. \\
++ comparer le volume indiqué par le logiciel dans /Outils-Evaluer-Propriétés de masse/ avec celui indiqué en dessous de chaque exercice. \\
 ** Série fondamentaux
 
 # [[./exercice_SW/fondamentaux/MEP FORMATION FONDAMENTAUX.pdf][Série Exercices Fondamentaux]] \\
