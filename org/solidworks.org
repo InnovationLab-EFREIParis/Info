@@ -71,12 +71,19 @@ Page 3: Volume = 23892.89 millimètres cubes \\
 Page 4: Volume = 47500.00 millimètres cubes \\
 Page 5: Volume = 807200.00 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_1.pdf]] \\
+Volume = 520281.34 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_2.pdf]] \\
+Volume = 208252.65 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_3.pdf]] \\
+Volume = 36899.98 millimètres cubes \\
 [[./exercice_SW/fondamentaux/guide-U.pdf]] \\
+Volume = 144236.17 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_bride.pdf]] \\
+Volume = 621722.05 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_bol_visiativ.pdf]] \\
+Volume = 51487.06 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_etude_de_cas_2.pdf]] \\
+Volume = 75475.34 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_prise.pdf]] \\
 
 ------
