@@ -6,11 +6,9 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+attr_html: :width 300px
-[[./img/repair.jpg]]
-
-
-
+[[./img/repair2.jpg]]
 Un Repair Café est un événement participatif et convivial. Son
 principal objectif est d’éviter de jeter les objets du quotidien qui
 peuvent encore servir, en les réparant ou en apprenant à les
@@ -20,16 +18,17 @@ ont en commun la curiosité, la volonté d’apprendre et de devenir
 plus autonomes. L’échange, la transmission de savoir-faire, la
 solidarité et la préservation de l’environnement sont également des
 valeurs qui les animent.
-Pour le bon déroulement du Repair Café, tous les participants,
-s’engagent à avoir une attitude respectueuse, patiente et cordiale
-et à prendre en compte notre charte :
+Lors des premières édition, un cuiseur à riz a pu retourner en cuisine, une guirlande a retrouvé son éclat, des écouteurs se sont remis à vibrer...
+La charte ci dessous permet à tous de comprendre le fonctionnement de cet évenement:
 
 
-* Inscription
+# * Inscription
+# 
+# #+begin_export html
+# <iframe width="640px" height="480px" src="https://forms.office.com/e/hEx8LrZ2em?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+# #+end_export
 
-#+begin_export html
-<iframe width="640px" height="480px" src="https://forms.office.com/e/hEx8LrZ2em?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-#+end_export
+-----------
 
 
 * Organisation
@@ -54,6 +53,9 @@ qu’un seul objet à réparer. Une
 forte affluence peut nous
 conduire à anticiper la fermeture
 de l’évènement.
+#+ATTR_HTML: :style float:right;margin:0px 20px 20px 0px;
+#+attr_html: :width 250px
+[[./img/repair.jpg]]
 * Pièces de rechange
 Repair Café ne s’engage pas à
 fournir les pièces détachées ou
