@@ -85,7 +85,7 @@ Volume = 51487.06 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_etude_de_cas_2.pdf]] \\
 Volume = 75475.34 millimètres cubes \\
 [[./exercice_SW/fondamentaux/fondamentaux_prise.pdf]] \\
-
+Volume = 28904.26 millimètres cubes \\
 ------
 Corrections partielles:\\
 [[./exercice_SW/fondamentaux/fondamentaux_bol_visiativ.SLDPRT]]

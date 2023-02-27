@@ -5,8 +5,8 @@
 #+OPTIONS: toc:t num:nil
 
 * Fournisseurs
-** Matériel et composant électronique: Farnell / Radiospares
-https://fr.farnell.com/
+** Materiel et composant electronique: Farnell / Radiospares
+https://fr.farnell.com/ \\
 https://fr.rs-online.com/web/
 ** Impression 3D (machines et consommables):
 https://www.makershop.fr/
@@ -14,7 +14,9 @@ https://www.makershop.fr/
 https://www.a4.fr/
 
 * Projets documentés
-** Site de projets très variés et bien documentés
+** Woodworking
+https://3axis.co/
+** Site de projets
 https://www.instructables.com/
 ** Hackaday serves up Fresh Hacks Every Day from around the Internet
 https://hackaday.com/
@@ -24,22 +26,22 @@ https://randomnerdtutorials.com/
 https://www.thingiverse.com/
 ** Modèles de fournitures de bureau
 https://www.opendesk.cc/
-** Learning center Sculpteo, société de prestation en fabrication numérique
+** Learning center Sculpteo
 https://www.sculpteo.com/en/lasercutting/introduction-laser-cutting/
 ** Partager son travail sous licence
 https://creativecommons.org/
 * Tiers Lieux
-** Hackerspace à Nanterre
+** Hackerspace Nanterre
 https://www.electrolab.fr/
-** Le FacLab à Gennevilliers
+** Le FacLab Gennevilliers
 https://www.faclab.org/
-** Fablab à la villette
+** Fablab  la villette
 http://carrefour-numerique.cite-sciences.fr/fablab/wiki/doku.php?id=index
 ** Le petit Fablab de Paris
 http://lepetitfablabdeparis.fr/
-** Makerspace à Paris et Ivry
+** Makerspace  Paris et Ivry
 https://www.techshoplm.fr/
-** Fablab à Malakoff
+** Fablab  Malakoff
 https://www.latreso.fr/
 ** Hackerspace dédié au Textile
 https://datapaulette.org/
