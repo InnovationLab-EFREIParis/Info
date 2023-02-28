@@ -7,6 +7,19 @@
 #+LINK_HOME: index.html
 
 Git est un outil de gestion version. 
+Historiquement, ce type d'outil a été crée afin de suivre et de gérer l'évolution de codes sources (c'est à dire des fichiers en texte brut) au fil du temps.
+Il permet de garder l'historique de l'évolution des fichiers mais également de travailler à plusieurs sur le même fichier.
+Les opérations de fusion des modifications apportés par les différents développeurs étant faites quasi automatiquement /(Merge)/.
+A noter que ce type d'outils peut egalement convenir pour une personne travaillant sur plusieurs machines.
+Aujourd'hui, l'arrivé d' offres d'hebergements en ligne comme GitHub se sont largement répandu et les services 
+qu'elles proposent ne s'adressent plus uniquement aux développeurs.
+Pour l'anecdote, j'ai vu des personnes organiser leur mariage avec Git et GitHub... 
+
+
+* Prérequis
+Avant de continuer:
++ Installation de Git https://git-scm.com/downloads
++ Création d'un compte sur https://github.com/
 
 #+BEGIN_QUOTE
 Version control systems provide you with three important capabilities:\\
@@ -17,15 +30,37 @@ Version control systems provide you with three important capabilities:\\
 #+END_QUOTE
 
 
+* Jargon
++ *Organisation*: une organisation sur GitHub contient plusieurs dépots. Exemple: https://github.com/InnovationLab-EFREIParis
++ *Dépot*: C'est le nom du dossier où se situe votre projet (repository en anglais). 
++ *Remote/Origin*: Il s'agit du dépot en ligne (sur GitHub dans notre cas). Exemple: https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench
++ *Local*: Il s'agit du dépot en local. Il se matérialise sous la forme d'un dossier.
+
+Au final, le but du "jeu" est de maintenir la cohérence entre votre dépot en local, où vous allez travailler et donc apporter des modifications, avec le dépot en ligne.
+
+Je trouve particulierement interessant que le dépot soit également visible avec un simple navigateur. 
+Il est ainsi possible de partager des informations (en lecture seule) avec des personnes n'ayant pas un logiciel de gestion de version.
+
+Voici un aperçu simplifié des opérations:
+Avant de commencer à travailler, je récupère en local les dernières modifications qui ont été déposées sur Origin (/pull/).
+Lorsque j'ai terminé ma session de travail, je pousse mes modifications faites en local vers le dépot en ligne (/push/).
+Si entre temps d'autres modifications ont été faites sur le dépot en ligne, le /push/ va échouer.
+Je dois alors récuperer les dernières modifications en local (/fetch/), que je les fusionne avec mes propres modifications (/merge/), pour ensuite les déposer
+en ligne (/push/). L'opération devrait alors réussir.
+*Vous noterez que les opérations de fusions sont faites en local!*
+
 #+attr_html: :width 500px
 [[./img/git.jpg]] 
 
 
-* Prérequis
-+ Installation de Git https://git-scm.com/downloads
-+ Création d'un compte sur https://github.com/
 * Configuration
 *** Clone d'un dépot (en ligne -> local)
+Il faut d'abord obtenir l'addresse du dépot en local.
+Pour cela, rendez-vous via votre navigateur sur l'organisation puis le dépot et cliquer sur Code.
+
+#+attr_html: :width 700px
+[[./img/github.jpg]] 
+
 #+BEGIN_SRC sh
 git clone https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench.git
 #+END_SRC
