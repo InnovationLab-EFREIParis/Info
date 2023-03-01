@@ -22,18 +22,19 @@ Lors des premières édition, un cuiseur à riz a pu retourner en cuisine, une g
 La charte ci dessous permet à tous de comprendre le fonctionnement de cet évenement:
 
 
-# * Inscription
-# 
-# #+begin_export html
-# <iframe width="640px" height="480px" src="https://forms.office.com/e/hEx8LrZ2em?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
-# #+end_export
-
------------
-
 
 * Organisation
 Après s'être inscrit via le formulaire, rendez vous à l'I-Lab à l'heure convenu. Vous serez pris en charge par une équipe de réparateurs qui va passer avec vous 40 minutes maximum sur votre objet. 
 Pensez à prendre tous les accessoires utiles à la réparation (cordon d'alimentation, batterie, mode d'emploi...). Suivant l'affluence, il est possible que vous ayez à attendre, une zone de convivialité est prévue à cette effet.
+
+* Inscription
+ 
+#+begin_export html
+<iframe width="640px" height="480px" src="https://forms.office.com/e/fjrFT0611C?embed=true" frameborder="0" marginwidth="0" marginheight="0" style="border: none; max-width:100%; max-height:100vh" allowfullscreen webkitallowfullscreen mozallowfullscreen msallowfullscreen> </iframe>
+#+end_export
+
+-----------
+
 * Gratuité
 Les activités au Repair Café
 sont effectuées gratuitement
