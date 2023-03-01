@@ -6,13 +6,17 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
-* Faire un circuit imprimé
+* Faire un circuit imprimÃ©
 
 Le circuit imprimé ou PCB (printed circuit board) est la meilleure façon d'interconnecter 
-les composants de votre systèmes embarqués. 
+les composants de votre système embarqué. 
 Sa fabrication s'étant largement démocratisé, il constitue une étape nécessaire pour un prototype convaincant.
 Les avantages d'un PCB sont: 
+<<<<<<< HEAD
 + Miniaturisation
+=======
++ Miniaturisation (utilisation CMS, possibilité de routage accrue)
+>>>>>>> refs/remotes/origin/master
 + Solidité
 + Bonne dissipation thermique
 + Bonne protection contre les pertubations électro magnétique
@@ -22,7 +26,7 @@ Les avantages d'un PCB sont:
 #+CAPTION: PCB
 [[./img/pcb.jpg]]
 
-** L'édition du schéma
+** L'Ã©dition du schÃ©ma
 Durant cette étape, vous interconnectez les symboles de chaque 
 composant entre eux. Le placement n'a pas d'importance,
  seul les connections comptent. A la suite de la saisie du schéma, 

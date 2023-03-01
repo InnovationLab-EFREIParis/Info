@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ST2CSE</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="ST2CSE"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">ST2CSE</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org9396598">Exigences programmes</a></li>
+<li><a href="#org94b05f1">Exigences boitier</a></li>
+<li><a href="#orgb24692f">Exigences circuit imprimé de la carte fille</a></li>
+<li><a href="#org574212c">Reference des composants</a></li>
+</ul>
+</div>
+</div>
+<p>
+Le projet consiste en la conception d'un système électronique composé 
+</p>
+<ul class="org-ul">
+<li>d'une carte mère acceuillant un microcontroller</li>
+<li>une carte fille acceuillant les capteurs et les actionneurs</li>
+<li>le boitier acceuillant les deux cartes mentionnés ci dessus</li>
+</ul>
+
+<p>
+Il est vivement conseillé de vous baser sur les notions vu en TPs pour faire 
+</p>
+
+
+<div class="figure">
+<p><img src="./img/projet_1.jpg" alt="projet_1.jpg" />
+</p>
+</div>
+
+<p>
+Le projet doit répondre aux exigences (requirements) suivantes. C'est la réponse aux exigences qui permettra l'évaluation du projet.
+</p>
+
+<div id="outline-container-org9396598" class="outline-2">
+<h2 id="org9396598">Exigences programmes</h2>
+<div class="outline-text-2" id="text-org9396598">
+<ul class="org-ul">
+<li>Le programme contient un automate (machine à état) changeant d’état à chaque appuie sur un des bouton poussoir</li>
+<li>L’état initiale est l’Etat1</li>
+<li>L’état courant est affiché sur l’écran LCD et sur la liaison série.</li>
+</ul>
+<p>
+++ Etat1 : Affichage de la température en °C par le capteur de température  situé dans le µC
+</p>
+
+<p>
+++ Etat2 : Affichage de la température en °C par le capteur de température situé sur la carte fille
+</p>
+
+<p>
+++ Etat3 : Affichage en mm de la distance relevé par le sonar
+</p>
+
+<p>
+++ Etat4 : Affichage en ° de l’inclinaison en X, Y et Z relevé par le gyroscope
+</p>
+
+<ul class="org-ul">
+<li>La séquence des états est : Etat1 -&gt; Etat2 -&gt; Etat3 -&gt; Etat4 -&gt; Etat1</li>
+<li>La vitesse de la liaison série est 115200 bd/s</li>
+<li>Par un appuie long (&gt;1s), le deuxième bouton poussoir permet de changer la lumière du fond d’écran LCD (backlight), quel que soit l’état courant</li>
+<li>Par un appuie court (&lt;1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert)</li>
+<li>La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org94b05f1" class="outline-2">
+<h2 id="org94b05f1">Exigences boitier</h2>
+<div class="outline-text-2" id="text-org94b05f1">
+<ul class="org-ul">
+<li>Le boitier contient la carte fille et la carte mère</li>
+<li>Dimensions maximales : 85 mm de large 95 mm de long et 55 de haut</li>
+<li>Le boitier doit laisser apparent le connecteur USB de la carte mère</li>
+<li>Le boitier doit faire intervenir dans sa fabrication de l’impression 3D et de la découpe laser</li>
+<li>Le boitier doit se fermer solidement (écrou-visse)</li>
+<li>L’écran LCD doit être visible sur l’un des côtés du boitier</li>
+<li>Le sonar doit être visible du côté opposé au connecteur USB</li>
+<li>Les LED doivent être visibles sur le dessus du boitier (guide lumière disponible)</li>
+<li>Les parties imprimées en 3D doivent être auto portantes (pas de support)</li>
+<li>Les parties découpées au laser font 3mm d’épaisseur</li>
+<li>La carte mère doit être fixée au fond du boitier (entretoises M3 de longueur 10 mm)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgb24692f" class="outline-2">
+<h2 id="orgb24692f">Exigences circuit imprimé de la carte fille</h2>
+<div class="outline-text-2" id="text-orgb24692f">
+<ul class="org-ul">
+<li>La carte fille doit avoir des dimensions maximales : 54 mm * 66 mm</li>
+<li>Le circuit imprimé doit avoir un plan de masse</li>
+<li>Les noms des broches de chaque connecteur doivent apparaitre sur le PCB</li>
+<li>Les noms du binôme, la lettre et la majeur (SRD/TI) doivent être inscrit sur le PCB</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org574212c" class="outline-2">
+<h2 id="org574212c">Reference des composants</h2>
+<div class="outline-text-2" id="text-org574212c">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Item</th>
+<th scope="col" class="org-left">Ref</th>
+<th scope="col" class="org-left">Bus/Interface</th>
+<th scope="col" class="org-left">Footprint</th>
+<th scope="col" class="org-left">Lien</th>
+<th scope="col" class="org-left">&#xa0;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Carte Microcontroleur</td>
+<td class="org-left">NUCLEO STM32L476RG</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Arduino R3 Shield</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Centrale inertielle</td>
+<td class="org-left">MPU6050</td>
+<td class="org-left">I2C</td>
+<td class="org-left">8*2.54 HEADER</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">LCD Screen</td>
+<td class="org-left">Grove LCD RGB BackLight</td>
+<td class="org-left">I2C</td>
+<td class="org-left">4*2 HEADER</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

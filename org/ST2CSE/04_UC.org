@@ -196,5 +196,5 @@ Programmer la carte de façon à ce le servo moteur face une rotation de 90° da
 
 ** Nom de broches
 
-#+INCLUDE: ./LG476_pinname.org
+# #+INCLUDE: ./LG476_pinname.org
 

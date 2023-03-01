@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ST2CSE</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="ST2CSE"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">ST2CSE</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5e647f9">Faire un circuit imprimÃ©</a>
+<ul>
+<li><a href="#org6f1dcf3">L'Ã©dition du schÃ©ma</a></li>
+<li><a href="#org848e258">Le placement routage</a></li>
+<li><a href="#org2b7d2db">La fabrication</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5e647f9" class="outline-2">
+<h2 id="org5e647f9">Faire un circuit imprimÃ©</h2>
+<div class="outline-text-2" id="text-org5e647f9">
+<p>
+Le circuit imprimé ou PCB (printed circuit board) est la meilleure façon d'interconnecter 
+les composants de votre système embarqué. 
+Sa fabrication s'étant largement démocratisé, il constitue une étape nécessaire pour un prototype convaincant.
+Les avantages d'un PCB sont: 
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+</p>
+<ul class="org-ul">
+<li>Miniaturisation</li>
+</ul>
+<p>
+<code>=====</code>
+</p>
+<ul class="org-ul">
+<li>Miniaturisation (utilisation CMS, possibilité de routage accrue)</li>
+</ul>
+<p>
+&gt;&gt;&gt;&gt;&gt;&gt;&gt; refs/remotes/origin/master
+</p>
+<ul class="org-ul">
+<li>Solidité</li>
+<li>Bonne dissipation thermique</li>
+<li>Bonne protection contre les pertubations électro magnétique</li>
+</ul>
+
+
+
+<div class="figure">
+<p><img src="./img/pcb.jpg" alt="pcb.jpg" width="300px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>PCB</p>
+</div>
+</div>
+
+<div id="outline-container-org6f1dcf3" class="outline-3">
+<h3 id="org6f1dcf3">L'Ã©dition du schÃ©ma</h3>
+<div class="outline-text-3" id="text-org6f1dcf3">
+<p>
+Durant cette étape, vous interconnectez les symboles de chaque 
+composant entre eux. Le placement n'a pas d'importance,
+ seul les connections comptent. A la suite de la saisie du schéma, 
+le fichier résultant est une une netlist (liste des interconnections). Vous pouvez 
+evidement exporter votre schéma en pdf.
+</p>
+
+<iframe width="560" height="315" src="https://youtu.be/ZozjHzfrQV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+</div>
+
+<div id="outline-container-org848e258" class="outline-3">
+<h3 id="org848e258">Le placement routage</h3>
+<div class="outline-text-3" id="text-org848e258">
+<p>
+Suite à la génération de la netlist, il faut placer et router 
+les empreintes associés à chaque symbole dans un espace prédéfinie. 
+Le fichier résultant est un fichier GERBER.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2b7d2db" class="outline-3">
+<h3 id="org2b7d2db">La fabrication</h3>
+<div class="outline-text-3" id="text-org2b7d2db">
+<p>
+Réaliser par un prestataire externe, il faut compter en général 2-3 semaines pour la fabrication et l'envoi. 
+Ce prestataire aura besoin de votre fichier GERBER.
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
