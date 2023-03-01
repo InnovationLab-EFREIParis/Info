@@ -13,15 +13,13 @@ les composants de votre systèmes embarqués.
 Sa fabrication s'étant largement démocratisé, il constitue une étape nécessaire pour un prototype convaincant.
 Les avantages d'un PCB sont: 
 + Miniaturisation
-++ Vous pouvez utiliser des composants montés en surfaces (CMS) et ainsi avoir un système compact.
-++ Il offre des possibilités de routage accru puisque les pistes peuvent se situé sur chaque face mais egalement à l'intérieur. 
 + Solidité
 + Bonne dissipation thermique
 + Bonne protection contre les pertubations électro magnétique
 
 
 #+attr_html: :width 300px
-# #+CAPTION: PCB
+#+CAPTION: PCB
 [[./img/pcb.jpg]]
 
 ** L'édition du schéma
@@ -31,8 +29,10 @@ composant entre eux. Le placement n'a pas d'importance,
 le fichier résultant est une une netlist (liste des interconnections). Vous pouvez 
 evidement exporter votre schéma en pdf.
 
-https://youtu.be/ZozjHzfrQV0
- 
+#+begin_export html 
+<iframe width="560" height="315" src="https://youtu.be/ZozjHzfrQV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+#+end_export
+
 ** Le placement routage
 Suite à la génération de la netlist, il faut placer et router 
 les empreintes associés à chaque symbole dans un espace prédéfinie. 

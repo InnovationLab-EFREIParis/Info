@@ -29,7 +29,7 @@
       '(
 
 	("org-notes"
-         :base-directory "org/"
+         :base-directory "./org/"
          :base-extension "org"
          :publishing-directory "./"
          :recursive t

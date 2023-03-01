@@ -14,17 +14,15 @@ publish_no_init: publish.el
 
 clean:
 	@echo "Cleaning up.."
-	@rm -rvf *.html~
-	@rm -rvf *.el~
 	@rm -rvf *~
 	@rm -rvf *#
 	@rm -rvf ./org/*~
-	@rm -rvf ./org/prototypage/*.org~
 	@rm -rvf ./org/*.html
+	@rm -rvf ./ST2CSE/*~
+	@rm -rvf ./org/ST2CSE/*~
+	@rm -rvf ./org/ST2CSE/*.html
 	@rm -rvf ./org/prototypage/*.html
-	@rm -rvf ./org/prototypage/*.html~
-	@rm -rvf ./prototypage/*.html~
-	#@rm -rvf *.elc
-	#@rm -rvf public
-	#@rm -rvf ~/.org-timestamps/*
+	@rm -rvf ./org/prototypage/*~
+	@rm -rvf ./prototypage/*~
+
 
