@@ -33,13 +33,13 @@ Dans  ce projet, nous travaillons sur une famille spécifique de ces codes défi
 Developpement d'une plate forme de sensibilisation à la cyber sécurité en entreprise
 ***  03/03 - Reconnaissance des émotions - /projet M2/
 Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions
-***  10/03 - Assistance in the assessment of physical and tactical needs in water polo - /stage Erasmus/
+# ***  10/03 - Assistance in the assessment of physical and tactical needs in water polo - /stage Erasmus/
 This project will be carried out in collaboration with the French Swimming Federation and will generally aim to provide assistance in the assessment of physical and tactical needs in water polo. The objective of this project will be to precisely locate (about 20cm) polo players during matches and
 training. For this, it will be necessary to deploy a localization system and integrate it into a swimming cap (waterproof device).
-***  17/03 - Drone simplifié - /stage M1/
+***  10/03 - Drone simplifié - /stage M1/
 Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
-***  24/03 - Open Source Robotic Arm - /projet M2/
+***  17/03 - Open Source Robotic Arm - /projet M2/
 Bras robotique open source avec éditeur d'animation 3d temps réel sur le web
-***  31/03 - etude/prédiction du classement des tournois de golf suivant le WAGRTBC - /projet M2/
+# ***  31/03 - etude/prédiction du classement des tournois de golf suivant le WAGRTBC - /projet M2/
 Le rang mondial au golf est mis à jour chaque semaine sur la base du cumul de points obtenus en tournois appelé "Power".  Ce power qui se base sur des critères et calculs tenus secrets par le WAGR , est annoncé après les tournois. Comment pourrons-nous prédire ce calcul en amont des tournois pour les joueurs Français ?
 
