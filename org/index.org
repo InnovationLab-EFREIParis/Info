@@ -5,23 +5,15 @@
 #+OPTIONS: num:nil
 #+LINK_UP: 
 #+LINK_HOME: index.html
-
+#+ATTR_HTML: :target _blank
+[[https://www.instagram.com/innovationlab_efrei/][file:./img/instagram_icon.png]]
+[[https://www.facebook.com/profile.php?id=100057387522496][file:./img/facebook_icon.png]]
 #+ATTR_HTML: :style float:right;margin:0px 20px 20px 0px;
 #+attr_html: :width 250px
 [[./img/LOGO_EFREI_WEB_bleu.png]]
 # #+ATTR_HTML: :<style>*{font-size: 150%;}</style>
 * Innovation Lab EFREI Paris
 * Actualités
-#+ATTR_HTML: :style float:left;margin:2px 10px 2px 2px;
-#+attr_html: :width 30px
-#+ATTR_HTML: :target _blank
-[[https://www.instagram.com/innovationlab_efrei/][file:./img/instagram_icon.png]]
- \\
-
-
-
-
-
 # #+ATTR_HTML: :target _blank
 + [[./presentation_projet.org][*Presentations Projets*]] - Tous les vendredi de 11h30 à 12h
 + [[./formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/ \\
