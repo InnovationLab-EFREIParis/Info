@@ -3,7 +3,8 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 
-
+* Installation
+#+INCLUDE: ./solidworks_setup.org
 * Capsules Videos sur Solidworks
 Chaque capsule video dure environ 15 minutes. Il est conseille de faire les manipulations en mÃªme temps que le visionnage de la vidéo, ce qui peut vous amener à passer 30 minutes par capsule.
 
