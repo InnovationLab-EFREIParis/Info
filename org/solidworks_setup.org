@@ -1,4 +1,5 @@
 #+ATTR_HTML: :target _blank
+Avant de toutes choses, Solidworks est uniquement compatible avec Windows et ne fonctionnera pas sur une machine virtuelle... \\
 Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023). Cette version est *gratuite* et *valable 1 an*:\\
 0 - Désinstaller tous les Solidworks avant d’installer une nouvelle version. \\
 1 – [[https://www.solidworks.com/SDK][Accéder à la page de téléchargement]]. Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.\\
