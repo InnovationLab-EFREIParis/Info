@@ -7,13 +7,14 @@
 #+attr_html: :width 300px
 [[./img/encadrant.jpg]]
 
-** Liste des étudiants encadrants 2022/2023
+# ** Liste des étudiants encadrants 2022/2023
 
 | Nom         | Prénom     | Promo. | Email                               |
 |-------------+------------+--------+-------------------------------------|
 | Poinama     | Samuel     | L1     | samuel.poinama@efrei.net            |
 | Dragan      | Constantin | L1     | constantin.dragan@efrei.net         |
 | Linossier   | Clément    | L1     | clement.linossier@efrei.net         |
+| Leclerq     | Maxence    | L1     | maxence.leclercq@efrei.net          |
 | Mercat      | Gautier    | B1     | gautier.mercat@efrei.net            |
 | Michel      | Quentin    | B1     | quentin.michel@efrei.net            |
 | Le Callonec | Baptise    | L2     | baptiste.le-callonnec@efrei.net     |
