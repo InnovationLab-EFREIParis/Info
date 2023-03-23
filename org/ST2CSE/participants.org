@@ -7,24 +7,8 @@
 
 | Nom                              | Binome |
 |----------------------------------+--------|
-| Anne-Lou CHARTIER                | A      |
-| Florian LEGRAND                  | A      |
-| Richard YE                       | B      |
-| Styven ZHANG                     | B      |
-| Lucas TOURNEAUX                  | C      |
-| Thibault ESNOUF                  | C      |
-| Ndeye Bineta WADE                | D      |
-| Nawel AÂSLI                      | D      |
-| James Llewellyn GUIATEU KAMGAING | D      |
-| Abdoula JAITEH                   | E      |
-| Axel GOURDIN                     | E      |
-| Nassim BELLAOUD                  | F      |
-| Alpha KEÏTA                      | F      |
-| Jérémie BARRIÈRE                 | G      |
-| Dantin DURAND                    | G      |
-| Aurel BAFOUNDA                   | H      |
-| Leo LANCELLE                     | H      |
-| Clément ROUANET                  | I      |
-| Rafaël LANGLAIS                  | I      |
-| Yassine EL MANSOURI EL MOUDAN    | X      |
+| TBC                              | A      |
+| TBC                              | A      |
+| ...                              | B      |
+| ...                              | B      |
 

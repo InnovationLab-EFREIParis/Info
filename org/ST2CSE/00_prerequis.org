@@ -37,22 +37,17 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 
 ** Evaluation
 
-+ devoir sur table 
-+ qualité du projet rendu. (A noter que des éléments du projet seront donné durant le TPs)
++ Notes de TPs (30%)
++ Projet (70%) (A noter que des éléments du projet seront donné durant le TPs)
 
 ** Projet 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+attr_html: :width 300px
 [[./img/projet_1.png]] 
 Le projet consiste en la conception d'un système électronique composé 
-+ d'une carte mère acceuillant un microcontroller
-+ une carte fille acceuillant les capteurs et les actionneurs 
-+ le boitier acceuillant les deux cartes mentionnés ci dessus
-
-Ce projet implique:
-+ la programmation d'un micro controller
-+ La conception de la carte fille
-+ la conception et la fabrication du boitier
++ d'une carte mère acceuillant un microcontroller (carte d'évaluation du marché, programmé par vos vos soins)
++ une carte fille acceuillant les capteurs et les actionneurs (conçu par vos soins)
++ le boitier acceuillant les deux cartes mentionnés ci dessus (conçu et fabriqué par vos soins)
 
 ** Binomes
 
@@ -72,33 +67,20 @@ Ce projet implique:
 
 * Logiciels prérequis 
 ** Conception 3D - Solidworks
-Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023).
-Désinstaller tous les SOLIDWORKS avant d’installer une nouvelle version.
-Pour accéder à la page de téléchargement :
-
-1 – https://www.solidworks.com/SDK
-Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.\\
-2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)\\
-4 – Choisissez la version 2022-2023\\
-5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC\\
-6- Télécharger le fichier exécutable.\\
-7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers\\
-8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe\\
-Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
-
+#+INCLUDE: ../solidworks_setup.org
 ** Fabrication 3D - Ideamaker
-Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab. \\
 https://www.raise3d.com/ideamaker/
 
 ** Programmation microcontroller - STM32CubeIde
-Compilateur et programmation de la carte Nucleo
+Compilateur et programmation de la carte Nucleo \\
 https://www.st.com/en/development-tools/stm32cubeide.html
 
 ** Création de carte électronique - EasyEDA Designer
-Creation de schéma électronique et PCB (Création d’un compte en ligne)
+Creation de schéma électronique et PCB (Création d’un compte en ligne) \\
 https://easyeda.com/editor
 
 ** Gestion de version
-Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
-Si vous voulez en savoir plus [[./git.org][Gestion de version]]
+Les rendus seront à faire via un outil de gestion de version. C'est aussi une des compétences qui vous sera demandé d'acquérir pour ce cours.
+Si vous voulez en savoir plus [[../git.org][Gestion de version]]
 
