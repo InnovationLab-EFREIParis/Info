@@ -1,6 +1,6 @@
 .d1{
-    width: 288px;
-    height: 384px;
+    width: 300px;
+    height: 400px;
     margin: 50px auto;
     box-shadow: 0px 15px 10px -5px #777;
     background-color: #EDEDED;
@@ -8,7 +8,7 @@
     animation: fondu 40s ease-in-out infinite both;
 }
 .conteneur{
-    max-width: 576px;
+    max-width: 300px;
     margin: 50px auto;
 }
 .d1:hover{
@@ -26,18 +26,9 @@
     20%{background-image: url("./img_project/5.jpg");}
     25%{background-image: url("./img_project/6.jpg");}
     30%{background-image: url("./img_project/7.jpg");}
-    35%{background-image: url("./img_project/8.png");}
-    40%{background-image: url("./img_project/9.jpg");}
-    45%{background-image: url("./img_project/10.jpg");}
     50%{background-image: url("./img_project/11.jpg");}
-    55%{background-image: url("./img_project/12.jpg");}
-    60%{background-image: url("./img_project/13.jpg");}
-    65%{background-image: url("./img_project/14.jpg");}
-    70%{background-image: url("./img_project/15.jpg");}
-    75%{background-image: url("./img_project/16.jpg");}
     80%{background-image: url("./img_project/17.jpg");}
     85%{background-image: url("./img_project/18.jpg");}
     90%{background-image: url("./img_project/19.png");}
     95%{background-image: url("./img_project/20.jpg");}
-    100%{background-image: url("./img_project/10.jpg");}
 }
