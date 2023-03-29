@@ -32,7 +32,3 @@ C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
 * ST2CSE
 [[./ST2CSE/00_prerequis.org]]
 
-
-
-
-
