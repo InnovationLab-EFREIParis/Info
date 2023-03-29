@@ -1,23 +1,28 @@
+#+title: Reparateur
+#+description: Fonctionnement de l'Innovation Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
 
-* Réparateur
 
-** Avant la réparation
 
-Les repair café sont des moments d'échanges, et l'acceuil que vous faites à la personne qui apporte un objet est primordial.
-N'oubliez pas que la réparation se fait avec elle. Vous pouvez obtenir quelques renseignements précieux avant de vous lancer dans la réparation.
+** Avant la rÃ©paration
+
+Les repair cafÃ© sont des moments d'Ã©changes, et l'acceuil que vous faites Ã  la personne qui apporte un objet est primordial.
+N'oubliez pas que la rÃ©paration se fait avec elle. Vous pouvez obtenir quelques renseignements prÃ©cieux avant de vous lancer dans la rÃ©paration.
 - L'objet a t il beaucoup servi ?
 - A qui appartient-il ?
-- La personne a t elle un attachement particulier à cet objet ?
-- La personne a t elle chercher à le réparer elle même ? Sinon pourquoi?
-- Selon le type d'objet, vous pouvez installer un dialogue et échanger avec la personne sur ses habitudes, ses gouts....
-Par exemple, j'ai le souvenir d'une personne agée dont le magnetoscope était en panne. Elle était très attachée à sa collection de film en cassette. J'ai pu sortir la cassette qui était coincée à l'interieur mais pas pu le réparer.
-Nous avons ensuite chercher ensemble sur le bon coin des magnétoscopes bon marché et pas loin de son domicile.
+- La personne a t elle un attachement particulier Ã  cet objet ?
+- La personne a t elle chercher Ã  le rÃ©parer elle mÃªme ? Sinon pourquoi?
+- Selon le type d'objet, vous pouvez installer un dialogue et Ã©changer avec la personne sur ses habitudes, ses gouts....
+Par exemple, j'ai le souvenir d'une personne agÃ©e dont le magnetoscope Ã©tait en panne. Elle Ã©tait trÃ¨s attachÃ©e Ã  sa collection de film en cassette. J'ai pu sortir la cassette qui Ã©tait coincÃ©e Ã  l'interieur mais pas pu le rÃ©parer.
+Nous avons ensuite chercher ensemble sur le bon coin des magnÃ©toscopes bon marchÃ© et pas loin de son domicile.
 
-L'issue de la réparation n'est pas certaine. Un nouvel achat, la commande d'une pièce de rechange...
+L'issue de la rÃ©paration n'est pas certaine. Un nouvel achat, la commande d'une piÃ¨ce de rechange...
 
-** Avant la réparation
+** Avant la rÃ©paration
 
-La réparation se fait à deux. Si certaines opérations peuvent être faites par la personne, n'heistez pas à lui demander si elle veut les faire.
+La rÃ©paration se fait Ã  deux. Si certaines opÃ©rations peuvent Ãªtre faites par la personne, n'heistez pas Ã  lui demander si elle veut les faire.
 
 
 

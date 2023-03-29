@@ -14,12 +14,15 @@ Avant le début du cours, il est vivement conseillé de:
 
 * Contenu
 
-Ce cours s'articule en plusieurs composantes:
-+ Cours magistrale portant principalement sur les élements théoriques
-+ Travaux pratiques portant sur la maitrise des outils
-+ un projet réalisé en binome permettant de mettre en pratique les compétences acquises. 
+[[./01_Capteur.org]] \\
+[[./02_CAO.org]] \\
+[[./03_FAO.org]] \\
+[[./04_UC.org]] \\
+[[./05_projet.org]] \\
+[[./06_analogique.org]] \\
+[[./07_CI.org]] \\
 
-Capteur \\
+
 Rappel C/C++ \\
 MicroController \\
 CAO \\

@@ -29,3 +29,10 @@ C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
 [[./prototypage/00_prerequis.org][Prerequis]]
 * Reparateur Repaircafé (TBC)
 [[./reparateur.org][TBC]]
+* ST2CSE
+[[./ST2CSE/00_prerequis.org]]
+
+
+
+
+

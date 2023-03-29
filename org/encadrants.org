@@ -32,4 +32,3 @@
 | Phonchareun | Alex       | M2     | alex.phonchareun@efrei.net          |
 | Angebaud    | Calixte    | M2     | calixte.angebaud@efrei.net          |
 | Yann Kader  | Obou N Do  | M2     | yann.kader.axel.obou.n.do@efrei.net |
-
