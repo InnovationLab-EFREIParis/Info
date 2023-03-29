@@ -4,8 +4,6 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: toc:nil num:nil
 
-
-
 ** Avant la réparation
 
 Les repair café sont des moments d'échanges, et l'acceuil que vous faites à la personne qui apporte un objet est primordial.
@@ -20,10 +18,15 @@ Nous avons ensuite chercher ensemble sur le bon coin des magnétoscopes bon marc
 
 L'issue de la réparation n'est pas certaine. Un nouvel achat, la commande d'une pièce de rechange...
 
-** Avant la réparation
+** Pendant la réparation
 
-La réparation se fait à deux. Si certaines opérations peuvent être faites par la personne, n'heistez pas à lui demander si elle veut les faire.
+La réparation se fait à deux. Si certaines opérations peuvent être faites par la personne, n'hésitez pas à lui demander si elle veut les faire.
+A noter que réparer un objet peut se faire en plusieurs fois. La session s'arretera peut être au diagnostique de panne ou à la commande d'une pièce de rechange.
+Si vous le souhaitez, vous pouvez donner RDV à la personne pour continuer la personne, dans le cadre d'un futur repair café ou pas.
 
+
+
+** Liens utiles
 
 
 https://fr.ifixit.com/
