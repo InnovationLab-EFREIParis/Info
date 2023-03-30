@@ -10,7 +10,7 @@ Ce cours porte sur la conception de système embarqué, qui est une notion recou
 immédiatement utilisables lors de vos projets étudiants.
 Avant le début du cours, il est vivement conseillé de:
 + Installer les logiciels prérequis (voir en bas de page)
-+ Créer les comptes associés
++ Créer les comptes associés 
 
 * Contenu
 
