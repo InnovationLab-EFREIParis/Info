@@ -1,0 +1,126 @@
+#+title: ST2CSE
+#+description: ST2CSE
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+
+
+* Commentaires
+
+#+begin_src C++ :includes <stdio.h>
+// Commentaires sur une ligne, peut s'insérer après une instruction
+  
+/*
+Bloc de commentaires 
+multi-lignes
+*/
+#+end_src
+
+
+* Instructions
+
+Une instruction en C se termine par un point virgule.
+
+** Variables
+
+Les noms de variables utilisées en C doivent obligatoirement commencer 
+par une lettre ou un underscore.
+*Attention, ce langage est sensible à la casse!*.
+
+*** Types
+
+#+begin_src C++ :includes <stdio.h>
+int ivar=4;
+float fvar=3.1415;
+char cvar='a';
+#+end_src
+
+*** Types énuméré
+Ces types permettent à l'utilisateur de créer un type de variable et d'en définir les 
+différents états. Nous nous en servirons pour les machines à états.
+#+begin_src C++ :includes <stdio.h>
+enum tricolore{vert, orange, rouge};
+enum tricolore feu;
+feu = orange; 
+#+end_src
+
+
+
+
+** Opérations arithmétique
+Les oprérations arithémtiques peuvent être réalisé entre des types différents, 
+mais votre compilateur fera certainement un choix à votre place, et peut être pas celui que vous attendez...
+#+begin_src C++ :includes <stdio.h>
+int result;
+result = i+f;
+result = i*f;
+result = i/f;
+result = i%f;
+#+end_src
+
+
+* Structures de controle
+Les structures de contrôles  utilisent des conditions booléennes évalués entre parenthèses.
+Si la condtion booléenne renvoit un résultat différent de 0, elle est considéré valide. Alors les instructions
+placés entre accolades sont executés.
+
+** Conditions
+#+begin_src C++ :includes <stdio.h>
+if(a==b){
+}
+else if(a<b){
+}
+else if(a>b){
+}
+
+#+end_src
+
+Une structure un peu particulière, et qui nous sera très utile pour faire une machine à état
+
+#+begin_src C++ :includes <stdio.h>
+switch ( expression ) {
+    case value1:
+        statement;
+        [statement]...
+        break;
+    case value2:
+        statement;
+        [statement]...
+        break;
+    default:
+        statement;
+        [statement]...
+}
+
+#+end_src
+
+** Boucles
+#+begin_src C++ :includes <stdio.h>
+for(int i=0;i<10;i++){
+}
+#+end_src
+
+#+begin_src C++ :includes <stdio.h>
+while(a<b){
+}
+#+end_src
+
+* Instructions pre-processeur
+
+Ces instructions sont destinés aux pré-processeur, qui est une étape dans la compilation.
+Le pre processeur est en charge vérifier la syntaxe et de créer un fichier avant la compilation à proporement parlé.
+Ces instructions sont donc purement organisationnelles. 
+
+** Inclure un fichier header
+#+begin_src C++ :includes <stdio.h>
+#include "definition.h"
+#+end_src
+
+** Définir une 
+#+begin_src C++ :includes <stdio.h>
+#include "definition.h"
+#+end_src
+
