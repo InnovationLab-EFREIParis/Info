@@ -6,7 +6,8 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 * Bienvenue
-Ce cours porte sur la conception de système embarqué, qui est une notion recoupant beaucoup de domaine. Le choix a été fait d'avoir une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
+Ce cours porte sur la conception de système embarqué, qui est une notion recoupant beaucoup de domaines. 
+Le choix a été fait d'avoir une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
 immédiatement utilisables lors de vos projets étudiants.
 Avant le début du cours, il est vivement conseillé de:
 + Installer les logiciels prérequis (voir en bas de page)
@@ -23,32 +24,26 @@ Avant le début du cours, il est vivement conseillé de:
 [[./07_CI.org]] \\
 
 
-Rappel C/C++ \\
-MicroController \\
-CAO \\
-FAO \\
-CTP \\
-Projet \\
 
 ** Compétences
  
-Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique
-+ Caractérisation de capteur et de la chaine d'acquisition
-+ Programation et traitement de données
-+ Conception de carte éléctronique
-+ Conception et fabrication numérique
+Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique:
++ La caractérisation de capteurs et de la chaine d'acquisition
++ La programation et le traitement de données
++ La conception de carte éléctronique
++ La conception et fabrication numérique
 
 ** Evaluation
 
 + Notes de TPs (30%)
-+ Projet (70%) (A noter que des éléments du projet seront donné durant le TPs)
++ Projet (70%) (A noter que des éléments du projet seront donnés durant le TPs)
 
 ** Projet 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+attr_html: :width 300px
 [[./img/projet_1.png]] 
 Le projet consiste en la conception d'un système électronique composé 
-+ d'une carte mère acceuillant un microcontroller (carte d'évaluation du marché, programmé par vos vos soins)
++ d'une carte mère acceuillant un microcontroller (carte d'évaluation du marché, programmé par vos soins)
 + une carte fille acceuillant les capteurs et les actionneurs (conçu par vos soins)
 + le boitier acceuillant les deux cartes mentionnés ci dessus (conçu et fabriqué par vos soins)
 
@@ -59,10 +54,11 @@ Le projet consiste en la conception d'un système électronique composé
 
 ** Agenda
 
-|    | Lundi (premier jour)               | Mardi                                    | Mercredi       | Jeudi  | Vendredi          |
-|----+------------------------------------+------------------------------------------+----------------+--------+-------------------|
-| AM | Introduction      Formation Binome | Electronique                             | Fabrication 2D | Projet | Projet            |
-| PM | Conception 2D/3D - Exercices       | Conception 2D/3D     Presentation projet | Fabrication 3D |        | Evaluation Projet |
+|     | CM          | TP1   | TP2            | TP3 | Proj 1 | Proj 2 | Proj 3 |
+|-----+-------------+-------+----------------+-----+--------+--------+--------|
+| SRD | 11/04 09/05 | 17/05 | Fabrication 2D |     | 19/05  | 27/06  |        |
+| TI  | 11/04 09/05 | 12/04 | Fabrication 3D |     | 30/05  | 13/06  |        |
+|     |             |       |                |     |        |        |        |
 
 
 
