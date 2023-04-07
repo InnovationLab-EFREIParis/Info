@@ -69,36 +69,36 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org22bdf61">Installer un environnement Linux sous Windows</a></li>
-<li><a href="#orgf734404">Commentaires</a></li>
-<li><a href="#orgfece204">Instructions</a>
+<li><a href="#orgf08b917">Installer un environnement Linux sous Windows</a></li>
+<li><a href="#org36e914a">Commentaires</a></li>
+<li><a href="#orgddefe36">Instructions</a>
 <ul>
-<li><a href="#org0c20801">Variables</a>
+<li><a href="#org6cada40">Variables</a>
 <ul>
-<li><a href="#orgbf3219f">Types</a></li>
-<li><a href="#orgea2385d">Types énuméré</a></li>
+<li><a href="#orga3f3969">Types</a></li>
+<li><a href="#org42562b9">Types Ã©numÃ©rÃ©</a></li>
 </ul>
 </li>
-<li><a href="#org455df71">Opérations arithmétique</a></li>
+<li><a href="#org82652c2">OpÃ©rations arithmÃ©tique</a></li>
 </ul>
 </li>
-<li><a href="#org48c6647">Structures de controle</a>
+<li><a href="#org073c9a1">Structures de controle</a>
 <ul>
-<li><a href="#org5d5c71c">Conditions</a></li>
-<li><a href="#orga64607f">Boucles</a></li>
+<li><a href="#org4af9b9d">Conditions</a></li>
+<li><a href="#org9841022">Boucles</a></li>
 </ul>
 </li>
-<li><a href="#orgd1ed23f">Compilation</a></li>
-<li><a href="#org8a82b7e">Directive pre-processeur</a>
+<li><a href="#org7a1d882">Compilation</a></li>
+<li><a href="#orgd030946">Directive pre-processeur</a>
 <ul>
-<li><a href="#org1f16ac2">Inclure un fichier header</a></li>
-<li><a href="#orgb9fc512">Définir une chaine de caractère</a></li>
-<li><a href="#orgdc062f8">Compilation conditionnelle</a></li>
+<li><a href="#org347c1f8">Inclure un fichier header</a></li>
+<li><a href="#org11b30a3">DÃ©finir une chaine de caractÃ¨re</a></li>
+<li><a href="#orga53e8bb">Compilation conditionnelle</a></li>
 </ul>
 </li>
-<li><a href="#org776e14d">Fonctions</a>
+<li><a href="#org2556303">Fonctions</a>
 <ul>
-<li><a href="#org4b5c905">Exemple</a></li>
+<li><a href="#org0b8f069">Exemple</a></li>
 </ul>
 </li>
 </ul>
@@ -113,28 +113,35 @@ dans un premier temps sur votre propre ordinateur avant de vous lancer dans la p
 d'un micro controller.
 </p>
 
-<div id="outline-container-org22bdf61" class="outline-2">
-<h2 id="org22bdf61">Installer un environnement Linux sous Windows</h2>
-<div class="outline-text-2" id="text-org22bdf61">
+<div id="outline-container-orgf08b917" class="outline-2">
+<h2 id="orgf08b917">Installer un environnement Linux sous Windows</h2>
+<div class="outline-text-2" id="text-orgf08b917">
 <p>
-Si vous êtes sous windows10 ou ultérieur, je vous conseille d'installer WSL2 (Windows Subsystem For Linux).
-Cette fonctionnalité vous permettra ensuite d'installer Ubuntu. 
-De là vous pourrez installer GCC qui est un compilateur C très utilisé.
+Linux est un système d'exploitation très utilisé pour le développement.
+Si vous êtes peu famillier avec cet environnement et si vous êtes sous windows10
+ou ultérieur, je vous conseille d'installer WSL2 (Windows Subsystem For Linux). <br />
+<a href="https://learn.microsoft.com/fr-fr/windows/wsl/install">https://learn.microsoft.com/fr-fr/windows/wsl/install</a> <br />
+Une fois cette fonctionnalité vous permettra ensuite d'installer une distribution linux,
+je vous conseille Ubuntu, qui est disponible dans le Windows store. <br />
 </p>
 
 <p>
-<a href="https://learn.microsoft.com/fr-fr/windows/wsl/install">https://learn.microsoft.com/fr-fr/windows/wsl/install</a>
+Une fois sous Ubuntu, vous pourrez installer GCC qui est un compilateur C trés utilisé.
 </p>
-</div>
-</div>
-
-
-
-<div id="outline-container-orgf734404" class="outline-2">
-<h2 id="orgf734404">Commentaires</h2>
-<div class="outline-text-2" id="text-orgf734404">
 <div class="org-src-container">
-<pre class="src src-C++"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Commentaires sur une ligne, peut s'ins&#233;rer apr&#232;s une instruction</span>
+<pre class="src src-bash">sudo apt install gcc
+</pre>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-org36e914a" class="outline-2">
+<h2 id="org36e914a">Commentaires</h2>
+<div class="outline-text-2" id="text-org36e914a">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Commentaires sur une ligne, peut s'ins&#195;&#169;rer apr&#195;&#168;s une instruction</span>
 
 <span style="font-weight: bold; font-style: italic;">/*</span>
 <span style="font-weight: bold; font-style: italic;">Bloc de commentaires </span>
@@ -145,27 +152,27 @@ De là vous pourrez installer GCC qui est un compilateur C très utilisé.
 </div>
 </div>
 
-<div id="outline-container-orgfece204" class="outline-2">
-<h2 id="orgfece204">Instructions</h2>
-<div class="outline-text-2" id="text-orgfece204">
+<div id="outline-container-orgddefe36" class="outline-2">
+<h2 id="orgddefe36">Instructions</h2>
+<div class="outline-text-2" id="text-orgddefe36">
 <p>
 Une instruction en C se termine par un point virgule.
 </p>
 </div>
 
-<div id="outline-container-org0c20801" class="outline-3">
-<h3 id="org0c20801">Variables</h3>
-<div class="outline-text-3" id="text-org0c20801">
+<div id="outline-container-org6cada40" class="outline-3">
+<h3 id="org6cada40">Variables</h3>
+<div class="outline-text-3" id="text-org6cada40">
 <p>
-Les noms de variables utilisées en C doivent obligatoirement commencer 
+Les noms de variables utiliséss en C doivent obligatoirement commencer 
 par une lettre ou un underscore.
 <b>Attention, ce langage est sensible à la casse!</b>
 </p>
 </div>
 
-<div id="outline-container-orgbf3219f" class="outline-4">
-<h4 id="orgbf3219f">Types</h4>
-<div class="outline-text-4" id="text-orgbf3219f">
+<div id="outline-container-orga3f3969" class="outline-4">
+<h4 id="orga3f3969">Types</h4>
+<div class="outline-text-4" id="text-orga3f3969">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">ivar</span>=4;
 <span style="font-weight: bold; text-decoration: underline;">float</span> <span style="font-weight: bold; font-style: italic;">fvar</span>=3.1415;
@@ -175,12 +182,12 @@ par une lettre ou un underscore.
 </div>
 </div>
 
-<div id="outline-container-orgea2385d" class="outline-4">
-<h4 id="orgea2385d">Types énuméré</h4>
-<div class="outline-text-4" id="text-orgea2385d">
+<div id="outline-container-org42562b9" class="outline-4">
+<h4 id="org42562b9">Types Ã©numÃ©rÃ©</h4>
+<div class="outline-text-4" id="text-org42562b9">
 <p>
-Ces types permettent à l'utilisateur de créer un type de variable et d'en définir les 
-différents états. Nous nous en servirons pour les machines à états.
+Ces types permettent Ã  l'utilisateur de crÃ©er un type de variable et d'en dÃ©finir les 
+diffÃ©rents Ã©tats. Nous nous en servirons pour les machines Ã  Ã©tats.
 </p>
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">enum</span> <span style="font-weight: bold; text-decoration: underline;">tricolore</span>{<span style="font-weight: bold; font-style: italic;">vert</span>, <span style="font-weight: bold; font-style: italic;">orange</span>, <span style="font-weight: bold; font-style: italic;">rouge</span>};
@@ -195,12 +202,12 @@ feu = orange;
 
 
 
-<div id="outline-container-org455df71" class="outline-3">
-<h3 id="org455df71">Opérations arithmétique</h3>
-<div class="outline-text-3" id="text-org455df71">
+<div id="outline-container-org82652c2" class="outline-3">
+<h3 id="org82652c2">OpÃ©rations arithmÃ©tique</h3>
+<div class="outline-text-3" id="text-org82652c2">
 <p>
-Les oprérations arithémtiques peuvent être réalisé entre des types différents, 
-mais votre compilateur fera certainement un choix à votre place, et peut être pas celui que vous attendez&#x2026;
+Les oprÃ©rations arithÃ©mtiques peuvent Ãªtre rÃ©alisÃ© entre des types diffÃ©rents, 
+mais votre compilateur fera certainement un choix Ã  votre place, et peut Ãªtre pas celui que vous attendez&#x2026;
 </p>
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">result</span>;
@@ -214,19 +221,19 @@ result = i%f;
 </div>
 </div>
 
-<div id="outline-container-org48c6647" class="outline-2">
-<h2 id="org48c6647">Structures de controle</h2>
-<div class="outline-text-2" id="text-org48c6647">
+<div id="outline-container-org073c9a1" class="outline-2">
+<h2 id="org073c9a1">Structures de controle</h2>
+<div class="outline-text-2" id="text-org073c9a1">
 <p>
-Les structures de contrôles  utilisent des conditions booléennes évalués entre parenthèses.
-Si la condtion booléenne renvoit un résultat différent de 0, elle est considéré valide. Alors les instructions
-placés entre accolades sont executés.
+Les structures de contrÃ´les  utilisent des conditions boolÃ©ennes Ã©valuÃ©s entre parenthÃ¨ses.
+Si la condtion boolÃ©enne renvoit un rÃ©sultat diffÃ©rent de 0, elle est considÃ©rÃ© valide. Alors les instructions
+placÃ©s entre accolades sont executÃ©s.
 </p>
 </div>
 
-<div id="outline-container-org5d5c71c" class="outline-3">
-<h3 id="org5d5c71c">Conditions</h3>
-<div class="outline-text-3" id="text-org5d5c71c">
+<div id="outline-container-org4af9b9d" class="outline-3">
+<h3 id="org4af9b9d">Conditions</h3>
+<div class="outline-text-3" id="text-org4af9b9d">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">if</span>(a==b){
 }
@@ -239,7 +246,7 @@ placés entre accolades sont executés.
 </div>
 
 <p>
-Une structure un peu particulière, et qui nous sera très utile pour faire une machine à état
+Une structure un peu particuliÃ¨re, et qui nous sera trÃ¨s utile pour faire une machine Ã  Ã©tat
 </p>
 
 <div class="org-src-container">
@@ -262,9 +269,9 @@ Une structure un peu particulière, et qui nous sera très utile pour faire une 
 </div>
 </div>
 
-<div id="outline-container-orga64607f" class="outline-3">
-<h3 id="orga64607f">Boucles</h3>
-<div class="outline-text-3" id="text-orga64607f">
+<div id="outline-container-org9841022" class="outline-3">
+<h3 id="org9841022">Boucles</h3>
+<div class="outline-text-3" id="text-org9841022">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">for</span>(<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">i</span>=0;i&lt;10;i++){
 }
@@ -280,60 +287,60 @@ Une structure un peu particulière, et qui nous sera très utile pour faire une 
 </div>
 </div>
 
-<div id="outline-container-orgd1ed23f" class="outline-2">
-<h2 id="orgd1ed23f">Compilation</h2>
+<div id="outline-container-org7a1d882" class="outline-2">
+<h2 id="org7a1d882">Compilation</h2>
 </div>
 
 
-<div id="outline-container-org8a82b7e" class="outline-2">
-<h2 id="org8a82b7e">Directive pre-processeur</h2>
-<div class="outline-text-2" id="text-org8a82b7e">
+<div id="outline-container-orgd030946" class="outline-2">
+<h2 id="orgd030946">Directive pre-processeur</h2>
+<div class="outline-text-2" id="text-orgd030946">
 <p>
 La compilation permet de passer du code source au code machine, ou code assembleur.
-Une étape précède cependant la compilation. Cette étape est le pre-processeur.
+Une Ã©tape prÃ©cÃ¨de cependant la compilation. Cette Ã©tape est le pre-processeur.
 Il existe dans le code source des directives pour le pre-processeur, elles commencent par un #.
-Le pre processeur est entre autre en charge de vérifier la syntaxe et de créer un fichier avant la compilation à proporement parlé.
-<b>Dans le fichier sortant de l'étape de pre-processing, toutes les directives de pre-processing ont été remplacées par leur valeure originale.</b>
+Le pre processeur est entre autre en charge de vÃ©rifier la syntaxe et de crÃ©er un fichier avant la compilation Ã  proporement parlÃ©.
+<b>Dans le fichier sortant de l'Ã©tape de pre-processing, toutes les directives de pre-processing ont Ã©tÃ© remplacÃ©es par leur valeure originale.</b>
 </p>
 </div>
 
 
-<div id="outline-container-org1f16ac2" class="outline-3">
-<h3 id="org1f16ac2">Inclure un fichier header</h3>
-<div class="outline-text-3" id="text-org1f16ac2">
+<div id="outline-container-org347c1f8" class="outline-3">
+<h3 id="org347c1f8">Inclure un fichier header</h3>
+<div class="outline-text-3" id="text-org347c1f8">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"definition.h"</span>
 </pre>
 </div>
 
 <p>
-La ligne précédente sera donc remplacée par le contenu du fichier definition.h
+La ligne prÃ©cÃ©dente sera donc remplacÃ©e par le contenu du fichier definition.h
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb9fc512" class="outline-3">
-<h3 id="orgb9fc512">Définir une chaine de caractère</h3>
-<div class="outline-text-3" id="text-orgb9fc512">
+<div id="outline-container-org11b30a3" class="outline-3">
+<h3 id="org11b30a3">DÃ©finir une chaine de caractÃ¨re</h3>
+<div class="outline-text-3" id="text-org11b30a3">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">MAXVALUE</span> 100
 </pre>
 </div>
 
 <p>
-La chaine de caractère MAXVALUE sera remplacé par 100
+La chaine de caractÃ¨re MAXVALUE sera remplacÃ© par 100
 </p>
 
 <p>
-<b>Pour des raisons de lisibilité et de maintenabilité du code, 
-evitez au maximum d'entrer des valeurs numériques directes, l'utilisation de directives pre-processeur est une façon élégante de le faire</b>
+<b>Pour des raisons de lisibilitÃ© et de maintenabilitÃ© du code, 
+evitez au maximum d'entrer des valeurs numÃ©riques directes, l'utilisation de directives pre-processeur est une faÃ§on Ã©lÃ©gante de le faire</b>
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgdc062f8" class="outline-3">
-<h3 id="orgdc062f8">Compilation conditionnelle</h3>
-<div class="outline-text-3" id="text-orgdc062f8">
+<div id="outline-container-orga53e8bb" class="outline-3">
+<h3 id="orga53e8bb">Compilation conditionnelle</h3>
+<div class="outline-text-3" id="text-orga53e8bb">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">DEBUG</span> 
 <span style="font-weight: bold;">#ifdef</span> DEBUG 
@@ -346,44 +353,44 @@ printf(<span style="font-style: italic;">"Version Client"</span>);
 </div>
 
 <p>
-Un ensemble d'instructions sera compilé ou non selon une condition.
-Cela est très utile pour créer plusieurs executable à partir d'un même fichier sources.
+Un ensemble d'instructions sera compilÃ© ou non selon une condition.
+Cela est trÃ¨s utile pour crÃ©er plusieurs executable Ã  partir d'un mÃªme fichier sources.
 </p>
 </div>
 </div>
 </div>
 
 
-<div id="outline-container-org776e14d" class="outline-2">
-<h2 id="org776e14d">Fonctions</h2>
-<div class="outline-text-2" id="text-org776e14d">
+<div id="outline-container-org2556303" class="outline-2">
+<h2 id="org2556303">Fonctions</h2>
+<div class="outline-text-2" id="text-org2556303">
 <p>
-Une fonction est un ensemble d'instruction. Elle peut être définie par l'utilisateur,
-ou donnée avec l'environnement de développement.
+Une fonction est un ensemble d'instruction. Elle peut Ãªtre dÃ©finie par l'utilisateur,
+ou donnÃ©e avec l'environnement de dÃ©veloppement.
 Elle a:
 </p>
 <ul class="org-ul">
 <li>Un type</li>
 <li>Un nom</li>
 <li>Des arguments</li>
-<li>Un ensemble d'instruction qui la définie</li>
+<li>Un ensemble d'instruction qui la dÃ©finie</li>
 </ul>
 
 
 <p>
-Le type définie le type de sortie de la fonction.
-Le nom de la fonction vien juste après le type.
-Les arguments sont considérées comme les entrées de la fonction, ils sont entre parenthèses et séparé par des virgules.
-Pour finir, les instructions correspondant à la fonction sont entre accolades.
-Pour utiliser une fonction, il faut au préalable qu'elle soit définit.
-Attention, en C vous pouvez définir un prototype de fonction, sans que la fonction
-en elle même soit 
+Le type dÃ©finie le type de sortie de la fonction.
+Le nom de la fonction vien juste aprÃ¨s le type.
+Les arguments sont considÃ©rÃ©es comme les entrÃ©es de la fonction, ils sont entre parenthÃ¨ses et sÃ©parÃ© par des virgules.
+Pour finir, les instructions correspondant Ã  la fonction sont entre accolades.
+Pour utiliser une fonction, il faut au prÃ©alable qu'elle soit dÃ©finit.
+Attention, en C vous pouvez dÃ©finir un prototype de fonction, sans que la fonction
+en elle mÃªme soit 
 </p>
 </div>
 
-<div id="outline-container-org4b5c905" class="outline-3">
-<h3 id="org4b5c905">Exemple</h3>
-<div class="outline-text-3" id="text-org4b5c905">
+<div id="outline-container-org0b8f069" class="outline-3">
+<h3 id="org0b8f069">Exemple</h3>
+<div class="outline-text-3" id="text-org0b8f069">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">&lt;stdio.h&gt;</span>
 

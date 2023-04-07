@@ -27,7 +27,7 @@ En général, les variations de ces grandeurs physiques feront varier une resist
 | Photodiode       | Lumière           |
 | ...              | ...               |
 
-De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacer.
+De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacé.
 
 | Actionneurs |
 |-------------|
@@ -38,12 +38,14 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 | ...         |
 
 Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
-Par exemple dans une automobile ou en IOT.
+Par exemple dans une automobile, en IOT ou en robotique.
 
 
-#+ATTR_HTML: :width 600px
+#+ATTR_HTML: :width 500px
 [[./img/voiture.jpg]]
 
+#+ATTR_HTML: :width 500px
+[[./img/turtlebot.png]]
 
 En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
 La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
@@ -52,7 +54,8 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 * STM32 Nucleo
 
-Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
+Cette carte d'évaluation est issue de la gamme Nucleo.
 
 | Board     | Nucleo STM32L476RG  | Arduino Uno |
 |-----------+---------------------+-------------|
@@ -73,122 +76,10 @@ Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Ce
 
 Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 
-docview:./stm/stm32_l476_usermanual.pdf
+docview:../stm/stm32_l476_usermanual.pdf
 
 
-docview:./stm/stm32_l476_schematic.pdf
-
-
-* LED (Utilisateur)
-** Hardware
-#+attr_html: :width 400px
-[[./img/led.jpg]] 
-
-** Keil Studio Ide
-#+STYLE: <style> pre { background-color: #000000 } pre { color:#00FF00 } </style>
-#+begin_src C++ 
-#include "mbed.h"
-#define WAIT_TIME_MS 100 
-DigitalOut led1(PA_5);
-int main()
-{
-    while (true)
-    {
-        led1 = !led1;
-        thread_sleep_for(WAIT_TIME_MS);
-    }
-}
-#+end_src
-
-** Cube IDE
-#TBC
-
-* Bouton Poussoir (Utilisateur)
-** Hardware
-#+attr_html: :width 400px
-[[./img/button.jpg]] 
-
-** Keil Studio Ide
-# #+ATTR_HTML: :style background-color:#000000;
-# #+BEGIN_EXAMPLE
-#+begin_src C++ 
-#include "mbed.h"
-#define WAIT_TIME_MS 100 
-DigitalOut led1(PA_5);
-DigitalIn button(PC_13);
-
-int main()
-{
-    while (true)
-    {
-        if(button==true){
-        led1 = false;
-        }              
-        else{
-        led1 = true;
-        }
-        thread_sleep_for(WAIT_TIME_MS);
-    }
-}
-#+end_src
-# #+END_EXAMPLE
-
-** Cube IDE
-#TBC
-
-* Servo Moteur (projet)
-#+BEGIN_QUOTE
-Un servomoteur est un système motorisé capable d'atteindre des positions prédéterminées, puis de les maintenir. La position est dans le cas d’un moteur rotatif, une valeur d'angle. \\
----  (Définition Wihipédia)
-#+END_QUOTE
-
-** Hardware
-
-
-
-** Keil Studio Ide
-Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans /File​/Add Mbed Library to Active Project/ \\
-http://os.mbed.com/users/jasonberry/code/Servo/
-
-#+begin_src C++ 
-#include "mbed.h"
-#include "Servo.h"
-
-#define WAIT_TIME_MS 500 
-
-Servo myservo(PA_8);
-
-int main()
-{
-    myservo.position(0);
-    while (true)
-    {
-        myservo.position(90);       
-        thread_sleep_for(WAIT_TIME_MS);
-        myservo.position(0);
-        thread_sleep_for(WAIT_TIME_MS);
-    }   
-}
-#+end_src
-
-
-* Switch (projet)
-# TBC
-* Carte fille /Seeed Grove Base Shield/
-# TBC
-
-* Exercices
-
-** Exercice 1
-Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
-
-** Exercice 2
-Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
-
-** Exercice 3
-Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
-** Exercice 4
-Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
+docview:../stm/stm32_l476_schematic.pdf
 
 
 
@@ -196,5 +87,5 @@ Programmer la carte de façon à ce le servo moteur face une rotation de 90° da
 
 ** Nom de broches
 
-# #+INCLUDE: ./LG476_pinname.org
+#+INCLUDE: ../LG476_pinname.org
 
