@@ -27,6 +27,14 @@ Avant le début du cours, il est vivement conseillé:
 + D'installer les logiciels prérequis (voir en bas de page)
 + De créer les comptes associés le cas échéant 
 
+
+** Contenu
+
+[[./08_CProgramming.org][Programmation en C]] \\
+[[./04_UC.org][Microcontroller ]] \\
+ 
+
+
 ** Compétences
  
 Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique:
@@ -39,6 +47,7 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 
 + Notes de TPs (30%)
 + Projet (70%) (des éléments du projet seront donnés durant le TPs)
+
 
 ** Projet 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;

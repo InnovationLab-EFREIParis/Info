@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Microcontroller (µC)</title>
+<title>Microcontroller (ÂµC)</title>
 <meta name="generator" content="Org mode" />
 <meta name="description" content="prototypage rapide"
  />
@@ -64,33 +64,49 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">Microcontroller (µC)</h1>
+<h1 class="title">Microcontroller (ÂµC)</h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgd9cc2ac">STM32 Nucleo</a></li>
-<li><a href="#org7b66d92">Cube IDE</a></li>
-<li><a href="#orgca794cf">GPIO</a>
+<li><a href="#org30f99d9">Carte d'évaluation Nucleo</a>
 <ul>
-<li><a href="#org65cbc55">NomDuProjet.ioc</a></li>
-<li><a href="#org61a6f4c">main.h</a></li>
-<li><a href="#orgc8b182a">main.c</a></li>
+<li><a href="#org723519e">LED (Utilisateur)</a>
+<ul>
+<li><a href="#orgf304465">Hardware</a></li>
 </ul>
 </li>
-<li><a href="#orgdd09c5a">La carte d'évaluation</a></li>
-<li><a href="#orgf22320f">Bouton Poussoir (Utilisateur)</a>
+<li><a href="#org5b1d4e7">Bouton Poussoir (Utilisateur)</a>
 <ul>
-<li><a href="#orgd20f1cb">Hardware</a></li>
-<li><a href="#orgd8deea3">Exercice 1</a></li>
-<li><a href="#orgcd55dd8">Exercice 2</a></li>
-<li><a href="#orga3d0b7a">Exercice 3</a></li>
+<li><a href="#org145550d">Hardware</a></li>
 </ul>
 </li>
-<li><a href="#org34ed339">Le microcontroller</a></li>
-<li><a href="#org1a91e23">Annexes</a>
+</ul>
+</li>
+<li><a href="#org2f892b2">Le microcontroller</a>
 <ul>
-<li><a href="#org3a11c83">Nom de broches</a></li>
+<li><a href="#org135c150">Caractéristiques</a></li>
+<li><a href="#orge36f625">Architecture</a></li>
+</ul>
+</li>
+<li><a href="#orgb85e550">Environnement de développement (IDE) CubeIDE</a>
+<ul>
+<li><a href="#orgcc5f7f5">HAL (Hardware Abstraction Layer)</a></li>
+<li><a href="#orgd7c81dd">GPIO</a>
+<ul>
+<li><a href="#orgb1c345a">NomDuProjet.ioc</a></li>
+<li><a href="#org92c3ac5">main.h</a></li>
+<li><a href="#org4a958ae">main.c</a></li>
+</ul>
+</li>
+<li><a href="#org7676533">Exercice 1</a></li>
+<li><a href="#orgbe4e299">Exercice 2</a></li>
+<li><a href="#orge3940d1">Exercice 3</a></li>
+</ul>
+</li>
+<li><a href="#org7f8f25a">Annexes</a>
+<ul>
+<li><a href="#org7300b63">Nom de broches</a></li>
 </ul>
 </li>
 </ul>
@@ -113,9 +129,9 @@ Ces périphériques sont reliés via un bus interne, décris ci desssous comme u
 
 
 <p>
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué. 
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout dÃ©signÃ© pour Ãªtre embarquÃ©. 
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra Ãªtre convertie en tension (ou en courant), et donc exploitable par le ÂµC.
 </p>
 
 
@@ -200,7 +216,8 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 </table>
 
 <p>
-Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. 
+Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
 Par exemple dans une automobile, en IOT ou en robotique.
 </p>
 
@@ -224,11 +241,11 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 
 
-<div id="outline-container-orgd9cc2ac" class="outline-2">
-<h2 id="orgd9cc2ac">STM32 Nucleo</h2>
-<div class="outline-text-2" id="text-orgd9cc2ac">
+<div id="outline-container-org30f99d9" class="outline-2">
+<h2 id="org30f99d9">Carte d'évaluation Nucleo</h2>
+<div class="outline-text-2" id="text-org30f99d9">
 <p>
-Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des tâches qu'il aura à accomplir et des contraintes en terme
+Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des taches qu'il aura à accomplir et des contraintes en terme
 de coûts, de consommation, de l'ergonomie de l'interface de développement&#x2026;
 </p>
 
@@ -237,6 +254,83 @@ Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
 Cette carte d'évaluation est issue de la gamme Nucleo.
 </p>
 
+
+
+
+<div class="figure">
+<p><img src="./img/hw_block_diagram.jpg" alt="hw_block_diagram.jpg" width="500px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/top_layout.jpg" alt="top_layout.jpg" width="500px" />
+</p>
+</div>
+
+
+<p>
+Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+</p>
+
+<p>
+<a href="../stm/stm32_l476_usermanual.pdf">Manuel utilisateur</a>
+</p>
+
+<p>
+<a href="../stm/stm32_l476_schematic.pdf">SchÃ©ma Ã©lectrique</a>
+</p>
+
+<p>
+<a href="../stm/stm32_l476_datasheet.pdf">Datasheet STM32L476RG</a>
+</p>
+</div>
+
+
+
+<div id="outline-container-org723519e" class="outline-3">
+<h3 id="org723519e">LED (Utilisateur)</h3>
+<div class="outline-text-3" id="text-org723519e">
+</div>
+<div id="outline-container-orgf304465" class="outline-4">
+<h4 id="orgf304465">Hardware</h4>
+<div class="outline-text-4" id="text-orgf304465">
+
+<div class="figure">
+<p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org5b1d4e7" class="outline-3">
+<h3 id="org5b1d4e7">Bouton Poussoir (Utilisateur)</h3>
+<div class="outline-text-3" id="text-org5b1d4e7">
+</div>
+<div id="outline-container-org145550d" class="outline-4">
+<h4 id="org145550d">Hardware</h4>
+<div class="outline-text-4" id="text-org145550d">
+
+<div class="figure">
+<p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org2f892b2" class="outline-2">
+<h2 id="org2f892b2">Le microcontroller</h2>
+<div class="outline-text-2" id="text-org2f892b2">
+</div>
+<div id="outline-container-org135c150" class="outline-3">
+<h3 id="org135c150">Caractéristiques</h3>
+<div class="outline-text-3" id="text-org135c150">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -346,28 +440,30 @@ Cette carte d'évaluation est issue de la gamme Nucleo.
 </tr>
 </tbody>
 </table>
+</div>
+</div>
 
 
+<div id="outline-container-orge36f625" class="outline-3">
+<h3 id="orge36f625">Architecture</h3>
+<div class="outline-text-3" id="text-orge36f625">
 <p>
-Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+Voir page 17 de la datasheet
 </p>
 
-<p>
-<a href="../stm/stm32_l476_usermanual.pdf">Manuel utilisateur</a>
-</p>
 
-<p>
-<a href="../stm/stm32_l476_schematic.pdf">Schéma électrique</a>
-</p>
-
-<p>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+<div class="figure">
+<p><img src="./img/uc_diagram.jpg" alt="uc_diagram.jpg" />
 </p>
 </div>
 </div>
-<div id="outline-container-org7b66d92" class="outline-2">
-<h2 id="org7b66d92">Cube IDE</h2>
-<div class="outline-text-2" id="text-org7b66d92">
+</div>
+</div>
+
+
+<div id="outline-container-orgb85e550" class="outline-2">
+<h2 id="orgb85e550">Environnement de développement (IDE) CubeIDE</h2>
+<div class="outline-text-2" id="text-orgb85e550">
 <p>
 Configuration du projet
 </p>
@@ -383,35 +479,44 @@ Configuration du projet
 </p>
 </div>
 </div>
+
+
+<div id="outline-container-orgcc5f7f5" class="outline-3">
+<h3 id="orgcc5f7f5">HAL (Hardware Abstraction Layer)</h3>
+<div class="outline-text-3" id="text-orgcc5f7f5">
+<p>
+Nous utiliserons les fonctions HAL incluent dans l'environnement de développement.
+Elles permettent de simplifier le travail du développeur concernant l'utilisation, la configuration et l'initialisation 
+des périphériques du microcontroller.
+</p>
+</div>
 </div>
 
 
-
-
-<div id="outline-container-orgca794cf" class="outline-2">
-<h2 id="orgca794cf">GPIO</h2>
-<div class="outline-text-2" id="text-orgca794cf">
+<div id="outline-container-orgd7c81dd" class="outline-3">
+<h3 id="orgd7c81dd">GPIO</h3>
+<div class="outline-text-3" id="text-orgd7c81dd">
 <p>
-General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrée ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
 </p>
 </div>
 
-<div id="outline-container-org65cbc55" class="outline-3">
-<h3 id="org65cbc55">NomDuProjet.ioc</h3>
-<div class="outline-text-3" id="text-org65cbc55">
+<div id="outline-container-orgb1c345a" class="outline-4">
+<h4 id="orgb1c345a">NomDuProjet.ioc</h4>
+<div class="outline-text-4" id="text-orgb1c345a">
 <p>
 L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
 </p>
 <ul class="org-ul">
-<li>Clique gauche sur les broches pour les configurer en sorties ou en entré</li>
+<li>Clique gauche sur les broches pour les configurer en sorties ou en entrÃ©</li>
 <li>Clique droit sur une broche pour lui donner un label</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org61a6f4c" class="outline-3">
-<h3 id="org61a6f4c">main.h</h3>
-<div class="outline-text-3" id="text-org61a6f4c">
+<div id="outline-container-org92c3ac5" class="outline-4">
+<h4 id="org92c3ac5">main.h</h4>
+<div class="outline-text-4" id="text-org92c3ac5">
 <p>
 Les directives suivantes permettent de faire le lien entre les user<sub>label</sub> et les noms des broches
 </p>
@@ -425,9 +530,9 @@ Les directives suivantes permettent de faire le lien entre les user<sub>label</s
 </div>
 </div>
 
-<div id="outline-container-orgc8b182a" class="outline-3">
-<h3 id="orgc8b182a">main.c</h3>
-<div class="outline-text-3" id="text-orgc8b182a">
+<div id="outline-container-org4a958ae" class="outline-4">
+<h4 id="org4a958ae">main.c</h4>
+<div class="outline-text-4" id="text-org4a958ae">
 <p>
 Cette fonction généré automatiquement configure les GPIO <br />
 </p>
@@ -435,8 +540,6 @@ Cette fonction généré automatiquement configure les GPIO <br />
 <pre class="src src-C++"><span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">MX_GPIO_Init</span>(<span style="font-weight: bold; text-decoration: underline;">void</span>)
 </pre>
 </div>
-
-
 
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_GPIO_WritePin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span>* <span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>, <span style="font-weight: bold; text-decoration: underline;">GPIO_PinState</span> <span style="font-weight: bold; font-style: italic;">PinState</span>);
@@ -467,39 +570,7 @@ Exemple:
 <p>
 Drivers&gt;STM32L4xx<sub>HAL</sub><sub>Driver</sub>&gt;stm32l4xx<sub>hal</sub><sub>gpio.h</sub>
 Ce fichier fournit par STMicro définit les masques derriere les alias GPIO<sub>PIN</sub><sub>X</sub> ainsi que toutes les fonctions relatives à l'utilisation des GPIO
-<code>=====</code>
 </p>
-
-<p>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; refs/remotes/origin/master
-</p>
-</div>
-</div>
-</div>
-
-<div id="outline-container-orgdd09c5a" class="outline-2">
-<h2 id="orgdd09c5a">La carte d'évaluation</h2>
-<div class="outline-text-2" id="text-orgdd09c5a">
-<p>
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
-</p>
-</div>
-</div>
-<div id="outline-container-orgf22320f" class="outline-2">
-<h2 id="orgf22320f">Bouton Poussoir (Utilisateur)</h2>
-<div class="outline-text-2" id="text-orgf22320f">
-</div>
-<div id="outline-container-orgd20f1cb" class="outline-3">
-<h3 id="orgd20f1cb">Hardware</h3>
-<div class="outline-text-3" id="text-orgd20f1cb">
-
-<div class="figure">
-<p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
-</p>
-</div>
-
-
-
 
 <p>
 Pour les exercices suivant, vous pouvez vous aider de la fonction 
@@ -510,80 +581,45 @@ Pour les exercices suivant, vous pouvez vous aider de la fonction
 </div>
 </div>
 </div>
+</div>
 
 
 
-<div id="outline-container-orgd8deea3" class="outline-3">
-<h3 id="orgd8deea3">Exercice 1</h3>
-<div class="outline-text-3" id="text-orgd8deea3">
+<div id="outline-container-org7676533" class="outline-3">
+<h3 id="org7676533">Exercice 1</h3>
+<div class="outline-text-3" id="text-org7676533">
 <p>
-Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume quand on appuie sur le bouton, reste allumÃ© quand on le relache, puis s'Ã©teint Ã  la pression suivante.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgcd55dd8" class="outline-3">
-<h3 id="orgcd55dd8">Exercice 2</h3>
-<div class="outline-text-3" id="text-orgcd55dd8">
+<div id="outline-container-orgbe4e299" class="outline-3">
+<h3 id="orgbe4e299">Exercice 2</h3>
+<div class="outline-text-3" id="text-orgbe4e299">
 <p>
-Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume 1 seconde puis s'Ã©teigne quand on bascule le switch sur une position. La LED reste Ã©teinte lorsque le switch est sur l'autre position.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orga3d0b7a" class="outline-3">
-<h3 id="orga3d0b7a">Exercice 3</h3>
-<div class="outline-text-3" id="text-orga3d0b7a">
+<div id="outline-container-orge3940d1" class="outline-3">
+<h3 id="orge3940d1">Exercice 3</h3>
+<div class="outline-text-3" id="text-orge3940d1">
 <p>
-Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
-</p>
-
-
-<p>
-<code>=====</code>
-</p>
-
-<div class="figure">
-<p><img src="./img/hw_block_diagram.jpg" alt="hw_block_diagram.jpg" width="500px" />
-</p>
-</div>
-
-
-<div class="figure">
-<p><img src="./img/top_layout.jpg" alt="top_layout.jpg" width="500px" />
-</p>
-</div>
-</div>
-</div>
-</div>
-
-<div id="outline-container-org34ed339" class="outline-2">
-<h2 id="org34ed339">Le microcontroller</h2>
-<div class="outline-text-2" id="text-org34ed339">
-<p>
-Voir page 17 de la datasheet
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; refs/remotes/origin/master
-</p>
-
-<p>
-<a href="../stm/stm32_l476_datasheet.pdf">Datasheet STM32L476RG</a>
-</p>
-
-
-<div class="figure">
-<p><img src="./img/uc_diagram.jpg" alt="uc_diagram.jpg" />
+Programmer la carte de faÃ§on Ã  ce que l'intensitÃ© de la luminositÃ© de la LED augmente puis diminue jusq'Ã  complÃ©tement d'Ã©teindre, et cela de faÃ§on cyclique (pÃ©riode de 500ms)
 </p>
 </div>
 </div>
 </div>
 
-<div id="outline-container-org1a91e23" class="outline-2">
-<h2 id="org1a91e23">Annexes</h2>
-<div class="outline-text-2" id="text-org1a91e23">
+<div id="outline-container-org7f8f25a" class="outline-2">
+<h2 id="org7f8f25a">Annexes</h2>
+<div class="outline-text-2" id="text-org7f8f25a">
 </div>
-<div id="outline-container-org3a11c83" class="outline-3">
-<h3 id="org3a11c83">Nom de broches</h3>
-<div class="outline-text-3" id="text-org3a11c83">
+<div id="outline-container-org7300b63" class="outline-3">
+<h3 id="org7300b63">Nom de broches</h3>
+<div class="outline-text-3" id="text-org7300b63">
 </div>
 </div>
 </div>

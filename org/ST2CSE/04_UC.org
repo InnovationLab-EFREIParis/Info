@@ -1,4 +1,4 @@
-#+title:  Microcontroller (µC)
+#+title:  Microcontroller (ÂµC)
 #+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -19,9 +19,9 @@ Ces périphériques sont reliés via un bus interne, décris ci desssous comme u
 
 
 
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué. 
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout dÃ©signÃ© pour Ãªtre embarquÃ©. 
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra Ãªtre convertie en tension (ou en courant), et donc exploitable par le ÂµC.
 
 
 | Capteurs         | Grandeur physique |
@@ -42,7 +42,8 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 | Ecran       |
 | ...         |
 
-Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. 
+Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
 Par exemple dans une automobile, en IOT ou en robotique.
 
 
@@ -57,13 +58,50 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 
 
-* STM32 Nucleo
+* Carte d'évaluation Nucleo
 
-Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des tâches qu'il aura à accomplir et des contraintes en terme
+Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des taches qu'il aura à accomplir et des contraintes en terme
 de coûts, de consommation, de l'ergonomie de l'interface de développement...
 
 Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
 Cette carte d'évaluation est issue de la gamme Nucleo.
+
+
+
+#+ATTR_HTML: :width 500px
+[[./img/hw_block_diagram.jpg]]
+
+#+ATTR_HTML: :width 500px
+[[./img/top_layout.jpg]]
+
+
+Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+
+# docview:../stm/stm32_l476_usermanual.pdf
+
+[[../stm/stm32_l476_usermanual.pdf][Manuel utilisateur]]
+
+[[../stm/stm32_l476_schematic.pdf][SchÃ©ma Ã©lectrique]]
+
+[[../stm/stm32_l476_datasheet.pdf][Datasheet STM32L476RG]]
+
+
+
+** LED (Utilisateur)
+*** Hardware
+#+attr_html: :width 400px
+[[./img/led.jpg]] 
+
+** Bouton Poussoir (Utilisateur)
+*** Hardware
+#+attr_html: :width 400px
+[[./img/button.jpg]] 
+
+
+
+
+* Le microcontroller
+** Caractéristiques
 
 | Board     | Nucleo STM32L476RG  | Arduino Uno |
 |-----------+---------------------+-------------|
@@ -84,16 +122,14 @@ Cette carte d'évaluation est issue de la gamme Nucleo.
 | RTC       | 1                   | 0           |
 
 
-Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+** Architecture
 
-# docview:../stm/stm32_l476_usermanual.pdf
+Voir page 17 de la datasheet
 
-[[../stm/stm32_l476_usermanual.pdf][Manuel utilisateur]]
+[[./img/uc_diagram.jpg]]
 
-[[../stm/stm32_l476_schematic.pdf][Schéma électrique]]
 
-<<<<<<< HEAD
-* Cube IDE
+* Environnement de développement (IDE) CubeIDE
 
 Configuration du projet
 #+ATTR_HTML: :width 800px
@@ -103,17 +139,22 @@ Configuration du projet
 [[./img/projectgenerator.jpg]]
 
 
+** HAL (Hardware Abstraction Layer)
+
+Nous utiliserons les fonctions HAL incluent dans l'environnement de développement.
+Elles permettent de simplifier le travail du développeur concernant l'utilisation, la configuration et l'initialisation 
+des périphériques du microcontroller.
 
 
-* GPIO
-General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrée ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+** GPIO
+General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
 
-** NomDuProjet.ioc
+*** NomDuProjet.ioc
 L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
-+ Clique gauche sur les broches pour les configurer en sorties ou en entré
++ Clique gauche sur les broches pour les configurer en sorties ou en entrÃ©
 + Clique droit sur une broche pour lui donner un label 
 
-** main.h
+*** main.h
 Les directives suivantes permettent de faire le lien entre les user_label et les noms des broches
 #+begin_src C++ :includes <stdio.h>
 #define user_label nom_broche
@@ -122,13 +163,11 @@ Les directives suivantes permettent de faire le lien entre les user_label et les
 #define D8_Pin GPIO_PIN_9
 #+end_src
 
-** main.c
+*** main.c
 Cette fonction généré automatiquement configure les GPIO \\
 #+begin_src C++ :includes <stdio.h>
 static void MX_GPIO_Init(void)
 #+end_src
-
-
 
 #+begin_src C++ :includes <stdio.h>
 void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
@@ -150,20 +189,6 @@ PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
 
 Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
 Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
-=======
-# docview:../stm/stm32_l476_schematic.pdf
->>>>>>> refs/remotes/origin/master
-
-* La carte d'évaluation
-
-<<<<<<< HEAD
-* Bouton Poussoir (Utilisateur)
-** Hardware
-#+attr_html: :width 400px
-[[./img/button.jpg]] 
-
-
-
 
 Pour les exercices suivant, vous pouvez vous aider de la fonction 
 #+begin_src C++ :includes <stdio.h>
@@ -173,30 +198,13 @@ HAL_Delay();
 
 
 ** Exercice 1
-Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume quand on appuie sur le bouton, reste allumÃ© quand on le relache, puis s'Ã©teint Ã  la pression suivante.
 
 ** Exercice 2
-Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
+Programmer la carte de faÃ§on Ã  ce que la LED s'allume 1 seconde puis s'Ã©teigne quand on bascule le switch sur une position. La LED reste Ã©teinte lorsque le switch est sur l'autre position.
 
 ** Exercice 3
-Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
-
-
-=======
-#+ATTR_HTML: :width 500px
-[[./img/hw_block_diagram.jpg]]
-
-#+ATTR_HTML: :width 500px
-[[./img/top_layout.jpg]]
-
-* Le microcontroller
-
-Voir page 17 de la datasheet
->>>>>>> refs/remotes/origin/master
-
-[[../stm/stm32_l476_datasheet.pdf][Datasheet STM32L476RG]]
-
-[[./img/uc_diagram.jpg]]
+Programmer la carte de faÃ§on Ã  ce que l'intensitÃ© de la luminositÃ© de la LED augmente puis diminue jusq'Ã  complÃ©tement d'Ã©teindre, et cela de faÃ§on cyclique (pÃ©riode de 500ms)
 
 * Annexes
 

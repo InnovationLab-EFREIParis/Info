@@ -15,13 +15,13 @@
 
 
 * SRD
-| Nom                | Binome |
-|--------------------+--------|
-| Julien Pannier     | A      |
-| Elouran De Kerros  | A      |
-| Sahbi MOATEMRI     | B      |
-| Ornélie Buissereth | B      |
-| ...                | C      |
-| ...                | C      |
-|                    |        |
+| Nom                   | Binome |
+|-----------------------+--------|
+| Julien Pannier        | A      |
+| Elouran De Kerros     | A      |
+| Sahbi MOATEMRI        | B      |
+| Ornélie Buissereth    | B      |
+| Agathe Valence        | C      |
+| Clément Francqueville | C      |
+|                       |        |
 
