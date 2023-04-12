@@ -6,24 +6,26 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 * Bienvenue
-Ce cours porte sur la conception de système embarqué, qui est une notion recoupant beaucoup de domaines. 
-Le choix a été fait d'avoir une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
-immédiatement utilisables lors de vos projets étudiants.
-Avant le début du cours, il est vivement conseillé de:
-+ Installer les logiciels prérequis (voir en bas de page)
-+ Créer les comptes associés 
+Ce cours porte sur la conception de systèmes embarqués.
+La définition d'un système embarqué n'est pas standardisé mais répond à certaines caractéristiques:
++ Intéragie avec son environnement
++ Dépend la plupart du temps d'un système plus vaste
++ Peut être soumis à des contraintes temps réels
++ Spécialisé sur une tâche en particulier relative à un traitement
 
-* Contenu
-
-[[./01_Capteur.org]] \\
-[[./02_CAO.org]] \\
-[[./03_FAO.org]] \\
-[[./04_UC.org]] \\
-[[./05_projet.org]] \\
-[[./06_analogique.org]] \\
-[[./07_CI.org]] \\
-
-
+Ce terme désigne des systèmes composés de quelques tranistors, capacités et resistances, jusqu'à des ordinateurs embarqués.
+Entre ces deux extrêmes se situe les systèmes à base de micro controller, qui sont souvent sous entendu lorsque l'on parle de systèmes embarqués.
+Nous utiliserons ce type de système dans le cadre de ce cours. 
+La conception d'un système embarqué fait appel à plusieurs domaines:
++ La programmation
++ La conception  de circuit imprimé
++ La conception de boitier et ou chassis
+ 
+Le choix a été fait d'avoir pour ce cours une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
+immédiatement utilisables lors de vos projets étudiants et qui vous donnera egalement des perspectives à long terme si vous souhaitez vous orienter vers ce domaine.
+Avant le début du cours, il est vivement conseillé:
++ D'installer les logiciels prérequis (voir en bas de page)
++ De créer les comptes associés le cas échéant 
 
 ** Compétences
  
@@ -36,7 +38,7 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 ** Evaluation
 
 + Notes de TPs (30%)
-+ Projet (70%) (A noter que des éléments du projet seront donnés durant le TPs)
++ Projet (70%) (des éléments du projet seront donnés durant le TPs)
 
 ** Projet 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;

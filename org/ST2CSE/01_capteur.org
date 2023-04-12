@@ -17,16 +17,16 @@ de mener une action. \\
 [[./doc/1_ST2CSE_Generalite_2023.pptx]]
 
 
-Les capteurs sont les premiers éléments de la chaine d'acquisition. Des outils mathématiques nous permettront 
-de les caractériser.
-Pour une série de mesures, M_{i} on a :
-
-* La moyenne
-\begin{equation}
-	\bar{m}=\sum_{i=1}^n \frac{M_{i}}{n}
-\end{equation}
-
-\begin{equation}
-   \frac{n!}{k!(n-k)!} = \binom{n}{k} 
-\end{equation}
+# Les capteurs sont les premiers éléments de la chaine d'acquisition. Des outils mathématiques nous permettront 
+# de les caractériser.
+# Pour une série de mesures, M_{i} on a :
+# 
+# * La moyenne
+# \begin{equation}
+# 	\bar{m}=\sum_{i=1}^n \frac{M_{i}}{n}
+# \end{equation}
+# 
+# \begin{equation}
+#    \frac{n!}{k!(n-k)!} = \binom{n}{k} 
+# \end{equation}
 

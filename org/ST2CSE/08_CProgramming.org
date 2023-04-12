@@ -12,14 +12,29 @@ un rappel sur des choses à savoir.
 Il peut Ãªtre interessant si vous n'avez jamais fait de C de monter en compÃ©tence
 dans un premier temps sur votre propre ordinateur avant de vous lancer dans la programmation 
 d'un micro controller.
+<<<<<<< HEAD
 # Faire un code qui fonctionne et qui est stable c'est déjà trés bien, mais il est au moins aussi important de faire un code lisible et maintenable. \\
 
 * Installer un environnement Linux sous Windows
 Si vous Ãªtes sous windows10 ou ultÃ©rieur, je vous conseille d'installer WSL2 (Windows Subsystem For Linux).
 Cette fonctionnalitÃ© vous permettra ensuite d'installer Ubuntu. 
 De lÀ vous pourrez installer GCC qui est un compilateur C trÃ¨s utilisÃ©.
+=======
+# Faire un code qui fonctionne et qui est stable c'est dÃ©jÃ  trÃ¨s bien, mais il est au moins aussi important de faire un code lisible et maintenable. \\
 
-https://learn.microsoft.com/fr-fr/windows/wsl/install
+* Installer un environnement Linux sous Windows
+Linux est un système d'exploitation très utilisé pour le développement.
+Si vous êtes peu famillier avec cet environnement et si vous êtes sous windows10
+ou ultérieur, je vous conseille d'installer WSL2 (Windows Subsystem For Linux). \\
+https://learn.microsoft.com/fr-fr/windows/wsl/install \\
+Une fois cette fonctionnalité vous permettra ensuite d'installer une distribution linux,
+je vous conseille Ubuntu, qui est disponible dans le Windows store. \\
+>>>>>>> refs/remotes/origin/master
+
+Une fois sous Ubuntu, vous pourrez installer GCC qui est un compilateur C trés utilisé.
+#+begin_src bash 
+sudo apt install gcc
+#+end_src
 
 
 
@@ -40,7 +55,11 @@ Une instruction en C se termine par un point virgule.
 
 ** Variables
 
+<<<<<<< HEAD
 Les noms de variables utilisÃ©es en C doivent obligatoirement commencer 
+=======
+Les noms de variables utiliséss en C doivent obligatoirement commencer 
+>>>>>>> refs/remotes/origin/master
 par une lettre ou un underscore.
 *Attention, ce langage est sensible Ã  la casse!*
 
@@ -64,7 +83,11 @@ feu = orange;
 
 
 
+<<<<<<< HEAD
 ** Opérations arithmétique
+=======
+** OpÃ©rations arithmÃ©tique
+>>>>>>> refs/remotes/origin/master
 Les oprÃ©rations arithÃ©mtiques peuvent Ãªtre rÃ©alisÃ© entre des types diffÃ©rents, 
 mais votre compilateur fera certainement un choix Ã  votre place, et peut Ãªtre pas celui que vous attendez...
 #+begin_src C++ :includes <stdio.h>
@@ -165,12 +188,13 @@ Cela est trÃ¨s utile pour crÃ©er plusieurs executable Ã  partir d'un mÃª
 
 
 * Fonctions
-Une fonction est un ensemble d'instruction. Elle peut être définie par l'utilisateur,
-ou donnée avec l'environnement de développement.
+Une fonction est un ensemble d'instruction. Elle peut Ãªtre dÃ©finie par l'utilisateur,
+ou donnÃ©e avec l'environnement de dÃ©veloppement.
 Elle a:
 + Un type
 + Un nom
 + Des arguments
+<<<<<<< HEAD
 + Un ensemble d'instruction qui la définisse
 
 Le type définie le type de sortie de la fonction.
@@ -187,6 +211,18 @@ C'est la fonction prinicpale de votre programme et la première à être execut�
 Quelque soit la plateforme (embarqué/débarqué) cette fonction est obligatoire en C et C++.
 A noter qu'en langage Arduino cette fonction est dissumulée.
 
+=======
++ Un ensemble d'instruction qui la dÃ©finie
+
+
+Le type dÃ©finie le type de sortie de la fonction.
+Le nom de la fonction vien juste aprÃ¨s le type.
+Les arguments sont considÃ©rÃ©es comme les entrÃ©es de la fonction, ils sont entre parenthÃ¨ses et sÃ©parÃ© par des virgules.
+Pour finir, les instructions correspondant Ã  la fonction sont entre accolades.
+Pour utiliser une fonction, il faut au prÃ©alable qu'elle soit dÃ©finit.
+Attention, en C vous pouvez dÃ©finir un prototype de fonction, sans que la fonction
+en elle mÃªme soit 
+>>>>>>> refs/remotes/origin/master
 
 ** Exemple
 

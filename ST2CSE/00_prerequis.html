@@ -69,63 +69,72 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org259a2d0">Bienvenue</a></li>
-<li><a href="#orgd2a05d6">Contenu</a>
+<li><a href="#org7f60bfa">Bienvenue</a>
 <ul>
-<li><a href="#org562df08">Compétences</a></li>
-<li><a href="#orgc8dac9c">Evaluation</a></li>
-<li><a href="#org37483d9">Projet</a></li>
-<li><a href="#org340193f">Binomes</a></li>
-<li><a href="#orgbc34b06">Agenda</a></li>
+<li><a href="#orgd1b4067">Compétences</a></li>
+<li><a href="#org5a67399">Evaluation</a></li>
+<li><a href="#org4bdc3e3">Projet</a></li>
+<li><a href="#org2905f09">Binomes</a>
+<ul>
+<li><a href="#org8526ba8">TI</a></li>
+<li><a href="#org2c548e2">SRD</a></li>
 </ul>
 </li>
-<li><a href="#orgb69a7b8">Logiciels prérequis</a>
+<li><a href="#orgbf56859">Agenda</a></li>
+</ul>
+</li>
+<li><a href="#orgc344594">Logiciels prérequis</a>
 <ul>
-<li><a href="#org8dba219">Conception 3D - Solidworks</a></li>
-<li><a href="#org1ea38f3">Fabrication 3D - Ideamaker</a></li>
-<li><a href="#org905c477">Programmation microcontroller - STM32CubeIde</a></li>
-<li><a href="#orgf3cd392">Création de carte électronique - EasyEDA Designer</a></li>
-<li><a href="#orga3e6539">Gestion de version</a></li>
+<li><a href="#org2d98b72">Conception 3D - Solidworks</a></li>
+<li><a href="#orgfc26db0">Fabrication 3D - Ideamaker</a></li>
+<li><a href="#org0673147">Programmation microcontroller - STM32CubeIde</a></li>
+<li><a href="#org5e9b9e4">Création de carte électronique - EasyEDA Designer</a></li>
+<li><a href="#orgbb2afa6">Gestion de version</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org259a2d0" class="outline-2">
-<h2 id="org259a2d0">Bienvenue</h2>
-<div class="outline-text-2" id="text-org259a2d0">
+<div id="outline-container-org7f60bfa" class="outline-2">
+<h2 id="org7f60bfa">Bienvenue</h2>
+<div class="outline-text-2" id="text-org7f60bfa">
 <p>
-Ce cours porte sur la conception de système embarqué, qui est une notion recoupant beaucoup de domaines. 
-Le choix a été fait d'avoir une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
-immédiatement utilisables lors de vos projets étudiants.
-Avant le début du cours, il est vivement conseillé de:
+Ce cours porte sur la conception de systèmes embarqués.
+La définition d'un système embarqué n'est pas standardisé mais répond à certaines caractéristiques:
 </p>
 <ul class="org-ul">
-<li>Installer les logiciels prérequis (voir en bas de page)</li>
-<li>Créer les comptes associés</li>
+<li>Intéragie avec son environnement</li>
+<li>Dépend la plupart du temps d'un système plus vaste</li>
+<li>Peut être soumis à des contraintes temps réels</li>
+<li>Spécialisé sur une tâche en particulier relative à un traitement</li>
+</ul>
+
+<p>
+Ce terme désigne des systèmes composés de quelques tranistors, capacités et resistances, jusqu'à des ordinateurs embarqués.
+Entre ces deux extrêmes se situe les systèmes à base de micro controller, qui sont souvent sous entendu lorsque l'on parle de systèmes embarqués.
+Nous utiliserons ce type de système dans le cadre de ce cours. 
+La conception d'un système embarqué fait appel à plusieurs domaines:
+</p>
+<ul class="org-ul">
+<li>La programmation</li>
+<li>La conception  de circuit imprimé</li>
+<li>La conception de boitier et ou chassis</li>
+</ul>
+
+<p>
+Le choix a été fait d'avoir pour ce cours une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
+immédiatement utilisables lors de vos projets étudiants et qui vous donnera egalement des perspectives à long terme si vous souhaitez vous orienter vers ce domaine.
+Avant le début du cours, il est vivement conseillé:
+</p>
+<ul class="org-ul">
+<li>D'installer les logiciels prérequis (voir en bas de page)</li>
+<li>De créer les comptes associés le cas échéant</li>
 </ul>
 </div>
-</div>
 
-<div id="outline-container-orgd2a05d6" class="outline-2">
-<h2 id="orgd2a05d6">Contenu</h2>
-<div class="outline-text-2" id="text-orgd2a05d6">
-<p>
-<a href="./01_Capteur.html">./01_Capteur.html</a> <br />
-<a href="./02_CAO.html">./02_CAO.html</a> <br />
-<a href="./03_FAO.html">./03_FAO.html</a> <br />
-<a href="./04_UC.html">./04_UC.html</a> <br />
-<a href="./05_projet.html">./05_projet.html</a> <br />
-<a href="./06_analogique.html">./06_analogique.html</a> <br />
-<a href="./07_CI.html">./07_CI.html</a> <br />
-</p>
-</div>
-
-
-
-<div id="outline-container-org562df08" class="outline-3">
-<h3 id="org562df08">Compétences</h3>
-<div class="outline-text-3" id="text-org562df08">
+<div id="outline-container-orgd1b4067" class="outline-3">
+<h3 id="orgd1b4067">Compétences</h3>
+<div class="outline-text-3" id="text-orgd1b4067">
 <p>
 Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique:
 </p>
@@ -138,19 +147,19 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 </div>
 </div>
 
-<div id="outline-container-orgc8dac9c" class="outline-3">
-<h3 id="orgc8dac9c">Evaluation</h3>
-<div class="outline-text-3" id="text-orgc8dac9c">
+<div id="outline-container-org5a67399" class="outline-3">
+<h3 id="org5a67399">Evaluation</h3>
+<div class="outline-text-3" id="text-org5a67399">
 <ul class="org-ul">
 <li>Notes de TPs (30%)</li>
-<li>Projet (70%) (A noter que des éléments du projet seront donnés durant le TPs)</li>
+<li>Projet (70%) (des éléments du projet seront donnés durant le TPs)</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org37483d9" class="outline-3">
-<h3 id="org37483d9">Projet</h3>
-<div class="outline-text-3" id="text-org37483d9">
+<div id="outline-container-org4bdc3e3" class="outline-3">
+<h3 id="org4bdc3e3">Projet</h3>
+<div class="outline-text-3" id="text-org4bdc3e3">
 <p width="300px" style="float:left;margin:0px 20px 20px 0px;">
 <img src="./img/projet_1.png" alt="projet_1.png" width="300px" style="float:left;margin:0px 20px 20px 0px;" /> 
 Le projet consiste en la conception d'un système électronique composé 
@@ -163,9 +172,14 @@ Le projet consiste en la conception d'un système électronique composé
 </div>
 </div>
 
-<div id="outline-container-org340193f" class="outline-3">
-<h3 id="org340193f">Binomes</h3>
-<div class="outline-text-3" id="text-org340193f">
+<div id="outline-container-org2905f09" class="outline-3">
+<h3 id="org2905f09">Binomes</h3>
+<div class="outline-text-3" id="text-org2905f09">
+</div>
+
+<div id="outline-container-org8526ba8" class="outline-4">
+<h4 id="org8526ba8">TI</h4>
+<div class="outline-text-4" id="text-org8526ba8">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -182,16 +196,6 @@ Le projet consiste en la conception d'un système électronique composé
 </thead>
 <tbody>
 <tr>
-<td class="org-left">TBC</td>
-<td class="org-left">A</td>
-</tr>
-
-<tr>
-<td class="org-left">TBC</td>
-<td class="org-left">A</td>
-</tr>
-
-<tr>
 <td class="org-left">&#x2026;</td>
 <td class="org-left">B</td>
 </tr>
@@ -206,9 +210,69 @@ Le projet consiste en la conception d'un système électronique composé
 </div>
 
 
-<div id="outline-container-orgbc34b06" class="outline-3">
-<h3 id="orgbc34b06">Agenda</h3>
-<div class="outline-text-3" id="text-orgbc34b06">
+
+<div id="outline-container-org2c548e2" class="outline-4">
+<h4 id="org2c548e2">SRD</h4>
+<div class="outline-text-4" id="text-org2c548e2">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nom</th>
+<th scope="col" class="org-left">Binome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Julien Pannier</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Elouran De Kerros</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Sahbi MOATEMRI</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Ornélie Buissereth</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgbf56859" class="outline-3">
+<h3 id="orgbf56859">Agenda</h3>
+<div class="outline-text-3" id="text-orgbf56859">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -284,13 +348,13 @@ Le projet consiste en la conception d'un système électronique composé
 
 
 
-<div id="outline-container-orgb69a7b8" class="outline-2">
-<h2 id="orgb69a7b8">Logiciels prérequis</h2>
-<div class="outline-text-2" id="text-orgb69a7b8">
+<div id="outline-container-orgc344594" class="outline-2">
+<h2 id="orgc344594">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-orgc344594">
 </div>
-<div id="outline-container-org8dba219" class="outline-3">
-<h3 id="org8dba219">Conception 3D - Solidworks</h3>
-<div class="outline-text-3" id="text-org8dba219">
+<div id="outline-container-org2d98b72" class="outline-3">
+<h3 id="org2d98b72">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-org2d98b72">
 <p target="_blank">
 Avant de toutes choses, Solidworks est uniquement compatible avec Windows et ne fonctionnera pas sur une machine virtuelle&#x2026; <br />
 Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023). Cette version est <b>gratuite</b> et <b>valable 1 an</b>:<br />
@@ -306,9 +370,9 @@ Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.
 </p>
 </div>
 </div>
-<div id="outline-container-org1ea38f3" class="outline-3">
-<h3 id="org1ea38f3">Fabrication 3D - Ideamaker</h3>
-<div class="outline-text-3" id="text-org1ea38f3">
+<div id="outline-container-orgfc26db0" class="outline-3">
+<h3 id="orgfc26db0">Fabrication 3D - Ideamaker</h3>
+<div class="outline-text-3" id="text-orgfc26db0">
 <p>
 Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab. <br />
 <a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
@@ -316,9 +380,9 @@ Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous
 </div>
 </div>
 
-<div id="outline-container-org905c477" class="outline-3">
-<h3 id="org905c477">Programmation microcontroller - STM32CubeIde</h3>
-<div class="outline-text-3" id="text-org905c477">
+<div id="outline-container-org0673147" class="outline-3">
+<h3 id="org0673147">Programmation microcontroller - STM32CubeIde</h3>
+<div class="outline-text-3" id="text-org0673147">
 <p>
 Compilateur et programmation de la carte Nucleo <br />
 <a href="https://www.st.com/en/development-tools/stm32cubeide.html">https://www.st.com/en/development-tools/stm32cubeide.html</a>
@@ -326,9 +390,9 @@ Compilateur et programmation de la carte Nucleo <br />
 </div>
 </div>
 
-<div id="outline-container-orgf3cd392" class="outline-3">
-<h3 id="orgf3cd392">Création de carte électronique - EasyEDA Designer</h3>
-<div class="outline-text-3" id="text-orgf3cd392">
+<div id="outline-container-org5e9b9e4" class="outline-3">
+<h3 id="org5e9b9e4">Création de carte électronique - EasyEDA Designer</h3>
+<div class="outline-text-3" id="text-org5e9b9e4">
 <p>
 Creation de schéma électronique et PCB (Création d’un compte en ligne) <br />
 <a href="https://easyeda.com/editor">https://easyeda.com/editor</a>
@@ -336,9 +400,9 @@ Creation de schéma électronique et PCB (Création d’un compte en ligne) <br 
 </div>
 </div>
 
-<div id="outline-container-orga3e6539" class="outline-3">
-<h3 id="orga3e6539">Gestion de version</h3>
-<div class="outline-text-3" id="text-orga3e6539">
+<div id="outline-container-orgbb2afa6" class="outline-3">
+<h3 id="orgbb2afa6">Gestion de version</h3>
+<div class="outline-text-3" id="text-orgbb2afa6">
 <p>
 Les rendus seront à faire via un outil de gestion de version. C'est aussi une des compétences qui vous sera demandé d'acquérir pour ce cours.
 Si vous voulez en savoir plus <a href="../git.html">Gestion de version</a>

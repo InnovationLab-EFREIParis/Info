@@ -11,8 +11,15 @@
 [[./img/uc.jpg]]
 Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
 En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
-En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus...
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
+Comme de la mémoire FLASH (program memory), mémoire RAM (data memory), convertisseur (NA ou AN), controller de bus...
+Ces périphériques sont reliés via un bus interne, décris ci desssous comme un bus système.
+
+#+ATTR_HTML: :width 500px
+[[./img/uc_arch.png]]
+
+
+
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué. 
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
 En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
 
@@ -25,7 +32,7 @@ En général, les variations de ces grandeurs physiques feront varier une resist
 | Photodiode       | Lumière           |
 | ...              | ...               |
 
-De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacer.
+De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacé.
 
 | Actionneurs |
 |-------------|
@@ -36,12 +43,14 @@ De là, il pourra réaliser un traitement et des actions, via des actionneurs au
 | ...         |
 
 Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
-Par exemple dans une automobile ou en IOT.
+Par exemple dans une automobile, en IOT ou en robotique.
 
 
-#+ATTR_HTML: :width 600px
+#+ATTR_HTML: :width 500px
 [[./img/voiture.jpg]]
 
+#+ATTR_HTML: :width 500px
+[[./img/turtlebot.png]]
 
 En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
 La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
@@ -50,32 +59,40 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 * STM32 Nucleo
 
-Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
+Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des tâches qu'il aura à accomplir et des contraintes en terme
+de coûts, de consommation, de l'ergonomie de l'interface de développement...
+
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
+Cette carte d'évaluation est issue de la gamme Nucleo.
 
 | Board     | Nucleo STM32L476RG  | Arduino Uno |
 |-----------+---------------------+-------------|
 | Family    | ARM Cortex-M4       | ATMega 328P |
 | Vendor    | ST Microelectronics | ATMega      |
+| Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
+| Bus size  | 32 bits             | 8 bits      |
 | SRAM      | 128 KB              | 2 KB        |
 | Flash     | 1 MB                | 32 KB       |
 | Frequency | up to 80MHz         | 16          |
 | FPU       | YES                 | NO          |
 | Timers    | 16                  | 3           |
 | ADCs      | 1x 12-bit           | 6 (10 bits) |
+| DAC       | 1                   | 1           |
 | UARTs     | 3                   | 1           |
 | SPIs      | 3                   | 1           |
 | I2Cs      | 3                   | 1           |
 | RTC       | 1                   | 0           |
-| CAN       | 1                   | 1           |
-| Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
+
 
 Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 
-docview:./stm/stm32_l476_usermanual.pdf
+# docview:../stm/stm32_l476_usermanual.pdf
 
+[[../stm/stm32_l476_usermanual.pdf][Manuel utilisateur]]
 
-docview:./stm/stm32_l476_schematic.pdf
+[[../stm/stm32_l476_schematic.pdf][Schéma électrique]]
 
+<<<<<<< HEAD
 * Cube IDE
 
 Configuration du projet
@@ -133,12 +150,13 @@ PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
 
 Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
 Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
+=======
+# docview:../stm/stm32_l476_schematic.pdf
+>>>>>>> refs/remotes/origin/master
 
-* LED (Utilisateur)
-** Hardware
-#+attr_html: :width 400px
-[[./img/led.jpg]] 
+* La carte d'évaluation
 
+<<<<<<< HEAD
 * Bouton Poussoir (Utilisateur)
 ** Hardware
 #+attr_html: :width 400px
@@ -164,12 +182,25 @@ Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteign
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
 
 
+=======
+#+ATTR_HTML: :width 500px
+[[./img/hw_block_diagram.jpg]]
 
+#+ATTR_HTML: :width 500px
+[[./img/top_layout.jpg]]
 
+* Le microcontroller
+
+Voir page 17 de la datasheet
+>>>>>>> refs/remotes/origin/master
+
+[[../stm/stm32_l476_datasheet.pdf][Datasheet STM32L476RG]]
+
+[[./img/uc_diagram.jpg]]
 
 * Annexes
 
 ** Nom de broches
 
-# #+INCLUDE: ./LG476_pinname.org
+# #+INCLUDE: ../LG476_pinname.org
 

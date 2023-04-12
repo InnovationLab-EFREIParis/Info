@@ -5,10 +5,23 @@
 # #+LINK_HOME: index.html
 # 
 
-| Nom                              | Binome |
-|----------------------------------+--------|
-| TBC                              | A      |
-| TBC                              | A      |
-| ...                              | B      |
-| ...                              | B      |
+* TI
+
+| Nom                | Binome |
+|--------------------+--------|
+| ...                | B      |
+| ...                | B      |
+
+
+
+* SRD
+| Nom                | Binome |
+|--------------------+--------|
+| Julien Pannier     | A      |
+| Elouran De Kerros  | A      |
+| Sahbi MOATEMRI     | B      |
+| Ornélie Buissereth | B      |
+| ...                | C      |
+| ...                | C      |
+|                    |        |
 
