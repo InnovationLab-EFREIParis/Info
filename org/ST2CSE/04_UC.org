@@ -1,12 +1,10 @@
-#+title: Prototypage (rapide)
+#+title:  Microcontroller (µC)
 #+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+OPTIONS: num:nil
 #+LINK_UP: 
 #+LINK_HOME: index.html
-
-* Microcontroller
 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+ATTR_HTML: :width 150px
@@ -78,106 +76,83 @@ docview:./stm/stm32_l476_usermanual.pdf
 
 docview:./stm/stm32_l476_schematic.pdf
 
+* Cube IDE
+
+Configuration du projet
+#+ATTR_HTML: :width 800px
+[[./img/boardselection.jpg]]
+
+#+ATTR_HTML: :width 800px
+[[./img/projectgenerator.jpg]]
+
+
+
+
+* GPIO
+General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrée ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+
+** NomDuProjet.ioc
+L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
++ Clique gauche sur les broches pour les configurer en sorties ou en entré
++ Clique droit sur une broche pour lui donner un label 
+
+** main.h
+Les directives suivantes permettent de faire le lien entre les user_label et les noms des broches
+#+begin_src C++ :includes <stdio.h>
+#define user_label nom_broche
+#define B1_Pin GPIO_PIN_13
+#define LD2_Pin GPIO_PIN_5
+#define D8_Pin GPIO_PIN_9
+#+end_src
+
+** main.c
+Cette fonction généré automatiquement configure les GPIO \\
+#+begin_src C++ :includes <stdio.h>
+static void MX_GPIO_Init(void)
+#+end_src
+
+
+
+#+begin_src C++ :includes <stdio.h>
+void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+#+end_src
+
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+HAL_GPIO_WritePin(GPIOA, LD2_Pin, RESET);
+#+end_src
+
+#+begin_src C++ :includes <stdio.h>
+GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+#+end_src
+
+Exemple: 
+#+begin_src C++ :includes <stdio.h>
+PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
+#+end_src
+
+Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
+Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
 
 * LED (Utilisateur)
 ** Hardware
 #+attr_html: :width 400px
 [[./img/led.jpg]] 
 
-** Keil Studio Ide
-#+STYLE: <style> pre { background-color: #000000 } pre { color:#00FF00 } </style>
-#+begin_src C++ 
-#include "mbed.h"
-#define WAIT_TIME_MS 100 
-DigitalOut led1(PA_5);
-int main()
-{
-    while (true)
-    {
-        led1 = !led1;
-        thread_sleep_for(WAIT_TIME_MS);
-    }
-}
-#+end_src
-
-** Cube IDE
-#TBC
-
 * Bouton Poussoir (Utilisateur)
 ** Hardware
 #+attr_html: :width 400px
 [[./img/button.jpg]] 
 
-** Keil Studio Ide
-# #+ATTR_HTML: :style background-color:#000000;
-# #+BEGIN_EXAMPLE
-#+begin_src C++ 
-#include "mbed.h"
-#define WAIT_TIME_MS 100 
-DigitalOut led1(PA_5);
-DigitalIn button(PC_13);
-
-int main()
-{
-    while (true)
-    {
-        if(button==true){
-        led1 = false;
-        }              
-        else{
-        led1 = true;
-        }
-        thread_sleep_for(WAIT_TIME_MS);
-    }
-}
-#+end_src
-# #+END_EXAMPLE
-
-** Cube IDE
-#TBC
-
-* Servo Moteur (projet)
-#+BEGIN_QUOTE
-Un servomoteur est un système motorisé capable d'atteindre des positions prédéterminées, puis de les maintenir. La position est dans le cas d’un moteur rotatif, une valeur d'angle. \\
----  (Définition Wihipédia)
-#+END_QUOTE
-
-** Hardware
 
 
 
-** Keil Studio Ide
-Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans /File​/Add Mbed Library to Active Project/ \\
-http://os.mbed.com/users/jasonberry/code/Servo/
-
-#+begin_src C++ 
-#include "mbed.h"
-#include "Servo.h"
-
-#define WAIT_TIME_MS 500 
-
-Servo myservo(PA_8);
-
-int main()
-{
-    myservo.position(0);
-    while (true)
-    {
-        myservo.position(90);       
-        thread_sleep_for(WAIT_TIME_MS);
-        myservo.position(0);
-        thread_sleep_for(WAIT_TIME_MS);
-    }   
-}
+Pour les exercices suivant, vous pouvez vous aider de la fonction 
+#+begin_src C++ :includes <stdio.h>
+HAL_Delay();
 #+end_src
 
 
-* Switch (projet)
-# TBC
-* Carte fille /Seeed Grove Base Shield/
-# TBC
-
-* Exercices
 
 ** Exercice 1
 Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
@@ -187,8 +162,8 @@ Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteign
 
 ** Exercice 3
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
-** Exercice 4
-Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
+
+
 
 
 
