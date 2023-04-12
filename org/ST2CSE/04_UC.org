@@ -246,15 +246,20 @@ Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_
 Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
 
 
-
 ** Exercice 1
-Programmer la carte de faÃ§on Ã  ce que la LED s'allume quand on appuie sur le bouton, reste allumÃ© quand on le relache, puis s'Ã©teint Ã  la pression suivante.
+Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
 
 ** Exercice 2
-Programmer la carte de faÃ§on Ã  ce que la LED s'allume 1 seconde puis s'Ã©teigne quand on bascule le switch sur une position. La LED reste Ã©teinte lorsque le switch est sur l'autre position.
+Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
 
 ** Exercice 3
-Programmer la carte de faÃ§on Ã  ce que l'intensitÃ© de la luminositÃ© de la LED augmente puis diminue jusq'Ã  complÃ©tement d'Ã©teindre, et cela de faÃ§on cyclique (pÃ©riode de 500ms)
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+
+** Exercice 4
+Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
+
+** Exercice 5
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
 
 
 
