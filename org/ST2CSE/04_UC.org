@@ -169,6 +169,8 @@ Cette fonction généré automatiquement configure les GPIO \\
 static void MX_GPIO_Init(void)
 #+end_src
 
+*** Ecriture
+
 #+begin_src C++ :includes <stdio.h>
 void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
 #+end_src
@@ -179,6 +181,17 @@ HAL_GPIO_WritePin(GPIOA, LD2_Pin, RESET);
 #+end_src
 
 #+begin_src C++ :includes <stdio.h>
+void HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+#+end_src
+  
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+  HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
+#+end_src
+
+*** Lecture
+
+#+begin_src C++ :includes <stdio.h>
 GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
 #+end_src
 
@@ -187,13 +200,50 @@ Exemple:
 PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
 #+end_src
 
+** Délai
+#+begin_src C++ :includes <stdio.h>
+void HAL_Delay (uint32_t Delay);
+#+end_src
+
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+// Temporistion de 10 ms
+HAL_Delay(10);
+#+end_src
+
+** RS232
+*** Emission (µC vers PC)
+#+begin_src C++ :includes <stdio.h>
+HAL_UART_Transmit (UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+#+end_src
+
+#+begin_src C++ :includes <stdio.h>
+  char uart_tx_buff[50];
+  int uart_tx_buf_len;
+  uart_tx_buf_len = sprintf(uart_tx_buff, "Nucleo L476RG connected\n\r");
+  HAL_UART_Transmit(&huart2, (uint8_t*) uart_tx_buff, uart_tx_buf_len,
+			  100);
+#+end_src
+
+*** Reception (PC vers µC)
+#+begin_src C++
+HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart,
+uint8_t * 	pData,
+uint16_t 	Size,
+uint32_t 	Timeout 
+)	
+#+end_src
+
+Exemple:
+#+begin_src C++
+HAL_UART_Receive(&huart2, uart_rx_buffer, 1, 10) 
+#+end_src
+
+
 Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
 Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
 
-Pour les exercices suivant, vous pouvez vous aider de la fonction 
-#+begin_src C++ :includes <stdio.h>
-HAL_Delay();
-#+end_src
+Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
 
 
 
@@ -205,6 +255,9 @@ Programmer la carte de faÃ§on Ã  ce que la LED s'allume 1 seconde puis s'Ã�
 
 ** Exercice 3
 Programmer la carte de faÃ§on Ã  ce que l'intensitÃ© de la luminositÃ© de la LED augmente puis diminue jusq'Ã  complÃ©tement d'Ã©teindre, et cela de faÃ§on cyclique (pÃ©riode de 500ms)
+
+
+
 
 * Annexes
 
