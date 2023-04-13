@@ -7,18 +7,18 @@
 
 * TI
 
-| Nom                      | Binome |
-|--------------------------+--------|
-| Antoine Covet            | A      |
-| Gauthier Marcelin        | A      |
-| Quentin Noiriel          | B      |
-| Savoureux Khondker       | B      |
-| Jean-Samuel Haudié       | C      |
-| Tristan Emmanuel Perrine | C      |
-| Nassim Berdouz           | D      |
-| Duy Ngoc Pham            | D      |
-| Dounia Adli              | E      |
-| Anthony Do               | E      |
+| Nom                      | Binome | Carte |
+|--------------------------+--------+-------|
+| Antoine Covet            | A      |       |
+| Gauthier Marcelin        | A      | X     |
+| Quentin Noiriel          | B      |       |
+| Savoureux Khondker       | B      |       |
+| Jean-Samuel Haudié       | C      |       |
+| Tristan Emmanuel Perrine | C      |       |
+| Nassim Berdouz           | D      | X     |
+| Duy Ngoc Pham            | D      |       |
+| Dounia Adli              | E      |       |
+| Anthony Do               | E      |       |
 
 
 * SRD
