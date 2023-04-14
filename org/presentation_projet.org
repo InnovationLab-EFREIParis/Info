@@ -18,28 +18,33 @@ L'idée est de créer un moment d'échange autour des différents projets réali
 Des présentations techniques et informelles qui seront l'occasion pour les presentateurs de partager l'avancement de leurs travaux et d'aiguiser leur discours!\\
 /15 minutes de présentation / 15 minutes d'échange./ \\
 /A midi vous êtes dehors, promis!/
-***  20/01 -  Robminton - /projet M2/
-Robots ramasseur & lanceur de volants de badminton
-***  27/01 - Course de voiture autonome - /projet M2/
-Conception d'une voiture à l'echelle 1/10e en vue de participer à une course de voiture autonome.
-***  03/02 - Localisation Roller - /projet M2/
-Localiser les sportifs lors de compétition de roller
-***  10/02 - Décodeur LDPC Non-Binaire - /stage M1/
-Les codes LDPC ont trouvé leur application dans les communications Satellitaires, Télévision Numérique, et récemment dans le standard de communication 5G.
-Dans  ce projet, nous travaillons sur une famille spécifique de ces codes définie dans un corps de Galois non-binaire, en se focalisant sur l’optimisation de l’architecture du décodeur basée sur l’algorithme T-EMS. Nous présentons l’architecture proposée avec des résultats de simulation et de synthèse sur FPGA.
-***  17/02 - DoRobo - /projet M2/
-"DoRobo" est un robot mobile autonome chargé de réaliser la prise de mesure de qualité de l'air ambiant pour la prévention de risques liés à la fuite de produits toxiques dans les entrepôts de stockages et autres lieux utilisant ou entreposant de nombreux produits nocifs pour l'homme.
-***  24/02 - Brainsecurity - /stage M1/
-Developpement d'une plate forme de sensibilisation à la cyber sécurité en entreprise
-***  03/03 - Reconnaissance des émotions - /projet M2/
-Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions
-# ***  10/03 - Assistance in the assessment of physical and tactical needs in water polo - /stage Erasmus/
-# This project will be carried out in collaboration with the French Swimming Federation and will generally aim to provide assistance in the assessment of physical and tactical needs in water polo. The objective of this project will be to precisely locate (about 20cm) polo players during matches and
-# training. For this, it will be necessary to deploy a localization system and integrate it into a swimming cap (waterproof device).
-***  10/03 - Drone simplifié - /stage M1/
-Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
-***  17/03 - Open Source Robotic Arm - /projet M2/
-Bras robotique open source avec éditeur d'animation 3d temps réel sur le web
-# ***  31/03 - etude/prédiction du classement des tournois de golf suivant le WAGRTBC - /projet M2/
-# Le rang mondial au golf est mis à jour chaque semaine sur la base du cumul de points obtenus en tournois appelé "Power".  Ce power qui se base sur des critères et calculs tenus secrets par le WAGR , est annoncé après les tournois. Comment pourrons-nous prédire ce calcul en amont des tournois pour les joueurs Français ?
+
+***  05/05 -  Gaspard Geslot - /stage M1/
+Développement d'application mobile
+
+
+# ***  20/01 -  Robminton - /projet M2/
+# Robots ramasseur & lanceur de volants de badminton
+# ***  27/01 - Course de voiture autonome - /projet M2/
+# Conception d'une voiture à l'echelle 1/10e en vue de participer à une course de voiture autonome.
+# ***  03/02 - Localisation Roller - /projet M2/
+# Localiser les sportifs lors de compétition de roller
+# ***  10/02 - Décodeur LDPC Non-Binaire - /stage M1/
+# Les codes LDPC ont trouvé leur application dans les communications Satellitaires, Télévision Numérique, et récemment dans le standard de communication 5G.
+# Dans  ce projet, nous travaillons sur une famille spécifique de ces codes définie dans un corps de Galois non-binaire, en se focalisant sur l’optimisation de l’architecture du décodeur basée sur l’algorithme T-EMS. Nous présentons l’architecture proposée avec des résultats de simulation et de synthèse sur FPGA.
+# ***  17/02 - DoRobo - /projet M2/
+# "DoRobo" est un robot mobile autonome chargé de réaliser la prise de mesure de qualité de l'air ambiant pour la prévention de risques liés à la fuite de produits toxiques dans les entrepôts de stockages et autres lieux utilisant ou entreposant de nombreux produits nocifs pour l'homme.
+# ***  24/02 - Brainsecurity - /stage M1/
+# Developpement d'une plate forme de sensibilisation à la cyber sécurité en entreprise
+# ***  03/03 - Reconnaissance des émotions - /projet M2/
+# Construction d’une base de données labelisée, étude statistique des caractéristiques de la voix et reconnaissance automatique d’émotions
+# # ***  10/03 - Assistance in the assessment of physical and tactical needs in water polo - /stage Erasmus/
+# # This project will be carried out in collaboration with the French Swimming Federation and will generally aim to provide assistance in the assessment of physical and tactical needs in water polo. The objective of this project will be to precisely locate (about 20cm) polo players during matches and
+# # training. For this, it will be necessary to deploy a localization system and integrate it into a swimming cap (waterproof device).
+# ***  10/03 - Drone simplifié - /stage M1/
+# Dispositif pédagogique permettant d'étudier les composants et certains algorithmes utilisés lors durant le vol d'un drone
+# ***  17/03 - Open Source Robotic Arm - /projet M2/
+# Bras robotique open source avec éditeur d'animation 3d temps réel sur le web
+# # ***  31/03 - etude/prédiction du classement des tournois de golf suivant le WAGRTBC - /projet M2/
+# # Le rang mondial au golf est mis à jour chaque semaine sur la base du cumul de points obtenus en tournois appelé "Power".  Ce power qui se base sur des critères et calculs tenus secrets par le WAGR , est annoncé après les tournois. Comment pourrons-nous prédire ce calcul en amont des tournois pour les joueurs Français ?
 
