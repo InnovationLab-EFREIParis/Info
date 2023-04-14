@@ -13,7 +13,7 @@
 | Gauthier Marcelin        | A      | X     |
 | Quentin Noiriel          | B      |       |
 | Savoureux Khondker       | B      |       |
-| Jean-Samuel Haudié       | C      |       |
+| Jean-Samuel Haudié       | C      | X     |
 | Tristan Emmanuel Perrine | C      |       |
 | Nassim Berdouz           | D      | X     |
 | Duy Ngoc Pham            | D      |       |
