@@ -43,7 +43,7 @@
 
 	("org-static"
 	 :base-directory "org/"
-	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
+	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf\\|sldprt\\|sldasm"
 	 :publishing-directory "./html"
 	 :recursive t
 	 :publishing-function org-publish-attachment
