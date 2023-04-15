@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="prototypage rapide"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Prototypage (rapide)</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org0d3a36a">Définitions</a></li>
+<li><a href="#org0fe274b">Qui prototype?</a></li>
+<li><a href="#orga98822c">Méthodes</a>
+<ul>
+<li><a href="#org7f089d4">Design thinking, une approche pragmatique</a></li>
+<li><a href="#orgb4c63ea">Contraintes</a></li>
+<li><a href="#org749d904">Qualités d'un prototype</a></li>
+<li><a href="#org1d43384">Caractéristiques d'un prototype</a></li>
+<li><a href="#orgf96d963">Exemple d'itération d'un design 3D</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0d3a36a" class="outline-2">
+<h2 id="org0d3a36a">Définitions</h2>
+<div class="outline-text-2" id="text-org0d3a36a">
+<blockquote>
+<p>
+Prototype: Premier exemplaire construit d'un ensemble mécanique, d'un appareil, d'une machine et qui est destiné à en expérimenter en service les qualités en vue de la construction en série. <br />
+ &#x2014;(Définition Larousse)
+</p>
+</blockquote>
+
+<p>
+Le prototypage implique une approche <span class="underline">transverse</span>, <span class="underline">pluridisciplinaire</span>, <span class="underline">itérative</span>  et &#x2026; <span class="underline">pragmatique</span>!
+On parle de <span class="underline">prototypage rapide</span> lorsque les itérations sont courtes. Certaines technologies
+ont permis de démocratiser la fabrication et de pouvoir sur un même site, concevoir et fabriquer.
+</p>
+
+<blockquote>
+<p>
+Le prototype matérialise une étape d'évolution d'un projet, souvent pour démontrer ou infirmer le bien-fondé d'un ou plusieurs concept(s) mis en jeu dans ce projet, avant toute valorisation commerciale. <br />
+&#x2014; (Définition Wihipédia)
+</p>
+</blockquote>
+
+
+<p>
+Le prototypage croise également le domaine du design, qui lui aussi est assez vaste et ne renvoyant pas à la même chose selon le contexte. 
+</p>
+
+<blockquote>
+<p>
+Un des rôles du design est de répondre à des besoins, de résoudre des problèmes, de proposer des solutions nouvelles ou d’explorer des possibilités pour améliorer la qualité de vie des êtres humains <br />
+ &#x2014;(Défnition Wikipedia)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org0fe274b" class="outline-2">
+<h2 id="org0fe274b">Qui prototype?</h2>
+<div class="outline-text-2" id="text-org0fe274b">
+<p>
+Aborder la conception d'un prototype se fait souvent en équipe relativement restreinte voir seul.
+Comme évoqué précédement, prototyper découle d'une volonté de "sortir des sentiers battus".
+Il s'agit donc d'être agile et la plupart du temps <i>multi-tâches</i>.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orga98822c" class="outline-2">
+<h2 id="orga98822c">Méthodes</h2>
+<div class="outline-text-2" id="text-orga98822c">
+
+<div class="figure">
+<p><img src="./img/0_iteration.jpg" alt="0_iteration.jpg" width="700px" />
+</p>
+<p><span class="figure-number">Figure 1: </span>Principales étapes de prototypage</p>
+</div>
+
+
+<ul class="org-ul">
+<li>Spécification
+<ul class="org-ul">
+<li>Approche fonctionnelle</li>
+<li>Formulation d'hypotheses</li>
+<li>Reflexion collective ou individuelle</li>
+<li>Mise en forme (exigences, cahiers des charges)</li>
+</ul></li>
+<li>Conception
+<ul class="org-ul">
+<li>Approche architecturale</li>
+<li>Modélisation 
+<ul class="org-ul">
+<li>Unitaire</li>
+<li>Assemblage</li>
+</ul></li>
+<li>Codage</li>
+</ul></li>
+<li>Simulation
+<ul class="org-ul">
+<li>Plus ou moins fidèle selon la granularité <i>(niveau de détail du modèle)</i></li>
+<li>Test unitaire</li>
+</ul></li>
+<li>Fabrication    
+<ul class="org-ul">
+<li>Paramétrage des machines</li>
+<li>Choix des matériaux</li>
+</ul></li>
+<li>Vérification
+<ul class="org-ul">
+<li>Mise en situation réelle</li>
+<li>Test global</li>
+<li>Test unitaire</li>
+</ul></li>
+</ul>
+</div>
+
+<div id="outline-container-org7f089d4" class="outline-3">
+<h3 id="org7f089d4">Design thinking, une approche pragmatique</h3>
+<div class="outline-text-3" id="text-org7f089d4">
+
+<div class="figure">
+<p><img src="./img/lean_startup.jpg" alt="lean_startup.jpg" width="700px" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Lean startup</p>
+</div>
+
+<p>
+Le design thinking est un process basé sur l’expérience utilisateur et l’itération
+rapide : tester et valider chaque étape de la création d’un produit avec l’utilisateur
+plutôt qu’aboutir pour se rendre compte qu’il ne plait pas.
+En effet il encourage à « faire » plutôt que « dire » : crayonner, dessiner, maquetter…
+Garder constamment le soucis de l'expérience utilisateur (client) permet de rapidement détecter: <br />
+</p>
+<ul class="org-ul">
+<li>les défauts ou bug</li>
+<li>les évolutions contre productives</li>
+</ul>
+
+<p>
+Plus ces découvertes sont tardives, plus elles peuvent couter cher. <i>Fail as fast as possible</i>
+</p>
+
+<blockquote>
+<p>
+Le réel, c'est quand on se cogne <br />
+ &#x2014;Jacques Lacan
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgb4c63ea" class="outline-3">
+<h3 id="orgb4c63ea">Contraintes</h3>
+<div class="outline-text-3" id="text-orgb4c63ea">
+<ul class="org-ul">
+<li><b>Temps</b></li>
+<li><b>Budget</b></li>
+<li><b>Stockage</b></li>
+<li><b>Compétence</b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org749d904" class="outline-3">
+<h3 id="org749d904">Qualités d'un prototype</h3>
+<div class="outline-text-3" id="text-org749d904">
+<p>
+Un prototype méle souvent matériel et logiciel. Ces deux aspects sont en fait très proches lorsqu'il s'agit des qualités requises:
+</p>
+
+<ul class="org-ul">
+<li><b>Maintenabilité</b>: facilite les itérations. Un code maintenable est un code qui est facile à lire et à comprendre. Il en va de même pour un modèle 3D. <br /></li>
+<li><b>Modularité</b>: facilite les évolutions et les réparations.</li>
+</ul>
+
+<p>
+Exemples: <br />
+Hardware: Eviter l'utilisation de colle et de clous! Priveligier les assemblages à base de visses et d'écrou. Concernant la modélisation, utiliser quand c'est possible des paramètres.
+</p>
+
+<p>
+Software: Eviter les copiers coller dans le code, autant utiliser des fonctions.
+Ne pas mettre de valeur numérique direct, utiliser des variables.
+</p>
+
+<p>
+Privilegier un code lisible&#x2026; <br />
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">rayon</span>=3;
+<span style="font-weight: bold; text-decoration: underline;">float</span> <span style="font-weight: bold; font-style: italic;">pi</span>=3.14;
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">diametre</span> = 2*rayon*pi;
+printf(<span style="font-style: italic;">"%d\n"</span>, diametre);
+</pre>
+</div>
+
+<p>
+&#x2026; à un code compact et "optimisé"
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">diametre</span> = 2*3*3.14;
+printf(<span style="font-style: italic;">"%d\n"</span>, diametre);
+</pre>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1d43384" class="outline-3">
+<h3 id="org1d43384">Caractéristiques d'un prototype</h3>
+<div class="outline-text-3" id="text-org1d43384">
+
+<div class="figure">
+<p><img src="./img/mvp_0.jpg" alt="mvp_0.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Pyramide des caratéristiques d'un prototype</p>
+</div>
+
+<p>
+Ne jamais perdre de vue les fonctions essentiels de votre prototype, sa raison d'être. Celles ci constituent la base de votre prototype.
+Se supperposeront ensuite avec les itérations succesives d'autres qualités: La fiablilité, l'ergonomie, le confort&#x2026; 
+C'est sur ce point qu'intervient la notion de <i><b>Minimum Viable Product</b></i>.
+</p>
+
+<div class="org-center">
+
+<div class="figure">
+<p><img src="./img/mvp_1.jpg" alt="mvp_1.jpg" width="500px" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Minimum Viable Product</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf96d963" class="outline-3">
+<h3 id="orgf96d963">Exemple d'itération d'un design 3D</h3>
+<div class="outline-text-3" id="text-orgf96d963">
+<p>
+Il s'agit d'un carter de protection d'une hélice de drone. La fonction première est de protéger les personnes de l'hélice. 
+En effet, celle ci tournant rapidement, il est difficile d'en déterminer les contours.
+A noter que ce carter doit être léger pour ne pas modifier le comportement du dispositif.
+</p>
+
+<p>
+<b>Version 1</b>
+</p>
+
+<div class="figure">
+<p><img src="./img/carter_helice_rsV1.jpg" alt="carter_helice_rsV1.jpg" width="700px" />
+</p>
+</div>
+
+<p>
+Non fonctionnel, car trop souple. Les turbulences créés par l'hélice font bouger le carter qui vient heurter les pales.
+</p>
+
+<p>
+Masse = 102.33 grammes (obtenue par modelisation avec une densité de 0.001g/mm3) <br />
+Epaisseur = 1.2 mm (celle du cylindre)
+</p>
+
+<hr />
+
+<p>
+<b>Version 2</b>
+</p>
+<p width="700px">
+<img src="./img/carter_helice_rsV2.jpg" alt="carter_helice_rsV2.jpg" width="700px" />
+Non fonctionnel car la grille sensée rigidifié le carter empeche l'air de passer.
+</p>
+
+<p>
+Masse = 129.53 grammes <br />
+Epaisseur = 1.2 mm
+</p>
+
+<hr />
+
+<p>
+<b>Version 3</b>
+</p>
+<p width="700px">
+<img src="./img/carter_helice_rsV3.jpg" alt="carter_helice_rsV3.jpg" width="700px" />
+Fonctionnel mais pas assez robuste.
+</p>
+
+<p>
+Masse = 116.28 grammes <br />
+Epaisseur = 1.2 mm
+</p>
+
+<hr />
+
+<p>
+<b>Version 4</b>
+</p>
+
+<div class="figure">
+<p><img src="./img/carter_helice_rsV4.jpg" alt="carter_helice_rsV4.jpg" width="700px" />
+</p>
+</div>
+
+<p>
+Fonctionnel mais trop lourde
+</p>
+
+<p>
+Masse = 137.19 grammes <br />
+Epaisseur = 2.4 mm
+</p>
+
+
+<hr />
+<p>
+<b>Version 5</b>
+</p>
+
+<div class="figure">
+<p><img src="./img/carter_helice_rsV5.jpg" alt="carter_helice_rsV5.jpg" width="700px" />
+</p>
+</div>
+
+<p>
+Fonctionnel, robuste, léger&#x2026; et esthetique
+</p>
+
+<p>
+Masse = 94.01 grammes <br />
+Epaisseur = 2.4 mm
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

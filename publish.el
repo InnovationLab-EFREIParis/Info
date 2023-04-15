@@ -31,7 +31,7 @@
 	("org-notes"
          :base-directory "./org/"
          :base-extension "org"
-         :publishing-directory "./"
+         :publishing-directory "./html"
          :recursive t
          :publishing-function org-html-publish-to-html
 	 :with-author nil      ;; Don't include author name
@@ -44,7 +44,7 @@
 	("org-static"
 	 :base-directory "org/"
 	 :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf\\|mp3\\|ogg\\|swf"
-	 :publishing-directory "./"
+	 :publishing-directory "./html"
 	 :recursive t
 	 :publishing-function org-publish-attachment
 	 )
