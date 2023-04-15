@@ -14,8 +14,8 @@ publish_no_init: publish.el
 
 clean:
 	@echo "Cleaning up.."
-	@rm -rvf *~
-	@rm -rvf *#
+	@rm -rvf ./html/*~
+	@rm -rvf ./html/*#
 	@rm -rvf ./org/*~
 	@rm -rvf ./org/*.html
 	@rm -rvf ./ST2CSE/*~

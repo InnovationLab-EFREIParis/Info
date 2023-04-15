@@ -6,7 +6,8 @@
 
 ** Déroulé de l'evenement
 
-Les personnes sont acceuillis dans une zone d'acceuil et dispatcher par un organisateur.
+Les personnes sont acceuillies à l'entrée du repair café par un organisateur
+qui va vérifier les inscriptions puis les diriger vers les réparateurs.
 En tant que réparateur, vous avez juste à attendre derrière votre paillase.
 On se donne 40 minutes maximum par objet, et la consigne a été donner d'amener un objet par personne.
 
