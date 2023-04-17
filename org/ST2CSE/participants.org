@@ -17,7 +17,7 @@
 | Tristan Emmanuel Perrine | C      |       |
 | Nassim Berdouz           | D      | X     |
 | Duy Ngoc Pham            | D      |       |
-| Dounia Adli              | E      |       |
+| Dounia Adli              | E      | X     |
 | Anthony Do               | E      |       |
 
 
