@@ -16,13 +16,13 @@ clean:
 	@echo "Cleaning up.."
 	@rm -rvf ./html/*~
 	@rm -rvf ./html/*#
+	@rm -rvf ./html/prototypage/*~
+	@rm -rvf ./html/ST2CSE/*~
 	@rm -rvf ./org/*~
 	@rm -rvf ./org/*.html
-	@rm -rvf ./ST2CSE/*~
 	@rm -rvf ./org/ST2CSE/*~
 	@rm -rvf ./org/ST2CSE/*.html
 	@rm -rvf ./org/prototypage/*.html
 	@rm -rvf ./org/prototypage/*~
-	@rm -rvf ./prototypage/*~
 
 
