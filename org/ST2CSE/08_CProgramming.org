@@ -26,6 +26,13 @@ Une fois sous Ubuntu, vous pourrez installer GCC qui est un compilateur C trés 
 sudo apt install gcc
 #+end_src
 
+* Utiliser un compilateur en ligne
+La façon la plus directe de commencer à s'exercer, sans rien installer. \\
+
+#+ATTR_HTML: :target _blank
+https://www.onlinegdb.com/
+
+
 * Commentaires
 
 #+begin_src C++ :includes <stdio.h>
@@ -175,11 +182,11 @@ ou donnée avec l'environnement de développement.
 Elle a:
 + Un type: Le type définie le type de sortie de la fonction.
 + Un nom: Le nom de la fonction vient juste après le type.
-+ Des arguments: Les arguments sont considérés comme les entrées de la fonction, ils sont entre parenthÃ¨ses et sÃ©parÃ© par des virgules.
-+ Un ensemble d'instruction qui la définisse
++ Des arguments: ce sont les entrées de la fonction, ils sont entre parenthèses et séparés par des virgules.
++ Un ensemble d'instructions qui definisse sont implémentation
 
-Pour finir, les instructions correspondant à la fonction sont entre accolades.
-Pour utiliser une fonction, il faut au préalable qu'elle soit définit.
+Pour utiliser une fonction, il faut au préalable qu'elle soit définit avant d'être appelée.
+Par convention, elle est définit par son prototype dans un fichier .h, et implémentée dans un fichier .c.
 Attention, en C vous pouvez définir un prototype de fonction, sans que la fonction
 en elle même le soit 
 
@@ -190,6 +197,8 @@ Quelque soit la plateforme (embarquée/débarquée) cette fonction est obligatoi
 A noter qu'en langage Arduino cette fonction est dissumulée.
 
 ** Exemple
+
+Definition et implémentation d'une fonction dans le même fichier
 
 #+begin_src C++ :includes <stdio.h>
 #include <stdio.h>
@@ -203,4 +212,31 @@ void main(){
 }
 #+end_src
 
-#+results:
+
+Definition et implémentation d'une fonction sur plusieurs fichiers
+
+*customfunc.c*
+Implémentation de la fonction
+#+begin_src C++
+float moyenne(float a, float b){
+  return (a+b)/2;
+}
+#+end_src
+
+*customfunc.h*
+Définition du prototype de la fonction
+#+begin_src C++
+float moyenne(float a, float b);
+#+end_src
+
+*main.c*
+Fichier contenant la fonction main()
+#+begin_src C++ :includes <stdio.h>
+#include <stdio.h>
+#include "customfunc.h"
+
+void main(){
+  printf("La moyenne de 3 et 4 est %f \n",moyenne(3,4));
+}
+#+end_src
+

@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2023-04-15 sam. 09:46 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Langage C</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="remi.griot@efrei.fr" />
+<meta name="description" content="ST2CSE"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Langage C</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgb7c68bf">Installer un environnement Linux sous Windows</a></li>
+<li><a href="#org0a4957a">Utiliser un compilateur en ligne</a></li>
+<li><a href="#org653fc24">Commentaires</a></li>
+<li><a href="#org88f929a">Instructions</a>
+<ul>
+<li><a href="#orgd2b9d55">Variables</a>
+<ul>
+<li><a href="#org3d73298">Types</a></li>
+<li><a href="#orgade69d0">Types énumérés</a></li>
+</ul>
+</li>
+<li><a href="#orgdaa005e">Opérations arithmétique</a></li>
+</ul>
+</li>
+<li><a href="#org0acd735">Structures de controle</a>
+<ul>
+<li><a href="#org5bb7802">Conditions</a></li>
+<li><a href="#orgd13d0e4">Boucles</a></li>
+</ul>
+</li>
+<li><a href="#orgeb9ca5c">Compilation</a></li>
+<li><a href="#org6b8cda5">Directive pre-processeur</a>
+<ul>
+<li><a href="#orgce24c2b">Inclure un fichier header</a></li>
+<li><a href="#org6c99f1e">Définir une chaine de caractère</a></li>
+<li><a href="#org4a86336">Compilation conditionnelle</a></li>
+</ul>
+</li>
+<li><a href="#org859be26">Fonctions</a>
+<ul>
+<li><a href="#orgca0ce29">Fonction main</a></li>
+<li><a href="#orgffb83f8">Exemple</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p>
+Cette page sur le langage C est loin d'être exhaustive, 
+mais permet certainement de faire
+un rappel sur des choses à savoir.
+Il peut être interessant si vous n'avez jamais fait de C de monter en compétence
+dans un premier temps sur votre propre ordinateur avant de vous lancer dans la programmation 
+d'un micro controller.
+</p>
+
+<div id="outline-container-orgb7c68bf" class="outline-2">
+<h2 id="orgb7c68bf">Installer un environnement Linux sous Windows</h2>
+<div class="outline-text-2" id="text-orgb7c68bf">
+<p>
+Linux est un système d'exploitation très utilisé pour le développement.
+Si vous êtes peu famillier avec cet environnement et si vous êtes sous windows10
+ou ultérieur, je vous conseille d'installer WSL2 (Windows Subsystem For Linux). <br />
+<a href="https://learn.microsoft.com/fr-fr/windows/wsl/install">https://learn.microsoft.com/fr-fr/windows/wsl/install</a> <br />
+Une fois cette fonctionnalité vous permettra ensuite d'installer une distribution linux,
+je vous conseille Ubuntu, qui est disponible dans le Windows store. <br />
+</p>
+
+<p>
+Une fois sous Ubuntu, vous pourrez installer GCC qui est un compilateur C trés utilisé.
+</p>
+<div class="org-src-container">
+<pre class="src src-bash">sudo apt install gcc
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0a4957a" class="outline-2">
+<h2 id="org0a4957a">Utiliser un compilateur en ligne</h2>
+<div class="outline-text-2" id="text-org0a4957a">
+<p>
+La façon la plus directe de commencer à s'exercer, sans rien installer. <br />
+</p>
+
+<p target="_blank">
+<a href="https://www.onlinegdb.com/" target="_blank">https://www.onlinegdb.com/</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org653fc24" class="outline-2">
+<h2 id="org653fc24">Commentaires</h2>
+<div class="outline-text-2" id="text-org653fc24">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #73d216;">// </span><span style="color: #73d216;">Commentaires sur une ligne, peut s'ins&#233;rer apr&#232;s une instruction</span>
+
+<span style="color: #73d216;">/*</span>
+<span style="color: #73d216;">Bloc de commentaires </span>
+<span style="color: #73d216;">multi-lignes</span>
+<span style="color: #73d216;">*/</span>
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org88f929a" class="outline-2">
+<h2 id="org88f929a">Instructions</h2>
+<div class="outline-text-2" id="text-org88f929a">
+<p>
+Une instruction en C se termine par un point virgule.
+</p>
+</div>
+
+<div id="outline-container-orgd2b9d55" class="outline-3">
+<h3 id="orgd2b9d55">Variables</h3>
+<div class="outline-text-3" id="text-orgd2b9d55">
+<p>
+Les noms de variables utiliséess en C doivent obligatoirement commencer 
+par une lettre ou un underscore.
+<b>Attention, ce langage est sensible à la casse!</b>
+</p>
+</div>
+
+<div id="outline-container-org3d73298" class="outline-4">
+<h4 id="org3d73298">Types</h4>
+<div class="outline-text-4" id="text-org3d73298">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #8cc4ff;">int</span> <span style="color: #fcaf3e;">ivar</span>=4;
+<span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">fvar</span>=3.1415;
+<span style="color: #8cc4ff;">char</span> <span style="color: #fcaf3e;">cvar</span>=<span style="color: #e9b96e;">'a'</span>;
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgade69d0" class="outline-4">
+<h4 id="orgade69d0">Types énumérés</h4>
+<div class="outline-text-4" id="text-orgade69d0">
+<p>
+Ces types permettent à l'utilisateur de créer un type de variable et d'en définir les 
+différents états. Nous nous en servirons pour les machines à états.
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #b4fa70;">enum</span> <span style="color: #8cc4ff;">tricolore</span>{<span style="color: #fcaf3e;">vert</span>, <span style="color: #fcaf3e;">orange</span>, <span style="color: #fcaf3e;">rouge</span>};
+<span style="color: #b4fa70;">enum</span> <span style="color: #8cc4ff;">tricolore</span> <span style="color: #fcaf3e;">feu</span>;
+feu = orange; 
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdaa005e" class="outline-3">
+<h3 id="orgdaa005e">Opérations arithmétique</h3>
+<div class="outline-text-3" id="text-orgdaa005e">
+<p>
+Les opérations arithémtiques peuvent être réalisée entre des types différents, 
+mais votre compilateur fera certainement un choix à votre place, et peut être pas celui que vous attendez&#x2026;
+Privilégiez donc les opérations entre des opérandes de même type.
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #8cc4ff;">int</span> <span style="color: #fcaf3e;">result</span>;
+result = i+f;
+result = i*f;
+result = i/f;
+result = i%f;
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0acd735" class="outline-2">
+<h2 id="org0acd735">Structures de controle</h2>
+<div class="outline-text-2" id="text-org0acd735">
+<p>
+Les structures de contrôles  utilisent des conditions booléennes évalués entre parenthèses.
+Si la condtion booléenne renvoit un résultat différent de 0, elle est considérée valide. Alors les instructions
+entre accolades sont executées.
+</p>
+</div>
+
+<div id="outline-container-org5bb7802" class="outline-3">
+<h3 id="org5bb7802">Conditions</h3>
+<div class="outline-text-3" id="text-org5bb7802">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #b4fa70;">if</span>(a==b){
+}
+<span style="color: #b4fa70;">else</span> <span style="color: #b4fa70;">if</span>(a&lt;b){
+}
+<span style="color: #b4fa70;">else</span> <span style="color: #b4fa70;">if</span>(a&gt;b){
+}
+
+</pre>
+</div>
+
+<p>
+Une structure un peu particulière, et qui nous sera trés utile pour faire une machine à état
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #b4fa70;">switch</span> ( expression ) {
+    <span style="color: #b4fa70;">case</span> value1:
+        statement;
+        [<span style="color: #e9b2e3;">statement</span>]...
+        <span style="color: #b4fa70;">break</span>;
+    <span style="color: #b4fa70;">case</span> value2:
+        statement;
+        [<span style="color: #e9b2e3;">statement</span>]...
+        <span style="color: #b4fa70;">break</span>;
+    <span style="color: #b4fa70;">default</span>:
+        statement;
+        [<span style="color: #e9b2e3;">statement</span>]...
+}
+
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgd13d0e4" class="outline-3">
+<h3 id="orgd13d0e4">Boucles</h3>
+<div class="outline-text-3" id="text-orgd13d0e4">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #b4fa70;">for</span>(<span style="color: #8cc4ff;">int</span> <span style="color: #fcaf3e;">i</span>=0;i&lt;10;i++){
+}
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #b4fa70;">while</span>(a&lt;b){
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeb9ca5c" class="outline-2">
+<h2 id="orgeb9ca5c">Compilation</h2>
+<div class="outline-text-2" id="text-orgeb9ca5c">
+
+<div class="figure">
+<p><img src="./img/compilationprocess.png" alt="compilationprocess.png" width="300px" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org6b8cda5" class="outline-2">
+<h2 id="org6b8cda5">Directive pre-processeur</h2>
+<div class="outline-text-2" id="text-org6b8cda5">
+<p>
+La compilation permet de passer du code source au code machine, ou code assembleur.
+Une étape précède cependant la compilation. Cette étape est le pre-processeur.
+Il existe dans le code source des directives pour le pre-processeur, elles commencent par un #.
+Le pre processeur est entre autre en charge de vérifier la syntaxe et de créer un fichier unique avant la compilation à proporement parler.
+<b>Dans le fichier sortant de l'étape de pre-processing, toutes les directives de pre-processing ont été remplacées par leur valeure originale.</b>
+</p>
+</div>
+
+
+<div id="outline-container-orgce24c2b" class="outline-3">
+<h3 id="orgce24c2b">Inclure un fichier header</h3>
+<div class="outline-text-3" id="text-orgce24c2b">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">"definition.h"</span>
+</pre>
+</div>
+
+<p>
+La ligne précédente sera donc remplacée par le contenu du fichier definition.h
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6c99f1e" class="outline-3">
+<h3 id="org6c99f1e">Définir une chaine de caractère</h3>
+<div class="outline-text-3" id="text-org6c99f1e">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #e090d7;">#define</span> <span style="color: #fcaf3e;">MAXVALUE</span> 100
+</pre>
+</div>
+
+<p>
+La chaine de caractère MAXVALUE sera remplacé par 100
+</p>
+
+<p>
+<b>Pour des raisons de lisibilité et de maintenabilité du code, evitez au maximum d'entrer des valeurs numériques directes, l'utilisation de directives pre-processeur est une façon élégante de remplacer une valeur numérique par
+une chaine de caractère explicite, qui aura pour avantages:</b>
+</p>
+<ul class="org-ul">
+<li><b>de ne pas consommer de la mémoire (à l'inverse d'une variable)</b></li>
+<li><b>de gagner en lisibilité</b></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org4a86336" class="outline-3">
+<h3 id="org4a86336">Compilation conditionnelle</h3>
+<div class="outline-text-3" id="text-org4a86336">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #e090d7;">#define</span> <span style="color: #fcaf3e;">DEBUG</span> 
+<span style="color: #e090d7;">#ifdef</span> DEBUG 
+printf(<span style="color: #e9b96e;">"Version Debug"</span>);
+<span style="color: #e090d7;">#endif</span>
+<span style="color: #e090d7;">#if</span><span style="color: #e090d7;">n</span><span style="color: #e090d7;">def</span> DEBUG 
+printf(<span style="color: #e9b96e;">"Version Client"</span>);
+<span style="color: #e090d7;">#endif</span>
+</pre>
+</div>
+
+<p>
+Un ensemble d'instructions sera compilé ou non selon une condition.
+Cela est très utile pour créer plusieurs executable à partir d'un même fichier sources.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org859be26" class="outline-2">
+<h2 id="org859be26">Fonctions</h2>
+<div class="outline-text-2" id="text-org859be26">
+<p>
+Une fonction est un ensemble d'instruction. Elle peut être définie par l'utilisateur,
+ou donnée avec l'environnement de développement.
+Elle a:
+</p>
+<ul class="org-ul">
+<li>Un type: Le type définie le type de sortie de la fonction.</li>
+<li>Un nom: Le nom de la fonction vient juste après le type.</li>
+<li>Des arguments: ce sont les entrées de la fonction, ils sont entre parenthèses et séparés par des virgules.</li>
+<li>Un ensemble d'instructions qui definisse sont implémentation</li>
+</ul>
+
+<p>
+Pour utiliser une fonction, il faut au préalable qu'elle soit définit avant d'être appelée.
+Par convention, elle est définit par son prototype dans un fichier .h, et implémentée dans un fichier .c.
+Attention, en C vous pouvez définir un prototype de fonction, sans que la fonction
+en elle même le soit 
+</p>
+</div>
+
+<div id="outline-container-orgca0ce29" class="outline-3">
+<h3 id="orgca0ce29">Fonction main</h3>
+<div class="outline-text-3" id="text-orgca0ce29">
+<p>
+C'est la fonction prinicpale de votre programme et la première à être executée.
+Quelque soit la plateforme (embarquée/débarquée) cette fonction est obligatoire en C et C++.
+A noter qu'en langage Arduino cette fonction est dissumulée.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgffb83f8" class="outline-3">
+<h3 id="orgffb83f8">Exemple</h3>
+<div class="outline-text-3" id="text-orgffb83f8">
+<p>
+Definition et implémentation d'une fonction dans le même fichier
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">&lt;stdio.h&gt;</span>
+
+<span style="color: #8cc4ff;">float</span> <span style="color: #fce94f;">moyenne</span>(<span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">a</span>, <span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">b</span>){
+  <span style="color: #b4fa70;">return</span> (a+b)/2;
+}
+
+<span style="color: #8cc4ff;">void</span> <span style="color: #fce94f;">main</span>(){
+  printf(<span style="color: #e9b96e;">"La moyenne de 3 et 4 est %f \n"</span>,moyenne(3,4));
+}
+</pre>
+</div>
+
+
+<p>
+Definition et implémentation d'une fonction sur plusieurs fichiers
+</p>
+
+<p>
+<b>customfunc.c</b>
+Implémentation de la fonction
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #8cc4ff;">float</span> <span style="color: #fce94f;">moyenne</span>(<span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">a</span>, <span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">b</span>){
+  <span style="color: #b4fa70;">return</span> (a+b)/2;
+}
+</pre>
+</div>
+
+<p>
+<b>customfunc.h</b>
+Définition du prototype de la fonction
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #8cc4ff;">float</span> <span style="color: #fce94f;">moyenne</span>(<span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">a</span>, <span style="color: #8cc4ff;">float</span> <span style="color: #fcaf3e;">b</span>);
+</pre>
+</div>
+
+<p>
+<b>main.c</b>
+Fichier contenant la fonction main()
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">&lt;stdio.h&gt;</span>
+<span style="color: #e090d7;">#include</span> <span style="color: #e9b96e;">"custom_func.h"</span>
+
+<span style="color: #8cc4ff;">void</span> <span style="color: #fce94f;">main</span>(){
+  printf(<span style="color: #e9b96e;">"La moyenne de 3 et 4 est %f \n"</span>,moyenne(3,4));
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: remi.griot@efrei.fr</p>
+<p class="date">Created: 2023-04-15 sam. 09:46</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
