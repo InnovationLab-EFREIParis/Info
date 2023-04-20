@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Microcontroller (ÂµC)</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="prototypage rapide"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Microcontroller (ÂµC)</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org85537d3">Carte d'évaluation Nucleo</a>
+<ul>
+<li><a href="#org76f1e2c">LED (Utilisateur)</a>
+<ul>
+<li><a href="#org22b1a9c">Hardware</a></li>
+</ul>
+</li>
+<li><a href="#orgc8cf0cd">Bouton Poussoir (Utilisateur)</a>
+<ul>
+<li><a href="#org2c8c0d6">Hardware</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#org0dae165">Le microcontroller</a>
+<ul>
+<li><a href="#org78cefff">Caractéristiques</a></li>
+<li><a href="#orga45fddd">Architecture</a></li>
+</ul>
+</li>
+<li><a href="#org0bb2425">Environnement de développement (IDE) CubeIDE</a>
+<ul>
+<li><a href="#org07d6889">HAL (Hardware Abstraction Layer)</a></li>
+<li><a href="#org3535d86">GPIO</a>
+<ul>
+<li><a href="#org3c4fe8f">NomDuProjet.ioc</a></li>
+<li><a href="#org73fc127">main.h</a></li>
+<li><a href="#org7294d59">main.c</a></li>
+<li><a href="#org63ae981">Ecriture</a></li>
+<li><a href="#org2d37ac4">Lecture</a></li>
+</ul>
+</li>
+<li><a href="#orgba695d7">Délai</a></li>
+<li><a href="#org0831b5b">RS232</a>
+<ul>
+<li><a href="#org70db43d">Emission (µC vers PC)</a></li>
+<li><a href="#org99a0aa0">Reception (PC vers µC)</a></li>
+</ul>
+</li>
+<li><a href="#org9a18324">Exercice 1</a></li>
+<li><a href="#orgc2ff587">Exercice 2</a></li>
+<li><a href="#org7c95001">Exercice 3</a></li>
+<li><a href="#orgecc509a">Exercice 4</a></li>
+<li><a href="#org8b0c81d">Exercice 5</a></li>
+</ul>
+</li>
+<li><a href="#org6ec22dd">Annexes</a>
+<ul>
+<li><a href="#org7e9171e">Nom de broches</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<p width="150px" style="float:left;margin:0px 20px 20px 0px;">
+<img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
+Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
+En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
+Comme de la mémoire FLASH (program memory), mémoire RAM (data memory), convertisseur (NA ou AN), controller de bus&#x2026;
+Ces périphériques sont reliés via un bus interne, décris ci desssous comme un bus système.
+</p>
+
+
+<div class="figure">
+<p><img src="./img/uc_arch.png" alt="uc_arch.png" width="500px" />
+</p>
+</div>
+
+
+
+<p>
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout dÃ©signÃ© pour Ãªtre embarquÃ©. 
+La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra Ãªtre convertie en tension (ou en courant), et donc exploitable par le ÂµC.
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Capteurs</th>
+<th scope="col" class="org-left">Grandeur physique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bouton</td>
+<td class="org-left">Pression</td>
+</tr>
+
+<tr>
+<td class="org-left">Potentiometre</td>
+<td class="org-left">Angle</td>
+</tr>
+
+<tr>
+<td class="org-left">Thermoresistance</td>
+<td class="org-left">Temperature</td>
+</tr>
+
+<tr>
+<td class="org-left">Photodiode</td>
+<td class="org-left">Lumière</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacé.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actionneurs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">LED</td>
+</tr>
+
+<tr>
+<td class="org-left">Servomoteur</td>
+</tr>
+
+<tr>
+<td class="org-left">Moteur</td>
+</tr>
+
+<tr>
+<td class="org-left">Ecran</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. 
+Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Par exemple dans une automobile, en IOT ou en robotique.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./img/voiture.jpg" alt="voiture.jpg" width="500px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/turtlebot.png" alt="turtlebot.png" width="500px" />
+</p>
+</div>
+
+<p>
+En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs&#x2026;
+La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
+</p>
+
+
+
+<div id="outline-container-org85537d3" class="outline-2">
+<h2 id="org85537d3">Carte d'évaluation Nucleo</h2>
+<div class="outline-text-2" id="text-org85537d3">
+<p>
+Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des taches qu'il aura à accomplir et des contraintes en terme
+de coûts, de consommation, de l'ergonomie de l'interface de développement&#x2026;
+</p>
+
+<p>
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
+Cette carte d'évaluation est issue de la gamme Nucleo.
+</p>
+
+
+
+
+<div class="figure">
+<p><img src="./img/hw_block_diagram.jpg" alt="hw_block_diagram.jpg" width="500px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/top_layout.jpg" alt="top_layout.jpg" width="500px" />
+</p>
+</div>
+
+
+<p>
+Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+</p>
+
+<p>
+<a href="../stm/stm32_l476_usermanual.pdf">Manuel utilisateur</a>
+</p>
+
+<p>
+<a href="../stm/stm32_l476_schematic.pdf">SchÃ©ma Ã©lectrique</a>
+</p>
+
+<p>
+<a href="../stm/stm32_l476_datasheet.pdf">Datasheet STM32L476RG</a>
+</p>
+</div>
+
+
+
+<div id="outline-container-org76f1e2c" class="outline-3">
+<h3 id="org76f1e2c">LED (Utilisateur)</h3>
+<div class="outline-text-3" id="text-org76f1e2c">
+</div>
+<div id="outline-container-org22b1a9c" class="outline-4">
+<h4 id="org22b1a9c">Hardware</h4>
+<div class="outline-text-4" id="text-org22b1a9c">
+
+<div class="figure">
+<p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgc8cf0cd" class="outline-3">
+<h3 id="orgc8cf0cd">Bouton Poussoir (Utilisateur)</h3>
+<div class="outline-text-3" id="text-orgc8cf0cd">
+</div>
+<div id="outline-container-org2c8c0d6" class="outline-4">
+<h4 id="org2c8c0d6">Hardware</h4>
+<div class="outline-text-4" id="text-org2c8c0d6">
+
+<div class="figure">
+<p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org0dae165" class="outline-2">
+<h2 id="org0dae165">Le microcontroller</h2>
+<div class="outline-text-2" id="text-org0dae165">
+</div>
+<div id="outline-container-org78cefff" class="outline-3">
+<h3 id="org78cefff">Caractéristiques</h3>
+<div class="outline-text-3" id="text-org78cefff">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Board</th>
+<th scope="col" class="org-left">Nucleo STM32L476RG</th>
+<th scope="col" class="org-left">Arduino Uno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Family</td>
+<td class="org-left">ARM Cortex-M4</td>
+<td class="org-left">ATMega 328P</td>
+</tr>
+
+<tr>
+<td class="org-left">Vendor</td>
+<td class="org-left">ST Microelectronics</td>
+<td class="org-left">ATMega</td>
+</tr>
+
+<tr>
+<td class="org-left">Vcc</td>
+<td class="org-left">1.71 V - 3.6V</td>
+<td class="org-left">3.3 - 5V</td>
+</tr>
+
+<tr>
+<td class="org-left">Bus size</td>
+<td class="org-left">32 bits</td>
+<td class="org-left">8 bits</td>
+</tr>
+
+<tr>
+<td class="org-left">SRAM</td>
+<td class="org-left">128 KB</td>
+<td class="org-left">2 KB</td>
+</tr>
+
+<tr>
+<td class="org-left">Flash</td>
+<td class="org-left">1 MB</td>
+<td class="org-left">32 KB</td>
+</tr>
+
+<tr>
+<td class="org-left">Frequency</td>
+<td class="org-left">up to 80MHz</td>
+<td class="org-left">16</td>
+</tr>
+
+<tr>
+<td class="org-left">FPU</td>
+<td class="org-left">YES</td>
+<td class="org-left">NO</td>
+</tr>
+
+<tr>
+<td class="org-left">Timers</td>
+<td class="org-left">16</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">ADCs</td>
+<td class="org-left">1x 12-bit</td>
+<td class="org-left">6 (10 bits)</td>
+</tr>
+
+<tr>
+<td class="org-left">DAC</td>
+<td class="org-left">1</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">UARTs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">SPIs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">I2Cs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">RTC</td>
+<td class="org-left">1</td>
+<td class="org-left">0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orga45fddd" class="outline-3">
+<h3 id="orga45fddd">Architecture</h3>
+<div class="outline-text-3" id="text-orga45fddd">
+<p>
+Voir page 17 de la datasheet
+</p>
+
+
+<div class="figure">
+<p><img src="./img/uc_diagram.jpg" alt="uc_diagram.jpg" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org0bb2425" class="outline-2">
+<h2 id="org0bb2425">Environnement de développement (IDE) CubeIDE</h2>
+<div class="outline-text-2" id="text-org0bb2425">
+<p>
+Configuration du projet
+</p>
+
+<div class="figure">
+<p><img src="./img/boardselection.jpg" alt="boardselection.jpg" width="800px" />
+</p>
+</div>
+
+
+<div class="figure">
+<p><img src="./img/projectgenerator.jpg" alt="projectgenerator.jpg" width="800px" />
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org07d6889" class="outline-3">
+<h3 id="org07d6889">HAL (Hardware Abstraction Layer)</h3>
+<div class="outline-text-3" id="text-org07d6889">
+<p>
+Nous utiliserons les fonctions HAL incluent dans l'environnement de développement.
+Elles permettent de simplifier le travail du développeur concernant l'utilisation, la configuration et l'initialisation 
+des périphériques du microcontroller.
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org3535d86" class="outline-3">
+<h3 id="org3535d86">GPIO</h3>
+<div class="outline-text-3" id="text-org3535d86">
+<p>
+General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+</p>
+</div>
+
+<div id="outline-container-org3c4fe8f" class="outline-4">
+<h4 id="org3c4fe8f">NomDuProjet.ioc</h4>
+<div class="outline-text-4" id="text-org3c4fe8f">
+<p>
+L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
+</p>
+<ul class="org-ul">
+<li>Clique gauche sur les broches pour les configurer en sorties ou en entrÃ©</li>
+<li>Clique droit sur une broche pour lui donner un label</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org73fc127" class="outline-4">
+<h4 id="org73fc127">main.h</h4>
+<div class="outline-text-4" id="text-org73fc127">
+<p>
+Les directives suivantes permettent de faire le lien entre les user<sub>label</sub> et les noms des broches
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">user_label</span> nom_broche
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">B1_Pin</span> GPIO_PIN_13
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">LD2_Pin</span> GPIO_PIN_5
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">D8_Pin</span> GPIO_PIN_9
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7294d59" class="outline-4">
+<h4 id="org7294d59">main.c</h4>
+<div class="outline-text-4" id="text-org7294d59">
+<p>
+Cette fonction généré automatiquement configure les GPIO <br />
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold;">static</span> <span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">MX_GPIO_Init</span>(<span style="font-weight: bold; text-decoration: underline;">void</span>)
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org63ae981" class="outline-4">
+<h4 id="org63ae981">Ecriture</h4>
+<div class="outline-text-4" id="text-org63ae981">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_GPIO_WritePin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span>* <span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>, <span style="font-weight: bold; text-decoration: underline;">GPIO_PinState</span> <span style="font-weight: bold; font-style: italic;">PinState</span>);
+</pre>
+</div>
+
+<p>
+Exemple:
+</p>
+<div class="org-src-container">
+<pre class="src src-C++">HAL_GPIO_WritePin(GPIOA, LD2_Pin, RESET);
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_GPIO_TogglePin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span> *<span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>);
+</pre>
+</div>
+
+<p>
+Exemple:
+</p>
+<div class="org-src-container">
+<pre class="src src-C++">HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org2d37ac4" class="outline-4">
+<h4 id="org2d37ac4">Lecture</h4>
+<div class="outline-text-4" id="text-org2d37ac4">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">GPIO_PinState</span> <span style="font-weight: bold;">HAL_GPIO_ReadPin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span>* <span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>);
+</pre>
+</div>
+
+<p>
+Exemple: 
+</p>
+<div class="org-src-container">
+<pre class="src src-C++">PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgba695d7" class="outline-3">
+<h3 id="orgba695d7">Délai</h3>
+<div class="outline-text-3" id="text-orgba695d7">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_Delay</span> (<span style="font-weight: bold; text-decoration: underline;">uint32_t</span> <span style="font-weight: bold; font-style: italic;">Delay</span>);
+</pre>
+</div>
+
+<p>
+Exemple:
+</p>
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; font-style: italic;">// </span><span style="font-weight: bold; font-style: italic;">Temporistion de 10 ms</span>
+HAL_Delay(10);
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0831b5b" class="outline-3">
+<h3 id="org0831b5b">RS232</h3>
+<div class="outline-text-3" id="text-org0831b5b">
+</div>
+<div id="outline-container-org70db43d" class="outline-4">
+<h4 id="org70db43d">Emission (µC vers PC)</h4>
+<div class="outline-text-4" id="text-org70db43d">
+<div class="org-src-container">
+<pre class="src src-C++">HAL_UART_Transmit (<span style="font-weight: bold; text-decoration: underline;">UART_HandleTypeDef</span> *<span style="font-weight: bold; font-style: italic;">huart</span>, <span style="font-weight: bold; text-decoration: underline;">uint8_t</span> *<span style="font-weight: bold; font-style: italic;">pData</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">Size</span>, <span style="font-weight: bold; text-decoration: underline;">uint32_t</span> <span style="font-weight: bold; font-style: italic;">Timeout</span>)
+</pre>
+</div>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">char</span> <span style="font-weight: bold; font-style: italic;">uart_tx_buff</span>[50];
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold; font-style: italic;">uart_tx_buf_len</span>;
+uart_tx_buf_len = sprintf(uart_tx_buff, <span style="font-style: italic;">"Nucleo L476RG connected\n\r"</span>);
+HAL_UART_Transmit(&amp;huart2, (<span style="font-weight: bold; text-decoration: underline;">uint8_t</span>*) uart_tx_buff, uart_tx_buf_len,
+                        100);
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org99a0aa0" class="outline-4">
+<h4 id="org99a0aa0">Reception (PC vers µC)</h4>
+<div class="outline-text-4" id="text-org99a0aa0">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">HAL_StatusTypeDef</span> <span style="font-weight: bold;">HAL_UART_Receive</span>(<span style="font-weight: bold; text-decoration: underline;">UART_HandleTypeDef</span> *<span style="font-weight: bold; font-style: italic;">huart</span>,
+<span style="font-weight: bold; text-decoration: underline;">uint8_t</span> *       <span style="font-weight: bold; font-style: italic;">pData</span>,
+<span style="font-weight: bold; text-decoration: underline;">uint16_t</span>        <span style="font-weight: bold; font-style: italic;">Size</span>,
+<span style="font-weight: bold; text-decoration: underline;">uint32_t</span>        <span style="font-weight: bold; font-style: italic;">Timeout</span> 
+)       
+</pre>
+</div>
+
+<p>
+Exemple:
+</p>
+<div class="org-src-container">
+<pre class="src src-C++">HAL_UART_Receive(&amp;huart2, uart_rx_buffer, 1, 10) 
+</pre>
+</div>
+
+
+<p>
+Drivers&gt;STM32L4xx<sub>HAL</sub><sub>Driver</sub>&gt;stm32l4xx<sub>hal</sub><sub>gpio.h</sub>
+Ce fichier fournit par STMicro définit les masques derriere les alias GPIO<sub>PIN</sub><sub>X</sub> ainsi que toutes les fonctions relatives à l'utilisation des GPIO
+</p>
+
+<p>
+Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org9a18324" class="outline-3">
+<h3 id="org9a18324">Exercice 1</h3>
+<div class="outline-text-3" id="text-org9a18324">
+<p>
+Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc2ff587" class="outline-3">
+<h3 id="orgc2ff587">Exercice 2</h3>
+<div class="outline-text-3" id="text-orgc2ff587">
+<p>
+Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org7c95001" class="outline-3">
+<h3 id="org7c95001">Exercice 3</h3>
+<div class="outline-text-3" id="text-org7c95001">
+<p>
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgecc509a" class="outline-3">
+<h3 id="orgecc509a">Exercice 4</h3>
+<div class="outline-text-3" id="text-orgecc509a">
+<p>
+Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b0c81d" class="outline-3">
+<h3 id="org8b0c81d">Exercice 5</h3>
+<div class="outline-text-3" id="text-org8b0c81d">
+<p>
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
+</p>
+</div>
+</div>
+</div>
+
+
+
+
+<div id="outline-container-org6ec22dd" class="outline-2">
+<h2 id="org6ec22dd">Annexes</h2>
+<div class="outline-text-2" id="text-org6ec22dd">
+</div>
+<div id="outline-container-org7e9171e" class="outline-3">
+<h3 id="org7e9171e">Nom de broches</h3>
+<div class="outline-text-3" id="text-org7e9171e">
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

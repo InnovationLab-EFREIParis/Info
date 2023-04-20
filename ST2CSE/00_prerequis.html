@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>ST2CSE</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="ST2CSE"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">ST2CSE</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org3da303e">Bienvenue</a>
+<ul>
+<li><a href="#org720339b">Contenu</a></li>
+<li><a href="#orgac86316">Compétences</a></li>
+<li><a href="#org5f6522e">Evaluation</a></li>
+<li><a href="#org71c919f">Projet</a></li>
+<li><a href="#org1dfab9c">Binomes</a>
+<ul>
+<li><a href="#orgb94d45d">TI</a></li>
+<li><a href="#orgc95a6bf">SRD</a></li>
+</ul>
+</li>
+<li><a href="#orgb828ed3">Agenda</a></li>
+</ul>
+</li>
+<li><a href="#orgaa1ff44">Logiciels prérequis</a>
+<ul>
+<li><a href="#org32b0002">Conception 3D - Solidworks</a></li>
+<li><a href="#org13f7fe5">Fabrication 3D - Ideamaker</a></li>
+<li><a href="#orgda80e70">Programmation microcontroller - STM32CubeIde</a></li>
+<li><a href="#orgdffcaa3">Création de carte électronique - EasyEDA Designer</a></li>
+<li><a href="#org9c2fb21">Gestion de version</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org3da303e" class="outline-2">
+<h2 id="org3da303e">Bienvenue</h2>
+<div class="outline-text-2" id="text-org3da303e">
+<p>
+Ce cours porte sur la conception de systèmes embarqués.
+La définition d'un système embarqué n'est pas standardisé mais répond à certaines caractéristiques:
+</p>
+<ul class="org-ul">
+<li>Intéragie avec son environnement</li>
+<li>Dépend la plupart du temps d'un système plus vaste</li>
+<li>Peut être soumis à des contraintes temps réels</li>
+<li>Spécialisé sur une tâche en particulier relative à un traitement</li>
+</ul>
+
+<p>
+Ce terme désigne des systèmes composés de quelques tranistors, capacités et resistances, jusqu'à des ordinateurs embarqués.
+Entre ces deux extrêmes se situe les systèmes à base de micro controller, qui sont souvent sous entendu lorsque l'on parle de systèmes embarqués.
+Nous utiliserons ce type de système dans le cadre de ce cours. 
+La conception d'un système embarqué fait appel à plusieurs domaines:
+</p>
+<ul class="org-ul">
+<li>La programmation</li>
+<li>La conception  de circuit imprimé</li>
+<li>La conception de boitier et ou chassis</li>
+</ul>
+
+<p>
+Le choix a été fait d'avoir pour ce cours une approche transverse et pragmatique, qui je l'espere vous permettra d'acquerir des compétences
+immédiatement utilisables lors de vos projets étudiants et qui vous donnera egalement des perspectives à long terme si vous souhaitez vous orienter vers ce domaine.
+Avant le début du cours, il est vivement conseillé:
+</p>
+<ul class="org-ul">
+<li>D'installer les logiciels prérequis (voir en bas de page)</li>
+<li>De créer les comptes associés le cas échéant</li>
+</ul>
+</div>
+
+
+<div id="outline-container-org720339b" class="outline-3">
+<h3 id="org720339b">Contenu</h3>
+<div class="outline-text-3" id="text-org720339b">
+<p>
+<a href="./08_CProgramming.html">Programmation en C</a> <br />
+<a href="./04_UC.html">Microcontroller </a> <br />
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgac86316" class="outline-3">
+<h3 id="orgac86316">Compétences</h3>
+<div class="outline-text-3" id="text-orgac86316">
+<p>
+Ce cours doit (normalement) vous permettre de monter en compétences sur la conception de systèmes embarqués, ce qui implique:
+</p>
+<ul class="org-ul">
+<li>La caractérisation de capteurs et de la chaine d'acquisition</li>
+<li>La programation et le traitement de données</li>
+<li>La conception de carte éléctronique</li>
+<li>La conception et fabrication numérique</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5f6522e" class="outline-3">
+<h3 id="org5f6522e">Evaluation</h3>
+<div class="outline-text-3" id="text-org5f6522e">
+<ul class="org-ul">
+<li>Notes de TPs (30%)</li>
+<li>Projet (70%) (des éléments du projet seront donnés durant le TPs)</li>
+</ul>
+</div>
+</div>
+
+
+<div id="outline-container-org71c919f" class="outline-3">
+<h3 id="org71c919f">Projet</h3>
+<div class="outline-text-3" id="text-org71c919f">
+<p width="300px" style="float:left;margin:0px 20px 20px 0px;">
+<img src="./img/projet_1.png" alt="projet_1.png" width="300px" style="float:left;margin:0px 20px 20px 0px;" /> 
+Le projet consiste en la conception d'un système électronique composé 
+</p>
+<ul class="org-ul">
+<li>d'une carte mère acceuillant un microcontroller (carte d'évaluation du marché, programmé par vos soins)</li>
+<li>une carte fille acceuillant les capteurs et les actionneurs (conçu par vos soins)</li>
+<li>le boitier acceuillant les deux cartes mentionnés ci dessus (conçu et fabriqué par vos soins)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org1dfab9c" class="outline-3">
+<h3 id="org1dfab9c">Binomes</h3>
+<div class="outline-text-3" id="text-org1dfab9c">
+</div>
+
+<div id="outline-container-orgb94d45d" class="outline-4">
+<h4 id="orgb94d45d">TI</h4>
+<div class="outline-text-4" id="text-orgb94d45d">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nom</th>
+<th scope="col" class="org-left">Binome</th>
+<th scope="col" class="org-left">Carte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Antoine Covet</td>
+<td class="org-left">A</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Gauthier Marcelin</td>
+<td class="org-left">A</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left">Quentin Noiriel</td>
+<td class="org-left">B</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Savoureux Khondker</td>
+<td class="org-left">B</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Jean-Samuel Haudié</td>
+<td class="org-left">C</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left">Tristan Emmanuel Perrine</td>
+<td class="org-left">C</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Nassim Berdouz</td>
+<td class="org-left">D</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left">Duy Ngoc Pham</td>
+<td class="org-left">D</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">Dounia Adli</td>
+<td class="org-left">E</td>
+<td class="org-left">X</td>
+</tr>
+
+<tr>
+<td class="org-left">Anthony Do</td>
+<td class="org-left">E</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgc95a6bf" class="outline-4">
+<h4 id="orgc95a6bf">SRD</h4>
+<div class="outline-text-4" id="text-orgc95a6bf">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nom</th>
+<th scope="col" class="org-left">Binome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Julien Pannier</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Elouran De Kerros</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Sahbi MOATEMRI</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Ornélie Buissereth</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Agathe Valence</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">Clément Francqueville</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orgb828ed3" class="outline-3">
+<h3 id="orgb828ed3">Agenda</h3>
+<div class="outline-text-3" id="text-orgb828ed3">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">CM</th>
+<th scope="col" class="org-left">TP1</th>
+<th scope="col" class="org-left">TP2</th>
+<th scope="col" class="org-left">TP3</th>
+<th scope="col" class="org-left">Proj 1</th>
+<th scope="col" class="org-left">Proj 2</th>
+<th scope="col" class="org-left">Proj 3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">SRD</td>
+<td class="org-left">11/04 09/05</td>
+<td class="org-left">17/05</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">19/05</td>
+<td class="org-left">27/06</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">TI</td>
+<td class="org-left">11/04 09/05</td>
+<td class="org-left">12/04</td>
+<td class="org-left">10/05</td>
+<td class="org-left">15/05</td>
+<td class="org-left">15/05</td>
+<td class="org-left">13/06</td>
+<td class="org-left">11/07</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+
+<div id="outline-container-orgaa1ff44" class="outline-2">
+<h2 id="orgaa1ff44">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-orgaa1ff44">
+</div>
+<div id="outline-container-org32b0002" class="outline-3">
+<h3 id="org32b0002">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-org32b0002">
+<p target="_blank">
+Avant de toutes choses, Solidworks est uniquement compatible avec Windows et ne fonctionnera pas sur une machine virtuelle&#x2026; <br />
+Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023). Cette version est <b>gratuite</b> et <b>valable 1 an</b>:<br />
+0 - Désinstaller tous les Solidworks avant d’installer une nouvelle version. <br />
+1 – <a href="https://www.solidworks.com/SDK" target="_blank">Accéder à la page de téléchargement</a>. Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.<br />
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)<br />
+4 – Choisissez la version 2022-2023<br />
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC<br />
+6- Télécharger le fichier exécutable.<br />
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers<br />
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe<br />
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+</p>
+</div>
+</div>
+<div id="outline-container-org13f7fe5" class="outline-3">
+<h3 id="org13f7fe5">Fabrication 3D - Ideamaker</h3>
+<div class="outline-text-3" id="text-org13f7fe5">
+<p>
+Logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab. <br />
+<a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda80e70" class="outline-3">
+<h3 id="orgda80e70">Programmation microcontroller - STM32CubeIde</h3>
+<div class="outline-text-3" id="text-orgda80e70">
+<p>
+Compilateur et programmation de la carte Nucleo <br />
+<a href="https://www.st.com/en/development-tools/stm32cubeide.html">https://www.st.com/en/development-tools/stm32cubeide.html</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdffcaa3" class="outline-3">
+<h3 id="orgdffcaa3">Création de carte électronique - EasyEDA Designer</h3>
+<div class="outline-text-3" id="text-orgdffcaa3">
+<p>
+Creation de schéma électronique et PCB (Création d’un compte en ligne) <br />
+<a href="https://easyeda.com/editor">https://easyeda.com/editor</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9c2fb21" class="outline-3">
+<h3 id="org9c2fb21">Gestion de version</h3>
+<div class="outline-text-3" id="text-org9c2fb21">
+<p>
+Les rendus seront à faire via un outil de gestion de version. C'est aussi une des compétences qui vous sera demandé d'acquérir pour ce cours.
+Si vous voulez en savoir plus <a href="../git.html">Gestion de version</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="prototypage rapide"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Prototypage (rapide)</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org5273204">Bienvenue</a></li>
+<li><a href="#org961b251">Contenu</a>
+<ul>
+<li><a href="#orgba1297b">Compétences</a></li>
+<li><a href="#orge52bfbe">Evaluation</a></li>
+<li><a href="#org3d9f5f3">Projet</a></li>
+<li><a href="#orge00e278">Binomes</a></li>
+<li><a href="#orgeee4e6f">Agenda</a></li>
+</ul>
+</li>
+<li><a href="#org0596b08">Logiciels prérequis</a>
+<ul>
+<li><a href="#org614d259">Conception 3D - Solidworks</a></li>
+<li><a href="#org98bbec2">Fabrication 3D</a></li>
+<li><a href="#orgda400c4">Conception 2D</a></li>
+<li><a href="#orgebda4f3">Programmation microcontroller</a></li>
+<li><a href="#orge0c17f0">Gestion de version (optionnel)</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-org5273204" class="outline-2">
+<h2 id="org5273204">Bienvenue</h2>
+<div class="outline-text-2" id="text-org5273204">
+<p>
+Ce cours sur le prototypage se base sur la fabrication numérique, et donc sur toute une suite de logiciel permettant de concevoir, simuler, et enfin fabriquer.
+Avant le début du cours, il est vivement conseillé de:
+</p>
+<ul class="org-ul">
+<li>Créer les comptes associés</li>
+<li>Installer les logiciels prérequis</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org961b251" class="outline-2">
+<h2 id="org961b251">Contenu</h2>
+<div class="outline-text-2" id="text-org961b251">
+<p>
+Ce cours contient plusieurs composantes:
+</p>
+<ul class="org-ul">
+<li>une partie théorique définissant quelques notions essentielles et abordant des questions de méthodologie. Cette partie permet egalement de faire un retour d'expérience.</li>
+<li>des exercices permettant de prendre en main les diffférents logiciels. Cette partie se fait en relative autonomie et les corrections sont fournies.</li>
+<li>un projet réalisé en binome permettant de mettre en pratique les compétences acquises. Cette partie se fait egalement en relative autonomie.</li>
+</ul>
+
+<p>
+<a href="./01_intro.html">Introduction</a> <br />
+<a href="./02_CAO.html">Conception 3D</a> <br />
+<a href="./04_UC.html">Electronique</a> <br />
+<a href="./05_projet.html">Projet</a> <br />
+<a href="./03_FAO.html">Fabrication</a> <br />
+</p>
+</div>
+
+
+
+<div id="outline-container-orgba1297b" class="outline-3">
+<h3 id="orgba1297b">Compétences</h3>
+<div class="outline-text-3" id="text-orgba1297b">
+<p>
+Ce cours doit (normalement) vous permettre de monter en compétences sur ces domaines:
+</p>
+<ul class="org-ul">
+<li>Modélisation 2D-3D</li>
+<li>Fabrication numérique additive et soustractive</li>
+<li>Electronique et programmation</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orge52bfbe" class="outline-3">
+<h3 id="orge52bfbe">Evaluation</h3>
+<div class="outline-text-3" id="text-orge52bfbe">
+<p>
+L'évaluation porte principalement sur la qualité du prototype réalisé pendant le projet.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3d9f5f3" class="outline-3">
+<h3 id="org3d9f5f3">Projet</h3>
+<div class="outline-text-3" id="text-org3d9f5f3">
+<p>
+Le projet consiste en la conception, la fabrication et la programmation d'une <i>useless box</i>.
+Ce projet implique:
+</p>
+<ul class="org-ul">
+<li>la programmation d'un micro controller</li>
+<li>son interfaçage avec un moteur et un switch</li>
+<li>la conception des éléments mécaniques et du boitier</li>
+</ul>
+
+<p>
+<a href="https://youtu.be/rFJcrQHw1k0">https://youtu.be/rFJcrQHw1k0</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orge00e278" class="outline-3">
+<h3 id="orge00e278">Binomes</h3>
+<div class="outline-text-3" id="text-orge00e278">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Nom</th>
+<th scope="col" class="org-left">Binome</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Anne-Lou CHARTIER</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Florian LEGRAND</td>
+<td class="org-left">A</td>
+</tr>
+
+<tr>
+<td class="org-left">Richard YE</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Styven ZHANG</td>
+<td class="org-left">B</td>
+</tr>
+
+<tr>
+<td class="org-left">Lucas TOURNEAUX</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">Thibault ESNOUF</td>
+<td class="org-left">C</td>
+</tr>
+
+<tr>
+<td class="org-left">Ndeye Bineta WADE</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-left">Nawel AÂSLI</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-left">James Llewellyn GUIATEU KAMGAING</td>
+<td class="org-left">D</td>
+</tr>
+
+<tr>
+<td class="org-left">Abdoula JAITEH</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-left">Axel GOURDIN</td>
+<td class="org-left">E</td>
+</tr>
+
+<tr>
+<td class="org-left">Nassim BELLAOUD</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left">Alpha KEÏTA</td>
+<td class="org-left">F</td>
+</tr>
+
+<tr>
+<td class="org-left">Jérémie BARRIÈRE</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-left">Dantin DURAND</td>
+<td class="org-left">G</td>
+</tr>
+
+<tr>
+<td class="org-left">Aurel BAFOUNDA</td>
+<td class="org-left">H</td>
+</tr>
+
+<tr>
+<td class="org-left">Leo LANCELLE</td>
+<td class="org-left">H</td>
+</tr>
+
+<tr>
+<td class="org-left">Clément ROUANET</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">Rafaël LANGLAIS</td>
+<td class="org-left">I</td>
+</tr>
+
+<tr>
+<td class="org-left">Yassine EL MANSOURI EL MOUDAN</td>
+<td class="org-left">X</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+<div id="outline-container-orgeee4e6f" class="outline-3">
+<h3 id="orgeee4e6f">Agenda</h3>
+<div class="outline-text-3" id="text-orgeee4e6f">
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Lundi (premier jour)</th>
+<th scope="col" class="org-left">Mardi</th>
+<th scope="col" class="org-left">Mercredi</th>
+<th scope="col" class="org-left">Jeudi</th>
+<th scope="col" class="org-left">Vendredi</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">AM</td>
+<td class="org-left">Introduction      Formation Binome</td>
+<td class="org-left">Electronique</td>
+<td class="org-left">Fabrication 2D</td>
+<td class="org-left">Projet</td>
+<td class="org-left">Projet</td>
+</tr>
+
+<tr>
+<td class="org-left">PM</td>
+<td class="org-left">Conception 2D/3D - Exercices</td>
+<td class="org-left">Conception 2D/3D     Presentation projet</td>
+<td class="org-left">Fabrication 3D</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Evaluation Projet</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+
+
+
+<div id="outline-container-org0596b08" class="outline-2">
+<h2 id="org0596b08">Logiciels prérequis</h2>
+<div class="outline-text-2" id="text-org0596b08">
+</div>
+<div id="outline-container-org614d259" class="outline-3">
+<h3 id="org614d259">Conception 3D - Solidworks</h3>
+<div class="outline-text-3" id="text-org614d259">
+<p target="_blank">
+Avant de toutes choses, Solidworks est uniquement compatible avec Windows et ne fonctionnera pas sur une machine virtuelle&#x2026; <br />
+Voici la procédure pour installer la version étudiante de Solidworks (SDK 2022-2023). Cette version est <b>gratuite</b> et <b>valable 1 an</b>:<br />
+0 - Désinstaller tous les Solidworks avant d’installer une nouvelle version. <br />
+1 – <a href="https://www.solidworks.com/SDK" target="_blank">Accéder à la page de téléchargement</a>. Attention, il sera nécessaire de télécharger le hotfix, après installation du logiciel, voir le message en haut de page avant d’indiquer votre nom et adresse mail.<br />
+2 – Cliquez sur OUI (question « J’ai déjà un numéro de série »)<br />
+4 – Choisissez la version 2022-2023<br />
+5 – Numéro de série Solidworks SDK 2022 : 90200054428870073GXSVZBC<br />
+6- Télécharger le fichier exécutable.<br />
+7- Exécuter le fichier, le « SLDIM » se lance et faites un téléchargement complet tous les fichiers<br />
+8- Lancer l’installation une fois que vous avez tous les fichiers sur votre poste à partir de setup.exe<br />
+Si vous n’activez pas la licence, vous n’aurez qu’une licence de 30 jours.  Cette licence expirera 365 jours après la date d’activation ou le 31 juillet 2024, selon la première éventualité.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org98bbec2" class="outline-3">
+<h3 id="org98bbec2">Fabrication 3D</h3>
+<div class="outline-text-3" id="text-org98bbec2">
+<p>
+Slicer: logiciel permettant de générer le fichier nécessaire à l'impression 3D. Nous utiliserons le slicer compatible avec les imprimantes de l'innovation Lab.
+<a href="https://www.raise3d.com/ideamaker/">https://www.raise3d.com/ideamaker/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgda400c4" class="outline-3">
+<h3 id="orgda400c4">Conception 2D</h3>
+<div class="outline-text-3" id="text-orgda400c4">
+<p>
+Solidworks permet de faire de la conception en 2D, mais il egalement interessant d'utiliser un logiciel de dessin vectoriel:
+<a href="https://inkscape.org/fr/">https://inkscape.org/fr/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgebda4f3" class="outline-3">
+<h3 id="orgebda4f3">Programmation microcontroller</h3>
+<div class="outline-text-3" id="text-orgebda4f3">
+<p>
+Le compilateur est 100% en ligne mais requiert de créer un compte
+<a href="https://studio.keil.arm.com/auth/login/">https://studio.keil.arm.com/auth/login/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge0c17f0" class="outline-3">
+<h3 id="orge0c17f0">Gestion de version (optionnel)</h3>
+<div class="outline-text-3" id="text-orge0c17f0">
+<p>
+Le temps étant limiter, la gestion de version ne sera malheuresement pas aborder dans ce cours.
+Si vous voulez en savoir plus <a href="./git.html">Gestion de version</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>

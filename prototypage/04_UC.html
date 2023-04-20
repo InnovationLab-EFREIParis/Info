@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Prototypage (rapide)</title>
+<meta name="generator" content="Org mode" />
+<meta name="description" content="prototypage rapide"
+ />
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/src/readtheorg_theme/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Prototypage (rapide)</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgc4a2890">Microcontroller</a></li>
+<li><a href="#org0eace1f">STM32 Nucleo</a></li>
+<li><a href="#orgaad3fc0">LED (Utilisateur)</a>
+<ul>
+<li><a href="#org2f7275a">Hardware</a></li>
+<li><a href="#orgbceb678">Keil Studio Ide</a></li>
+<li><a href="#org0892e81">Cube IDE</a></li>
+</ul>
+</li>
+<li><a href="#org511d8a8">Bouton Poussoir (Utilisateur)</a>
+<ul>
+<li><a href="#orgf4f369c">Hardware</a></li>
+<li><a href="#org571a94a">Keil Studio Ide</a></li>
+<li><a href="#org598989c">Cube IDE</a></li>
+</ul>
+</li>
+<li><a href="#orgcfadd4e">Servo Moteur (projet)</a>
+<ul>
+<li><a href="#org6d8f655">Hardware</a></li>
+<li><a href="#orgf770c05">Keil Studio Ide</a></li>
+</ul>
+</li>
+<li><a href="#orge201fb7">Switch (projet)</a></li>
+<li><a href="#org5855b54">Carte fille <i>Seeed Grove Base Shield</i></a></li>
+<li><a href="#org9752377">Exercices</a>
+<ul>
+<li><a href="#org9264e35">Exercice 1</a></li>
+<li><a href="#org05615c3">Exercice 2</a></li>
+<li><a href="#orgcdf1fb2">Exercice 3</a></li>
+<li><a href="#org320be60">Exercice 4</a></li>
+</ul>
+</li>
+<li><a href="#orgf4a64bc">Annexes</a>
+<ul>
+<li><a href="#orgf8e6add">Nom de broches</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgc4a2890" class="outline-2">
+<h2 id="orgc4a2890">Microcontroller</h2>
+<div class="outline-text-2" id="text-orgc4a2890">
+<p width="150px" style="float:left;margin:0px 20px 20px 0px;">
+<img src="./img/uc.jpg" alt="uc.jpg" width="150px" style="float:left;margin:0px 20px 20px 0px;" />
+Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
+En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
+En voici quelques exemples: mémoire FLASH, mémoire RAM, convertisseur (NA ou AN), controller de bus&#x2026;
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué.
+La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le µC.
+</p>
+
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Capteurs</th>
+<th scope="col" class="org-left">Grandeur physique</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Bouton</td>
+<td class="org-left">Pression</td>
+</tr>
+
+<tr>
+<td class="org-left">Potentiometre</td>
+<td class="org-left">Angle</td>
+</tr>
+
+<tr>
+<td class="org-left">Thermoresistance</td>
+<td class="org-left">Temperature</td>
+</tr>
+
+<tr>
+<td class="org-left">Photodiode</td>
+<td class="org-left">Lumière</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacer.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Actionneurs</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">LED</td>
+</tr>
+
+<tr>
+<td class="org-left">Servomoteur</td>
+</tr>
+
+<tr>
+<td class="org-left">Moteur</td>
+</tr>
+
+<tr>
+<td class="org-left">Ecran</td>
+</tr>
+
+<tr>
+<td class="org-left">&#x2026;</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Par exemple dans une automobile ou en IOT.
+</p>
+
+
+
+<div class="figure">
+<p><img src="./img/voiture.jpg" alt="voiture.jpg" width="600px" />
+</p>
+</div>
+
+
+<p>
+En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs&#x2026;
+La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
+</p>
+</div>
+</div>
+
+
+
+<div id="outline-container-org0eace1f" class="outline-2">
+<h2 id="org0eace1f">STM32 Nucleo</h2>
+<div class="outline-text-2" id="text-org0eace1f">
+<p>
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics. Cette carte d'évaluation est issue de la gamme Nucleo.
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Board</th>
+<th scope="col" class="org-left">Nucleo STM32L476RG</th>
+<th scope="col" class="org-left">Arduino Uno</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">Family</td>
+<td class="org-left">ARM Cortex-M4</td>
+<td class="org-left">ATMega 328P</td>
+</tr>
+
+<tr>
+<td class="org-left">Vendor</td>
+<td class="org-left">ST Microelectronics</td>
+<td class="org-left">ATMega</td>
+</tr>
+
+<tr>
+<td class="org-left">SRAM</td>
+<td class="org-left">128 KB</td>
+<td class="org-left">2 KB</td>
+</tr>
+
+<tr>
+<td class="org-left">Flash</td>
+<td class="org-left">1 MB</td>
+<td class="org-left">32 KB</td>
+</tr>
+
+<tr>
+<td class="org-left">Frequency</td>
+<td class="org-left">up to 80MHz</td>
+<td class="org-left">16</td>
+</tr>
+
+<tr>
+<td class="org-left">FPU</td>
+<td class="org-left">YES</td>
+<td class="org-left">NO</td>
+</tr>
+
+<tr>
+<td class="org-left">Timers</td>
+<td class="org-left">16</td>
+<td class="org-left">3</td>
+</tr>
+
+<tr>
+<td class="org-left">ADCs</td>
+<td class="org-left">1x 12-bit</td>
+<td class="org-left">6 (10 bits)</td>
+</tr>
+
+<tr>
+<td class="org-left">UARTs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">SPIs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">I2Cs</td>
+<td class="org-left">3</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">RTC</td>
+<td class="org-left">1</td>
+<td class="org-left">0</td>
+</tr>
+
+<tr>
+<td class="org-left">CAN</td>
+<td class="org-left">1</td>
+<td class="org-left">1</td>
+</tr>
+
+<tr>
+<td class="org-left">Vcc</td>
+<td class="org-left">1.71 V - 3.6V</td>
+<td class="org-left">3.3 - 5V</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+</p>
+
+<p>
+<a href="/home/remi/git/Info/org/stm/stm32_l476_usermanual.pdf">../stm/stm32_l476_usermanual.pdf</a>
+</p>
+
+
+<p>
+<a href="/home/remi/git/Info/org/stm/stm32_l476_schematic.pdf">../stm/stm32_l476_schematic.pdf</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-orgaad3fc0" class="outline-2">
+<h2 id="orgaad3fc0">LED (Utilisateur)</h2>
+<div class="outline-text-2" id="text-orgaad3fc0">
+</div>
+<div id="outline-container-org2f7275a" class="outline-3">
+<h3 id="org2f7275a">Hardware</h3>
+<div class="outline-text-3" id="text-org2f7275a">
+
+<div class="figure">
+<p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbceb678" class="outline-3">
+<h3 id="orgbceb678">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orgbceb678">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 100 
+<span style="font-weight: bold; text-decoration: underline;">DigitalOut</span> <span style="font-weight: bold;">led1</span>(PA_5);
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+{
+    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    {
+        led1 = !led1;
+        thread_sleep_for(WAIT_TIME_MS);
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0892e81" class="outline-3">
+<h3 id="org0892e81">Cube IDE</h3>
+<div class="outline-text-3" id="text-org0892e81">
+<p>
+#TBC
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org511d8a8" class="outline-2">
+<h2 id="org511d8a8">Bouton Poussoir (Utilisateur)</h2>
+<div class="outline-text-2" id="text-org511d8a8">
+</div>
+<div id="outline-container-orgf4f369c" class="outline-3">
+<h3 id="orgf4f369c">Hardware</h3>
+<div class="outline-text-3" id="text-orgf4f369c">
+
+<div class="figure">
+<p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org571a94a" class="outline-3">
+<h3 id="org571a94a">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-org571a94a">
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 100 
+<span style="font-weight: bold; text-decoration: underline;">DigitalOut</span> <span style="font-weight: bold;">led1</span>(PA_5);
+<span style="font-weight: bold; text-decoration: underline;">DigitalIn</span> <span style="font-weight: bold;">button</span>(PC_13);
+
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+{
+    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    {
+        <span style="font-weight: bold;">if</span>(button==<span style="font-weight: bold; text-decoration: underline;">true</span>){
+        led1 = <span style="font-weight: bold; text-decoration: underline;">false</span>;
+        }              
+        <span style="font-weight: bold;">else</span>{
+        led1 = <span style="font-weight: bold; text-decoration: underline;">true</span>;
+        }
+        thread_sleep_for(WAIT_TIME_MS);
+    }
+}
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org598989c" class="outline-3">
+<h3 id="org598989c">Cube IDE</h3>
+<div class="outline-text-3" id="text-org598989c">
+<p>
+#TBC
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgcfadd4e" class="outline-2">
+<h2 id="orgcfadd4e">Servo Moteur (projet)</h2>
+<div class="outline-text-2" id="text-orgcfadd4e">
+<blockquote>
+<p>
+Un servomoteur est un système motorisé capable d'atteindre des positions prédéterminées, puis de les maintenir. La position est dans le cas d’un moteur rotatif, une valeur d'angle. <br />
+&#x2014;  (Définition Wihipédia)
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-org6d8f655" class="outline-3">
+<h3 id="org6d8f655">Hardware</h3>
+</div>
+
+
+
+<div id="outline-container-orgf770c05" class="outline-3">
+<h3 id="orgf770c05">Keil Studio Ide</h3>
+<div class="outline-text-3" id="text-orgf770c05">
+<p>
+Afin d'ajouter la librairie Servo, copier coller l'URL suivante dans <i>File​/Add Mbed Library to Active Project</i> <br />
+<a href="http://os.mbed.com/users/jasonberry/code/Servo/">http://os.mbed.com/users/jasonberry/code/Servo/</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-C++"><span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"mbed.h"</span>
+<span style="font-weight: bold;">#include</span> <span style="font-style: italic;">"Servo.h"</span>
+
+<span style="font-weight: bold;">#define</span> <span style="font-weight: bold; font-style: italic;">WAIT_TIME_MS</span> 500 
+
+<span style="font-weight: bold; text-decoration: underline;">Servo</span> <span style="font-weight: bold;">myservo</span>(PA_8);
+
+<span style="font-weight: bold; text-decoration: underline;">int</span> <span style="font-weight: bold;">main</span>()
+{
+    myservo.position(0);
+    <span style="font-weight: bold;">while</span> (<span style="font-weight: bold; text-decoration: underline;">true</span>)
+    {
+        myservo.position(90);       
+        thread_sleep_for(WAIT_TIME_MS);
+        myservo.position(0);
+        thread_sleep_for(WAIT_TIME_MS);
+    }   
+}
+</pre>
+</div>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-orge201fb7" class="outline-2">
+<h2 id="orge201fb7">Switch (projet)</h2>
+<div class="outline-text-2" id="text-orge201fb7">
+</div>
+</div>
+<div id="outline-container-org5855b54" class="outline-2">
+<h2 id="org5855b54">Carte fille <i>Seeed Grove Base Shield</i></h2>
+<div class="outline-text-2" id="text-org5855b54">
+</div>
+</div>
+
+<div id="outline-container-org9752377" class="outline-2">
+<h2 id="org9752377">Exercices</h2>
+<div class="outline-text-2" id="text-org9752377">
+</div>
+<div id="outline-container-org9264e35" class="outline-3">
+<h3 id="org9264e35">Exercice 1</h3>
+<div class="outline-text-3" id="text-org9264e35">
+<p>
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org05615c3" class="outline-3">
+<h3 id="org05615c3">Exercice 2</h3>
+<div class="outline-text-3" id="text-org05615c3">
+<p>
+Programmer la carte de façon à ce que la LED s'allume 1 seconde puis s'éteigne quand on bascule le switch sur une position. La LED reste éteinte lorsque le switch est sur l'autre position.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcdf1fb2" class="outline-3">
+<h3 id="orgcdf1fb2">Exercice 3</h3>
+<div class="outline-text-3" id="text-orgcdf1fb2">
+<p>
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complétement d'éteindre, et cela de façon cyclique (période de 500ms)
+</p>
+</div>
+</div>
+<div id="outline-container-org320be60" class="outline-3">
+<h3 id="org320be60">Exercice 4</h3>
+<div class="outline-text-3" id="text-org320be60">
+<p>
+Programmer la carte de façon à ce le servo moteur face une rotation de 90° dans un sens, puis dans le sens inverse, et cela toue les 500 ms
+</p>
+</div>
+</div>
+</div>
+
+
+
+<div id="outline-container-orgf4a64bc" class="outline-2">
+<h2 id="orgf4a64bc">Annexes</h2>
+<div class="outline-text-2" id="text-orgf4a64bc">
+</div>
+<div id="outline-container-orgf8e6add" class="outline-3">
+<h3 id="orgf8e6add">Nom de broches</h3>
+<div class="outline-text-3" id="text-orgf8e6add">
+<p>
+Dans Keil Studio, le fichier definissant le nom des broches du composant est <br />
+TARGET​_STM​/TARGET​_STM32L4​/TARGET​_STM32L476xG/pinNames.h <br />
+</p>
+
+<p>
+Voici un tableau permettant de faire le lien entre les noms des broches du composants (schéma),
+ les noms utilisés par Keil et le connecteur au format Arduino situé sur la carte. Ainsi, une même broche peut être appelé par différent nom dans le code, suivant si l'utilisateur utilise le connecteur Arduino ou Morpho
+</p>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Schéma</th>
+<th scope="col" class="org-left">Keil IDE</th>
+<th scope="col" class="org-left">Arduino (Keil IDE)</th>
+<th scope="col" class="org-left">Autre nom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="org-left">PA0</td>
+<td class="org-left">PA​_0  ​</td>
+<td class="org-left">ARDUINO​_UNO​_A0</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA1</td>
+<td class="org-left">PA​_1</td>
+<td class="org-left">ARDUINO​_UNO​_A1</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA2</td>
+<td class="org-left">PA​_2</td>
+<td class="org-left">ARDUINO​_UNO​_D1</td>
+<td class="org-left">CONSOLE​_TX</td>
+</tr>
+
+<tr>
+<td class="org-left">PA3</td>
+<td class="org-left">PA​_3</td>
+<td class="org-left">ARDUINO​_UNO​_D0</td>
+<td class="org-left">CONSOLE​_RX</td>
+</tr>
+
+<tr>
+<td class="org-left">PA4</td>
+<td class="org-left">PA​_4</td>
+<td class="org-left">ARDUINO​_UNO​_A2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA5</td>
+<td class="org-left">PA​_5</td>
+<td class="org-left">ARDUINO​_UNO​_D13</td>
+<td class="org-left">LED1</td>
+</tr>
+
+<tr>
+<td class="org-left">PA6</td>
+<td class="org-left">PA​_6</td>
+<td class="org-left">ARDUINO​_UNO​_D12</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA7</td>
+<td class="org-left">PA​_7</td>
+<td class="org-left">ARDUINO​_UNO​_D11</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA8</td>
+<td class="org-left">PA​_8</td>
+<td class="org-left">ARDUINO​_UNO​_D7</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA9</td>
+<td class="org-left">PA​_9</td>
+<td class="org-left">ARDUINO​_UNO​_D8</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA10</td>
+<td class="org-left">PA​_10</td>
+<td class="org-left">ARDUINO​_UNO​_D2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA11</td>
+<td class="org-left">PA​_11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA12</td>
+<td class="org-left">PA​_12</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA13</td>
+<td class="org-left">PA​_13</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA14</td>
+<td class="org-left">PA​_14</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PA15</td>
+<td class="org-left">PA​_15</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB0</td>
+<td class="org-left">PB​_0</td>
+<td class="org-left">ARDUINO​_UNO​_A3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB1</td>
+<td class="org-left">PB​_1</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB2</td>
+<td class="org-left">PB​_2</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB3</td>
+<td class="org-left">PB​_3</td>
+<td class="org-left">ARDUINO​_UNO​_D3</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB4</td>
+<td class="org-left">PB​_4</td>
+<td class="org-left">ARDUINO​_UNO​_D5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB5</td>
+<td class="org-left">PB​_5</td>
+<td class="org-left">ARDUINO​_UNO​_D4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB6</td>
+<td class="org-left">PB​_6</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB7</td>
+<td class="org-left">PB​_7</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB8</td>
+<td class="org-left">PB​_8</td>
+<td class="org-left">ARDUINO​_UNO​_D15</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB9</td>
+<td class="org-left">PB​_9</td>
+<td class="org-left">ARDUINO​_UNO​_D14</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB10</td>
+<td class="org-left">PB​_10</td>
+<td class="org-left">ARDUINO​_UNO​_D6</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB11</td>
+<td class="org-left">PB​_11</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB12</td>
+<td class="org-left">PB​_12</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB13</td>
+<td class="org-left">PB​_13</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB14</td>
+<td class="org-left">PB​_14</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PB15</td>
+<td class="org-left">PB​_15</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC0</td>
+<td class="org-left">PC​_0</td>
+<td class="org-left">ARDUINO​_UNO​_A5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC1</td>
+<td class="org-left">PC​_1</td>
+<td class="org-left">ARDUINO​_UNO​_A4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC2</td>
+<td class="org-left">PC​_2</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC3</td>
+<td class="org-left">PC​_3</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC4</td>
+<td class="org-left">PC​_4</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC5</td>
+<td class="org-left">PC​_5</td>
+<td class="org-left">​    ​</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC6</td>
+<td class="org-left">PC​_6</td>
+<td class="org-left">ARDUINO​_UNO​_D10</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC7</td>
+<td class="org-left">PC​_7</td>
+<td class="org-left">ARDUINO​_UNO​_D9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC8</td>
+<td class="org-left">PC​_8</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC9</td>
+<td class="org-left">PC​_9</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC10</td>
+<td class="org-left">PC​_10</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC11</td>
+<td class="org-left">PC​_11</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC12</td>
+<td class="org-left">PC​_12</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC13</td>
+<td class="org-left">PC​_13</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">BUTTON1</td>
+</tr>
+
+<tr>
+<td class="org-left">PC14</td>
+<td class="org-left">PC​_14</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PC15</td>
+<td class="org-left">PC​_15</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PD2</td>
+<td class="org-left">PD​_2</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PH0</td>
+<td class="org-left">PH​_0</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+<tr>
+<td class="org-left">PH1</td>
+<td class="org-left">PH​_1</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
