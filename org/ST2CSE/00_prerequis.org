@@ -32,7 +32,7 @@ Avant le début du cours, il est vivement conseillé:
 
 [[./08_CProgramming.org][Programmation en C]] \\
 [[./04_UC.org][Microcontroller ]] \\
- 
+[[./05_projet.org][Projet]] \\ 
 
 
 ** Compétences
