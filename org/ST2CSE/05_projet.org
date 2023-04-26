@@ -53,6 +53,10 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 + Les parties découpées au laser font 3mm d’épaisseur
 + La carte mère doit être fixée au fond du boitier (entretoises M3 de longueur 10 mm)
 
+** Modèles 
+[[./mdl/Stm32_Nucleo.sldprt][Modèle carte Nucleo]]
+
+
 * Exigences circuit imprimé de la carte fille
 
 + La carte fille doit avoir des dimensions maximales : 54 mm * 66 mm

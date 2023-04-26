@@ -19,8 +19,8 @@ Des présentations techniques et informelles qui seront l'occasion pour les pres
 /15 minutes de présentation / 15 minutes d'échange./ \\
 /A midi vous êtes dehors, promis!/
 
-***  05/05 -  Gaspard Geslot - /stage M1/
-Développement d'application mobile
+***  12/05 -  Gaspard Geslot - /stage M1/
+Développement d'applications mobiles en réalité augmenté afin de découuvrir de façon ludique les nouveaux métiers (Olecio)
 
 
 # ***  20/01 -  Robminton - /projet M2/
