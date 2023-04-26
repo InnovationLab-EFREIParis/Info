@@ -53,6 +53,18 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vTP7yL_E8E8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 #+end_export
 
+** Projet
+Suite de 3 vidéos sur la conception d'un boitier et de son capot
+Boitier
+https://youtu.be/BS8QqYOdhqY
+
+Capot
+https://youtu.be/H16Lw8CH_UY
+
+Assemblage
+https://youtu.be/NdKaXjjU-Js
+
+
 * Exercices
 
 
