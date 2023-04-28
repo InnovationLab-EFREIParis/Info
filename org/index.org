@@ -16,7 +16,7 @@
 * Actualités
 # #+ATTR_HTML: :target _blank
 # + [[./presentation_projet.org][*Presentations Projets*]] - Tous les vendredi de 11h30 à 12h
-+ [[./repaircafe.org][ *Repair Café* ]] - Jeudi 27/04 à 17h à l'I-Lab - /Viens réparer ton cuiseur à riz!/ \\
+# + [[./repaircafe.org][ *Repair Café* ]] - Jeudi 27/04 à 17h à l'I-Lab - /Viens réparer ton cuiseur à riz!/ \\
 + [[./formations.org][*Formations*]] - à partir de 17h30 en semaine - /ça serait dommage de s'en priver/ \\
 + *Master Project* - Les projets M1 tous les vendredi à l'I-lab \\
 # + *Learning XP Week - 9 au 13 janvier - /L'Innovation Lab est reservé durant toute la semaine/*

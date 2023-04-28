@@ -54,15 +54,31 @@ Cette vidéo vous permet de comprendre les principaux paramètres d'une fonction
 #+end_export
 
 ** Projet
-Suite de 3 vidéos sur la conception d'un boitier et de son capot
-Boitier
-https://youtu.be/BS8QqYOdhqY
+Suite de 3 vidéos sur la conception d'un boitier et de son capot.
+*** Boitier
 
-Capot
-https://youtu.be/H16Lw8CH_UY
+[[./exercice_SW/boite.sldprt]]
 
-Assemblage
-https://youtu.be/NdKaXjjU-Js
+
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BS8QqYOdhqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+*** Capot
+
+[[./exercice_SW/capot.sldprt]]
+
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/H16Lw8CH_UY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+*** Assemblage
+
+[[./exercice_SW/Assemblage1.sldasm]]
+
+#+begin_export html
+<iframe width="560" height="315" src="https://www.youtube.com/embed/NdKaXjjU-Js" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
 
 
 * Exercices
