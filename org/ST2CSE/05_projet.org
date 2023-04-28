@@ -16,7 +16,7 @@ Il est vivement conseillé de vous baser sur les notions vu en TPs pour faire
 
 #+attr_html: :width 500px
 # #+CAPTION: Pyramide des caratéristiques d'un prototype
-[[./img/projet_1.jpg]]
+[[./img/projet_1.png]]
 
 Le projet doit répondre aux exigences (requirements) suivantes. C'est la réponse aux exigences qui permettra l'évaluation du projet.
 
