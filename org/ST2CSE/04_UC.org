@@ -1,4 +1,4 @@
-#+title:  Microcontroller (ÂµC)
+#+title:  Microcontroller (µC)
 #+description: prototypage rapide
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -19,9 +19,9 @@ Ces périphériques sont reliés via un bus interne, décris ci desssous comme u
 
 
 
-Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout dÃ©signÃ© pour Ãªtre embarquÃ©. 
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué. 
 La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
-En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra Ãªtre convertie en tension (ou en courant), et donc exploitable par le ÂµC.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le ÂµC.
 
 
 | Capteurs         | Grandeur physique |
