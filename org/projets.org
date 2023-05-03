@@ -1,0 +1,23 @@
+# #+title: Innovation Lab EFREI Paris
+#+description: Fonctionnement de l'I-Lab
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil toc:nil
+
+Les utilisateurs de l'I-Lab s'engagent à remplir une fiche pour chaque projet qu'ils réalisent. 
+Cette fiche est rapide à remplir et permet de recenser les usages de l'I-Lab.
+#+ATTR_HTML: :target _blank
+ [[https://forms.monday.com/forms/75d3d586abeab1eb25c5115f4f8c8c34?r=use1][*Je remplis ma fiche projet*]]
+
+
+* Liste des projets
+#+begin_export html
+
+<iframe src="https://view.monday.com/embed/2048659497-cb5faeaa79a56795cecfec114cc7b2f4?r=use1" width=700 height=700 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+
+#+end_export
+
+* Quelques chiffres
+#+begin_export html
+<iframe src="https://view.monday.com/embed/2048659497-b2fe1ed09a83bcdc94064b3f38331b51?r=use1" width=700 height=500 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
+#+end_export
