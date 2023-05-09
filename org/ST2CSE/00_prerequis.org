@@ -33,6 +33,7 @@ Avant le début du cours, il est vivement conseillé:
 [[./doc/Acquisition2023.pdf][Chaine d'acquisition - Capteurs]] \\
 [[./08_CProgramming.org][Programmation en C]] \\
 [[./04_UC.org][Microcontroller ]] \\
+[[./09_FabNum.org][Conception et Fabrication Numérique]] \\
 [[./05_projet.org][Projet]] \\ 
 
 
