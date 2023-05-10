@@ -56,7 +56,7 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 + La carte mère doit être fixée au fond du boitier (entretoises M3 de longueur 10 mm)
 
 ** Modèles 
-[[./mdl/Stm32_Nucleo.sldprt][Modèle carte Nucleo]]
+[[./mdl/Stm32_Nucleo.SLDPRT][Modèle carte Nucleo]]
 
 
 * Exigences circuit imprimé de la carte fille

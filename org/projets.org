@@ -17,7 +17,7 @@ Cette fiche est rapide à remplir et permet de recenser les usages de l'I-Lab.
 
 #+end_export
 
-* Quelques chiffres
+* Répartition et types de projets
 #+begin_export html
 <iframe src="https://view.monday.com/embed/2048659497-b2fe1ed09a83bcdc94064b3f38331b51?r=use1" width=700 height=500 style="border: 0; box-shadow: 5px 5px 56px 0px rgba(0,0,0,0.25);"></iframe>
 #+end_export

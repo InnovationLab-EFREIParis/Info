@@ -1,14 +1,20 @@
-#+title: ST2CSE
+#+title: Conception et Fabrication Numérique
 #+description: ST2CSE
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-#+OPTIONS: num:nil toc:nil
+#+OPTIONS: num:nil
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
 
 * [[./doc/PRES_PPT_TP_FAB_NUMERIQUE.pdf][Support TP]]
 
-* [[../solidworks.org][Formations Solidworks]]
+* [[../solidworks.org][Solidworks]]
+
+* Exercices
+
+[[./doc/FOND_PLAN_NIVEAU0.pdf][Exercice 1]] \\
+[[./doc/FOND_PLAN_NIVEAU1.pdf][Exercice 2]] \\
+[[./doc/FOND_PLAN_NIVEAU2.pdf][Exercice 3]] \\
 
 
