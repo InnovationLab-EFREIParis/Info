@@ -262,6 +262,9 @@ Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (vi
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
 
 
+* Exemple de projet avec CubeIDE
+
+https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_CubeIDE
 
 
 * Annexes

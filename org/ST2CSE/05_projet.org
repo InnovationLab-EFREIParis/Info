@@ -80,4 +80,4 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 | Sonar                 | HCR SR-04               |               | 4*2.54mm HEADER   |
 | Resistances           |                         |               | SMD1206           |
 | Potentiomètre         |                         |               | 3*2.54mm HEADER   |
-|                       |                         |               |                   |
+| Capteur Température   |                         |               |                   |
