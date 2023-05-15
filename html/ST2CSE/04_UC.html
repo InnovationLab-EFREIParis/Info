@@ -69,56 +69,56 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgb500e9f">Carte d'évaluation Nucleo</a>
+<li><a href="#org299e32a">Carte d'évaluation Nucleo</a>
 <ul>
-<li><a href="#org34071f1">LED (Utilisateur)</a>
+<li><a href="#org56f3891">LED (Utilisateur)</a>
 <ul>
-<li><a href="#orgd3e21a5">Hardware</a></li>
+<li><a href="#orgbf4512c">Hardware</a></li>
 </ul>
 </li>
-<li><a href="#org82f2577">Bouton Poussoir (Utilisateur)</a>
+<li><a href="#org0d524d3">Bouton Poussoir (Utilisateur)</a>
 <ul>
-<li><a href="#org43a25d4">Hardware</a></li>
+<li><a href="#org69a4af8">Hardware</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org3e9ce5e">Le microcontroller</a>
+<li><a href="#org529f5c8">Le microcontroller</a>
 <ul>
-<li><a href="#org66bf3db">Caractéristiques</a></li>
-<li><a href="#org1815d04">Architecture</a></li>
+<li><a href="#org366d6cd">Caractéristiques</a></li>
+<li><a href="#orgcb2d7ae">Architecture</a></li>
 </ul>
 </li>
-<li><a href="#org852a2d2">Environnement de développement (IDE) CubeIDE</a>
+<li><a href="#org417682d">Environnement de développement (IDE) CubeIDE</a>
 <ul>
-<li><a href="#org475e707">HAL (Hardware Abstraction Layer)</a></li>
-<li><a href="#org3991bcc">GPIO</a>
+<li><a href="#org9feada9">HAL (Hardware Abstraction Layer)</a></li>
+<li><a href="#org4a7a95b">GPIO</a>
 <ul>
-<li><a href="#orge69d671">NomDuProjet.ioc</a></li>
-<li><a href="#orgae8242a">main.h</a></li>
-<li><a href="#orgd7196c9">main.c</a></li>
-<li><a href="#orgba9ea47">Ecriture</a></li>
-<li><a href="#org4bb6824">Lecture</a></li>
+<li><a href="#org36cf047">NomDuProjet.ioc</a></li>
+<li><a href="#org7e96511">main.h</a></li>
+<li><a href="#org79fd7a1">main.c</a></li>
+<li><a href="#orged5ad28">Ecriture</a></li>
+<li><a href="#org1b1a6bb">Lecture</a></li>
 </ul>
 </li>
-<li><a href="#org36b2caf">Délai</a></li>
-<li><a href="#orgebaedeb">RS232</a>
+<li><a href="#orgd537015">Délai</a></li>
+<li><a href="#orgf88d275">RS232</a>
 <ul>
-<li><a href="#org7aa68ba">Emission (µC vers PC)</a></li>
-<li><a href="#org0acf49e">Reception (PC vers µC)</a></li>
+<li><a href="#orge02538d">Emission (µC vers PC)</a></li>
+<li><a href="#orgacf77d8">Reception (PC vers µC)</a></li>
 </ul>
 </li>
-<li><a href="#orga10c030">Exercice 1</a></li>
-<li><a href="#org245d365">Exercice 2</a></li>
-<li><a href="#org17961b8">Exercice 3</a></li>
-<li><a href="#org34dd14c">Exercice 4</a></li>
-<li><a href="#orgc8cb2e6">Exercice 5</a></li>
+<li><a href="#org253f121">Exercice 1</a></li>
+<li><a href="#org71d8fe6">Exercice 2</a></li>
+<li><a href="#orgcdfb8c4">Exercice 3</a></li>
+<li><a href="#orgead1635">Exercice 4</a></li>
+<li><a href="#org333e795">Exercice 5</a></li>
 </ul>
 </li>
-<li><a href="#org0c90d25">Exemple de projet avec CubeIDE</a></li>
-<li><a href="#org54f7107">Annexes</a>
+<li><a href="#org408a24e">Exemple de projet avec CubeIDE</a></li>
+<li><a href="#org9d8358a">Annexes</a>
 <ul>
-<li><a href="#org291726c">Nom de broches</a></li>
+<li><a href="#org38e3787">Nom de broches</a></li>
 </ul>
 </li>
 </ul>
@@ -253,9 +253,9 @@ La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'
 
 
 
-<div id="outline-container-orgb500e9f" class="outline-2">
-<h2 id="orgb500e9f">Carte d'évaluation Nucleo</h2>
-<div class="outline-text-2" id="text-orgb500e9f">
+<div id="outline-container-org299e32a" class="outline-2">
+<h2 id="org299e32a">Carte d'évaluation Nucleo</h2>
+<div class="outline-text-2" id="text-org299e32a">
 <p>
 Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des taches qu'il aura à accomplir et des contraintes en terme
 de coûts, de consommation, de l'ergonomie de l'interface de développement&#x2026;
@@ -290,7 +290,7 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </p>
 
 <p>
-<a href="../stm/stm32_l476_schematic.pdf">SchÃ©ma Ã©lectrique</a>
+[[../stm/stm32<sub>l476</sub><sub>schematic.pdf</sub>][Schéma électrique]
 </p>
 
 <p>
@@ -300,13 +300,13 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 
 
 
-<div id="outline-container-org34071f1" class="outline-3">
-<h3 id="org34071f1">LED (Utilisateur)</h3>
-<div class="outline-text-3" id="text-org34071f1">
+<div id="outline-container-org56f3891" class="outline-3">
+<h3 id="org56f3891">LED (Utilisateur)</h3>
+<div class="outline-text-3" id="text-org56f3891">
 </div>
-<div id="outline-container-orgd3e21a5" class="outline-4">
-<h4 id="orgd3e21a5">Hardware</h4>
-<div class="outline-text-4" id="text-orgd3e21a5">
+<div id="outline-container-orgbf4512c" class="outline-4">
+<h4 id="orgbf4512c">Hardware</h4>
+<div class="outline-text-4" id="text-orgbf4512c">
 
 <div class="figure">
 <p><img src="./img/led.jpg" alt="led.jpg" width="400px" /> 
@@ -316,13 +316,13 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 </div>
 
-<div id="outline-container-org82f2577" class="outline-3">
-<h3 id="org82f2577">Bouton Poussoir (Utilisateur)</h3>
-<div class="outline-text-3" id="text-org82f2577">
+<div id="outline-container-org0d524d3" class="outline-3">
+<h3 id="org0d524d3">Bouton Poussoir (Utilisateur)</h3>
+<div class="outline-text-3" id="text-org0d524d3">
 </div>
-<div id="outline-container-org43a25d4" class="outline-4">
-<h4 id="org43a25d4">Hardware</h4>
-<div class="outline-text-4" id="text-org43a25d4">
+<div id="outline-container-org69a4af8" class="outline-4">
+<h4 id="org69a4af8">Hardware</h4>
+<div class="outline-text-4" id="text-org69a4af8">
 
 <div class="figure">
 <p><img src="./img/button.jpg" alt="button.jpg" width="400px" /> 
@@ -336,13 +336,13 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 
 
 
-<div id="outline-container-org3e9ce5e" class="outline-2">
-<h2 id="org3e9ce5e">Le microcontroller</h2>
-<div class="outline-text-2" id="text-org3e9ce5e">
+<div id="outline-container-org529f5c8" class="outline-2">
+<h2 id="org529f5c8">Le microcontroller</h2>
+<div class="outline-text-2" id="text-org529f5c8">
 </div>
-<div id="outline-container-org66bf3db" class="outline-3">
-<h3 id="org66bf3db">Caractéristiques</h3>
-<div class="outline-text-3" id="text-org66bf3db">
+<div id="outline-container-org366d6cd" class="outline-3">
+<h3 id="org366d6cd">Caractéristiques</h3>
+<div class="outline-text-3" id="text-org366d6cd">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
@@ -456,9 +456,9 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 </div>
 
 
-<div id="outline-container-org1815d04" class="outline-3">
-<h3 id="org1815d04">Architecture</h3>
-<div class="outline-text-3" id="text-org1815d04">
+<div id="outline-container-orgcb2d7ae" class="outline-3">
+<h3 id="orgcb2d7ae">Architecture</h3>
+<div class="outline-text-3" id="text-orgcb2d7ae">
 <p>
 Voir page 17 de la datasheet
 </p>
@@ -473,9 +473,9 @@ Voir page 17 de la datasheet
 </div>
 
 
-<div id="outline-container-org852a2d2" class="outline-2">
-<h2 id="org852a2d2">Environnement de développement (IDE) CubeIDE</h2>
-<div class="outline-text-2" id="text-org852a2d2">
+<div id="outline-container-org417682d" class="outline-2">
+<h2 id="org417682d">Environnement de développement (IDE) CubeIDE</h2>
+<div class="outline-text-2" id="text-org417682d">
 <p>
 Configuration du projet
 </p>
@@ -493,9 +493,9 @@ Configuration du projet
 </div>
 
 
-<div id="outline-container-org475e707" class="outline-3">
-<h3 id="org475e707">HAL (Hardware Abstraction Layer)</h3>
-<div class="outline-text-3" id="text-org475e707">
+<div id="outline-container-org9feada9" class="outline-3">
+<h3 id="org9feada9">HAL (Hardware Abstraction Layer)</h3>
+<div class="outline-text-3" id="text-org9feada9">
 <p>
 Nous utiliserons les fonctions HAL incluent dans l'environnement de développement.
 Elles permettent de simplifier le travail du développeur concernant l'utilisation, la configuration et l'initialisation 
@@ -505,17 +505,17 @@ des périphériques du microcontroller.
 </div>
 
 
-<div id="outline-container-org3991bcc" class="outline-3">
-<h3 id="org3991bcc">GPIO</h3>
-<div class="outline-text-3" id="text-org3991bcc">
+<div id="outline-container-org4a7a95b" class="outline-3">
+<h3 id="org4a7a95b">GPIO</h3>
+<div class="outline-text-3" id="text-org4a7a95b">
 <p>
 General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
 </p>
 </div>
 
-<div id="outline-container-orge69d671" class="outline-4">
-<h4 id="orge69d671">NomDuProjet.ioc</h4>
-<div class="outline-text-4" id="text-orge69d671">
+<div id="outline-container-org36cf047" class="outline-4">
+<h4 id="org36cf047">NomDuProjet.ioc</h4>
+<div class="outline-text-4" id="text-org36cf047">
 <p>
 L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
 </p>
@@ -526,9 +526,9 @@ L'interface graphique de configuration de votre microcontroller. Concernant les 
 </div>
 </div>
 
-<div id="outline-container-orgae8242a" class="outline-4">
-<h4 id="orgae8242a">main.h</h4>
-<div class="outline-text-4" id="text-orgae8242a">
+<div id="outline-container-org7e96511" class="outline-4">
+<h4 id="org7e96511">main.h</h4>
+<div class="outline-text-4" id="text-org7e96511">
 <p>
 Les directives suivantes permettent de faire le lien entre les user<sub>label</sub> et les noms des broches
 </p>
@@ -542,9 +542,9 @@ Les directives suivantes permettent de faire le lien entre les user<sub>label</s
 </div>
 </div>
 
-<div id="outline-container-orgd7196c9" class="outline-4">
-<h4 id="orgd7196c9">main.c</h4>
-<div class="outline-text-4" id="text-orgd7196c9">
+<div id="outline-container-org79fd7a1" class="outline-4">
+<h4 id="org79fd7a1">main.c</h4>
+<div class="outline-text-4" id="text-org79fd7a1">
 <p>
 Cette fonction généré automatiquement configure les GPIO <br />
 </p>
@@ -555,9 +555,9 @@ Cette fonction généré automatiquement configure les GPIO <br />
 </div>
 </div>
 
-<div id="outline-container-orgba9ea47" class="outline-4">
-<h4 id="orgba9ea47">Ecriture</h4>
-<div class="outline-text-4" id="text-orgba9ea47">
+<div id="outline-container-orged5ad28" class="outline-4">
+<h4 id="orged5ad28">Ecriture</h4>
+<div class="outline-text-4" id="text-orged5ad28">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_GPIO_WritePin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span>* <span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>, <span style="font-weight: bold; text-decoration: underline;">GPIO_PinState</span> <span style="font-weight: bold; font-style: italic;">PinState</span>);
 </pre>
@@ -586,9 +586,9 @@ Exemple:
 </div>
 </div>
 
-<div id="outline-container-org4bb6824" class="outline-4">
-<h4 id="org4bb6824">Lecture</h4>
-<div class="outline-text-4" id="text-org4bb6824">
+<div id="outline-container-org1b1a6bb" class="outline-4">
+<h4 id="org1b1a6bb">Lecture</h4>
+<div class="outline-text-4" id="text-org1b1a6bb">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">GPIO_PinState</span> <span style="font-weight: bold;">HAL_GPIO_ReadPin</span>(<span style="font-weight: bold; text-decoration: underline;">GPIO_TypeDef</span>* <span style="font-weight: bold; font-style: italic;">GPIOx</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">GPIO_Pin</span>);
 </pre>
@@ -605,9 +605,9 @@ Exemple:
 </div>
 </div>
 
-<div id="outline-container-org36b2caf" class="outline-3">
-<h3 id="org36b2caf">Délai</h3>
-<div class="outline-text-3" id="text-org36b2caf">
+<div id="outline-container-orgd537015" class="outline-3">
+<h3 id="orgd537015">Délai</h3>
+<div class="outline-text-3" id="text-orgd537015">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">void</span> <span style="font-weight: bold;">HAL_Delay</span> (<span style="font-weight: bold; text-decoration: underline;">uint32_t</span> <span style="font-weight: bold; font-style: italic;">Delay</span>);
 </pre>
@@ -624,13 +624,13 @@ HAL_Delay(10);
 </div>
 </div>
 
-<div id="outline-container-orgebaedeb" class="outline-3">
-<h3 id="orgebaedeb">RS232</h3>
-<div class="outline-text-3" id="text-orgebaedeb">
+<div id="outline-container-orgf88d275" class="outline-3">
+<h3 id="orgf88d275">RS232</h3>
+<div class="outline-text-3" id="text-orgf88d275">
 </div>
-<div id="outline-container-org7aa68ba" class="outline-4">
-<h4 id="org7aa68ba">Emission (µC vers PC)</h4>
-<div class="outline-text-4" id="text-org7aa68ba">
+<div id="outline-container-orge02538d" class="outline-4">
+<h4 id="orge02538d">Emission (µC vers PC)</h4>
+<div class="outline-text-4" id="text-orge02538d">
 <div class="org-src-container">
 <pre class="src src-C++">HAL_UART_Transmit (<span style="font-weight: bold; text-decoration: underline;">UART_HandleTypeDef</span> *<span style="font-weight: bold; font-style: italic;">huart</span>, <span style="font-weight: bold; text-decoration: underline;">uint8_t</span> *<span style="font-weight: bold; font-style: italic;">pData</span>, <span style="font-weight: bold; text-decoration: underline;">uint16_t</span> <span style="font-weight: bold; font-style: italic;">Size</span>, <span style="font-weight: bold; text-decoration: underline;">uint32_t</span> <span style="font-weight: bold; font-style: italic;">Timeout</span>)
 </pre>
@@ -647,9 +647,9 @@ HAL_UART_Transmit(&amp;huart2, (<span style="font-weight: bold; text-decoration:
 </div>
 </div>
 
-<div id="outline-container-org0acf49e" class="outline-4">
-<h4 id="org0acf49e">Reception (PC vers µC)</h4>
-<div class="outline-text-4" id="text-org0acf49e">
+<div id="outline-container-orgacf77d8" class="outline-4">
+<h4 id="orgacf77d8">Reception (PC vers µC)</h4>
+<div class="outline-text-4" id="text-orgacf77d8">
 <div class="org-src-container">
 <pre class="src src-C++"><span style="font-weight: bold; text-decoration: underline;">HAL_StatusTypeDef</span> <span style="font-weight: bold;">HAL_UART_Receive</span>(<span style="font-weight: bold; text-decoration: underline;">UART_HandleTypeDef</span> *<span style="font-weight: bold; font-style: italic;">huart</span>,
 <span style="font-weight: bold; text-decoration: underline;">uint8_t</span> *       <span style="font-weight: bold; font-style: italic;">pData</span>,
@@ -681,45 +681,45 @@ Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argum
 </div>
 
 
-<div id="outline-container-orga10c030" class="outline-3">
-<h3 id="orga10c030">Exercice 1</h3>
-<div class="outline-text-3" id="text-orga10c030">
+<div id="outline-container-org253f121" class="outline-3">
+<h3 id="org253f121">Exercice 1</h3>
+<div class="outline-text-3" id="text-org253f121">
 <p>
 Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
 </p>
 </div>
 </div>
 
-<div id="outline-container-org245d365" class="outline-3">
-<h3 id="org245d365">Exercice 2</h3>
-<div class="outline-text-3" id="text-org245d365">
+<div id="outline-container-org71d8fe6" class="outline-3">
+<h3 id="org71d8fe6">Exercice 2</h3>
+<div class="outline-text-3" id="text-org71d8fe6">
 <p>
 Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org17961b8" class="outline-3">
-<h3 id="org17961b8">Exercice 3</h3>
-<div class="outline-text-3" id="text-org17961b8">
+<div id="outline-container-orgcdfb8c4" class="outline-3">
+<h3 id="orgcdfb8c4">Exercice 3</h3>
+<div class="outline-text-3" id="text-orgcdfb8c4">
 <p>
 Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org34dd14c" class="outline-3">
-<h3 id="org34dd14c">Exercice 4</h3>
-<div class="outline-text-3" id="text-org34dd14c">
+<div id="outline-container-orgead1635" class="outline-3">
+<h3 id="orgead1635">Exercice 4</h3>
+<div class="outline-text-3" id="text-orgead1635">
 <p>
 Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc8cb2e6" class="outline-3">
-<h3 id="orgc8cb2e6">Exercice 5</h3>
-<div class="outline-text-3" id="text-orgc8cb2e6">
+<div id="outline-container-org333e795" class="outline-3">
+<h3 id="org333e795">Exercice 5</h3>
+<div class="outline-text-3" id="text-org333e795">
 <p>
 Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
 </p>
@@ -728,9 +728,9 @@ Programmer la carte de façon à ce que l'intensité de la luminosité de la LED
 </div>
 
 
-<div id="outline-container-org0c90d25" class="outline-2">
-<h2 id="org0c90d25">Exemple de projet avec CubeIDE</h2>
-<div class="outline-text-2" id="text-org0c90d25">
+<div id="outline-container-org408a24e" class="outline-2">
+<h2 id="org408a24e">Exemple de projet avec CubeIDE</h2>
+<div class="outline-text-2" id="text-org408a24e">
 <p>
 <a href="https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_CubeIDE">https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_CubeIDE</a>
 </p>
@@ -738,13 +738,13 @@ Programmer la carte de façon à ce que l'intensité de la luminosité de la LED
 </div>
 
 
-<div id="outline-container-org54f7107" class="outline-2">
-<h2 id="org54f7107">Annexes</h2>
-<div class="outline-text-2" id="text-org54f7107">
+<div id="outline-container-org9d8358a" class="outline-2">
+<h2 id="org9d8358a">Annexes</h2>
+<div class="outline-text-2" id="text-org9d8358a">
 </div>
-<div id="outline-container-org291726c" class="outline-3">
-<h3 id="org291726c">Nom de broches</h3>
-<div class="outline-text-3" id="text-org291726c">
+<div id="outline-container-org38e3787" class="outline-3">
+<h3 id="org38e3787">Nom de broches</h3>
+<div class="outline-text-3" id="text-org38e3787">
 </div>
 </div>
 </div>

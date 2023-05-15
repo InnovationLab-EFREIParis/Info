@@ -69,14 +69,14 @@ for the JavaScript code in this tag.
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org7fe225f">Exigences programmes</a></li>
-<li><a href="#orgd263ed9">Exigences boitier</a>
+<li><a href="#org2e002ef">Exigences programmes</a></li>
+<li><a href="#org77a5895">Exigences boitier</a>
 <ul>
-<li><a href="#org4c98ac9">Modèles</a></li>
+<li><a href="#org9ca37a0">Modèles</a></li>
 </ul>
 </li>
-<li><a href="#orgbfdf0cf">Exigences circuit imprimé de la carte fille</a></li>
-<li><a href="#orgeef4285">Reference des composants</a></li>
+<li><a href="#orga555b43">Exigences circuit imprimé de la carte fille</a></li>
+<li><a href="#org89d446b">Reference des composants</a></li>
 </ul>
 </div>
 </div>
@@ -103,9 +103,9 @@ Il est vivement conseillé de vous baser sur les notions vu en TPs pour faire
 Le projet doit répondre aux exigences (requirements) suivantes. C'est la réponse aux exigences qui permettra l'évaluation du projet.
 </p>
 
-<div id="outline-container-org7fe225f" class="outline-2">
-<h2 id="org7fe225f">Exigences programmes</h2>
-<div class="outline-text-2" id="text-org7fe225f">
+<div id="outline-container-org2e002ef" class="outline-2">
+<h2 id="org2e002ef">Exigences programmes</h2>
+<div class="outline-text-2" id="text-org2e002ef">
 <ul class="org-ul">
 <li>Le programme contient un automate (machine à état) changeant d’état à chaque appuie sur un des bouton poussoir</li>
 <li>L’état initiale est l’Etat1</li>
@@ -138,9 +138,9 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </div>
 </div>
 
-<div id="outline-container-orgd263ed9" class="outline-2">
-<h2 id="orgd263ed9">Exigences boitier</h2>
-<div class="outline-text-2" id="text-orgd263ed9">
+<div id="outline-container-org77a5895" class="outline-2">
+<h2 id="org77a5895">Exigences boitier</h2>
+<div class="outline-text-2" id="text-org77a5895">
 <ul class="org-ul">
 <li>Le boitier contient la carte fille et la carte mère</li>
 <li>Dimensions maximales extérieures : 85 mm de large 95 mm de long et 60 mm de haut</li>
@@ -157,9 +157,9 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </ul>
 </div>
 
-<div id="outline-container-org4c98ac9" class="outline-3">
-<h3 id="org4c98ac9">Modèles</h3>
-<div class="outline-text-3" id="text-org4c98ac9">
+<div id="outline-container-org9ca37a0" class="outline-3">
+<h3 id="org9ca37a0">Modèles</h3>
+<div class="outline-text-3" id="text-org9ca37a0">
 <p>
 <a href="./mdl/Stm32_Nucleo.SLDPRT">Modèle carte Nucleo</a>
 </p>
@@ -168,9 +168,9 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </div>
 
 
-<div id="outline-container-orgbfdf0cf" class="outline-2">
-<h2 id="orgbfdf0cf">Exigences circuit imprimé de la carte fille</h2>
-<div class="outline-text-2" id="text-orgbfdf0cf">
+<div id="outline-container-orga555b43" class="outline-2">
+<h2 id="orga555b43">Exigences circuit imprimé de la carte fille</h2>
+<div class="outline-text-2" id="text-orga555b43">
 <ul class="org-ul">
 <li>La carte fille doit avoir des dimensions maximales : 54 mm * 66 mm</li>
 <li>Le circuit imprimé doit avoir un plan de masse</li>
@@ -180,13 +180,15 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </div>
 </div>
 
-<div id="outline-container-orgeef4285" class="outline-2">
-<h2 id="orgeef4285">Reference des composants</h2>
-<div class="outline-text-2" id="text-orgeef4285">
+<div id="outline-container-org89d446b" class="outline-2">
+<h2 id="org89d446b">Reference des composants</h2>
+<div class="outline-text-2" id="text-org89d446b">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
+<col  class="org-left" />
+
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -201,35 +203,40 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <th scope="col" class="org-left">Ref</th>
 <th scope="col" class="org-left">Bus/Interface</th>
 <th scope="col" class="org-left">Footprint</th>
+<th scope="col" class="org-left">Alimentation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="org-left">Carte Microcontroleur</td>
-<td class="org-left">NUCLEO STM32L476RG</td>
+<td class="org-left"><a href="../stm/stm32_l476_schematic.pdf">NUCLEO STM32L476RG</a></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">Arduino R3 Shield</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
 <td class="org-left">Centrale inertielle</td>
-<td class="org-left">MPU6050</td>
+<td class="org-left"><a href="https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/">MPU6050 - GY521</a></td>
 <td class="org-left">I2C</td>
 <td class="org-left">8*2.54 mm HEADER</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
 <td class="org-left">Ecran LCD</td>
-<td class="org-left">Grove LCD RGB BackLight</td>
+<td class="org-left"><a href="https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/">Grove LCD RGB BackLight</a></td>
 <td class="org-left">I2C</td>
 <td class="org-left">4*2 mm HEADER</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
 <td class="org-left">Bouton poussoir</td>
-<td class="org-left">Tactile swicth</td>
+<td class="org-left"><a href="https://fr.rs-online.com/web/p/interrupteurs-tactiles/4791508">Tactile swicth</a></td>
 <td class="org-left">GPIO</td>
 <td class="org-left">6*6 mm SMD</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
@@ -237,6 +244,7 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <td class="org-left"><a href="https://fr.farnell.com/tenma/25-7524/addressable-rgb-leds-smd5050-10/dp/2801875">Lien</a></td>
 <td class="org-left">GPIO</td>
 <td class="org-left">SMD5050</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
@@ -244,6 +252,7 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <td class="org-left">&#xa0;</td>
 <td class="org-left">A determiner</td>
 <td class="org-left">SMD1206</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
@@ -251,6 +260,7 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <td class="org-left">HCR SR-04</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">4*2.54mm HEADER</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
@@ -258,6 +268,7 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">SMD1206</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
@@ -265,10 +276,20 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">3*2.54mm HEADER</td>
+<td class="org-left">A determiner</td>
 </tr>
 
 <tr>
 <td class="org-left">Capteur Température</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">A determiner</td>
+</tr>
+
+<tr>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">&#xa0;</td>
