@@ -1,4 +1,4 @@
-#+title: ST2CSE
+#+title: [[./00_prerequis.org][ST2CSE]]
 #+description: ST2CSE
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -69,16 +69,16 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 * Reference des composants
 
 
-| Item                  | Ref                     | Bus/Interface | Footprint         | Alimentation |
-|-----------------------+-------------------------+---------------+-------------------+--------------|
-| Carte Microcontroleur | [[../stm/stm32_l476_schematic.pdf][NUCLEO STM32L476RG]]      |               | Arduino R3 Shield | A determiner |
-| Centrale inertielle   | [[https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/][MPU6050 - GY521]]         | I2C           | 8*2.54 mm HEADER  | A determiner |
-| Ecran LCD             | [[https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/][Grove LCD RGB BackLight]] | I2C           | 4*2 mm HEADER     | A determiner |
-| Bouton poussoir       | [[https://fr.rs-online.com/web/p/interrupteurs-tactiles/4791508][Tactile swicth]]          | GPIO          | 6*6 mm SMD        | A determiner |
-| RGB LED Addressable   | [[https://fr.farnell.com/tenma/25-7524/addressable-rgb-leds-smd5050-10/dp/2801875][Lien]]                    | GPIO          | SMD5050           | A determiner |
-| LED                   |                         | A determiner  | SMD1206           | A determiner |
-| Sonar                 | HCR SR-04               |               | 4*2.54mm HEADER   | A determiner |
-| Resistances           |                         |               | SMD1206           | A determiner |
-| Potentiomètre         |                         |               | 3*2.54mm HEADER   | A determiner |
-| Capteur Température   |                         |               |                   | A determiner |
-|                       |                         |               |                   |              |
+| Item                  | Ref                       | Bus/Interface  | Footprint-Boitier | Alimentation   |
+|-----------------------+---------------------------+----------------+-------------------+----------------|
+| Carte Microcontroleur | [[../stm/stm32_l476_schematic.pdf][NUCLEO STM32L476RG]]        |                | Arduino R3 Shield | /A determiner/ |
+| Centrale inertielle   | [[https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/][MPU6050 - GY521]] [[./doc/projet/accel_MPU6050.pdf][datasheet]] | I2C            | 8*2.54 mm HEADER  | /A determiner/ |
+| Ecran LCD             | [[https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/][Grove LCD RGB BackLight]]   | I2C            | 4*2 mm HEADER     | /A determiner/ |
+| Bouton poussoir       | [[https://fr.rs-online.com/web/p/interrupteurs-tactiles/4791508][Tactile swicth]]            | GPIO           | 6*6 mm SMD        | /A determiner/ |
+| RGB LED Addressable   | [[https://fr.farnell.com/tenma/25-7524/addressable-rgb-leds-smd5050-10/dp/2801875][Lien]]  [[./doc/projet/led_addressable.pdf][datasheet]]           | GPIO           | SMD5050           | /A determiner/ |
+| LED                   | [[./doc/projet/led_simple.pdf][datasheet]]                 | /A determiner/ | SMD1206           | /A determiner/ |
+| Sonar                 | [[https://controllerstech.com/hcsr04-ultrasonic-sensor-and-stm32/][HCR SR-04]] [[./doc/projet/HCSR04.pdf][datasheet]]       | /A determiner/ | 4*2.54mm HEADER   | /A determiner/ |
+| Resistances           | NC                        | NC             | SMD1206           | /A determiner/ |
+| Potentiomètre         | Linéaire 10kOhm           | /A determiner/ | 3*2.54mm HEADER   | /A determiner/ |
+| Capteur Température   | [[./doc/projet/tmp36grtz.pdf][TMP36grtz]]                 | /A determiner/ | SOT-23            | /A determiner/ |
+
