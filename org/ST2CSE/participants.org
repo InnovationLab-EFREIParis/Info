@@ -36,5 +36,7 @@
 | Ryan Vialatoux-Herz   | E      |       |
 | Maxime LINKA          | F      |       |
 | Théophile DAL         | F      |       |
+| Marine Celerault      | G      |       |
+| David Benibri         | G      |       |
 
 
