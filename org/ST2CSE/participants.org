@@ -24,7 +24,7 @@
 * SRD
 | Nom                   | Binome | Carte |
 |-----------------------+--------+-------|
-| Julien Pannier        | A      |       |
+| Julien Pannier        | A      | X     |
 | Elouran De Kerros     | A      |       |
 | Sahbi MOATEMRI        | B      | X     |
 | Ornélie Buissereth    | B      |       |
@@ -34,15 +34,15 @@
 | Robin DHEILLY         | D      |       |
 | Clément Dilly         | E      | X     |
 | Ryan Vialatoux-Herz   | E      |       |
-| Maxime LINKA          | F      |       |
+| Maxime LINKA          | F      | X     |
 | Théophile DAL         | F      |       |
 | Marine Celerault      | G      | X     |
 | David Benibri         | G      |       |
-| Valère Gomez          | H      |       |
+| Valère Gomez          | H      | X     |
 | Maxime Laze           | H      |       |
-| Jules Burette         | I      |       |
+| Jules Burette         | I      | X     |
 | Wiame Gourinda        | I      |       |
 | France Issenmann      | J      |       |
 | Yann Monnier          | J      |       |
-| Alexandre Florian     | K      |       |
+| Alexandre Florian     | K      | X     |
 
