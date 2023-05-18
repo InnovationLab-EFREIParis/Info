@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ST2CSE</title>
+<title><a href="./00_prerequis.html">ST2CSE</a></title>
 <meta name="generator" content="Org mode" />
 <meta name="description" content="ST2CSE"
  />
@@ -64,46 +64,36 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">ST2CSE</h1>
+<h1 class="title"><a href="./00_prerequis.html">ST2CSE</a></h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org555e788">Faire un circuit imprimÃ©</a>
+<li><a href="#org46f4077">Réalisation d'un circuit imprimé (PCB Printed Circuit Board)</a>
 <ul>
-<li><a href="#org44e488a">L'Ã©dition du schÃ©ma</a></li>
-<li><a href="#org0264feb">Le placement routage</a></li>
-<li><a href="#org47b41c7">La fabrication</a></li>
+<li><a href="#orgaadbec5">L'édition du schéma</a></li>
+<li><a href="#orgf021bd1">Le placement-routage</a></li>
+<li><a href="#org84007b4">La fabrication</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org555e788" class="outline-2">
-<h2 id="org555e788">Faire un circuit imprimÃ©</h2>
-<div class="outline-text-2" id="text-org555e788">
+<div id="outline-container-org46f4077" class="outline-2">
+<h2 id="org46f4077">Réalisation d'un circuit imprimé (PCB Printed Circuit Board)</h2>
+<div class="outline-text-2" id="text-org46f4077">
 <p>
-Le circuit imprimé ou PCB (printed circuit board) est la meilleure façon d'interconnecter 
-les composants de votre système embarqué. 
+Le circuit imprimé est le meilleur moyen d'interconnecter les composants de votre système embarqué. 
 Sa fabrication s'étant largement démocratisé, il constitue une étape nécessaire pour un prototype convaincant.
-Les avantages d'un PCB sont: 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+Les avantages d'un PCB:
 </p>
 <ul class="org-ul">
-<li>Miniaturisation</li>
-</ul>
-<p>
-<code>=====</code>
-</p>
-<ul class="org-ul">
-<li>Miniaturisation (utilisation CMS, possibilité de routage accrue)</li>
-</ul>
-<p>
-&gt;&gt;&gt;&gt;&gt;&gt;&gt; refs/remotes/origin/master
-</p>
-<ul class="org-ul">
+<li>Miniaturisation (utilisation de composants montés en surface, finesse de fabrication)</li>
 <li>Solidité</li>
+<li>Fiabilité acrrue des contacts électriques</li>
+<li>Possibilité de faire un plan de masse</li>
+<li>Minimisation des resistances parasites</li>
 <li>Bonne dissipation thermique</li>
 <li>Bonne protection contre les pertubations électro magnétique</li>
 </ul>
@@ -115,11 +105,16 @@ Les avantages d'un PCB sont:
 </p>
 <p><span class="figure-number">Figure 1: </span>PCB</p>
 </div>
+
+
+<p>
+La réalisation d'un PCB se fait en 3 grandes étapes:
+</p>
 </div>
 
-<div id="outline-container-org44e488a" class="outline-3">
-<h3 id="org44e488a">L'Ã©dition du schÃ©ma</h3>
-<div class="outline-text-3" id="text-org44e488a">
+<div id="outline-container-orgaadbec5" class="outline-3">
+<h3 id="orgaadbec5">L'édition du schéma</h3>
+<div class="outline-text-3" id="text-orgaadbec5">
 <p>
 Durant cette étape, vous interconnectez les symboles de chaque 
 composant entre eux. Le placement n'a pas d'importance,
@@ -132,9 +127,9 @@ evidement exporter votre schéma en pdf.
 </div>
 </div>
 
-<div id="outline-container-org0264feb" class="outline-3">
-<h3 id="org0264feb">Le placement routage</h3>
-<div class="outline-text-3" id="text-org0264feb">
+<div id="outline-container-orgf021bd1" class="outline-3">
+<h3 id="orgf021bd1">Le placement-routage</h3>
+<div class="outline-text-3" id="text-orgf021bd1">
 <p>
 Suite à la génération de la netlist, il faut placer et router 
 les empreintes associés à chaque symbole dans un espace prédéfinie. 
@@ -143,9 +138,10 @@ Le fichier résultant est un fichier GERBER.
 </div>
 </div>
 
-<div id="outline-container-org47b41c7" class="outline-3">
-<h3 id="org47b41c7">La fabrication</h3>
-<div class="outline-text-3" id="text-org47b41c7">
+
+<div id="outline-container-org84007b4" class="outline-3">
+<h3 id="org84007b4">La fabrication</h3>
+<div class="outline-text-3" id="text-org84007b4">
 <p>
 Réaliser par un prestataire externe, il faut compter en général 2-3 semaines pour la fabrication et l'envoi. 
 Ce prestataire aura besoin de votre fichier GERBER.
