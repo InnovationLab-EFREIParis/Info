@@ -30,6 +30,8 @@
 | Zhou        | Killian    | M1     | killian.zhou@efrei.net          |
 | Geslot      | Gaspard    | M1     | gaspard.geslot@efrei.net        |
 | Pannier     | Julien     | M1     | julien.pannier@efrei.net        |
+| Ballo       | Raymond    | M1     | raymond.ballo@efrei.net         |
+
 
 # | Collin      | Alexis     | M2     | alexis.collin@efrei.net             |
 # | Cotton      | Florent    | M2     | florent.cotton@efrei.net            |
