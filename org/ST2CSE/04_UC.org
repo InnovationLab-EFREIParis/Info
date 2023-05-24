@@ -81,7 +81,7 @@ Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
 
 [[../stm/stm32_l476_usermanual.pdf][Manuel utilisateur]]
 
-[[../stm/stm32_l476_schematic.pdf][SchÃ©ma Ã©lectrique]]
+[[../stm/stm32_l476_schematic.pdf][Schéma électrique]]
 
 [[../stm/stm32_l476_datasheet.pdf][Datasheet STM32L476RG]]
 
