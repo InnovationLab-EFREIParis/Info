@@ -31,9 +31,11 @@ Avant le début du cours, il est vivement conseillé:
 ** Contenu
 
 [[./doc/Acquisition2023.pdf][Chaine d'acquisition - Capteurs]] \\
+[[./doc/conditionnement2023.pdf][Chaine d'acquisition - Conditionneur]] \\
 [[./08_CProgramming.org][Programmation en C]] \\
 [[./04_UC.org][Microcontroller ]] \\
 [[./09_FabNum.org][Conception et Fabrication Numérique]] \\
+[[./07_CI.org][Conception d'un circuit imprimé]] \\
 [[./05_projet.org][Projet]] \\ 
 
 
@@ -69,7 +71,7 @@ Le projet consiste en la conception d'un système électronique composé
 
 |     | CM          | TP1   | TP2   | TP3   | Proj 1 | Proj 2 | Proj 3 |
 |-----+-------------+-------+-------+-------+--------+--------+--------|
-| SRD | 11/04 09/05 | 17/05 |       |       | 19/05  | 27/06  |        |
+| SRD | 11/04 09/05 | 17/05 |       |       | 19/06  | 27/06  | 12/07  |
 | TI  | 11/04 09/05 | 12/04 | 10/05 | 15/05 | 15/05  | 13/06  | 11/07  |
 
 

@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>ST2CSE</title>
+<title><a href="./00_prerequis.html">ST2CSE</a></title>
 <meta name="generator" content="Org mode" />
 <meta name="description" content="ST2CSE"
  />
@@ -64,19 +64,19 @@ for the JavaScript code in this tag.
 </head>
 <body>
 <div id="content">
-<h1 class="title">ST2CSE</h1>
+<h1 class="title"><a href="./00_prerequis.html">ST2CSE</a></h1>
 <div id="table-of-contents">
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org960717b">Exigences programmes</a></li>
-<li><a href="#orge73dad0">Exigences boitier</a>
+<li><a href="#orgf55c727">Exigences programmes</a></li>
+<li><a href="#org4db74eb">Exigences boitier</a>
 <ul>
-<li><a href="#orgbee8537">Modèles</a></li>
+<li><a href="#org2800faf">Modèles</a></li>
 </ul>
 </li>
-<li><a href="#orgb976892">Exigences circuit imprimé de la carte fille</a></li>
-<li><a href="#org32c3613">Reference des composants</a></li>
+<li><a href="#org1ee7d28">Exigences circuit imprimé de la carte fille</a></li>
+<li><a href="#org7d88a90">Reference des composants</a></li>
 </ul>
 </div>
 </div>
@@ -103,9 +103,9 @@ Il est vivement conseillé de vous baser sur les notions vu en TPs pour faire
 Le projet doit répondre aux exigences (requirements) suivantes. C'est la réponse aux exigences qui permettra l'évaluation du projet.
 </p>
 
-<div id="outline-container-org960717b" class="outline-2">
-<h2 id="org960717b">Exigences programmes</h2>
-<div class="outline-text-2" id="text-org960717b">
+<div id="outline-container-orgf55c727" class="outline-2">
+<h2 id="orgf55c727">Exigences programmes</h2>
+<div class="outline-text-2" id="text-orgf55c727">
 <ul class="org-ul">
 <li>Le programme contient un automate (machine à état) changeant d’état à chaque appuie sur un des bouton poussoir</li>
 <li>L’état initiale est l’Etat1</li>
@@ -131,22 +131,24 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <li>La séquence des états est : Etat1 -&gt; Etat2 -&gt; Etat3 -&gt; Etat4 -&gt; Etat1</li>
 <li>La vitesse de la liaison série est 115200 bd/s</li>
 <li>Par un appuie long (&gt;1s), le deuxième bouton poussoir permet de changer la lumière du fond d’écran LCD (backlight), quel que soit l’état courant</li>
-<li>Par un appuie court (&lt;1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert)</li>
-<li>La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état</li>
+<li>Par un appuie court (&lt;1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert),  quel que soit l’état courant</li>
+<li>La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état, sur position basse du potentiometre</li>
+<li>La course du potentiomètre permet d'augmenter la fréquence de clignotement de la LED, jusqu'à 10Hz</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orge73dad0" class="outline-2">
-<h2 id="orge73dad0">Exigences boitier</h2>
-<div class="outline-text-2" id="text-orge73dad0">
+<div id="outline-container-org4db74eb" class="outline-2">
+<h2 id="org4db74eb">Exigences boitier</h2>
+<div class="outline-text-2" id="text-org4db74eb">
 <ul class="org-ul">
 <li>Le boitier contient la carte fille et la carte mère</li>
-<li>Dimensions maximales : 85 mm de large 95 mm de long et 55 de haut</li>
+<li>Dimensions maximales extérieures : 85 mm de large 95 mm de long et 60 mm de haut</li>
 <li>Le boitier doit laisser apparent le connecteur USB de la carte mère</li>
 <li>Le boitier doit faire intervenir dans sa fabrication de l’impression 3D et de la découpe laser</li>
 <li>Le boitier doit se fermer solidement (écrou-visse)</li>
 <li>L’écran LCD doit être visible sur l’un des côtés du boitier</li>
+<li>Le potentiomètre doit sur la face opposé à l'écran</li>
 <li>Le sonar doit être visible du côté opposé au connecteur USB</li>
 <li>Les LED doivent être visibles sur le dessus du boitier (guide lumière disponible)</li>
 <li>Les parties imprimées en 3D doivent être auto portantes (pas de support)</li>
@@ -155,9 +157,9 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </ul>
 </div>
 
-<div id="outline-container-orgbee8537" class="outline-3">
-<h3 id="orgbee8537">Modèles</h3>
-<div class="outline-text-3" id="text-orgbee8537">
+<div id="outline-container-org2800faf" class="outline-3">
+<h3 id="org2800faf">Modèles</h3>
+<div class="outline-text-3" id="text-org2800faf">
 <p>
 <a href="./mdl/Stm32_Nucleo.SLDPRT">Modèle carte Nucleo</a>
 </p>
@@ -166,9 +168,9 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </div>
 
 
-<div id="outline-container-orgb976892" class="outline-2">
-<h2 id="orgb976892">Exigences circuit imprimé de la carte fille</h2>
-<div class="outline-text-2" id="text-orgb976892">
+<div id="outline-container-org1ee7d28" class="outline-2">
+<h2 id="org1ee7d28">Exigences circuit imprimé de la carte fille</h2>
+<div class="outline-text-2" id="text-org1ee7d28">
 <ul class="org-ul">
 <li>La carte fille doit avoir des dimensions maximales : 54 mm * 66 mm</li>
 <li>Le circuit imprimé doit avoir un plan de masse</li>
@@ -178,15 +180,13 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 </div>
 </div>
 
-<div id="outline-container-org32c3613" class="outline-2">
-<h2 id="org32c3613">Reference des composants</h2>
-<div class="outline-text-2" id="text-org32c3613">
+<div id="outline-container-org7d88a90" class="outline-2">
+<h2 id="org7d88a90">Reference des composants</h2>
+<div class="outline-text-2" id="text-org7d88a90">
 <table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
 
 
 <colgroup>
-<col  class="org-left" />
-
 <col  class="org-left" />
 
 <col  class="org-left" />
@@ -202,37 +202,89 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 <th scope="col" class="org-left">Item</th>
 <th scope="col" class="org-left">Ref</th>
 <th scope="col" class="org-left">Bus/Interface</th>
-<th scope="col" class="org-left">Footprint</th>
-<th scope="col" class="org-left">Lien</th>
-<th scope="col" class="org-left">&#xa0;</th>
+<th scope="col" class="org-left">Footprint-Boitier</th>
+<th scope="col" class="org-left">Alimentation</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="org-left">Carte Microcontroleur</td>
-<td class="org-left">NUCLEO STM32L476RG</td>
+<td class="org-left"><a href="../stm/stm32_l476_schematic.pdf">NUCLEO STM32L476RG</a></td>
 <td class="org-left">&#xa0;</td>
 <td class="org-left">Arduino R3 Shield</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left"><i>A determiner</i></td>
 </tr>
 
 <tr>
 <td class="org-left">Centrale inertielle</td>
-<td class="org-left">MPU6050</td>
+<td class="org-left"><a href="https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/">MPU6050 - GY521</a> <a href="./doc/projet/accel_MPU6050.pdf">datasheet</a></td>
 <td class="org-left">I2C</td>
-<td class="org-left">8*2.54 HEADER</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">8*2.54 mm HEADER</td>
+<td class="org-left"><i>A determiner</i></td>
 </tr>
 
 <tr>
-<td class="org-left">LCD Screen</td>
-<td class="org-left">Grove LCD RGB BackLight</td>
+<td class="org-left">Ecran LCD</td>
+<td class="org-left"><a href="https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/">Grove LCD RGB BackLight</a></td>
 <td class="org-left">I2C</td>
-<td class="org-left">4*2 HEADER</td>
-<td class="org-left">&#xa0;</td>
-<td class="org-left">&#xa0;</td>
+<td class="org-left">4*2 mm HEADER</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Bouton poussoir</td>
+<td class="org-left"><a href="https://fr.rs-online.com/web/p/interrupteurs-tactiles/4791508">Tactile swicth</a></td>
+<td class="org-left">GPIO</td>
+<td class="org-left">6*6 mm SMD</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">RGB LED Addressable</td>
+<td class="org-left"><a href="https://fr.farnell.com/tenma/25-7524/addressable-rgb-leds-smd5050-10/dp/2801875">Lien</a>  <a href="./doc/projet/led_addressable.pdf">datasheet</a></td>
+<td class="org-left">GPIO</td>
+<td class="org-left">SMD5050</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">LED</td>
+<td class="org-left"><a href="./doc/projet/led_simple.pdf">datasheet</a></td>
+<td class="org-left"><i>A determiner</i></td>
+<td class="org-left">SMD1206</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Sonar</td>
+<td class="org-left"><a href="https://controllerstech.com/hcsr04-ultrasonic-sensor-and-stm32/">HCR SR-04</a> <a href="./doc/projet/HCSR04.pdf">datasheet</a></td>
+<td class="org-left"><i>A determiner</i></td>
+<td class="org-left">4*2.54mm HEADER</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Resistances</td>
+<td class="org-left">NC</td>
+<td class="org-left">NC</td>
+<td class="org-left">SMD1206</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Potentiomètre</td>
+<td class="org-left">Linéaire 10kOhm</td>
+<td class="org-left"><i>A determiner</i></td>
+<td class="org-left">3*2.54mm HEADER</td>
+<td class="org-left"><i>A determiner</i></td>
+</tr>
+
+<tr>
+<td class="org-left">Capteur Température</td>
+<td class="org-left"><a href="./doc/projet/tmp36grtz.pdf">TMP36grtz</a></td>
+<td class="org-left"><i>A determiner</i></td>
+<td class="org-left">SOT-23</td>
+<td class="org-left"><i>A determiner</i></td>
 </tr>
 </tbody>
 </table>

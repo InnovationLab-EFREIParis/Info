@@ -22,13 +22,27 @@
 
 
 * SRD
-| Nom                   | Binome |
-|-----------------------+--------|
-| Julien Pannier        | A      |
-| Elouran De Kerros     | A      |
-| Sahbi MOATEMRI        | B      |
-| Ornélie Buissereth    | B      |
-| Agathe Valence        | C      |
-| Clément Francqueville | C      |
-|                       |        |
+| Nom                   | Binome | Carte |
+|-----------------------+--------+-------|
+| Julien Pannier        | A      | X     |
+| Elouran De Kerros     | A      |       |
+| Sahbi MOATEMRI        | B      | X     |
+| Ornélie Buissereth    | B      |       |
+| Agathe Valence        | C      | X     |
+| Clément Francqueville | C      |       |
+| Arthur SOULET-WINOCK  | D      | X     |
+| Robin DHEILLY         | D      |       |
+| Clément Dilly         | E      | X     |
+| Ryan Vialatoux-Herz   | E      |       |
+| Maxime LINKA          | F      | X     |
+| Théophile DAL         | F      |       |
+| Marine Celerault      | G      | X     |
+| David Benibri         | G      |       |
+| Valère Gomez          | H      | X     |
+| Maxime Laze           | H      |       |
+| Jules Burette         | I      | X     |
+| Wiame Gourinda        | I      |       |
+| France Issenmann      | J      |       |
+| Yann Monnier          | J      |       |
+| Alexandre Florian     | K      | X     |
 

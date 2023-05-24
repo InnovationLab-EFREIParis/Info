@@ -1,4 +1,4 @@
-#+title: ST2CSE
+#+title: [[./00_prerequis.org][ST2CSE]]
 #+description: ST2CSE
 #+author: remi.griot@efrei.fr
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
@@ -36,17 +36,19 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 + La séquence des états est : Etat1 -> Etat2 -> Etat3 -> Etat4 -> Etat1
 + La vitesse de la liaison série est 115200 bd/s
 + Par un appuie long (>1s), le deuxième bouton poussoir permet de changer la lumière du fond d’écran LCD (backlight), quel que soit l’état courant
-+ Par un appuie court (<1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert)
-+ La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état
-
++ Par un appuie court (<1s), le deuxième bouton poussoir permet de changer la couleur de la LED adressable (soit rouge, soit bleu, soit vert),  quel que soit l’état courant
++ La led clignote à une fréquence de 1Hz (500ms ON, 500 ms OFF), quel que soit l’état, sur position basse du potentiometre
++ La course du potentiomètre permet d'augmenter la fréquence de clignotement de la LED, jusqu'à 10Hz
+  
 * Exigences boitier
 
 + Le boitier contient la carte fille et la carte mère
-+ Dimensions maximales : 85 mm de large 95 mm de long et 55 de haut
++ Dimensions maximales extérieures : 85 mm de large 95 mm de long et 60 mm de haut
 + Le boitier doit laisser apparent le connecteur USB de la carte mère
 + Le boitier doit faire intervenir dans sa fabrication de l’impression 3D et de la découpe laser
 + Le boitier doit se fermer solidement (écrou-visse)
 + L’écran LCD doit être visible sur l’un des côtés du boitier
++ Le potentiomètre doit sur la face opposé à l'écran  
 + Le sonar doit être visible du côté opposé au connecteur USB
 + Les LED doivent être visibles sur le dessus du boitier (guide lumière disponible)
 + Les parties imprimées en 3D doivent être auto portantes (pas de support)
@@ -67,9 +69,16 @@ Le projet doit répondre aux exigences (requirements) suivantes. C'est la répon
 * Reference des composants
 
 
-| Item                  | Ref                     | Bus/Interface | Footprint         | Lien |   |
-|-----------------------+-------------------------+---------------+-------------------+------+---|
-| Carte Microcontroleur | NUCLEO STM32L476RG      |               | Arduino R3 Shield |      |   |
-| Centrale inertielle   | MPU6050                 | I2C           | 8*2.54 HEADER     |      |   |
-| LCD Screen            | Grove LCD RGB BackLight | I2C           | 4*2 HEADER        |      |   |
+| Item                  | Ref                       | Bus/Interface  | Footprint-Boitier | Alimentation   |
+|-----------------------+---------------------------+----------------+-------------------+----------------|
+| Carte Microcontroleur | [[../stm/stm32_l476_schematic.pdf][NUCLEO STM32L476RG]]        |                | Arduino R3 Shield | /A determiner/ |
+| Centrale inertielle   | [[https://controllerstech.com/how-to-interface-mpu6050-gy-521-with-stm32/][MPU6050 - GY521]] [[./doc/projet/accel_MPU6050.pdf][datasheet]] | I2C            | 8*2.54 mm HEADER  | /A determiner/ |
+| Ecran LCD             | [[https://wiki.seeedstudio.com/Grove-LCD_RGB_Backlight/][Grove LCD RGB BackLight]]   | I2C            | 4*2 mm HEADER     | /A determiner/ |
+| Bouton poussoir       | [[https://fr.rs-online.com/web/p/interrupteurs-tactiles/4791508][Tactile swicth]]            | GPIO           | 6*6 mm SMD        | /A determiner/ |
+| RGB LED Addressable   | [[https://fr.farnell.com/tenma/25-7524/addressable-rgb-leds-smd5050-10/dp/2801875][Lien]]  [[./doc/projet/led_addressable.pdf][datasheet]]           | GPIO           | SMD5050           | /A determiner/ |
+| LED                   | [[./doc/projet/led_simple.pdf][datasheet]]                 | /A determiner/ | SMD1206           | /A determiner/ |
+| Sonar                 | [[https://controllerstech.com/hcsr04-ultrasonic-sensor-and-stm32/][HCR SR-04]] [[./doc/projet/HCSR04.pdf][datasheet]]       | /A determiner/ | 4*2.54mm HEADER   | /A determiner/ |
+| Resistances           | NC                        | NC             | SMD1206           | /A determiner/ |
+| Potentiomètre         | Linéaire 10kOhm           | /A determiner/ | 3*2.54mm HEADER   | /A determiner/ |
+| Capteur Température   | [[./doc/projet/tmp36grtz.pdf][TMP36grtz]]                 | /A determiner/ | SOT-23            | /A determiner/ |
 
