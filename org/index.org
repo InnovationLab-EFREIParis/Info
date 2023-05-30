@@ -47,9 +47,11 @@ Permanences, évenements, formations... tout est indiqué sur l'agenda ci dessou
 -----
 * Fablab Manager
 Pour toutes questions vous pouvez écrire à remi.griot@efrei.fr et marion.cragnolini@efrei.fr
+#+ATTR_HTML: :target _blank
 * [[./encadrants.org][Les étudiants encadrants]]
 #+ATTR_HTML: :target _blank
 Les étudiants encadrants co-gèrent  l'Innovation Lab avec les Fablab manager. Ils dispensent les formations à l'utilisation des machines et sont responsables du bon fonctionnement du lieu. \\
+#+ATTR_HTML: :target _blank
 [[file:encadrants.org][*Liste des étudiants encadrants*]] \\
 Envie de participer à la vie du lieu? Vous pouvez envoyer votre candidature aux Fablab Manager.
 
