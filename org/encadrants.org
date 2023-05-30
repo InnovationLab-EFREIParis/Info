@@ -26,6 +26,7 @@
 | Mercat      | Gautier    | B1     | gautier.mercat@efrei.net        |
 | Michel      | Quentin    | B1     | quentin.michel@efrei.net        |
 | Ménard      | Tristan    | L2     | tristan.menard@efrei.net        |
+| Menin       | Thibaut    | L2     | thibaut.menin@efrei.net         |
 | Le Callonec | Baptiste   | L2     | baptiste.le-callonnec@efrei.net |
 | Lucas       | Martin     | L3     | martin.lucas@efrei.net          |
 | Morel       | Nathan     | L3     | nathan.morel@efrei.net          |
