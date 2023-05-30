@@ -77,9 +77,9 @@ Pour l'anecdote, j'ai vu des personnes organiser leur mariage avec Git et GitHub
 </p>
 
 
-<div id="outline-container-org32d70a5" class="outline-2">
-<h2 id="org32d70a5">Prérequis</h2>
-<div class="outline-text-2" id="text-org32d70a5">
+<div id="outline-container-org1fb66b2" class="outline-2">
+<h2 id="org1fb66b2">Prérequis</h2>
+<div class="outline-text-2" id="text-org1fb66b2">
 <p>
 Avant de continuer:
 </p>
@@ -101,9 +101,9 @@ Version control systems provide you with three important capabilities:<br />
 </div>
 
 
-<div id="outline-container-orgd7f74b8" class="outline-2">
-<h2 id="orgd7f74b8">Jargon</h2>
-<div class="outline-text-2" id="text-orgd7f74b8">
+<div id="outline-container-org82a5c2c" class="outline-2">
+<h2 id="org82a5c2c">Jargon</h2>
+<div class="outline-text-2" id="text-org82a5c2c">
 <ul class="org-ul">
 <li><b>Organisation</b>: une organisation sur GitHub contient plusieurs dépots. Exemple: <a href="https://github.com/InnovationLab-EFREIParis">https://github.com/InnovationLab-EFREIParis</a></li>
 <li><b>Dépot</b>: C'est le nom du dossier où se situe votre projet (repository en anglais).</li>
@@ -139,13 +139,13 @@ en ligne (<i>push</i>). L'opération devrait alors réussir.
 </div>
 
 
-<div id="outline-container-org1654335" class="outline-2">
-<h2 id="org1654335">Configuration</h2>
-<div class="outline-text-2" id="text-org1654335">
+<div id="outline-container-org0da87d8" class="outline-2">
+<h2 id="org0da87d8">Configuration</h2>
+<div class="outline-text-2" id="text-org0da87d8">
 </div>
-<div id="outline-container-org973cdd5" class="outline-4">
-<h4 id="org973cdd5">Clone d'un dépot (en ligne -&gt; local)</h4>
-<div class="outline-text-4" id="text-org973cdd5">
+<div id="outline-container-org3b1f316" class="outline-4">
+<h4 id="org3b1f316">Clone d'un dépot (en ligne -&gt; local)</h4>
+<div class="outline-text-4" id="text-org3b1f316">
 <p>
 Il faut d'abord obtenir l'addresse du dépot en local.
 Pour cela, rendez-vous via votre navigateur sur l'organisation puis le dépot et cliquer sur Code.
@@ -164,9 +164,9 @@ Pour cela, rendez-vous via votre navigateur sur l'organisation puis le dépot et
 </div>
 </div>
 
-<div id="outline-container-org377bf7f" class="outline-4">
-<h4 id="org377bf7f">Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)</h4>
-<div class="outline-text-4" id="text-org377bf7f">
+<div id="outline-container-orgd69aa32" class="outline-4">
+<h4 id="orgd69aa32">Initialisation du dépôt (création des fichiers nécessaires à git dans le dossier .git)</h4>
+<div class="outline-text-4" id="text-orgd69aa32">
 <div class="org-src-container">
 <pre class="src src-sh">git init
 </pre>
@@ -179,58 +179,58 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org00688f6" class="outline-2">
-<h2 id="org00688f6">En local</h2>
-<div class="outline-text-2" id="text-org00688f6">
+<div id="outline-container-org4c9a9f3" class="outline-2">
+<h2 id="org4c9a9f3">En local</h2>
+<div class="outline-text-2" id="text-org4c9a9f3">
 </div>
-<div id="outline-container-org54c0865" class="outline-4">
-<h4 id="org54c0865">ajout du fichier monfichier.txt à l'index</h4>
-<div class="outline-text-4" id="text-org54c0865">
+<div id="outline-container-orgd544a32" class="outline-4">
+<h4 id="orgd544a32">ajout du fichier monfichier.txt à l'index</h4>
+<div class="outline-text-4" id="text-orgd544a32">
 <div class="org-src-container">
 <pre class="src src-sh">git add monfichier.txt
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org35923b5" class="outline-4">
-<h4 id="org35923b5">ajout de tous les fichiers encore non présents à l'index</h4>
-<div class="outline-text-4" id="text-org35923b5">
+<div id="outline-container-org4e2d10d" class="outline-4">
+<h4 id="org4e2d10d">ajout de tous les fichiers encore non présents à l'index</h4>
+<div class="outline-text-4" id="text-org4e2d10d">
 <div class="org-src-container">
 <pre class="src src-sh">git add .
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org7123a71" class="outline-4">
-<h4 id="org7123a71">retire le ficher monfichier.txt de l’index</h4>
-<div class="outline-text-4" id="text-org7123a71">
+<div id="outline-container-org9b49eab" class="outline-4">
+<h4 id="org9b49eab">retire le ficher monfichier.txt de l’index</h4>
+<div class="outline-text-4" id="text-org9b49eab">
 <div class="org-src-container">
 <pre class="src src-sh">git rm&#160;monfichier.txt
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgddf9d89" class="outline-4">
-<h4 id="orgddf9d89">Sauvegarde en local de ma version, accompagné d’un message "Version 1"</h4>
-<div class="outline-text-4" id="text-orgddf9d89">
+<div id="outline-container-org9b40d25" class="outline-4">
+<h4 id="org9b40d25">Sauvegarde en local de ma version, accompagné d’un message "Version 1"</h4>
+<div class="outline-text-4" id="text-org9b40d25">
 <div class="org-src-container">
 <pre class="src src-sh">git commit &#8211;m <span style="font-style: italic;">"Version 1"</span>
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org70c3189" class="outline-4">
-<h4 id="org70c3189">Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail</h4>
-<div class="outline-text-4" id="text-org70c3189">
+<div id="outline-container-org206df33" class="outline-4">
+<h4 id="org206df33">Statut de la cohérence entre l’index, le dépôt local, et le dossier de travail</h4>
+<div class="outline-text-4" id="text-org206df33">
 <div class="org-src-container">
 <pre class="src src-sh">git&#160;status
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-org0ab7e05" class="outline-4">
-<h4 id="org0ab7e05">Liste les fichiers modifiés entre origin (le depot originelement cloner, donc à distance) et l'index en local (la plupart du temps la branche local)</h4>
-<div class="outline-text-4" id="text-org0ab7e05">
+<div id="outline-container-org24ade84" class="outline-4">
+<h4 id="org24ade84">Liste les fichiers modifiés entre origin (le depot originelement cloner, donc à distance) et l'index en local (la plupart du temps la branche local)</h4>
+<div class="outline-text-4" id="text-org24ade84">
 <p>
 <b>A faire seulement après <i>git fetch</i></b>
 </p>
@@ -242,17 +242,17 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org8460a2c" class="outline-2">
-<h2 id="org8460a2c">Echange entre distant et local</h2>
-<div class="outline-text-2" id="text-org8460a2c">
+<div id="outline-container-org1031bcf" class="outline-2">
+<h2 id="org1031bcf">Echange entre distant et local</h2>
+<div class="outline-text-2" id="text-org1031bcf">
 </div>
-<div id="outline-container-orgc068d84" class="outline-3">
-<h3 id="orgc068d84">Local vers distant</h3>
-<div class="outline-text-3" id="text-orgc068d84">
+<div id="outline-container-org378cfe4" class="outline-3">
+<h3 id="org378cfe4">Local vers distant</h3>
+<div class="outline-text-3" id="text-org378cfe4">
 </div>
-<div id="outline-container-org6b96da6" class="outline-4">
-<h4 id="org6b96da6">Transfert les commit du dépôt local vers le dépôt maitre (en ligne)</h4>
-<div class="outline-text-4" id="text-org6b96da6">
+<div id="outline-container-org4faefd6" class="outline-4">
+<h4 id="org4faefd6">Transfert les commit du dépôt local vers le dépôt maitre (en ligne)</h4>
+<div class="outline-text-4" id="text-org4faefd6">
 <div class="org-src-container">
 <pre class="src src-sh">git push
 </pre>
@@ -261,13 +261,13 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-org95b9f8c" class="outline-3">
-<h3 id="org95b9f8c">Distant vers local</h3>
-<div class="outline-text-3" id="text-org95b9f8c">
+<div id="outline-container-org618c9bb" class="outline-3">
+<h3 id="org618c9bb">Distant vers local</h3>
+<div class="outline-text-3" id="text-org618c9bb">
 </div>
-<div id="outline-container-org1d3c89b" class="outline-4">
-<h4 id="org1d3c89b">Télécharge le <span class="underline">depot distant</span> vers le <span class="underline">dépôt local</span> (<b>Attention</b>, cette opération ne met pas l'espace de travail à jour!)</h4>
-<div class="outline-text-4" id="text-org1d3c89b">
+<div id="outline-container-org3dbab69" class="outline-4">
+<h4 id="org3dbab69">Télécharge le <span class="underline">depot distant</span> vers le <span class="underline">dépôt local</span> (<b>Attention</b>, cette opération ne met pas l'espace de travail à jour!)</h4>
+<div class="outline-text-4" id="text-org3dbab69">
 <div class="org-src-container">
 <pre class="src src-sh">git fetch
 </pre>
@@ -275,18 +275,18 @@ Notamment le fichier .gitignore permettant de lister les fichiers ignorés par l
 </div>
 </div>
 
-<div id="outline-container-orgb8b1663" class="outline-4">
-<h4 id="orgb8b1663">Met à jour l'espace de travail en y appliquant les modifications du dépôt local</h4>
-<div class="outline-text-4" id="text-orgb8b1663">
+<div id="outline-container-org56ebbf4" class="outline-4">
+<h4 id="org56ebbf4">Met à jour l'espace de travail en y appliquant les modifications du dépôt local</h4>
+<div class="outline-text-4" id="text-org56ebbf4">
 <div class="org-src-container">
 <pre class="src src-sh">git merge
 </pre>
 </div>
 </div>
 </div>
-<div id="outline-container-orgbdd2e71" class="outline-4">
-<h4 id="orgbdd2e71">Reviens à faire fetch suivie d'un merge</h4>
-<div class="outline-text-4" id="text-orgbdd2e71">
+<div id="outline-container-org44ad7fb" class="outline-4">
+<h4 id="org44ad7fb">Reviens à faire fetch suivie d'un merge</h4>
+<div class="outline-text-4" id="text-org44ad7fb">
 <div class="org-src-container">
 <pre class="src src-sh">git pull 
 </pre>
