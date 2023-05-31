@@ -1,0 +1,275 @@
+#+title:  Microcontroller (µC)
+#+description: prototypage rapide
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: num:nil
+#+LINK_UP: 
+#+LINK_HOME: index.html
+
+#+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
+#+ATTR_HTML: :width 150px
+[[./img/uc.jpg]]
+Un microcontroller (µC) est une puce programmable en C ou C++ pour la majorité des cas. 
+En première approche, on peut voir cette puce comme un micro ordinateur, car elle intègre non seulement une unité de calcul (micro processeur), mais egalement des périphériques. 
+Comme de la mémoire FLASH (program memory), mémoire RAM (data memory), convertisseur (NA ou AN), controller de bus...
+Ces périphériques sont reliés via un bus interne, décris ci desssous comme un bus système.
+
+#+ATTR_HTML: :width 500px
+[[./img/uc_arch.png]]
+
+
+
+Du fait que tout soit intégré dans une puce, les microcontroller sont compacts, économes en énergie et donc tout désigné pour être embarqué. 
+La plupart du temps le µC va s'interfacer avec des capteurs dont le rôle est de capter des grandeurs physiques.
+En général, les variations de ces grandeurs physiques feront varier une resistance, une capacité ou inductance qui au final pourra être convertie en tension (ou en courant), et donc exploitable par le ÂµC.
+
+
+| Capteurs         | Grandeur physique |
+|------------------+-------------------|
+| Bouton           | Pression          |
+| Potentiometre    | Angle             |
+| Thermoresistance | Temperature       |
+| Photodiode       | Lumière           |
+| ...              | ...               |
+
+De là, il pourra réaliser un traitement et des actions, via des actionneurs auquels il est également interfacé.
+
+| Actionneurs |
+|-------------|
+| LED         |
+| Servomoteur |
+| Moteur      |
+| Ecran       |
+| ...         |
+
+Dans d'autre configurations, le µC et les capteurs forment un sous système intégré dans un système plus large. 
+Ce sous système n'effectue aucune action à part renvoyer ses données à un autre sous sytème.
+Par exemple dans une automobile, en IOT ou en robotique.
+
+
+#+ATTR_HTML: :width 500px
+[[./img/voiture.jpg]]
+
+#+ATTR_HTML: :width 500px
+[[./img/turtlebot.png]]
+
+En général le µC se trouve sur une carte électronique où l'on pourra trouver le minimum pour travailler comme des boutons, des LEDS et des connecteurs...
+La plus connues de ces cartes est la carte ARDUINO UNO, architecturée autour d'un µC ATmega328P.
+
+
+
+* Carte d'évaluation Nucleo
+
+Il existe une grande variété de constructeur et de gammes. En général, le choix d'un micro controller se fait en fonction des taches qu'il aura à accomplir et des contraintes en terme
+de coûts, de consommation, de l'ergonomie de l'interface de développement...
+
+Nous utiliserons une carte d'évaluation du constructeur ST Microelectronics.
+Cette carte d'évaluation est issue de la gamme Nucleo.
+
+
+
+#+ATTR_HTML: :width 500px
+[[./img/hw_block_diagram.jpg]]
+
+#+ATTR_HTML: :width 500px
+[[./img/top_layout.jpg]]
+
+
+Voici les documents relatifs à la carte d'évaluation Nucleo STM32L476RG
+
+# docview:../stm/stm32_l476_usermanual.pdf
+
+[[../stm/stm32_l476_usermanual.pdf][Manuel utilisateur]]
+
+[[../stm/stm32_l476_schematic.pdf][Schéma électrique]]
+
+[[../stm/stm32_l476_datasheet.pdf][Datasheet STM32L476RG]]
+
+
+
+** LED (Utilisateur)
+*** Hardware
+#+attr_html: :width 400px
+[[./img/led.jpg]] 
+
+** Bouton Poussoir (Utilisateur)
+*** Hardware
+#+attr_html: :width 400px
+[[./img/button.jpg]] 
+
+
+
+
+* Le microcontroller
+** Caractéristiques
+
+| Board     | Nucleo STM32L476RG  | Arduino Uno |
+|-----------+---------------------+-------------|
+| Family    | ARM Cortex-M4       | ATMega 328P |
+| Vendor    | ST Microelectronics | ATMega      |
+| Vcc       | 1.71 V - 3.6V       | 3.3 - 5V    |
+| Bus size  | 32 bits             | 8 bits      |
+| SRAM      | 128 KB              | 2 KB        |
+| Flash     | 1 MB                | 32 KB       |
+| Frequency | up to 80MHz         | 16          |
+| FPU       | YES                 | NO          |
+| Timers    | 16                  | 3           |
+| ADCs      | 1x 12-bit           | 6 (10 bits) |
+| DAC       | 1                   | 1           |
+| UARTs     | 3                   | 1           |
+| SPIs      | 3                   | 1           |
+| I2Cs      | 3                   | 1           |
+| RTC       | 1                   | 0           |
+
+
+** Architecture
+
+Voir page 17 de la datasheet
+
+[[./img/uc_diagram.jpg]]
+
+
+* Environnement de développement (IDE) CubeIDE
+
+Configuration du projet
+#+ATTR_HTML: :width 800px
+[[./img/boardselection.jpg]]
+
+#+ATTR_HTML: :width 800px
+[[./img/projectgenerator.jpg]]
+
+
+** HAL (Hardware Abstraction Layer)
+
+Nous utiliserons les fonctions HAL incluent dans l'environnement de développement.
+Elles permettent de simplifier le travail du développeur concernant l'utilisation, la configuration et l'initialisation 
+des périphériques du microcontroller.
+
+
+** GPIO
+General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+
+*** NomDuProjet.ioc
+L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
++ Clique gauche sur les broches pour les configurer en sorties ou en entrÃ©
++ Clique droit sur une broche pour lui donner un label 
+
+*** main.h
+Les directives suivantes permettent de faire le lien entre les user_label et les noms des broches
+#+begin_src C++ :includes <stdio.h>
+#define user_label nom_broche
+#define B1_Pin GPIO_PIN_13
+#define LD2_Pin GPIO_PIN_5
+#define D8_Pin GPIO_PIN_9
+#+end_src
+
+*** main.c
+Cette fonction généré automatiquement configure les GPIO \\
+#+begin_src C++ :includes <stdio.h>
+static void MX_GPIO_Init(void)
+#+end_src
+
+*** Ecriture
+
+#+begin_src C++ :includes <stdio.h>
+void HAL_GPIO_WritePin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin, GPIO_PinState PinState);
+#+end_src
+
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+HAL_GPIO_WritePin(GPIOA, LD2_Pin, RESET);
+#+end_src
+
+#+begin_src C++ :includes <stdio.h>
+void HAL_GPIO_TogglePin(GPIO_TypeDef *GPIOx, uint16_t GPIO_Pin);
+#+end_src
+  
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+  HAL_GPIO_TogglePin(GPIOA, LD2_Pin);
+#+end_src
+
+*** Lecture
+
+#+begin_src C++ :includes <stdio.h>
+GPIO_PinState HAL_GPIO_ReadPin(GPIO_TypeDef* GPIOx, uint16_t GPIO_Pin);
+#+end_src
+
+Exemple: 
+#+begin_src C++ :includes <stdio.h>
+PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
+#+end_src
+
+** Délai
+#+begin_src C++ :includes <stdio.h>
+void HAL_Delay (uint32_t Delay);
+#+end_src
+
+Exemple:
+#+begin_src C++ :includes <stdio.h>
+// Temporistion de 10 ms
+HAL_Delay(10);
+#+end_src
+
+** RS232
+*** Emission (µC vers PC)
+#+begin_src C++ :includes <stdio.h>
+HAL_UART_Transmit (UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)
+#+end_src
+
+#+begin_src C++ :includes <stdio.h>
+  char uart_tx_buff[50];
+  int uart_tx_buf_len;
+  uart_tx_buf_len = sprintf(uart_tx_buff, "Nucleo L476RG connected\n\r");
+  HAL_UART_Transmit(&huart2, (uint8_t*) uart_tx_buff, uart_tx_buf_len,
+			  100);
+#+end_src
+
+*** Reception (PC vers µC)
+#+begin_src C++
+HAL_StatusTypeDef HAL_UART_Receive(UART_HandleTypeDef *huart,
+uint8_t * 	pData,
+uint16_t 	Size,
+uint32_t 	Timeout 
+)	
+#+end_src
+
+Exemple:
+#+begin_src C++
+HAL_UART_Receive(&huart2, uart_rx_buffer, 1, 10) 
+#+end_src
+
+
+Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
+Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
+
+Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
+
+
+** Exercice 1
+Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
+
+** Exercice 2
+Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
+
+** Exercice 3
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+
+** Exercice 4
+Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
+
+** Exercice 5
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
+
+
+* Exemple de projet avec CubeIDE
+
+https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_CubeIDE
+
+
+* Annexes
+
+** Nom de broches
+
+# #+INCLUDE: ../LG476_pinname.org
+

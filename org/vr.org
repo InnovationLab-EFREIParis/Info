@@ -1,0 +1,26 @@
+#+title: Espace réalité virtuelle
+#+description: Atelier
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+#+attr_html: :width 400px
+[[./img/vr.jpg]]
+
+** Description
+
+L'espace VR de l'I-Lab est mis à la disposition des étudiants. Cet espace se compose:
++ D'un casque VR HTC Vive Pro avec 2 manettes et le kit sans fil
++ Un PC (Ram 32 Go, Carte Graphique GTX 1650 Nvidia, Core AMD Ryzen 7 3700X, SSD 1To, HD 1To)
++ 2 bases fixés au plafond
++ Un grand écran
+
+Cet espace est dimensionné pour 5 personnes et le _matériel est uniquement utilisable sur place_.
+
+** Utilisation
+
+L'espace VR est utilisable sur reservation auprès des fablabmanger. 
+Ils pourront installer les logiciels ou application sur demande.\\ 
+
+Pour plus d'infos: marion.cragnolini@efrei.fr et remi.griot@efrei.fr

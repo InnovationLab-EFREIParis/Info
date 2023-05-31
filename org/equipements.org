@@ -7,6 +7,9 @@
 
 #+attr_html: :width 400px
 [[./img/flou.jpg]]
+
+** [[./vr.org][Espace VR]]
+Plus d'infos [[./vr.org][ici]]
 ** Zone machines silencieuses
 *** Impression 3D Depot de filament
 + Simple extrusion 3D Creality - CR30 - (200 x 170 x ∞ mm)  
@@ -19,8 +22,6 @@
 *** Electronique
 + Station soudage et air chaud
 + Oscilloscopes et alimentations de laboratoire
-*** Zone réalité virtuelle
-+ HTC Vive Pro
 ** Zone machines bruyantes
 + Découpeuse Laser  GCC Spirit GLS (960 x 610 mm)
 + Fraiseuse numérique Ooznest (500 x 500 mm)
