@@ -20,6 +20,15 @@
 | Dounia Adli              | E      | X     |
 | Anthony Do               | E      |       |
 
+** Composants distribués
+
+|                    | A | B | C | D | E |
+| Ecran              |   |   |   |   |   |
+| Sonar              |   |   |   |   |   |
+| Potentiometre      |   |   |   |   |   |
+| Station Inertielle |   |   |   |   |   |
+| LED Addressable    |   |   |   |   |   |
+
 
 * SRD
 | Nom                   | Binome | Carte |
@@ -46,3 +55,10 @@
 | Yann Monnier          | J      |       |
 | Alexandre Florian     | K      | X     |
 
+** Composants distribués 
+|                    | A | B | C | D | E | F | G | H | I | J | K |
+| Ecran              |   |   | X |   |   |   |   | X |   |   |   |
+| Sonar              |   |   |   |   |   |   |   | X |   |   |   |
+| Potentiometre      |   |   | X |   |   |   |   | X |   |   |   |
+| Station Inertielle |   |   | X |   |   |   |   | X |   |   |   |
+| LED Addressable    |   |   | X |   |   |   |   | X |   |   |   |
