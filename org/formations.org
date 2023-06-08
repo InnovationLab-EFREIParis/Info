@@ -15,7 +15,7 @@ Vous trouverez sur cette page les supports utilisés durant les formations, les 
 ** [[file:support/support_electronique.pdf][Espace électronique]]
 # * Dessin vectoriel
 # C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
-# * Espace réalité virtuelle
+** [[./vr.org][Espace réalité virtuelle]]
 # ... Ã  venir
 
 ** [[./reparateur.org][Réparateur Repair Café]]
