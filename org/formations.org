@@ -8,14 +8,14 @@ Vous trouverez sur cette page les supports utilisés durant les formations, les 
 
 
 ** [[file:support/SUPPORT_IMPRIMANTE_3D_ILAB_2023_DIGITAL.pdf][Impression 3D]] 
-** [[file:solidworks.org][Conception 3D avec Solidwors]]
+** [[file:solidworks.org][Conception 3D avec Solidworks]]
 ** [[file:support/SUPPORT_DECOUPE_LASER_FORMATION_ILAB_2023_DIGITAL.pdf][Découpe Laser]]
 ** [[file:support/SUPPORT_FRAISEUSE_CNC_FORMATION_ILAB_2023_DIGITAL.pdf][Fraiseuse Numérique]]
 ** [[file:support/support_outillage.pdf][Outillage]]
 ** [[file:support/support_electronique.pdf][Espace électronique]]
 # * Dessin vectoriel
 # C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
-# * Espace réalité virtuelle
+** [[./vr.org][Espace réalité virtuelle]]
 # ... Ã  venir
 
 ** [[./reparateur.org][Réparateur Repair Café]]

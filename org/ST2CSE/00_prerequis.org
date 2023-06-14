@@ -47,11 +47,10 @@ Ce cours doit (normalement) vous permettre de monter en compétences sur la conc
 + La conception de carte éléctronique
 + La conception et fabrication numérique
 
-** Evaluation
+** *Evaluation (Erratum 09/06/2023)*
 
-+ Notes de TPs (30%)
-+ Projet (70%) (des éléments du projet seront donnés durant le TPs)
-
++ Projet-TP (50%)
++ DE 50%
 
 ** Projet 
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
