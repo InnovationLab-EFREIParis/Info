@@ -208,6 +208,7 @@ PinState = HAL_GPIO_ReadPin(GPIOC, B1_Pin);
 void HAL_Delay (uint32_t Delay);
 #+end_src
 
+L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
 Exemple:
 #+begin_src C++ :includes <stdio.h>
 // Temporistion de 10 ms
@@ -243,10 +244,34 @@ HAL_UART_Receive(&huart2, uart_rx_buffer, 1, 10)
 #+end_src
 
 
+** Convertisseur analogique-numérique
+*** Déclaration et configuration
+Voici les principaux paramètres accessible via l'interface graphique (.ioc) de configuration:
+- GPIO associé
+- Résolution 
+- Fréquence d'échantillonnage
+
+
+
+
+*** Utilisation
+#+begin_src C++
+int load_adc(ADC_HandleTypeDef hadc, int polTime) {
+
+	HAL_ADC_Start(&hadc);
+	HAL_ADC_PollForConversion(&hadc, polTime);
+	return HAL_ADC_GetValue(&hadc);
+}
+#+end_src
+
+
+
+
 Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
 Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
 
-Pour les exercices suivant, vous pouvez vous aider de la fonction delay. L'argument entre parenthèse est un entier, qui est le temps en millisecondes.
+Pour les exercices suivant, vous pouvez vous aider de la fonction delay.
+
 
 
 ** Exercice 1
@@ -268,6 +293,24 @@ Programmer la carte de façon à ce que l'intensité de la luminosité de la LED
 * Exemple de projet avec CubeIDE
 
 https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_CubeIDE
+
+* Tutoriels CubeIde
+** Prise en main
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/hyZS2p1tW-g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+** Exemple d'interface avec un capteur I2C
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/isOekyygpR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+** Compteur et interruption
+#+begin_export html 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VfbW6nfG4kw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+#+end_export
+
+
 
 
 * Annexes
