@@ -6,6 +6,7 @@
 #+LINK_UP: 
 #+LINK_HOME: index.html
 
+* Généralités
 #+ATTR_HTML: :style float:left;margin:0px 20px 20px 0px;
 #+ATTR_HTML: :width 150px
 [[./img/uc.jpg]]
@@ -132,14 +133,19 @@ Voir page 17 de la datasheet
 [[./img/uc_diagram.jpg]]
 
 
-* Environnement de développement (IDE) CubeIDE
+* CubeIDE: Configuration du projet
 
-Configuration du projet
 #+ATTR_HTML: :width 800px
 [[./img/boardselection.jpg]]
 
 #+ATTR_HTML: :width 800px
 [[./img/projectgenerator.jpg]]
+
+* CubeIDE: Configuration et utilisation des périphériques
+
+** NomDuProjet.ioc
+La première étape avant d'utiliser un périphérique est de le configurer. Ceci ce fait via une interface graphique.
+Cette interface génère infine du code.
 
 
 ** HAL (Hardware Abstraction Layer)
@@ -149,12 +155,18 @@ Elles permettent de simplifier le travail du développeur concernant l'utilisati
 des périphériques du microcontroller.
 
 
-** GPIO
-General purpose Input Outpout. Ce sont les broches du micro controleur qui peuvent être utilisées comme entrÃ©e ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
+** GPIO (General purpose Input Outpout.)
+ Ce sont les broches du micro controleur qui peuvent être utilisées comme entrée ou sortie selon leur configuration. On y branche typiquement une LED ou un bouton poussoir. Il y a 3 ports (A, B, C) comportant chacun 16 broches. Par exemple, PA8 est la 8e broche du port A. Il y a theoriquement 48 GPIO de disponible sur notre carte.
 
-*** NomDuProjet.ioc
-L'interface graphique de configuration de votre microcontroller. Concernant les entrées/sorties:
-+ Clique gauche sur les broches pour les configurer en sorties ou en entrÃ©
+
+Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
+Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
+
+ 
+*** Configuration
+
+Afin de configuer les GPIO en entrée ou en sortie, ainsi que les assignés à certains périphériques (controler de bus, convertisseur, timer...):
++ Clique gauche sur les broches pour les configurer en sorties ou en entrée
 + Clique droit sur une broche pour lui donner un label 
 
 *** main.h
@@ -216,6 +228,42 @@ HAL_Delay(10);
 #+end_src
 
 ** RS232
+*** Configuration
+Si vous avez suivi l'étape de configuration de votre projet pour la carte d'évaluation Nucleo L476RG, la configuration de la liason série est déjà faite.
+C'est le rôle du Board Support Package (BSP) de faciliter la configuration logiciels des cartes du commerce.
+Dans notre cas, il s'agit d'une liaison "serial over USB". Le protocol série est utiliser au travers d'une connection USB.
+Vous pouvez éditer la configuration existante comme indiqué ci dessous (baudrate, checksum...)
+[[./img/serial_conf.jpg]]
+
+Le code C généré par cette interface doit se retrouver dans le fichier uart.c, dont voici un extrait:
+#+begin_src C++ :includes <stdio.h>
+#include "usart.h"
+
+UART_HandleTypeDef huart2;
+
+void MX_USART2_UART_Init(void)
+{
+  huart2.Instance = USART2;
+  huart2.Init.BaudRate = 9600;
+  huart2.Init.WordLength = UART_WORDLENGTH_8B;
+  huart2.Init.StopBits = UART_STOPBITS_1;
+  huart2.Init.Parity = UART_PARITY_NONE;
+  huart2.Init.Mode = UART_MODE_TX_RX;
+  huart2.Init.HwFlowCtl = UART_HWCONTROL_NONE;
+  huart2.Init.OverSampling = UART_OVERSAMPLING_16;
+  huart2.Init.OneBitSampling = UART_ONE_BIT_SAMPLE_DISABLE;
+  huart2.AdvancedInit.AdvFeatureInit = UART_ADVFEATURE_NO_INIT;
+  if (HAL_UART_Init(&huart2) != HAL_OK)
+  {
+    Error_Handler();
+  }
+  /* USER CODE BEGIN USART2_Init 2 */
+
+  /* USER CODE END USART2_Init 2 */
+
+}
+#+end_src
+
 *** Emission (µC vers PC)
 #+begin_src C++ :includes <stdio.h>
 HAL_UART_Transmit (UART_HandleTypeDef *huart, uint8_t *pData, uint16_t Size, uint32_t Timeout)
@@ -245,16 +293,18 @@ HAL_UART_Receive(&huart2, uart_rx_buffer, 1, 10)
 
 
 ** Convertisseur analogique-numérique
-*** Déclaration et configuration
+*** Configuration
 Voici les principaux paramètres accessible via l'interface graphique (.ioc) de configuration:
 - GPIO associé
 - Résolution 
 - Fréquence d'échantillonnage
 
-
+[[./img/adc_conf.jpg]]
 
 
 *** Utilisation
+Exemple de fonction définie par l'utilisateur permettant de récupérer d'utiliser l'ADC:
+
 #+begin_src C++
 int load_adc(ADC_HandleTypeDef hadc, int polTime) {
 
@@ -265,29 +315,6 @@ int load_adc(ADC_HandleTypeDef hadc, int polTime) {
 #+end_src
 
 
-
-
-Drivers>STM32L4xx_HAL_Driver>stm32l4xx_hal_gpio.h
-Ce fichier fournit par STMicro définit les masques derriere les alias GPIO_PIN_X ainsi que toutes les fonctions relatives à l'utilisation des GPIO
-
-Pour les exercices suivant, vous pouvez vous aider de la fonction delay.
-
-
-
-** Exercice 1
-Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
-
-** Exercice 2
-Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
-
-** Exercice 3
-Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
-
-** Exercice 4
-Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
-
-** Exercice 5
-Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
 
 
 * Exemple de projet avec CubeIDE
@@ -311,6 +338,25 @@ https://github.com/InnovationLab-EFREIParis/Stage_1DOF_DroneBench/tree/main/05_C
 #+end_export
 
 
+* Exercices
+
+Pour les exercices suivant, vous pouvez vous aider de la fonction delay.
+
+
+** Exercice 1
+Programmer la carte de façon à ce que la LED s'allume pendant 500ms puis s'éteigne pendant 1000ms de façon cyclique
+
+** Exercice 2
+Programmer la carte de façon à ce que la LED s'allume lorsque l'on appuie sur le bouton et s'eteigne lorsque le bouton est relaché.
+
+** Exercice 3
+Programmer la carte de façon à ce que la LED s'allume quand on appuie sur le bouton, reste allumé quand on le relache, puis s'éteint à la pression suivante.
+
+** Exercice 4
+Envoyer votre prénom via l'UART toute les secondes, vérifier avec votre PC (via un terminal série) 
+
+** Exercice 5
+Programmer la carte de façon à ce que l'intensité de la luminosité de la LED augmente puis diminue jusq'à complètement s'éteindre, et cela de façon cyclique (période d'une seconde)
 
 
 * Annexes
