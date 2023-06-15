@@ -24,7 +24,7 @@
 
 |                    | A | B | C | D | E |
 | Ecran              |   |   |   |   |   |
-| Sonar              |   |   |   |   |   |
+| Sonar              |   |   | X |   |   |
 | Potentiometre      |   |   |   |   |   |
 | Station Inertielle |   |   |   |   |   |
 | LED Addressable    |   |   |   |   |   |
@@ -51,7 +51,7 @@
 | Maxime Laze           | H      |       |
 | Jules Burette         | I      | X     |
 | Wiame Gourinda        | I      |       |
-| France Issenmann      | J      |       |
+| France Issenmann      | J      | X     |
 | Yann Monnier          | J      |       |
 | Alexandre Florian     | K      | X     |
 
