@@ -23,10 +23,10 @@
 ** Composants distribués
 
 |                    | A | B | C | D | E |
-| Ecran              |   |   |   |   |   |
-| Sonar              |   |   | X |   |   |
-| Potentiometre      |   |   |   |   |   |
-| Station Inertielle |   |   |   |   |   |
+| Ecran              |   |   |   |   | X |
+| Sonar              |   |   | X |   | X |
+| Potentiometre      |   |   |   |   | X |
+| Station Inertielle |   |   |   |   | X |
 | LED Addressable    |   |   |   |   |   |
 
 
