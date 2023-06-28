@@ -35,7 +35,7 @@ le fichier résultant est une une netlist (liste des interconnections). Vous pou
 evidement exporter votre schéma en pdf.
 
 #+begin_export html 
-<iframe width="560" height="315" src="https://youtu.be/ZozjHzfrQV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZozjHzfrQV0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 #+end_export
 
 ** Le placement-routage
