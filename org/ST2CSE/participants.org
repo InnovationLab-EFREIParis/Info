@@ -11,7 +11,7 @@
 |--------------------------+--------+-------|
 | Antoine Covet            | A      |       |
 | Gauthier Marcelin        | A      | X     |
-| Quentin Noiriel          | B      |       |
+| Quentin Noiriel          | B      | X     |
 | Savoureux Khondker       | B      |       |
 | Jean-Samuel Haudié       | C      | X     |
 | Tristan Emmanuel Perrine | C      |       |
