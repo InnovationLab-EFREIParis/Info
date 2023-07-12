@@ -1,0 +1,59 @@
+#+title: Coupe de robotique
+#+description:  Coupe de robotique
+#+author: remi.griot@efrei.fr
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+OPTIONS: toc:nil num:nil
+
+
+
+#+attr_html: :width 300px
+[[./img/coupe_robotique.jpg]]
+
+
+* Calendrier 2024
+
++ Presentation du réglement Septembre 2023
++ Epreuve Juin 2023
+
+* Description
+
+https://www.coupederobotique.fr/levenement/lacoupe/
+
+** Réglement 2023
+
+https://www.coupederobotique.fr/wp-content/uploads/RentreeRobotique_Beta2023.pptx
+
+** Homologation
+
+https://www.coupederobotique.fr/wp-content/uploads/E2023_Memento_Homologuation_FR.pdf
+
+* Budget
+Budget total: ~5000€
+
+| Item                           | €€    |                                                                                                                                                                                                                                                      |
+|--------------------------------+-------+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Adhésion au concours           | 50€   | par structure  (école ou association)                                                                                                                                                                                                                |
+| Frais de participation         | 150€  | par équipe (dans l'éventualité ou l'école présenterait plusieurs équipes seuls les frais de participations sont à payer pour chaque équipe)                                                                                                          |
+| Poster de présentation         | 20€   | par équipe (demandé dans le règlement du concours, pour présenter le robot de l'équipe) B                                                                                                                                                            |
+| Déplacement à la roche sur yon | 250€  | essence  et péage pour un minibus (Tout va dépendre ensuite du moyen de transport, si vous le louer ou si vous en avez un, c'est une estimation) B                                                                                                   |
+| Logement                       | 1000€ | 4 nuits à 25€ pour une équipes de 10 personnes (C'est le tarif 2023 pour les logements proposés aux équipes, certaines équipes louent des airbnb ou vont en camping)                                                                                 |
+| Restaurations                  | 1500€ | 8 repas chaud pour une équipes de 10 personnes (En 2023 nous avons proposé des repas chaud à 7.50€  mais aussi des paniers repas froid à 5€,  mais il y a un Leclerc littéralement à 20 mètre, c'est donc une estimation très haute et tout confort) |
+| Conception Robot               | 2000€ |                                                                                                                                                                                                                                     |
+
+* Qui fait quoi
+
++ Association/InnovationLab: Fabrication de l'aire de jeux, capitalisation d'année en année
++ M2: Du 06/11/2023 au 08/03/2024. Fabrication Robot durant le projet transverse
++ M1: 03/2023 au 06/2024. Fabrication Robot durant le projet transverse
+
+* Plan sur 3 ans
+
++ année 1 - Développer une base roulante et un petit actionneur
++ année 2 - Développer des actionneurs et se doter d'une odométrie et d'un positionnement absolu
++ année 3 - Doter le robot d'une IA
+
+* Remarques
+Autre clef de réussite : l'échange avec les autres équipes. Les équipes isolées ont généralement des robots moins aboutis que celles qui échangent avec les autres équipes. Les équipes ont un discord auto-géré qui peut étre d'une aide non négligeable pour une jeune équipe même si elle est encadrée. Voici le lien :  https://discord.gg/tteC3Cp
+
+* Contact
+hugo.boisaubert@planete-sciences.org Président Groupe Robotique Coupe de France de robotique
