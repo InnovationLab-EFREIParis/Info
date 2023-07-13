@@ -24,4 +24,4 @@ Vous trouverez sur cette page les supports utilisés durant les formations, les 
 
 ** [[./prototypage/00_prerequis.org][LXP: Prototypage]]
 ** [[./ST2CSE/00_prerequis.org][ST2CSE]]
-
+** [[./git.org][Gestion de version avec GIT]]

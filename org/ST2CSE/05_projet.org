@@ -69,6 +69,7 @@ Le système de priorité des exigences est comme suit:
 + 1) Le circuit imprimé doit avoir un plan de masse
 + 1) Les noms des broches de chaque connecteur doivent apparaitre en sérigraphie sur le PCB
 + 1) La lettre du binome et la majeure doivent apparaitre en sérigraphie sur le PCB
++ 1) Des points de tests doivent être prévu
 
 * Reference des composants
 
