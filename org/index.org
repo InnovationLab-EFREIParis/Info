@@ -19,8 +19,9 @@
 # #+ATTR_HTML: :target _blank
 # + [[./presentation_projet.org][*Presentations Projets*]] - Tous les vendredi de 11h30 à 12h
 # + [[./repaircafe.org][ *Repair Café* ]] - Jeudi 27/04 à 17h à l'I-Lab - /Viens réparer ton cuiseur à riz!/ \\
++ *Excellente rentrée à tous!* -  si vous vous posez des questions sur l'I-lab, le mieux est encore de nous rendre une petite visite
 + [[./formations.org][*Formations*]] - Venez vous former à l'utilisation des machines - /ça serait dommage de s'en priver/ \\
-+ *Master Project* - Les projets M1 tous les vendredi à l'I-lab \\
+# + *Master Project* - Les projets M1 tous les vendredi à l'I-lab \\
 # + [[https://www.festivalrobotiquecachan.fr/event/grand-public-lia-est-elle-la-plus-grande-menace-du-xxie-siecle/][ *Festival de robotique de Cachan* ]] - /Le 07 juin sur le campus, mais pas que.../ \\
 # + *Learning XP Week - 9 au 13 janvier - /L'Innovation Lab est reservé durant toute la semaine/*
 
