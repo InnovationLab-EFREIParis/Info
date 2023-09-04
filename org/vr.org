@@ -29,3 +29,6 @@ La procédure se trouve [[./support/GUIDE_UTILISATION_HTC_VIVE.pdf][ici]]
 
 
 Pour plus d'infos: marion.cragnolini@efrei.fr et remi.griot@efrei.fr
+
+
+file:./support/SUPPORT_REALITE_VIRTUELLE_ILAB_2023_DIGITAL.pdf
