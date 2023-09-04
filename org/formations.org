@@ -17,6 +17,7 @@ Vous trouverez sur cette page les supports utilisés durant les formations, les 
 # C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
 ** [[./vr.org][Espace réalité virtuelle]]
 ** [[file:./support/SUPPORT_SCANNER_3D_FORMATION_ILAB_2023_DIGITAL.pdf][Scanner 3D]]
+** [[file:support/SUPPORT_FABRICATION_NUMERIQUE_ILAB_2023_DIGITAL.pdf][Fabrication numérique]]
 ** [[./reparateur.org][Réparateur Repair Café]]
 
 -----
