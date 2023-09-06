@@ -14,31 +14,30 @@
 [[./img/encadrants.png]]
 
 
-# ** Liste des étudiants encadrants 2022/2023
+# ** Liste des étudiants encadrants 2023/2024
 
 | Nom         | Prénom     | Promo. | Email                           |
 |-------------+------------+--------+---------------------------------|
-| Poinama     | Samuel     | L1     | samuel.poinama@efrei.net        |
-| Dragan      | Constantin | L1     | constantin.dragan@efrei.net     |
-| Linossier   | Clément    | L1     | clement.linossier@efrei.net     |
-| Leclerq     | Maxence    | L1     | maxence.leclercq@efrei.net      |
-| Amour       | Raphaël    | L1     | raphael.amour@efrei.net         |
-| Mercat      | Gautier    | B1     | gautier.mercat@efrei.net        |
-| Michel      | Quentin    | B1     | quentin.michel@efrei.net        |
-| Ménard      | Tristan    | L2     | tristan.menard@efrei.net        |
-| Menin       | Thibaut    | L2     | thibaut.menin@efrei.net         |
-| Le Callonec | Baptiste   | L2     | baptiste.le-callonnec@efrei.net |
-| Lucas       | Martin     | L3     | martin.lucas@efrei.net          |
-| Morel       | Nathan     | L3     | nathan.morel@efrei.net          |
-| Vialle      | Martin     | L3     | martin.vialle@efrei.net         |
-| Vincent     | Esteban    | L3     | esteban.vincent@efrei.net       |
-| Guez        | Victoria   | L3     | victoria.guez@efrei.net         |
-| Guillot     | Sasha      | L3     | sasha.guillot@efrei.net         |
-| Dheilly     | Robin      | M1     | robin.dheilly@efrei.net         |
-| Zhou        | Killian    | M1     | killian.zhou@efrei.net          |
-| Geslot      | Gaspard    | M1     | gaspard.geslot@efrei.net        |
-| Pannier     | Julien     | M1     | julien.pannier@efrei.net        |
-| Ballo       | Raymond    | M1     | raymond.ballo@efrei.net         |
+| Poinama     | Samuel     | B2     | samuel.poinama@efrei.net        |
+| Dragan      | Constantin | B2     | constantin.dragan@efrei.net     |
+| Leclerq     | Maxence    | L2     | maxence.leclercq@efrei.net      |
+| Amour       | Raphaël    | L2     | raphael.amour@efrei.net         |
+| Mercat      | Gautier    | B2     | gautier.mercat@efrei.net        |
+| Michel      | Quentin    | B2     | quentin.michel@efrei.net        |
+| Ménard      | Tristan    | L3     | tristan.menard@efrei.net        |
+| Menin       | Thibaut    | L3     | thibaut.menin@efrei.net         |
+| Le Callonec | Baptiste   | L3     | baptiste.le-callonnec@efrei.net |
+| Lucas       | Martin     | M1     | martin.lucas@efrei.net          |
+| Morel       | Nathan     | M1     | nathan.morel@efrei.net          |
+| Vialle      | Martin     | M1     | martin.vialle@efrei.net         |
+| Vincent     | Esteban    | M1     | esteban.vincent@efrei.net       |
+| Guez        | Victoria   | M1     | victoria.guez@efrei.net         |
+| Guillot     | Sasha      | M1     | sasha.guillot@efrei.net         |
+| Dheilly     | Robin      | M2     | robin.dheilly@efrei.net         |
+| Zhou        | Killian    | M2     | killian.zhou@efrei.net          |
+| Geslot      | Gaspard    | M2     | gaspard.geslot@efrei.net        |
+| Pannier     | Julien     | M2     | julien.pannier@efrei.net        |
+| Ballo       | Raymond    | M2     | raymond.ballo@efrei.net         |
 
 
 # | Collin      | Alexis     | M2     | alexis.collin@efrei.net             |
