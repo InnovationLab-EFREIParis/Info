@@ -8,6 +8,10 @@
 #+attr_html: :width 400px
 [[./img/vr.jpg]]
 
+
+** [[file:./support/SUPPORT_REALITE_VIRTUELLE_ILAB_2023_DIGITAL.pdf][Support de formation]]
+Le support de fomation à l'espace de réalité virtuelle est [[file:./support/SUPPORT_REALITE_VIRTUELLE_ILAB_2023_DIGITAL.pdf][ici]]
+
 ** Description
 
 L'espace VR de l'I-Lab est mis à la disposition des étudiants. Cet espace se compose:
@@ -23,9 +27,9 @@ Cet espace est dimensionné pour 5 personnes et le _matériel est uniquement uti
 L'espace VR est utilisable sur reservation auprès des fablabmanger. 
 Ils pourront installer les logiciels ou application sur demande.\\ 
 
-** [[./support/GUIDE_UTILISATION_HTC_VIVE.pdf][Guide d'utilisation HTC Vive]]
+# ** [[./support/GUIDE_UTILISATION_HTC_VIVE.pdf][Guide d'utilisation HTC Vive]]
 
-La procédure se trouve [[./support/GUIDE_UTILISATION_HTC_VIVE.pdf][ici]]
+# La procédure se trouve [[./support/GUIDE_UTILISATION_HTC_VIVE.pdf][ici]]
 
 
-Pour plus d'infos: marion.cragnolini@efrei.fr et remi.griot@efrei.fr
+
