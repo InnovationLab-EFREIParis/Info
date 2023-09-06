@@ -28,6 +28,7 @@
 | Menin       | Thibaut    | L3     | thibaut.menin@efrei.net         |
 | Le Callonec | Baptiste   | L3     | baptiste.le-callonnec@efrei.net |
 | Lucas       | Martin     | M1     | martin.lucas@efrei.net          |
+| Chazard     | Elisa      | M1     | elisa.chazard@efrei.net         |
 | Morel       | Nathan     | M1     | nathan.morel@efrei.net          |
 | Vialle      | Martin     | M1     | martin.vialle@efrei.net         |
 | Vincent     | Esteban    | M1     | esteban.vincent@efrei.net       |
