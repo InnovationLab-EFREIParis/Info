@@ -13,6 +13,7 @@ Vous trouverez sur cette page les supports utilisés durant les formations, les 
 ** [[file:support/SUPPORT_FRAISEUSE_CNC_FORMATION_ILAB_2023_DIGITAL.pdf][Fraiseuse Numérique]]
 ** [[file:support/SUPPORT_FABRICATION_NUMERIQUE_ILAB_2023_DIGITAL.pdf][Fabrication numérique]]
 ** [[file:support/SUPPORT_ELECTRONIQUE_ILAB_2023_DIGITAL.pdf][Espace électronique]]
+** [[file:./support/SUPPORT_PROTOTYPAGE_ILAB_2023_DIGITAL.pdf][Prototypage]]
 # * Dessin vectoriel
 # C'est ici: *[[file:vectoriel.org][Dessin vectoriel]]*
 ** [[./vr.org][Espace réalité virtuelle]]

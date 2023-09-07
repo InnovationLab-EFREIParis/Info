@@ -11,8 +11,10 @@
 [[https://github.com/InnovationLab-EFREIParis][file:./img/github_icon.png]]
 
 #+ATTR_HTML: :style float:right;margin:0px 20px 20px 0px;
-#+attr_html: :width 250px
-[[./img/LOGO_EFREI_WEB_bleu.png]]
+#+attr_html: :width 200px
+[[./img/logo_ilab_2.png]]
+
+# /img/LOGO_EFREI_WEB_bleu.png]]
 # #+ATTR_HTML: :<style>*{font-size: 150%;}</style>
 * Innovation Lab EFREI Paris
 * Actualités
@@ -22,9 +24,11 @@
 # + *Programme du 1er semestre!* -
 + *Soirée porte ouverte* - Mercredi 04 octobre à partir de 17h - /Don't be shy, come say hi/ \\
 + [[./repaircafe.org][ *Repair Café* ]] - Jeudi 05/10 et 07/12  à partir de 18h - /Viens réparer ton cuiseur à riz!/ \\
++ *Jam Acoustique* - Jeudi 19/10 en co-orga avec Live Efrei - /On a dit Fa bémol / \\
 + *Atelier Fabrication* - Jeudi 14/11 à midi - /On y fabrique (presque) tout.../ \\
+----- 
 + [[./formations.org][*Formations*]] - Venez vous former à l'utilisation des machines - /ça serait dommage de s'en priver/ \\
-# + *Jam* -    
+
 
 
 
