@@ -113,10 +113,13 @@ et visiteurs.
 
 ** Liens utiles
 
-[[./support/Repair_Cafe_Orga.pdf]]
+https://academie.repaircafeparis.fr/
+
 
 https://fr.ifixit.com/
 
 https://solar.lowtechmagazine.com/fr/2021/10/how-to-build-a-low-tech-solar-panel.html
 
 https://wiki.lowtechlab.org/wiki/Group:Low-tech_Lab
+
+[[./support/Repair_Cafe_Orga.pdf]]
