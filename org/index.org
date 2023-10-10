@@ -89,7 +89,7 @@ Pour en savoir plus: *[[file:equipements.org][equipements]]*
 Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent par groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
 Elles vous permettent d’acquérir les bases indispensables afin d’utiliser les machines.
 Vous y aborderez les notions de conceptions, de fabrication ainsi que les consignes de sécurités.\\
-À la suite de la formation, rendez vous sur *Moodle* (espace Innovation Lab) où vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
+À la suite de la formation, vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
 comme étudiant autorisé à vous servir des machines. Comme dit dans le règlement intérieur, les machines sont accessibles seulement 
 durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
