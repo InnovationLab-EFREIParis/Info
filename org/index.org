@@ -23,15 +23,12 @@
 # + [[./presentation_projet.org][*Presentations Projets*]] - Tous les vendredi de 11h30 à 12h
 
 # + *Programme du 1er semestre!* -
-+ *Soirée porte ouverte* - Mercredi 04 octobre à partir de 17h - /Don't be shy, come say hi/ \\
-+ [[./repaircafe.org][ *Repair Café* ]] - Jeudi 05/10 et 07/12  à partir de 18h - /Viens réparer ton cuiseur à riz!/ \\
-+ *Jam Acoustique* - Jeudi 19/10 en co-orga avec Live Efrei - /On avait dit Fa bémol/ \\
+# + *Soirée porte ouverte* - Mercredi 04 octobre à partir de 17h - /Don't be shy, come say hi/ \\
++ [[./repaircafe.org][ *Repair Café* ]] - Jeudi 07/11  à partir de 18h - /Viens réparer ton cuiseur à riz!/ \\
++ *Jam Acoustique* - Jeudi 14/12 en co-orga avec Live Efrei - /On avait dit Fa bémol/ \\
 + *Atelier Fabrication* - Jeudi 14/11 à midi - /On y fabrique (presque) tout.../ \\
 ----- 
 # + [[./formations.org][*Formations*]] - Venez vous former à l'utilisation des machines - /ça serait dommage de s'en priver/ \\
-
-
-
 
 # + *Master Project* - Les projets M1 tous les vendredi à l'I-lab \\
 # + [[https://www.festivalrobotiquecachan.fr/event/grand-public-lia-est-elle-la-plus-grande-menace-du-xxie-siecle/][ *Festival de robotique de Cachan* ]] - /Le 07 juin sur le campus, mais pas que.../ \\
