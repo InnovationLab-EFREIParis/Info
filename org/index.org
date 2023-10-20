@@ -24,8 +24,13 @@
 
 # + *Programme du 1er semestre!* -
 # + *Soirée porte ouverte* - Mercredi 04 octobre à partir de 17h - /Don't be shy, come say hi/ \\
+<<<<<<< HEAD
 + [[./repaircafe.org][ *Repair Café* ]] - Jeudi 07/11  à partir de 18h - /Viens réparer ton cuiseur à riz!/ \\
 + *Jam Acoustique* - Jeudi 14/12 en co-orga avec Live Efrei - /On avait dit Fa bémol/ \\
+=======
+# + [[./repaircafe.org][ *Repair Café* ]] - Jeudi 05/10 et 07/12  à partir de 18h - /Viens réparer ton cuiseur à riz!/ \\
++ *Jam Acoustique* - Jeudi 19/10 en co-orga avec Live Efrei - /On avait dit Fa bémol/ \\
+>>>>>>> refs/remotes/origin/master
 + *Atelier Fabrication* - Jeudi 14/11 à midi - /On y fabrique (presque) tout.../ \\
 ----- 
 # + [[./formations.org][*Formations*]] - Venez vous former à l'utilisation des machines - /ça serait dommage de s'en priver/ \\
@@ -86,7 +91,7 @@ Pour en savoir plus: *[[file:equipements.org][equipements]]*
 Les dates et horaires de formations sont inscrites sur l'agenda. Elles se déroulent par groupe de 5 personnes maximum et sont dispensées par des étudiants encadrants.
 Elles vous permettent d’acquérir les bases indispensables afin d’utiliser les machines.
 Vous y aborderez les notions de conceptions, de fabrication ainsi que les consignes de sécurités.\\
-À la suite de la formation, rendez vous sur *Moodle* (espace Innovation Lab) où vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
+À la suite de la formation, vous aurez à passer un questionnaire vous permettant d’obtenir un *Open Badge*. C’est un certificat vous enregistrant 
 comme étudiant autorisé à vous servir des machines. Comme dit dans le règlement intérieur, les machines sont accessibles seulement 
 durant les permanences sous la supervision des encadrants.
 Impression 3D, Scanner 3D, découpe laser, électronique… Pensez à préciser la formation qui
