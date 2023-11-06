@@ -34,6 +34,7 @@
 | Vincent     | Esteban    | M1     | esteban.vincent@efrei.net       |
 | Guez        | Victoria   | M1     | victoria.guez@efrei.net         |
 | Guillot     | Sasha      | M1     | sasha.guillot@efrei.net         |
+| Jurasunas   | Rémi       | M1     | remi.jurasunas@efrei.net        |
 | Dheilly     | Robin      | M2     | robin.dheilly@efrei.net         |
 | Zhou        | Killian    | M2     | killian.zhou@efrei.net          |
 | Geslot      | Gaspard    | M2     | gaspard.geslot@efrei.net        |
